@@ -7,7 +7,7 @@
       "locale": "zh-CN",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "build_entry_point": "docs",
       "template_folder": "_themes"
     }
@@ -21,6 +21,8 @@
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "contribution_branch_mappings": {},
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Contribute.zh-CN",
+  "git_repository_branch_open_to_public_contributors": "live",
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
