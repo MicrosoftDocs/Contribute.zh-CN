@@ -1,0 +1,50 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.pdf",
+          "**/*.pptx"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "breadcrumb_path": "~/breadcrumb/toc.yml",
+      "extendBreadcrumb": true,
+      "titleSuffix": "Contributor Guide",
+      "searchScope": ["Contribute"],
+      "hideScope": true,
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/Contribute",
+      "feedback_product_url": "https://aka.ms/sitefeedback"
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "ContributionGuide"
+  }
+}
