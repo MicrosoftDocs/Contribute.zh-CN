@@ -8,11 +8,11 @@ ms.date: 01/04/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 62c4b234f23b470ffea33cacdfc469fbd7e526bd
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="install-content-authoring-tools"></a>安装内容创作工具
 
@@ -22,9 +22,9 @@ ms.lasthandoff: 04/23/2018
 > * 安装 [Visual Studio Code](https://code.visualstudio.com/)
 
 >[!IMPORTANT]
-> 如果只对文章进行次要更改，则不需要完成本文中的步骤，可以直接继续完成[次要/间歇更改工作流](light-workflow.md)。
+> 如果只对文章进行小的更改，则*不*需要完成本文中的步骤，可以直接继续进行[快速更改工作流](index.md#quick-edits-to-existing-documents)。
 >
-> 建议主要参与者完成这些步骤，以便你能够使用[主要/持续更改的工作流](full-workflow.md)。 即使具有针对主存储库的写入权限，也强烈建议（同时本指南假定）为存储库创建分支并克隆存储库，以便具有读/写权限在分支中存储建议的更改。
+> 建议主要参与者完成这些步骤，以便你能够使用[主要/持续更改的工作流](how-to-write-workflows-major.md)。 即使具有针对主存储库的写入权限，也强烈建议（同时本指南假定）为存储库创建分支并克隆存储库，以便具有读/写权限在分支中存储建议的更改。
 
 ## <a name="install-git-client-tools-on-windows"></a>在 Windows 上安装 Git 客户端工具
 
