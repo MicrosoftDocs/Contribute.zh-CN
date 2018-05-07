@@ -1,19 +1,18 @@
 ---
 title: 用于 VS Code 的 Docs 创作包
-description: VS Code 的扩展包，用于辅助 docs.microsoft.com 的 Markdown 创作。
+description: 本文介绍了 VS Code 的扩展包，用于辅助 docs.microsoft.com 的 Markdown 创作。
 author: meganbradley
 ms.author: mbradley
 manager: jemash
 ms.date: 04/06/2018
-ms.article: contributor-guide
-ms.prod: n.a
-ms.service: n.a
-ms.technology: n.a
-ms.openlocfilehash: 5c857deb07e28e1f6744c895a291bf78a6acf1df
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.prod: non-product-specific
+ms.topic: contributor-guide
+ms.custom: external-contributor-guide
+ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>用于 VS Code 的 Docs 创作包
 
@@ -87,7 +86,7 @@ Docs 创作包是 VS Code 扩展的集合，用于辅助 docs.microsoft.com 的 
 
 ## <a name="known-issues"></a>已知问题
 
-- [DocFX 预览] MacOS 和 Linux：DocFX 预览不能正确启动预览（这些平台的预览默认为 VS Code Markdown 预览）。
-- [DocFx 预览] 所有平台：指向 API 的 xref（交叉引用）链接等某些语法在预览中无法正确呈现，有时还会留下空白内容。
-- [外部书签] Linux：显示文件列表，但不显示可供选择的标题。
-- [包括] Linux：显示文件列表，但选择后不添加任何链接。
+- DocFX 预览：在 MacOS 和 Linux 上，DocFX 预览不能正确启动预览（这些平台的预览默认为 VS Code Markdown 预览）。
+- DocFx 预览：在所有平台上，指向 API 的 xref（交叉引用）链接等某些语法在预览中无法正确呈现，有时还会留下空白内容。
+- 外部书签：在 Linux 上会显示文件列表，但不显示可供选择的标题。
+- 包括：在 Linux 上会显示文件列表，但选择后不添加任何链接。

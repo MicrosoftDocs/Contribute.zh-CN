@@ -1,18 +1,18 @@
 ---
 title: 安装内容创作工具
 description: 本文将介绍如何下载并安装用于 Git 和编辑标记文件所需的客户端工具。
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
-ms.date: 01/04/2018
+author: jasonwhowell
+ms.author: jasonh
+manager: kfile
+ms.date: 04/30/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
-ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
+ms.openlocfilehash: 1011c3fc829202a3df134ddc80eb05b8959b7bf6
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-content-authoring-tools"></a>安装内容创作工具
 
@@ -20,6 +20,7 @@ ms.lasthandoff: 04/28/2018
 > [!div class="checklist"]
 > * 安装 [Git for Windows](https://git-scm.com/download/win)
 > * 安装 [Visual Studio Code](https://code.visualstudio.com/)
+> * 安装 [Docs 创作包](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)
 
 >[!IMPORTANT]
 > 如果只对文章进行小的更改，则*不*需要完成本文中的步骤，可以直接继续进行[快速更改工作流](index.md#quick-edits-to-existing-documents)。
@@ -58,6 +59,16 @@ Markdown 文本将保存为扩展名为 .md 的文件。
 
 > [!TIP]
 > 若要启动 VS Code 和打开当前文件夹，请运行命令行中的 `code .` 命令或 bash shell。 如果当前文件夹是本地 Git 存储库的一部分，github 集成将在 Visual Studio Code 中自动显示。
+
+## <a name="docs-authoring-pack"></a>Docs 创作包
+安装 Visual Studio Code Docs 创作包。 这组扩展包括在编写 Markdown 时提供帮助的基本创作协助，以及一个预览功能，方便用户看到 docs.microsoft.com 网站风格的 Markdown 外观。
+
+   访问此[商城页](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)，并选择“安装”，或者在 VS Code 窗口的扩展列表中搜索 `docsmsft.docs-authoring-pack`。 
+
+   可以通过在 VS Code 中按 Alt+M 键来访问 Docs 创作包。 工具栏默认隐藏，但可以显示。 编辑 VS Code 设置（Ctrl+逗号），并添加用户设置 `"markdown.showToolbar": true` 来显示工具栏。
+
+   有关详细信息，请参阅 [Docs 创作包](how-to-write-docs-auth-pack.md)页面。
+
 
 ## <a name="next-steps"></a>后续步骤
 

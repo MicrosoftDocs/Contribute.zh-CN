@@ -8,11 +8,11 @@ ms.date: 01/18/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: d9c7211641fb05aaca8a76e10c7216ff61a5d23c
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: f702d0d29ee7dc9c69cb26b79bf6283d91b6b6bc
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>设置本地 Git 文档存储库
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 04/23/2018
 > * 配置上游远程值
 
 > [!IMPORTANT]
-> 如果要对文章进行次要更改，无需完成本文中的相关步骤。 可直接转到[次要/间歇更改工作流](light-workflow.md)。
+> 如果要对文章进行次要更改，无需完成本文中的相关步骤。 可直接转到[快速更改工作流](index.md#quick-edits-to-existing-documents)。
 >
 
 ## <a name="overview"></a>概述
@@ -46,7 +46,7 @@ ms.lasthandoff: 04/23/2018
 
 1. 如果不确定要使用的存储库，请使用 Web 浏览器访问 docs.microsoft.com 上的文章。 选择文章右上方的“编辑”链接（铅笔图标）。
 
-   ![单击“编辑”来确定存储库和文件位置。](media/edit-article.png)
+   ![单击“编辑”来确定存储库和文件位置。](media/index/edit-article.png)
 
 2. 该链接会将你带到 github.com 位置，以获取相应存储库中对应的 Markdown 文件。 请注意用于查看存储库名称的 URL。
 
