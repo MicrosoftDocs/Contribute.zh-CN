@@ -9,18 +9,18 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
-ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
+ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>用于 VS Code 的 Docs 创作包
 
 Docs 创作包是 VS Code 扩展的集合，用于辅助 docs.microsoft.com 的 Markdown 创作。此包[可在 VS Code Marketplace 中获得](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)，包含以下扩展：
 
-- **DocFx：**提供特定于 docs.microsoft.com 的 Markdown 预览。 有关详细信息，请参阅 [DocFx](https://marketplace.visualstudio.com/items?itemName=ms-docfx.DocFX)。
-- **markdownlint：**David Anson 推出的一种非常受欢迎的 Markdown Linter，可帮助确保 Markdown 遵循最佳做法。 有关详细信息，请参阅 [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)。
-- **Docs Markdown：**为公开发布系统(OPS) 中的 docs.microsoft.com 内容提供 Markdown 创作帮助，包括基本的 Markdown 支持和对 OPS 中自定义 Markdown 语法的支持。 此主题的其余部分介绍了 Docs Markdown 扩展。
+- **DocFx：** 提供特定于 docs.microsoft.com 的 Markdown 预览。 有关详细信息，请参阅 [DocFx](https://marketplace.visualstudio.com/items?itemName=ms-docfx.DocFX)。
+- **markdownlint：** David Anson 推出的一种非常受欢迎的 Markdown Linter，可帮助确保 Markdown 遵循最佳做法。 有关详细信息，请参阅 [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)。
+- **Docs Markdown：** 为公开发布系统(OPS) 中的 docs.microsoft.com 内容提供 Markdown 创作帮助，包括基本的 Markdown 支持和对 OPS 中自定义 Markdown 语法的支持。 此主题的其余部分介绍了 Docs Markdown 扩展。
 
 ## <a name="prerequisites-and-assumptions"></a>前提条件和假设
 
