@@ -8,17 +8,22 @@ ms.date: 07/13/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 96d00abc052c3b23ca62201dccdbe590a927e72d
-ms.sourcegitcommit: de6e6b6ca641fdd5b30eb46deee9ac3a500089ef
+ms.openlocfilehash: 041398361aef90c44bdf3a0dad4aaa2d40a38289
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 撰写 Docs
 
 Docs.microsoft.com 文章均采用一种称为 [Markdown](https://daringfireball.net/projects/markdown/) 的轻量级标记语言编写，这种语言易读且易学。 正因为如此，Markdown 已迅速成为行业标准。
 
-由于 Doc 内容存储在 GitHub 中，因此可以使用 Markdown 超集（称为 [ GitHub 风格的 Markdown (GFM)](https://help.github.com/categories/writing-on-github/)），它为常用格式需求提供了附加功能。 此外， Open Publishing Services (OPS) 还将实现 DocFX 风格的 Markdown (DFM)。 DFM 与 GitHub 风格的 Markdown (GFM) 高度兼容，并添加了实现 Docs 特定功能的功能。
+由于 Doc 内容存储在 GitHub 中，因此可以使用 Markdown 超集（称为 [ GitHub 风格的 Markdown (GFM)](https://help.github.com/categories/writing-on-github/)），它为常用格式需求提供了附加功能。 此外， Open Publishing Services (OPS) 还将实现 Markdig Markdown 分析程序。 Markdig 与 GitHub 风格的 Markdown (GFM) 高度兼容，并添加了实现 Docs 特定功能的功能。
+
+* Markdig 是一种适用于 .NET 的 Markdown 分析程序，它运行快速、功能强大且兼容 CommonMark。
+* https://github.com/lunet-io/markdig
+* 更好的社区支持
+* 更好的标准支持
 
 ## <a name="markdown-basics"></a>Markdown 基础知识
 
@@ -145,7 +150,7 @@ Docs.microsoft.com 文章均采用一种称为 [Markdown](https://daringfireball
 
 有关创建表格的详细信息，请参阅：
 
-- DFM [表格换行功能](#table-wrapping)，有助于设置宽表格的格式
+- Markdig [表格换行功能](#table-wrapping)，有助于设置宽表格的格式
 - GitHub 的[使用表格整理信息](https://help.github.com/articles/organizing-information-with-tables/)
 - [Markdown 表格生成器](https://www.tablesgenerator.com/markdown_tables) Web 应用
 - [Adam Pritchard 的 Markdown 备忘单](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
@@ -161,7 +166,7 @@ Markdown 的内联链接语法由两部分组成：`[link text]` 部分，这是
 有关链接的详细信息，请参阅：
 
 - [Markdown 语法指南](https://daringfireball.net/projects/markdown/syntax#link)，详细了解 Markdown 的基本链接支持相关信息。
-- 本指南的[链接](how-to-write-links.md)部分，了解 DFM 提供的其他链接语法的详细信息。
+- 本指南的[链接](how-to-write-links.md)部分，了解 Markdig 提供的其他链接语法的详细信息。
 
 ### <a name="code-snippets"></a>代码片段
 
@@ -272,9 +277,9 @@ CREATE TABLE T1 (
 ## <a name="ops-custom-markdown-extensions"></a>OPS 自定义 Markdown 扩展
 
 > [!NOTE]
-> Open Publishing Services(OPS) 可实现 DocFX 风格的 Markdown (DFM)，它与 GitHub 风格的 Markdown (GFM) 高度兼容。 DFM 通过 Markdown 扩展添加一些功能。 就这一点而言，本指南从完整的《OPS 创作指南》中选用了几篇文章，以供参考。 （例如，请参阅目录中的“DFM 和 Markdown 扩展”以及“代码片段”。）
+> Open Publishing Services(OPS) 可实现 Markdown Markdig 分析程序，它与 GitHub 风格的 Markdown (GFM) 高度兼容。 Markdig 通过 Markdown 扩展添加一些功能。 就这一点而言，本指南从完整的《OPS 创作指南》中选用了几篇文章，以供参考。 （例如，请参阅目录中的“Markdig 和 Markdown 扩展”以及“代码片段”。）
 
-Doc 文章使用 GFM 完成大多文章的格式设置，如段落、链接、列表和标题。 要想实现更丰富的格式设置功能，文章可以使用 DFM 功能，例如：
+Doc 文章使用 GFM 完成大多文章的格式设置，如段落、链接、列表和标题。 要想实现更丰富的格式设置功能，文章可以使用 Markdig 功能，例如：
 
 - 备注块
 - 包含文件
@@ -282,7 +287,7 @@ Doc 文章使用 GFM 完成大多文章的格式设置，如段落、链接、�
 - 嵌入视频
 - 代码片段/示例
 
-如需完整列表，请参阅目录中的“DFM 和 Markdown 扩展”以及“代码片段”。
+如需完整列表，请参阅目录中的“Markdig 和 Markdown 扩展”以及“代码片段”。
 
 ### <a name="note-blocks"></a>备注块
 
@@ -297,7 +302,7 @@ Doc 文章使用 GFM 完成大多文章的格式设置，如段落、链接、�
 
 ### <a name="includes"></a>包含文件
 
-如果有需要加入文章文件中的可重用的文本或图像文件，可以通过 DFM 文件的包含文件功能使用对“包含”文件的引用。 此功能指示 OPS 在创建时将该文件加入文章文件中，使它成为已发布文章的一部分。 有 3 种类型的包含功能可帮助你重用内容：
+如果有需要加入文章文件中的可重用的文本或图像文件，可以通过 Markdig 文件的包含文件功能使用对“包含”文件的引用。 此功能指示 OPS 在创建时将该文件加入文章文件中，使它成为已发布文章的一部分。 有 3 种类型的包含功能可帮助你重用内容：
 
 - 内联：重用内联在其他句子中的常用文本片段。
 - 块：将整个 Markdown 文件作为一个块来重用，嵌套在文章的某一部分中。
@@ -309,7 +314,7 @@ Doc 文章使用 GFM 完成大多文章的格式设置，如段落、链接、�
 
 - 无论何时需要使相同的文本显示在多篇文章中，均可使用包含功能。
 - 块包含文件用于大篇幅内容，比如一个或者两个段落、共享过程或者共享章节。 请勿将它们用于小于一个句子的内容。
-- 包含文件不会在你文章的 GitHub 渲染视图中显示，因为它们依赖于 DFM 扩展。 它们在发布后才会显示。
+- 包含文件不会在你文章的 GitHub 渲染视图中显示，因为它们依赖于 Markdig 扩展。 它们在发布后才会显示。
 - 确保包含文件中的所有文本都是完整的句子或者段落，并且与引用包含文件的文章的前后文没有关联。 如果不遵循此指导原则，则会在文章中创建无法转换的字符串，进而破坏本地化体验。
 - 请勿将包含文件嵌入其他包含文件中。 不支持此操作。
 - 将媒体文件置于特定于包含文件子目录的媒体文件夹中，例如，`<repo>`/includes/媒体文件夹。 媒体目录不应在根目录中包含任何图片。 如果包含文件不包含图像，则不需要相应的媒体目录。
@@ -318,13 +323,13 @@ Doc 文章使用 GFM 完成大多文章的格式设置，如段落、链接、�
 
 ### <a name="selectors"></a>选择器
 
-当你创作具有多种风格的同一篇技术文章时，请在文章中使用选择器，从而跨技术或平台解决实现上的差异。 通常，这最适用于开发人员的移动平台内容。 DFM 中目前有两种类型的选择器，单选择器和多选择器。
+当你创作具有多种风格的同一篇技术文章时，请在文章中使用选择器，从而跨技术或平台解决实现上的差异。 通常，这最适用于开发人员的移动平台内容。 Markdig 中目前有两种类型的选择器，单选择器和多选择器。
 
 由于选择的每篇文章中都会出现相同的选择器 Markdown，因此建议将文章的选择器放在一个包含文件中。 然后，可以在使用相同选择器的所有文章中引用该包含文件。
 
 ### <a name="code-snippets"></a>代码片段
 
-DFM 支持通过代码片段扩展以一种高级方式将代码加入文章中。 它提供了一种高级的呈现方式，这种方式基于 GFM 功能（例如编程语言选择和语法着色）以及以下一些出色的功能生成：
+Markdig 支持通过代码片段扩展以一种高级方式将代码加入文章中。 它提供了一种高级的呈现方式，这种方式基于 GFM 功能（例如编程语言选择和语法着色）以及以下一些出色的功能生成：
 
 - 通过外部存储库加入集中式代码示例/片段。
 - 选项卡式 UI，可采用不同语言显示多个版本的代码示例。
