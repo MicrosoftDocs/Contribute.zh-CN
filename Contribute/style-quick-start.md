@@ -9,14 +9,15 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 74f78b72f61cfebddb0cb03b73a3a806f4fe4a10
-ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34469385"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs 风格和语调快速入门
 
-此快速入门不会花费太多时间，但能够让你在为 docs.microsoft.com 撰写文章时，清楚地了解如何应用最重要的 Docs 风格概念。无论是创建新文档还是更新现有文档，这些指南均适用。
+此快速入门不会花费太多时间，但能够让你在为 docs.microsoft.com 撰写文章时，清楚地了解如何应用最重要的 Docs 风格概念。 无论是创建新文档还是更新现有文档，这些指南均适用。
 
 以下是一些最低限度的要求：
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 05/22/2018
 
 ## <a name="use-the-microsoft-voice-principles"></a>使用 Microsoft 语调原则
 
-我们努力做到在撰写 [docs.microsoft.com](https://docs.microsoft.com) 技术内容时遵循这些原则。可能无法始终达到要求，但仍要不断努力！
+我们努力做到在撰写 [docs.microsoft.com](https://docs.microsoft.com) 技术内容时遵循这些原则。 可能无法始终达到要求，但仍要不断努力！
 
 - **关注意图**：客户在查阅我们的文档时，都有自己的专门用途。 开始撰写之前，需要清楚客户是谁，他/她尝试完成的任务是什么。 然后，撰写文章以帮助特定客户完成特定任务。
 - **使用常用字词**：尝试使用自然语言，客户使用的字词。 可以不正式，但不能缺少技术性。 提供介绍新概念的示例。
