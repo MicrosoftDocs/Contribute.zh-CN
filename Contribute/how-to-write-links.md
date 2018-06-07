@@ -9,13 +9,14 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34469523"
 ---
 # <a name="using-links-in-documentation"></a>在文档中使用链接
-本文介绍如何使用 docs.microsoft.com 上托管页面的超链接。通过几种不同的约定，便可轻松地将链接添加到 markdown。 链接将用户指向相同页面中的内容、其他相邻页面或外部站点和 URL。
+本文介绍如何使用 docs.microsoft.com 上托管页面的超链接。 通过几种不同的约定，便可轻松地将链接添加到 markdown。 链接将用户指向相同页面中的内容、其他相邻页面或外部站点和 URL。
 
 docs.microsoft.com 站点后端使用实现 DocFX Flavored Markdown (DFM) 的公开发布服务 (OPS)。 DFM 与 GitHub Flavored Markdown (GFM) 高度兼容，并且 DFM 通过 Markdown 扩展添加了附加功能。
 
