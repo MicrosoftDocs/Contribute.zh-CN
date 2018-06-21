@@ -1,19 +1,16 @@
 ---
 title: Microsoft Docs 参与者指南概述
 description: 本文介绍为 Microsoft 文档站点 docs.microsoft.com 供稿的方式。
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
+author: billwagner
+ms.author: wiwagn
+manager: wpickett
 ms.date: 04/17/2018
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1cda40c890e5b30e6e1e10f3bcee0278f8004653
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: a0c52fea8f3a57cdfe89c2cd7a24ef7b511ada7c
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469431"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239760"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 参与者指南概述
 

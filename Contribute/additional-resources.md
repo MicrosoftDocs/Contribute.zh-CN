@@ -4,16 +4,12 @@ description: 本文列出了有关参与 docs.microsoft.com 供稿的推荐的 G
 author: billwagner
 ms.author: wiwagn
 manager: wpickett
-ms.date: 02/27/2018
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 792b8d530a4308741a7e1c86af40d738fb0ba1bc
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: d45e395c19a0619e0c73f7ad0a3858e0e48098c6
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469408"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239571"
 ---
 # <a name="additional-git-and-github-resources"></a>其他的 Git 和 Github 资源
 

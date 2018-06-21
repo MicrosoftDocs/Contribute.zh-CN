@@ -5,15 +5,12 @@ author: meganbradley
 ms.author: mbradley
 manager: jemash
 ms.date: 04/06/2018
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 0a6a793f568771347efce5d7b2d347210f9e5c70
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469569"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238888"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>用于 VS Code 的 Docs 创作包
 

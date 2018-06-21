@@ -5,15 +5,12 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1011c3fc829202a3df134ddc80eb05b8959b7bf6
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 00631485f1f4eed9e0de2f6df98d973a819dfe4d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469362"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238911"
 ---
 # <a name="install-content-authoring-tools"></a>安装内容创作工具
 
@@ -64,7 +61,7 @@ Markdown 文本将保存为扩展名为 .md 的文件。
 ## <a name="docs-authoring-pack"></a>Docs 创作包
 安装 Visual Studio Code Docs 创作包。 这组扩展包括在编写 Markdown 时提供帮助的基本创作协助，以及一个预览功能，方便用户看到 docs.microsoft.com 网站风格的 Markdown 外观。
 
-   访问此[商城页](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)，并选择“安装”，或者在 VS Code 窗口的扩展列表中搜索 `docsmsft.docs-authoring-pack`。 
+   访问此[市场页](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)，并选择“安装”，或者在 VS Code 窗口的扩展列表中搜索 `docsmsft.docs-authoring-pack`。 
 
    可以通过在 VS Code 中按 Alt+M 键来访问 Docs 创作包。 工具栏默认隐藏，但可以显示。 编辑 VS Code 设置（Ctrl+逗号），并添加用户设置 `"markdown.showToolbar": true` 来显示工具栏。
 

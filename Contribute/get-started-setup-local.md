@@ -5,15 +5,12 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 01/18/2018
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: f702d0d29ee7dc9c69cb26b79bf6283d91b6b6bc
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 2ad0de552d481e2460ca0f56570181e33d0a6608
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469753"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238980"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>设置本地 Git 文档存储库
 
