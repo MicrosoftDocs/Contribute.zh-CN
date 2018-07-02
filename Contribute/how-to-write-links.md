@@ -1,19 +1,13 @@
 ---
 title: 如何在文档中使用链接
 description: 本文指导如何在 docs.microsoft.com 中创建内容链接。
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/29/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469523"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239717"
 ---
 # <a name="using-links-in-documentation"></a>在文档中使用链接
 本文介绍如何使用 docs.microsoft.com 上托管页面的超链接。 通过几种不同的约定，便可轻松地将链接添加到 markdown。 链接将用户指向相同页面中的内容、其他相邻页面或外部站点和 URL。
@@ -63,7 +57,10 @@ docs.microsoft.com 站点后端使用实现 DocFX Flavored Markdown (DFM) 的公
   `[link text](../directory/article-name.md)`
 
 - 跨 docset 链接的文章（即使在同一存储库中）：`[link text](./directory/article-name)`
-  
+
+> [!IMPORTANT]
+> 上述示例中均未在链接中使用 `~/`。 如果要链接到存储库的根路径，请以 `/` 开头。 如果包含 `~/`，当在 GitHub 上导航源存储库时会生成无效的链接。 使路径以 `/` 开头便可有效解决此问题。
+
 ## <a name="links-to-anchors"></a>链接到锚点
 
 不必创建锚点。 它们在发布时会自动生成，用于所有 H2 标题。 只需要创建到 H2 部分的链接。
