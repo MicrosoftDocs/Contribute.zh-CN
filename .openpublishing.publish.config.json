@@ -20,7 +20,9 @@
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
+	"contribution_branch_mappings": {
+		       "live-sxs": "live"
+  },
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Contribute.zh-CN",
   "git_repository_branch_open_to_public_contributors": "live",
   "dependent_repositories": [
