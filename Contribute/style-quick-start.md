@@ -2,22 +2,22 @@
 title: Docs 风格指南 - 快速入门
 description: 本文是关于风格注意事项的简明指南，仅包含 docs.microsoft.com 入门的基本主题。
 ms.date: 07/25/2017
-ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239594"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40243014"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs 风格和语调快速入门
 
-此快速入门不会花费太多时间，但能够让你在为 docs.microsoft.com 撰写文章时，清楚地了解如何应用最重要的 Docs 风格概念。 无论是创建新文档还是更新现有文档，这些指南均适用。
+此快速入门是针对 docs.microsoft.com 上的出版物的书面技术内容的简短指南。 无论是创建新文档还是更新现有文档，这些指南均适用。
 
-以下是一些最低限度的要求：
+最佳做法：
 
 - 检查文章中的拼写和语法，即使需要复制粘贴到 Word 中来执行此操作。
 - 采用随意且友好的语调，就像是在和其他人面对面聊天一样。
-- 使用结构简单的句子。 这些句子通俗易懂，不论是人工译者还是机器翻译，都能够更轻松地完成翻译。
+- 使用结构简单的句子。 易于阅读的句子意味着读者可以快速使用你共享的指南。
 
 ## <a name="use-the-microsoft-voice-principles"></a>使用 Microsoft 语调原则
 

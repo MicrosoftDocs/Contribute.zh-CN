@@ -5,18 +5,18 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 00631485f1f4eed9e0de2f6df98d973a819dfe4d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238911"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251459"
 ---
 # <a name="install-content-authoring-tools"></a>安装内容创作工具
 
 本文介绍以交互方式安装 Git 客户端工具和 Visual Studio Code 的相关步骤。
 > [!div class="checklist"]
-> * 安装 [Git for Windows](https://git-scm.com/download/win)
+> * 安装 [Git](https://git-scm.com/)
 > * 安装 [Visual Studio Code](https://code.visualstudio.com/)
 > * 安装 [Docs 创作包](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)
 
@@ -25,9 +25,13 @@ ms.locfileid: "36238911"
 >
 > 建议主要参与者完成这些步骤，以便你能够使用[主要/持续更改的工作流](how-to-write-workflows-major.md)。 即使具有针对主存储库的写入权限，也强烈建议（同时本指南假定）为存储库创建分支并克隆存储库，以便具有读/写权限在分支中存储建议的更改。
 
-## <a name="install-git-client-tools-on-windows"></a>在 Windows 上安装 Git 客户端工具
+## <a name="install-git-client-tools"></a>安装 Git 客户端工具 
 
- 安装最新版本的[软件自由保护组织的 Git 客户端工具](https://git-scm.com/download/)。 安装包括 Git 版本控制系统，以及用于与本地 Git 存储库进行交互的命令行应用 Git Bash。
+ 为你的平台安装最新版本的[软件自由保护组织的 Git 客户端工具](https://git-scm.com/download/)。 
+
+* [Git for Windows](https://git-scm.com/download/win)。 此安装包括 Git 版本控制系统，以及用于与本地 Git 存储库进行交互的命令行应用 Git Bash。
+* Git for Mac 作为 Xcode 命令行工具的一部分提供。 只需从命令行运行 `git`。 系统将提示你安装命令行工具（如有必要）。 你也可以从软件自由保护组织中下载 [Git for Mac](https://git-scm.com/download/mac)。
+* [Git for Linux 和 Git for Unix](https://git-scm.com/download/linux)
 
 如果希望使用图形用户界面 (GUI) 而不是命令行界面 (CLI)，请参阅[软件自由保护组织提供的 GUI 客户端页面](https://git-scm.com/downloads/guis)、[GitHub 的 GitHub Desktop](https://desktop.github.com/) 或 [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx)，获取一些热门选择。
 

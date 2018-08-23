@@ -2,12 +2,12 @@
 title: 如何在文档中使用链接
 description: 本文指导如何在 docs.microsoft.com 中创建内容链接。
 ms.date: 06/29/2017
-ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: dad0460cfb36594c17cef1b079c5fc14191f56f7
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239717"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251481"
 ---
 # <a name="using-links-in-documentation"></a>在文档中使用链接
 本文介绍如何使用 docs.microsoft.com 上托管页面的超链接。 通过几种不同的约定，便可轻松地将链接添加到 markdown。 链接将用户指向相同页面中的内容、其他相邻页面或外部站点和 URL。
@@ -148,12 +148,12 @@ URL 结构：
 
 &lt;moniker-name&gt; 部分是可选的。 如果省略这一部分，会将用户定向到最新版本的内容。 &lt;service-name&gt; 部分是以下基 URL 中显示的其中一个示例：
 
-- Azure PowerShell (AzureRM) 内容：https://docs.microsoft.com/powershell/azure/
-- Azure PowerShell (ASM) 内容：https://docs.microsoft.com/powershell/azure/_servicemanagement_
-- Azure Active Directory (AzureAD) PowerShell 内容：https://docs.microsoft.com/powershell/azure/_active-directory_
-- Azure Service Fabric PowerShell：https://docs.microsoft.com/powershell/azure/_service-fabric_
-- Azure 信息保护 PowerShell：https://docs.microsoft.com/powershell/azure/_aip_
-- Azure 弹性数据库作业 PowerShell：https://docs.microsoft.com/powershell/azure/_elasticdbjobs_
+- Azure PowerShell (AzureRM) 内容：[https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
+- Azure PowerShell (ASM) 内容：[https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)
+- Azure Active Directory (AzureAD) PowerShell 内容：[https://docs.microsoft.com/powershell/azure/_active-directory_](https://docs.microsoft.com/powershell/azure/active-directory)
+- Azure Service Fabric PowerShell：[https://docs.microsoft.com/powershell/azure/_service-fabric_](https://docs.microsoft.com/powershell/azure/service-fabric)
+- Azure 信息保护 PowerShell：[https://docs.microsoft.com/powershell/azure/_aip_](https://docs.microsoft.com/powershell/azure/aip)
+- Azure 弹性数据库作业 PowerShell：[https://docs.microsoft.com/powershell/azure/_elasticdbjobs_](https://docs.microsoft.com/powershell/azure/elasticdbjobs)
 
 在使用这些 URL 时，会将用户重定向到最新版本的内容。 这样就不必指定版本名字对象。 并且不会有指向版本更改时必须进行更新的概念内容的链接。
 

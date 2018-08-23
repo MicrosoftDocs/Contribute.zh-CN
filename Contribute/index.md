@@ -5,18 +5,18 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: a0c52fea8f3a57cdfe89c2cd7a24ef7b511ada7c
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239760"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251476"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 参与者指南概述
 
 欢迎查看 [docs.microsoft.com](https://docs.microsoft.com) (Docs) 风格指南！
 
-我们的一些文档集是开放源代码，托管在 GitHub 上。 更多团队一直在采用这种模式。 即使文档集不完全开放源代码，也有面向公众的存储库，其中用户受邀发出拉取请求。 这种模式简化并改善了产品工程师、内容团队和我们的客户之间的通信。 开放式工作有以下几点好处：
+我们的一些文档集是开放源代码，托管在 GitHub 上。 Microsoft 的更多团队一直在采用这种模式。 即使文档集不完全开放源代码，也有面向公众的存储库，其中用户受邀发出拉取请求。 这种模式简化并改善了产品工程师、内容团队和我们的客户之间的通信。 开放式工作有以下几点好处：
 
 - 开放源代码存储库以公开方式计划，获取如下反馈：哪些文档是最需要的。
 - 开放源代码存储库以公开方式评审，在我们首个版本中发布最具帮助意义的内容。
