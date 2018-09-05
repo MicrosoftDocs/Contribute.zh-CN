@@ -1,0 +1,24 @@
+### YamlMime:ZonePivotGroups
+groups:
+- id: keyvault-platforms
+  title: 平台
+  prompt: Choose your platform
+  pivots:
+  - id: macos
+    title: Mac
+  - id: windows
+    title: Windows
+- id: keyvault-languages
+  title: 编程语言
+  prompt: Choose a programming language
+  pivots:
+  - id: nodejs
+    title: Node.js
+  - id: dotnet
+    title: ASP.NET
+ms.openlocfilehash: 7f7811090f93a0d0f81b73025c755b0a2a754dcd
+ms.sourcegitcommit: b0105f322f91bb4dbde47f6da35b3c12271d5b03
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43239527"

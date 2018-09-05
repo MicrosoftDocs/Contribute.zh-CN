@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 94fad6f4b2faeefff687eb57cd2de8a0fb5bbbf3
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251476"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308884"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 参与者指南概述
 
@@ -31,7 +31,7 @@ ms.locfileid: "40251476"
 
 ## <a name="quick-edits-to-existing-documents"></a>对现有文档进行快速编辑
 
-快速编辑可简化报告和修复文档中的小错误和遗漏的过程。 尽管做出了各种各样的努力，但在我们发布的文档中仍会遇到小的语法错误和拼写错误。 虽然可以创建问题来报告错误，但创建拉取请求 (PR) 来解决此问题速度更快，也更简便。 几乎每一篇文章都显示一个“编辑”按钮，如下图所示。 单击“编辑”按钮将转到 GitHub 上的源文件。
+快速编辑可简化报告和修复文档中的小错误和遗漏的过程。 尽管做出了各种各样的努力，但在我们发布的文档中仍会遇到小的语法错误和拼写错误。 虽然可以创建问题来报告错误，但创建拉取请求 (PR) 来解决此问题速度更快，也更简便。 几乎每一篇文章都显示一个“编辑”按钮，如下图所示。 单击“编辑”（或等效的本地化名称）按钮将转到 GitHub 上的源文件。
 
 ![“编辑”链接的位置](./media/index/edit-article.png)
 
@@ -46,6 +46,12 @@ ms.locfileid: "40251476"
 
 ![建议更改](./media/index/submit-pull-request.png)
 
+既然已提出更改，则需要请求存储库的所有者将更改“拉取”到其存储库中。 这是使用称为“拉取请求”的操作完成的。 单击上图中的“建议文件更改”时，应该会进入一个如下图所示的新页面：
+
+![创建拉取请求](media/index/create-pull-request.png)
+
+单击“创建拉取请求”，为拉取请求输入标题（以及可选的描述），然后再次单击“创建拉取请求”。
+
 就这么简单！ 内容团队成员将评审并合并你的 PR。 如果进行了更大范围的更改，可能会收到一些请求更改的反馈。
 
 GitHub 编辑 UI 会响应你在存储库上的权限。 前面的图像对于那些对目标存储库没有写入权限的参与者来说是准确的。 GitHub 会在帐户中自动创建目标存储库的一个分支。 如果你对目标存储库具有写入访问权限，GitHub 将在目标存储库中创建一个新分支。 分支名称采用 \<GitHubId\>-patch-n 形式，使用的是你的 GitHub ID 和修补程序分支的数字标识符。
@@ -53,6 +59,12 @@ GitHub 编辑 UI 会响应你在存储库上的权限。 前面的图像对于�
 我们使用 PR 进行所有更改，即使对于具有写入访问权限的参与者也是如此。 大多数存储库都会为 `master` 分支提供保护，使更新必须作为 PR 提交。
 
 浏览器内编辑体验最适合进行细微或不频繁的更改。 如果大篇幅供稿，或者使用高级 Git 功能（例如分支管理或高级合并冲突解决），需要[在本地创建存储库和工作分支](how-to-write-workflows-major.md)。
+
+> [!NOTE]
+> 如果启用，则可以使用任何语言编辑文章，并根据编辑类型执行以下操作：
+> 1. 任何经过批准的语言更改也将有助于改进我们的机器翻译引擎
+> 2. 任何显着修改文章内容的编辑都将在内部进行处理，以提交对英语版本的同一文章的更改，从而在获得批准后，以所有语言对文章进行本地化。
+> 因此，你建议的改进不仅会正面地影响你自己语言的文章，还会影响所有可用语言。
 
 ## <a name="review-open-prs"></a>评审开放式 PR
 
