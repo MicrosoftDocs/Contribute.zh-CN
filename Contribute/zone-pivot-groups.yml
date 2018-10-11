@@ -16,9 +16,10 @@ groups:
     title: <span data-ttu-id="7d98a-105">Node.js</span><span class="sxs-lookup"><span data-stu-id="7d98a-105">Node.js</span></span>
   - id: dotnet
     title: <span data-ttu-id="7d98a-106">ASP.NET</span><span class="sxs-lookup"><span data-stu-id="7d98a-106">ASP.NET</span></span>
-ms.openlocfilehash: 2bd6283731284152e24f87d500775955f1678ba2
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308790"
+metadata:
+  ms.openlocfilehash: 2bd6283731284152e24f87d500775955f1678ba2
+  ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 08/30/2018
+  ms.locfileid: "43308790"
