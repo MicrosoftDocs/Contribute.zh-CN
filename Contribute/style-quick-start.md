@@ -2,12 +2,12 @@
 title: Docs 风格指南 - 快速入门
 description: 本文是关于风格注意事项的简明指南，仅包含 docs.microsoft.com 入门的基本主题。
 ms.date: 07/25/2017
-ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
+ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40243014"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084390"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs 风格和语调快速入门
 
@@ -15,7 +15,7 @@ ms.locfileid: "40243014"
 
 最佳做法：
 
-- 检查文章中的拼写和语法，即使需要复制粘贴到 Word 中来执行此操作。
+- 检查文章中的拼写和语法，即使需要复制粘贴到 Microsoft Word 中来执行此操作。
 - 采用随意且友好的语调，就像是在和其他人面对面聊天一样。
 - 使用结构简单的句子。 易于阅读的句子意味着读者可以快速使用你共享的指南。
 
@@ -45,11 +45,11 @@ ms.locfileid: "40243014"
 - 对于包含代码片段的步骤，将关于步骤的其他信息作为注释放入代码中。 这会减少用户需要仔细阅读的内容量。 关键信息被复制到代码项目中，可以提醒用户他们稍后引用的代码的具体意义。
 - 对所有标题使用句首大写。
 - 使用“sign-in”（登录）而不使用“log-in”。
-- 在列表或代码片段之前的每个句子中加上“following”（以下）或者“as follows”（如下）字样。
+- 有关详细指导，请参阅 [Microsoft 写作风格指南](https://docs.microsoft.com/style-guide/welcome)。
 
 ## <a name="localized-documentation"></a>本地化文档
 
 - 如果你参与撰写本地化文档，请参阅 [Microsoft 语言门户](https://www.microsoft.com/Language/Default.aspx)。
 - 若要获取本地化指南，技术出版物中的语言风格及用法相关的信息，以及市场特定数据格式的相关信息，请下载你所在国家/地区语言版本的[风格指南](https://www.microsoft.com/Language/StyleGuides)。
 - 有关 Microsoft 本地化术语，请搜索你所在国家/地区语言版本的[产品特定批准术语](https://www.microsoft.com/Language/Default.aspx)或者下载你所在国家/地区语言版本的 [Microsoft 术语集](https://www.microsoft.com/Language/Terminology.aspx)。
-- 有关详细信息，请参阅“Microsoft 风格指南”的[本地化部分](https://docs.microsoft.com/style-guide/global-communications/)。
+- 要了解有关本地化的详细信息，请参阅 [Microsoft 写作风格指南](https://docs.microsoft.com/style-guide/global-communications)中的“全局通信”。
