@@ -1,0 +1,14 @@
+items:
+- name: PR 验证服务参考
+  href: index.md
+  items:
+  - name: 特定于区域设置的链接
+    href: locale-specific-links.md
+  - name: Markdown 标题
+    href: markdown-headings.md
+ms.openlocfilehash: bcf6b4c712b9f73787875119326f15393dd7ca26
+ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084421"
