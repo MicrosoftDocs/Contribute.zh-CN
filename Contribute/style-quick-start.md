@@ -2,12 +2,12 @@
 title: Docs 风格指南 - 快速入门
 description: 本文是关于风格注意事项的简明指南，仅包含 docs.microsoft.com 入门的基本主题。
 ms.date: 07/25/2017
-ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: f5c32d3fb71ef3513c68b9c506c823997bfe4d8f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805557"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs 风格和语调快速入门
 
@@ -51,5 +51,5 @@ ms.locfileid: "49084390"
 
 - 如果你参与撰写本地化文档，请参阅 [Microsoft 语言门户](https://www.microsoft.com/Language/Default.aspx)。
 - 若要获取本地化指南，技术出版物中的语言风格及用法相关的信息，以及市场特定数据格式的相关信息，请下载你所在国家/地区语言版本的[风格指南](https://www.microsoft.com/Language/StyleGuides)。
-- 有关 Microsoft 本地化术语，请搜索你所在国家/地区语言版本的[产品特定批准术语](https://www.microsoft.com/Language/Default.aspx)或者下载你所在国家/地区语言版本的 [Microsoft 术语集](https://www.microsoft.com/Language/Terminology.aspx)。
+- 有关 Microsoft 本地化术语，请搜索你所在国家/地区语言版本的[产品特定批准术语](https://www.microsoft.com/Language/Default.aspx)或者下载你所在国家/地区语言版本的 [Microsoft 术语集](https://www.microsoft.com/language/Terminology)。
 - 要了解有关本地化的详细信息，请参阅 [Microsoft 写作风格指南](https://docs.microsoft.com/style-guide/global-communications)中的“全局通信”。
