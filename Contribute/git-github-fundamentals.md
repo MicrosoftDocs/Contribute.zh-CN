@@ -2,12 +2,12 @@
 title: Git 和 GitHub 的文档概要
 description: 本文概述了 Git、GitHub 存储库、组织内容的方式和用于 docs.microsoft.com 的命名约定。
 ms.date: 06/30/2017
-ms.openlocfilehash: 8a116067fdd7d031c560abfb7055236e0bfb1a3d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239793"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805691"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Git 和 GitHub 的 Docs 概要
 
@@ -30,8 +30,8 @@ Git 还使用分层结构来存储和管理项目的内容：
 
 参与者与 Git 进行交互，更新和处理本地和 GitHub 级别的存储库：
 
-- 在本地，通过 Git Bash 控制台等工具，可支持用于管理本地存储库并与 GitHub 存储库进行通信的 Git 命令
-- 通过集成 Git 的 [www.github.com](https://www.github.com) 来管理流回主存储库的参与协调
+- 在本地，通过 Git Bash 控制台等工具，该工具支持用于管理本地存储库并与 GitHub 存储库进行通信的 Git 命令。
+- 通过 [www.github.com](https://www.github.com) 集成 Git 来管理流回主存储库的参与协调。
 
 ## <a name="github"></a>GitHub
 
@@ -46,7 +46,7 @@ Git 还使用分层结构来存储和管理项目的内容：
 
 如前所述，项目的默认/主分支用作项目的当前内容版本。 主分支（以及从主分支创建的分支）中的内容与相应 Docs 页面上文章的组织大体一致。 子目录用于分离类似内容（如服务）、媒体内容（如图像文件）和“包括”文件（使内容可重复使用）。
 
-通常情况下，可在存储库的根目录处找到主要的 `articles` 目录。 文章目录包含一组子目录。 子目录中的文章格式为使用 .md 扩展名的 Markdown 文件。 一些支持多项服务的存储库（如 [https://github.com/microsoft/Azure-Docs](https://github.com/microsoft/Azure-Docs) 存储库）使用通用 `/articles` 子目录。 另一些存储库可能会使用服务专用名称，如使用 `/IntuneDocs` 的 [https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs) 存储库。
+通常情况下，可在存储库的根目录处找到主要的 `articles` 目录。 文章目录包含一组子目录。 子目录中的文章格式为使用 .md 扩展名的 Markdown 文件。 一些支持多项服务的存储库（如 [Azure-Docs](https://github.com/MicrosoftDocs/Azure-Docs) 存储库）使用通用 `/articles` 子目录。 另一些存储库可能会使用服务专用名称，如使用 `/IntuneDocs` 的 [IntuneDocs](https://github.com/MicrosoftDocs/IntuneDocs) 存储库。
 
 在此目录的根目录中，可以找到与整体服务或产品相关的一般性文章。 通常情况下，接下来可以找到其他系列的子目录，这些子目录与功能/服务或常见方案相匹配。 例如，Azure“虚拟机”文章在 `/virtual-machines` 子目录中，Intune“了解与探索”文章在 `/understand-explore` 子目录中。
 

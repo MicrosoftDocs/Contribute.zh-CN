@@ -2,18 +2,18 @@
 title: GitHub 帐户设置步骤
 description: 本文逐步讲解设置 GitHub 帐户的过程，必须使用该帐户才能为 docs.microsoft.com 供稿。
 ms.date: 02/27/2018
-ms.openlocfilehash: 15fa7c11090a5c4faefe38d00d273e92c231329b
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 4bbf110fdbc1a60f77362a36a9c2c5b654d450cf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805472"
 ---
 # <a name="github-account-setup"></a>GitHub 帐户设置
 
 ## <a name="set-up-your-github-account"></a>设置 GitHub 帐户
 
-若要提供 Docs 技术内容，需要设置自己的 GitHub 帐户。 不过，多数步骤只需执行一次。
+若要提供 Docs 技术内容，需要设置自己的 GitHub 帐户。 好消息是，通常只需要执行一次这些步骤。
 
 ### <a name="1-create-a-github-account-and-set-up-your-profile"></a>1.创建 GitHub 帐户并设置个人资料
 

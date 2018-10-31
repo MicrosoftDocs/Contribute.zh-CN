@@ -7,6 +7,7 @@
 ## [完整工作流](how-to-write-workflows-major.md)
 # 撰写概要
 ## [Markdown](how-to-write-use-markdown.md)
+## [Markdown 引用](markdown-reference.md)
 ## [风格和语调快速入门](style-quick-start.md)
 ## [链接](how-to-write-links.md)
 ## [Docs 创作包](how-to-write-docs-auth-pack.md)
@@ -29,7 +30,7 @@
 
       It will have condensed versions of get-started-setup-github,
       get-started-setup-tools, and get-started-setup-local.
-
+      
 ### Git and GitHub essentials
 
    <!--
@@ -47,7 +48,7 @@
      Process content will also be taken from how-to-contribute.
 #### Content types
 #### Markdown resources
-#### Tone, voice and style
+#### Tone, voice, and style
 
 ### Contribute new samples
 
@@ -58,19 +59,19 @@
 
      We have an important decision to make here: This contributing guide
      can contain the union of all code style rules for all different languages
-     and frameworks, or it can contain the intersection (coode samples must
+     and frameworks, or it can contain the intersection (code samples must
      compile and run).
 
      I'm in favor of the former: Everyone writing Python should follow the Python
-     guidance; everyone writing C# should follow the C# rules. Those should be 
+     guidance; everyone writing C# should follow the C# rules. Those should be
      consistent regardless of project team.
 
 ## List of documentation repositories -->
 
-   <!-- 
+   <!--
      This will take the list of repos from git-github-fundamentals
      for the public repositories.
 
      Open question: How to keep this up to date?
    -->
-# [其他资源](additional-resources.md)
+## [其他资源](additional-resources.md)

@@ -8,16 +8,16 @@ ms.date: 07/24/2018
 ms.author: cfowler
 zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.openlocfilehash: 497631fe46ac4e2c9c495a609547753a84d662bf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805720"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>快速入门：在 Azure Key Vault 中设置和检索机密
 
-本快速入门介绍如何在 Key Vault 中存储机密，以及如何使用 Web 应用来检索它。 若要查看机密值，必须在 Azure 上运行此应用。 本快速入门使用 Node.js 和托管服务标识 (MSI)
+本快速入门介绍如何在 Key Vault 中存储机密，以及如何使用 Web 应用来检索它。 若要查看机密值，必须在 Azure 上运行此应用。 本快速入门使用 Node.js 和托管服务标识 (MSI)。
 
 > [!div class="checklist"]
 > * 创建 Key Vault。
@@ -30,16 +30,19 @@ ms.locfileid: "43308815"
 在继续操作之前，请确保熟悉[基本概念](https://docs.microsoft.com/azure/key-vault/key-vault-whatis#basic-concepts)。
 
 > [!NOTE]
-> 若要理解为什么以下教程是最佳做法，我们需要了解一些概念。 Key Vault 是一个以编程方式存储机密的中央存储库。 但要这样做，应用程序/用户需要首先向 Key Vault 进行身份验证，即提供机密。 为了遵循安全最佳做法，第一个机密也需要定期轮换。 但是，在 Azure 中运行的[托管服务标识](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview)应用程序将获得由 Azure 自动管理的标识。 这有助于解决机密采用问题，其中用户/应用程序可以遵循最佳做法，而不必担心轮换第一个机密
+> 若要理解为什么以下教程是最佳做法，我们需要了解一些概念。 Key Vault 是一个以编程方式存储机密的中央存储库。 但要这样做，应用程序/用户需要首先向 Key Vault 进行身份验证，即提供机密。 为了遵循安全最佳做法，第一个机密也需要定期轮换。 但是，使用 [托管服务标识](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview)，在 Azure 中运行的应用程序将获得由 Azure 自动管理的标识。 这有助于解决机密采用问题，其中用户/应用程序可以遵循最佳做法，而不必担心轮换第一个机密
 
 ## <a name="prerequisites"></a>先决条件
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
+* [Node JS](https://nodejs.org/en/)
+::: zone-end
+::: zone pivot="dotnet"
 * [Visual Studio 2017 版本 15.7.3 或更高版本](https://www.microsoft.com/net/download/windows)，其中包含以下工作负载：
   * ASP.NET 和 Web 开发
   * .NET Core 跨平台开发
-* [.NET Core 2.1 SDK 或更高版本](https://www.microsoft.com/net/download/windows) ::: zone-end
+* [.NET Core 2.1 SDK 或更高版本](https://www.microsoft.com/net/download/windows)
+::: zone-end
 * Git（[下载](https://git-scm.com/downloads)）。
 * Azure 订阅。 如果没有 Azure 订阅，请在开始之前创建一个[免费帐户](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)。
 * [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) 版本 2.0.4 或更高版本。 适用于 Windows、Mac 和 Linux。
@@ -110,7 +113,10 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="install-dependencies"></a>安装依赖项
 
-在这里，我们安装依赖项。 运行以下命令：cd key-vault-node-quickstart npm install
+在这里，我们安装依赖项。 运行以下命令：
+
+    cd key-vault-node-quickstart
+    npm install
 
 此项目使用 2 个节点模块：
 
@@ -119,14 +125,14 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="publish-the-web-application-to-azure"></a>将 Web 应用程序发布到 Azure
 
-下面是需完成的一些步骤
+将应用程序发布到 Azure 需执行以下几个步骤。
 
 * 第一步是创建 [Azure 应用服务](https://azure.microsoft.com/services/app-service/)计划。 可以在此计划中存储多个 Web 应用。
 
     ```azurecli
     az appservice plan create --name myAppServicePlan --resource-group myResourceGroup
     ```
-* 接下来创建 Web 应用。 在以下示例中，将 <app_name> 替换为全局唯一的应用名称（有效字符为 a-z、0-9 和 -）。 运行时设置为 NODE|6.9。 若要查看所有受支持的运行时，请运行 az webapp list-runtimes
+* 接下来创建 Web 应用。 在以下示例中，将 <app_name> 替换为全局唯一的应用名称（有效字符为 a-z、0-9 和 -）。 运行时设置为 NODE|6.9。 若要查看所有受支持的运行时，请运行 `az webapp list-runtimes`
 
     ```azurecli
     az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "NODE|6.9" --deployment-local-git
@@ -238,7 +244,8 @@ git push azure master
 
 ::: zone-end
 
-::: zone pivot="dotnet" 现在运行应用程序时，应该会看到检索到的机密值。
+::: zone pivot="dotnet"
+现在运行应用程序时，应该会看到检索到的机密值。
 ::: zone-end
 
 ## <a name="next-steps"></a>后续步骤
@@ -247,10 +254,12 @@ git push azure master
 * [Azure Key Vault 主页](https://azure.microsoft.com/services/key-vault/)
 * [Azure Key Vault 文档](https://docs.microsoft.com/azure/key-vault/)
 * [用于 Node 的 Azure SDK](https://docs.microsoft.com/javascript/api/overview/azure/key-vault)
-* [Azure REST API 参考](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Azure REST API 参考](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end
 
 ::: zone pivot="dotnet"
 * [Azure Key Vault 主页](https://azure.microsoft.com/services/key-vault/)
 * [Azure Key Vault 文档](https://docs.microsoft.com/azure/key-vault/)
 * [用于 .NET 的 Azure SDK](https://github.com/Azure/azure-sdk-for-net)
-* [Azure REST API 参考](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Azure REST API 参考](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end

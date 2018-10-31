@@ -2,12 +2,12 @@
 title: 如何在文档中使用链接
 description: 本文指导如何在 docs.microsoft.com 中创建内容链接。
 ms.date: 06/29/2017
-ms.openlocfilehash: 92c23f2b91c67d7a1695c5f1e5dcdc80a8517f6e
-ms.sourcegitcommit: 37cd16636d7dcfc5222ef5a5d60e4ff30f74485c
+ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48030924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805760"
 ---
 # <a name="using-links-in-documentation"></a>在文档中使用链接
 本文介绍如何使用 docs.microsoft.com 上托管页面的超链接。 通过几种不同的约定，便可轻松地将链接添加到 markdown。 链接将用户指向相同页面中的内容、其他相邻页面或外部站点和 URL。
@@ -158,7 +158,7 @@ URL 结构：
 在使用这些 URL 时，会将用户重定向到最新版本的内容。 这样就不必指定版本名字对象。 并且不会有指向版本更改时必须进行更新的概念内容的链接。
 
 若要创建正确的链接，可以在浏览器中找到要链接的页面并复制 URL。
-然后，删除 ´ “https://docs.microsoft.com” ´ 和区域设置信息。
+然后，删除 `https://docs.microsoft.com` 和区域设置信息。
 
 从 TOC 进行链接时，必须使用完整的 URL（不包含区域设置信息）。
 

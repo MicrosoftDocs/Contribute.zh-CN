@@ -2,18 +2,18 @@
 title: 如何使用 Markdown 撰写 Docs
 description: 本文提供用于撰写 docs.microsoft.com 文章的 Markdown 语言的基础知识和参考信息。
 ms.date: 07/13/2017
-ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238957"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805714"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 撰写 Docs
 
-Docs.microsoft.com 文章均采用一种称为 [Markdown](https://daringfireball.net/projects/markdown/) 的轻量级标记语言编写，这种语言易读且易学。 正因为如此，Markdown 已迅速成为行业标准。
+[Docs.microsoft.com](http://docs.microsoft.com) 文章采用名为 [Markdown](https://daringfireball.net/projects/markdown/) 的轻型标记语言撰写，这种语言可读性强且简单易学。 正因为如此，Markdown 已迅速成为行业标准。
 
-由于 Doc 内容存储在 GitHub 中，因此可以使用 Markdown 超集（称为 [ GitHub 风格的 Markdown (GFM)](https://help.github.com/categories/writing-on-github/)），它为常用格式需求提供了附加功能。 此外， Open Publishing Services (OPS) 还将实现 Markdig Markdown 分析程序。 Markdig 与 GitHub 风格的 Markdown (GFM) 高度兼容，并添加了实现 Docs 特定功能的功能。
+由于 Doc 内容存储在 GitHub 中，因此可以使用 Markdown 超集（称为 [GitHub 风格的 Markdown (GFM)](https://help.github.com/categories/writing-on-github/)），它为常用格式需求提供了附加功能。 此外， Open Publishing Services (OPS) 还将实现 Markdig Markdown 分析程序。 Markdig 与 GFM 高度兼容，并添加了实现 Docs 特定功能的功能。
 
 * Markdig 是一种适用于 .NET 的 Markdown 分析程序，它运行快速、功能强大且兼容 CommonMark。
 * https://github.com/lunet-io/markdig
@@ -27,10 +27,10 @@ Docs.microsoft.com 文章均采用一种称为 [Markdown](https://daringfireball
 要创建标题，请使用井号标记 (#)，如下所示：
 
 ```markdown
-    # This is heading 1
-    ## This is heading 2
-    ### This is heading 3
-    #### This is heading 4
+# This is heading 1
+## This is heading 2
+### This is heading 3
+#### This is heading 4
 ```
 
 ### <a name="bold-and-italic-text"></a>粗体和斜体文本
@@ -38,19 +38,19 @@ Docs.microsoft.com 文章均采用一种称为 [Markdown](https://daringfireball
 要将文本设置为粗体格式，请用两个星号括住文本：
 
 ```markdown
-    This text is **bold**.
+This text is **bold**.
 ```
 
 要将文本设置为斜体格式，请用一个星号括住文本：
 
 ```markdown
-    This text is *italic*.
+This text is *italic*.
 ```
 
 要将文本同时设置为粗体和斜体格式，请用三个星号括住文本：
 
 ```markdown
-    This is text is both ***bold and italic***.
+This is text is both ***bold and italic***.
 ```
 
 ### <a name="lists"></a>列表
@@ -107,16 +107,16 @@ Docs.microsoft.com 文章均采用一种称为 [Markdown](https://daringfireball
 
 ```markdown
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 ```
 
 将显示为：
 
 1. 第一个说明
-    1. 辅助说明
-    2. 辅助说明
+   1. 辅助说明
+   2. 辅助说明
 2. 第二个说明
 
 ### <a name="tables"></a>表格
@@ -145,12 +145,12 @@ Docs.microsoft.com 文章均采用一种称为 [Markdown](https://daringfireball
 
 有关创建表格的详细信息，请参阅：
 
-- Markdig [表格换行功能](#table-wrapping)，有助于设置宽表格的格式
-- GitHub 的[使用表格整理信息](https://help.github.com/articles/organizing-information-with-tables/)
-- [Markdown 表格生成器](https://www.tablesgenerator.com/markdown_tables) Web 应用
-- [Adam Pritchard 的 Markdown 备忘单](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
-- [Michel Fortin 的 Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table)
-- [将 HTML 表转换为 Markdown 格式](https://jmalarcon.github.io/markdowntables/)
+- Markdig [表格换行功能](#table-wrapping)，有助于设置宽表格的格式。
+- GitHub 的[使用表格整理信息](https://help.github.com/articles/organizing-information-with-tables/)。
+- [Markdown 表格生成器](https://www.tablesgenerator.com/markdown_tables) Web 应用。
+- [Adam Pritchard 的 Markdown 备忘单](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)。
+- [Michel Fortin 的 Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table)。
+- [将 HTML 表转换为 Markdown 格式](https://jmalarcon.github.io/markdowntables/)。
 
 ### <a name="links"></a>链接
 
@@ -161,7 +161,7 @@ Markdown 的内联链接语法由两部分组成：`[link text]` 部分，这是
 有关链接的详细信息，请参阅：
 
 - [Markdown 语法指南](https://daringfireball.net/projects/markdown/syntax#link)，详细了解 Markdown 的基本链接支持相关信息。
-- 本指南的[链接](how-to-write-links.md)部分，了解 Markdig 提供的其他链接语法的详细信息。
+- 参阅本指南的[链接](how-to-write-links.md)部分，深入了解 Markdig 提供的其他链接语法。
 
 ### <a name="code-snippets"></a>代码片段
 
@@ -212,6 +212,7 @@ Markdown 不仅支持将代码片段内联在某个句子中，还支持将它�
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
@@ -336,18 +337,19 @@ Markdig 支持通过代码片段扩展以一种高级方式将代码加入文章
 无法正确显示带下划线的替换文字。 例如，与使用以下下划线相比：
 
 ```markdown
-![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 转义下划线，如下所示：
 
 ```markdown
-![ADextension\_2FA\_Configure\_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 ### <a name="apostrophes-and-quotation-marks"></a>撇号和引号
 
-如果将文本从 Word 复制到 Markdown 编辑器，文本可能包含“弯”撇号或弯引号。 需要将这些内容编码或更改为基本撇号或单引号。 否则，在发布文件时，最终将得到：Itâ€™s
+如果将文本从 Word 复制到 Markdown 编辑器，文本可能包含“弯”撇号或弯引号。 需要将这些内容编码或更改为基本撇号或单引号。
+否则，在发布文件时，最终将得到：Itâ€™s
 
 下面是关于这些“弯”版本标点符号的编码：
 
@@ -358,14 +360,15 @@ Markdig 支持通过代码片段扩展以一种高级方式将代码加入文章
 
 ### <a name="angle-brackets"></a>尖括号
 
-如果在文件中的文本（不是代码）里使用尖括号（例如要表示占位符），则需要对尖括号手动编码。 否则，Markdown 会认为它们是一个 HTML 标记。
+通常使用尖括号来表示占位符。 在文本（而不是代码）中执行此操作时，必须对尖括号进行编码。 否则，Markdown 会认为它们是一个 HTML 标记。
 
 例如，将 `<script name>` 编码为 `&lt;script name&gt;`
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅：
 
 ### <a name="markdown-resources"></a>Markdown 资源
 
 - [Markdown 简介](https://daringfireball.net/projects/markdown/syntax)
 - [Docs Markdown 备忘单](./media/documents/markdown-cheatsheet.pdf?raw=true)
 - [GitHub 的 Markdown 基础知识](https://help.github.com/articles/markdown-basics/)
+- [Markdown 指南](https://www.markdownguide.org/)

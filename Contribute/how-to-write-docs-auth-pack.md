@@ -1,20 +1,19 @@
 ---
-title: 用于 VS Code 的 Docs 创作包
-description: 本文介绍了 VS Code 的扩展包，用于辅助 docs.microsoft.com 的 Markdown 创作。
+title: 适用于 Visual Studio Code 的 Docs 创作包
+description: 本文介绍了 Visual Studio Code 的扩展包，用于辅助 docs.microsoft.com 的 Markdown 创作。
 author: meganbradley
 ms.author: mbradley
-manager: jemash
-ms.date: 04/06/2018
-ms.openlocfilehash: b9fedce0a73c5c4212ffd0893c745fab56677c8c
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.date: 10/22/2018
+ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805645"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>用于 VS Code 的 Docs 创作包
 
-Docs 创作包是 VS Code 扩展的集合，用于辅助 docs.microsoft.com 的 Markdown 创作。 此包[可在 VS Code Marketplace 中获得](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)，包含以下扩展：
+Docs 创作包是 Visual Studio Code 扩展集合，用于辅助 docs.microsoft.com 的 Markdown 创作。 此包[可在 VS Code Marketplace 中获得](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)，包含以下扩展：
 
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)：David Anson 推出的一种非常受欢迎的 Markdown Linter，可帮助确保 Markdown 遵循最佳做法。
 - [代码拼写检查器](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)：Street Side Software 推出的完全脱机的拼写检查器。
@@ -103,7 +102,7 @@ Templates 扩展支持三个动态元数据字段：author、ms.author 和 ms.da
 |----------|---------------|
 |author    |你的 GitHub ID（如果在 VS Code 设置文件中指定）。|
 |ms.author |你的 Microsoft 别名（如果在 VS Code 设置文件中指定）。 如果你不是 Microsoft 员工，请不要指定该字段。|
-|ms.date   |Docs 支持格式的当前日期，MM/DD/YYYY。 请注意，如果随后更新文件，则日期不会自动更新 - 必须手动更新该文件以指示文章刷新日期。|
+|ms.date   |Docs 支持格式的当前日期，MM/DD/YYYY。 请注意，如果之后更新文件，则不会自动更新日期。 必须手动更新 ms.date 值以指示 docs.microsoft.com 站点上的最新发布日期。|
 
 ### <a name="to-set-author-github-id-andor-msauthor-microsoft-alias"></a>设置创建者 (GitHub ID) 和/或 ms.author（Microsoft 别名）
 

@@ -3,14 +3,13 @@ title: 设置本地 Git 存储库
 description: 本文介绍创建本地 Git 存储库和提供文档的指南，包括创建分支和克隆过程。
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 01/18/2018
-ms.openlocfilehash: 2ad0de552d481e2460ca0f56570181e33d0a6608
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238980"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805668"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>设置本地 Git 文档存储库
 
@@ -30,7 +29,7 @@ ms.locfileid: "36238980"
 
 ## <a name="overview"></a>概述
 
-要为 Microsoft 文档站点供稿，可以通过克隆相应的文档存储库在本地创建和编辑 Markdown 文件。 Microsoft 要求对你自己的 github 帐户创建相应的存储库分支，以便在其中具有读/写权限来存储建议的更改。 然后，使用拉取请求将更改合并到只读的中央共享存储库。
+要为 Microsoft 文档站点供稿，可以通过克隆相应的文档存储库在本地创建和编辑 Markdown 文件。 Microsoft 要求你在自己的 GitHub 帐户创建相应的存储库分支，以便在其中具有读/写权限来存储建议的更改。 然后，使用拉取请求将更改合并到只读的中央共享存储库。
 
 ![GitHub 三角形](./media/git-and-github-initial-setup.png)
 
@@ -60,7 +59,7 @@ ms.locfileid: "36238980"
 ## <a name="fork-the-repository"></a>为存储库创建分支
 使用合适的存储库，通过 GitHub 网站，将存储库的一个分支创建到自己的 GitHub 帐户中。
 
-因为所有主文档存储库都提供只读访问，所以需要个人分支，这表示无法直接更改存储库中的内容。 要进行更改，必须将[拉取请求](git-github-fundamentals.md#pull-requests)从自己的分支提交到存储库。 为推进此过程，首先需要自己拥有一个存储库副本并对其具有写入权限。 GitHub 分支就很适合该用途。
+由于所有主文档存储库均提供只读访问权限，因此需具备个人分支。 要进行更改，必须将[拉取请求](git-github-fundamentals.md#pull-requests)从自己的分支提交到存储库。 为推进此过程，首先需要自己拥有一个存储库副本并对其具有写入权限。 GitHub 分支就很适合该用途。
 
 1. 转到主存储库的 GitHub 页面，然后单击右上角的“创建分支”按钮。
 
