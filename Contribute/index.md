@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 921c63c2748149543bfc73e4b38278a2ed74ac56
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805783"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609352"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 参与者指南概述
 
@@ -37,10 +37,12 @@ ms.locfileid: "49805783"
 
 接下来，单击“铅笔”图标（如下图所示）编辑文章。
 
-> [!NOTE]
-> 如果铅笔图标显示为灰色，需要登录到 GitHub 帐户，或者创建一个新帐户。 在 Web 编辑器中进行更改。 可以单击“预览更改”选项卡来检查更改的格式。
-
 ![铅笔图标的位置](./media/index/editicon.png)
+
+> [!NOTE]
+> 如果铅笔图标显示为灰色，需要登录到 GitHub 帐户，或者创建一个新帐户。
+
+在 Web 编辑器中进行更改。 可以单击“预览更改”选项卡来检查更改的格式。
 
 做出更改后，将滚动到页面底部。 为 PR 输入标题和描述，并单击“建议文件更改”，如下图所示：
 
