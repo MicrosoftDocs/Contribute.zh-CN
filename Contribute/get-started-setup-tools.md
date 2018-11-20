@@ -5,12 +5,12 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 715634a9a2342311eb1d358cb8379f90a7074d80
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251459"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609375"
 ---
 # <a name="install-content-authoring-tools"></a>安装内容创作工具
 
@@ -47,7 +47,7 @@ Markdown 是一种轻量级标记语言，既易于阅读也易于理解。 因�
 
 Markdown 文本将保存为扩展名为 .md 的文件。
 
-有关如何使用 Markdown 进行编写的其他详细信息（包括 Markdown 基础知识和 OPS 自定义 Markdown 扩展支持的功能），稍后在[如何使用 Markdown](how-to-write-use-markdown.md) 一文中有所介绍。
+有关如何使用 Markdown 进行编写的其他详细信息（包括 Markdown 基础知识和 Open Publishing Services (OPS) 自定义 Markdown 扩展支持的功能），请参阅[如何使用 Markdown 撰写文档](how-to-write-use-markdown.md)和 [OPS 的 Markdown 引用](markdown-reference.md)文章。
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 
@@ -60,7 +60,7 @@ Markdown 文本将保存为扩展名为 .md 的文件。
 - [Linux](https://code.visualstudio.com/docs/setup/linux)
 
 > [!TIP]
-> 若要启动 VS Code 和打开当前文件夹，请运行命令行中的 `code .` 命令或 bash shell。 如果当前文件夹是本地 Git 存储库的一部分，github 集成将在 Visual Studio Code 中自动显示。
+> 若要启动 VS Code 和打开当前文件夹，请运行命令行中的 `code .` 命令或 bash shell。 如果当前文件夹是本地 Git 存储库的一部分，GitHub 集成将在 Visual Studio Code 中自动显示。
 
 ## <a name="docs-authoring-pack"></a>Docs 创作包
 安装 Visual Studio Code Docs 创作包。 这组扩展包括在编写 Markdown 时提供帮助的基本创作协助，以及一个预览功能，方便用户看到 docs.microsoft.com 网站风格的 Markdown 外观。

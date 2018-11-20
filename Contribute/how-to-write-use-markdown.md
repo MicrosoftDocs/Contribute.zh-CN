@@ -2,12 +2,12 @@
 title: 如何使用 Markdown 撰写 Docs
 description: 本文提供用于撰写 docs.microsoft.com 文章的 Markdown 语言的基础知识和参考信息。
 ms.date: 07/13/2017
-ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805714"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609513"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 撰写 Docs
 
@@ -33,6 +33,14 @@ ms.locfileid: "49805714"
 #### This is heading 4
 ```
 
+应使用 atx 样式完成标题，即在行的开头使用 1-6 个哈希字符 (#) 指示标题，对应 HTML 标题级别 H1 到 H6。 上述示例使用的是一级到四级的标题。
+
+主题中只能有一个一级标题 (H1)，将显示为页面内标题。
+
+如果标题以 `#` 字符结尾，则需要在末尾添加额外的 `#` 字符，使标题正确呈现。 例如，`# Async Programming in F# #`。
+
+二级标题将生成页面内 TOC，在页面内标题下方的“本文内容”中显示。
+
 ### <a name="bold-and-italic-text"></a>粗体和斜体文本
 
 要将文本设置为粗体格式，请用两个星号括住文本：
@@ -52,6 +60,18 @@ This text is *italic*.
 ```markdown
 This is text is both ***bold and italic***.
 ```
+
+### <a name="blockquotes"></a>块引用
+
+块引用使用 `>` 字符创建：
+
+```markdown
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+```
+
+上述示例的呈现如下所示：
+
+> 干旱迄今为止已持续一千万年，恐怖蜥蜴的统治时代早已结束。 赤道上，在将有一天会以“非洲”闻名的大陆上，生存的战斗已经达到新一轮残暴的高潮，胜负未分。 在这片贫瘠、干枯的土地上，只有体型较小或动作迅捷或凶猛的物种才能繁荣，乃至于有希望幸存。
 
 ### <a name="lists"></a>列表
 
@@ -93,8 +113,8 @@ This is text is both ***bold and italic***.
 
 ```markdown
 1. First instruction
-2. Second instruction
-3. Third instruction
+1. Second instruction
+1. Third instruction
 ```
 
 将显示为：
@@ -108,8 +128,8 @@ This is text is both ***bold and italic***.
 ```markdown
 1. First instruction
    1. Sub-instruction
-   2. Sub-instruction
-2. Second instruction
+   1. Sub-instruction
+1. Second instruction
 ```
 
 将显示为：
@@ -118,6 +138,8 @@ This is text is both ***bold and italic***.
    1. 辅助说明
    2. 辅助说明
 2. 第二个说明
+
+注意：我们对所有条目 均使用“1.”。 当后续更新包括新步骤或要删除现有步骤时，这样更易于评审差异。
 
 ### <a name="tables"></a>表格
 
@@ -194,6 +216,8 @@ Markdown 不仅支持将代码片段内联在某个句子中，还支持将它�
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
 |C#|csharp|
+|浏览器中的 C#|csharp-interactive|
+|控制台|console|
 |CSHTML|cshtml|
 |DAX|dax|
 |F#|fsharp|
@@ -221,6 +245,8 @@ Markdown 不仅支持将代码片段内联在某个句子中，还支持将它�
 |VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
+
+`csharp-interactive` 名称指定 C# 语言，以及从浏览器中运行示例的能力。 这些代码片段在 Docker 容器中进行编译和执行，并且该程序执行的结果在用户浏览器窗口中显示。
 
 #### <a name="example-c"></a>示例：C\#
 
@@ -256,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -265,8 +291,8 @@ __呈现__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -296,6 +322,36 @@ Doc 文章使用 GFM 完成大多文章的格式设置，如段落、链接、�
 
 总之，应谨慎使用备注块，因为它们可能会造成干扰。 尽管备注块也支持代码块、图像、列表以及链接，但最好尽量保持备注块简单明了。
 
+示例：
+
+```markdown
+> [!NOTE]
+> This is a NOTE
+
+> [!WARNING]
+> This is a WARNING
+
+> [!TIP]
+> This is a TIP
+
+> [!IMPORTANT]
+> This is IMPORTANT
+```
+
+这些呈现结果如下：
+
+> [!NOTE]
+> 这是一条备注
+
+> [!WARNING]
+> 这是一条警告
+
+> [!TIP]
+> 这是一条提示
+
+> [!IMPORTANT]
+> 这是一条重要提示
+
 ### <a name="includes"></a>包含文件
 
 如果有需要加入文章文件中的可重用的文本或图像文件，可以通过 Markdig 文件的包含文件功能使用对“包含”文件的引用。 此功能指示 OPS 在创建时将该文件加入文章文件中，使它成为已发布文章的一部分。 有 3 种类型的包含功能可帮助你重用内容：
@@ -317,13 +373,29 @@ Doc 文章使用 GFM 完成大多文章的格式设置，如段落、链接、�
 - 对于常规文章，请勿在各包含文件之间共享媒体。 对于每个包含文件和文章，请使用具有唯一名称的单独文件。 将媒体文件存储在与包含文件关联的媒体文件夹中。
 - 请勿将包含文件用作文章的唯一内容。  包含文件主要用作文章其余内容的补充内容。
 
+示例：
+
+```markdown
+[!INCLUDE[sample include file](../includes/sampleinclude.md)]
+```
+
 ### <a name="selectors"></a>选择器
 
 当你创作具有多种风格的同一篇技术文章时，请在文章中使用选择器，从而跨技术或平台解决实现上的差异。 通常，这最适用于开发人员的移动平台内容。 Markdig 中目前有两种类型的选择器，单选择器和多选择器。
 
 由于选择的每篇文章中都会出现相同的选择器 Markdown，因此建议将文章的选择器放在一个包含文件中。 然后，可以在使用相同选择器的所有文章中引用该包含文件。
 
-### <a name="code-snippets"></a>代码片段
+下面展示了一个示例选择器：
+
+```markdown
+> [!div class="op_single_selector"]
+- [macOS](../docs/core/tutorials/using-on-macos.md)
+- [Windows](../docs/core/tutorials/with-visual-studio.md)
+```
+
+可在 [Azure 文档](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic)中查看有效的选择器示例。
+
+### <a name="code-includes"></a>代码包含
 
 Markdig 支持通过代码片段扩展以一种高级方式将代码加入文章中。 它提供了一种高级的呈现方式，这种方式基于 GFM 功能（例如编程语言选择和语法着色）以及以下一些出色的功能生成：
 
@@ -348,8 +420,7 @@ Markdig 支持通过代码片段扩展以一种高级方式将代码加入文章
 
 ### <a name="apostrophes-and-quotation-marks"></a>撇号和引号
 
-如果将文本从 Word 复制到 Markdown 编辑器，文本可能包含“弯”撇号或弯引号。 需要将这些内容编码或更改为基本撇号或单引号。
-否则，在发布文件时，最终将得到：Itâ€™s
+如果将文本从 Word 复制到 Markdown 编辑器，文本可能包含“弯”撇号或弯引号。 需要将这些内容编码或更改为基本撇号或单引号。 否则，在发布文件时，最终将得到：Itâ€™s
 
 下面是关于这些“弯”版本标点符号的编码：
 

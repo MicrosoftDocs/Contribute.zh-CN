@@ -2,12 +2,12 @@
 title: 主要或持续更改的 GitHub 参与工作流
 description: 本文介绍如何使用“主要”参与者工作流参与 docs.microsoft.com 文章的供稿。
 ms.date: 08/30/2017
-ms.openlocfilehash: 31f9421fc5edbc2f65c5ff20a86da08c70211ec7
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239816"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609382"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>主要或持续更改的 GitHub 参与工作流
 
@@ -31,7 +31,7 @@ ms.locfileid: "36239816"
 | 名称 | 说明 |
 |-----------|-------------|
 |分支|在表示主 GitHub 存储库的副本时，通常用作名词。 实际上，分支只是另一个存储库。 但是，从某种意义上来说，GitHub 维护至主/父存储库的连接。 它有时用作动词，如“必须首先为存储库创建分支”。|
-|远程|到远程存储库的命名连接，例如“源”或“上游”远程。 Git 称之为“远程源”，是因为它们可用于引用托管在另一台计算机上的存储库。 在此工作流中，远程始终是一个 GitHub 存储库。|
+|远程|到远程存储库的命名连接，例如“源”或“上游”远程。 Git 称之为“远程源”，因为它们可用于引用托管在另一台计算机上的存储库。 在此工作流中，远程始终是一个 GitHub 存储库。|
 |源|分配给本地存储库与在其中进行克隆的源存储库之间的连接的名称。 在此工作流中，源表示与分支的连接。 它有时用作源存储库本身的一个名字对象，如“请务必将更改推送到源”。|
 |上游|与源远程一样，上游是与另一个存储库的命名连接。 在此工作流中，上游表示本地存储库与在其中创建分支的主存储库之间的连接。 它有时用作上游存储库本身的一个名字对象，如“请务必从上游拉取更改”。|
 

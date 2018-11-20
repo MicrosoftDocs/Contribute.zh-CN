@@ -5,6 +5,6 @@ Microsoft、Windows、Microsoft Azure 和/或本文档中引用的其他 Microso
 此项目的许可证不授予你使用任何 Microsoft 名称、徽标或商标的权利。
 可在 http://go.microsoft.com/fwlink/?LinkID=254653 找到 Microsoft 的通用商标指南。
 
-可在 https://privacy.microsoft.com/en-us/ 找到隐私信息
+可在 https://privacy.microsoft.com/ 找到隐私信息
 
 Microsoft 和任何参与者通过暗示、禁止或其他方式保留其他所有权利，无论是他们各自的版权、专利权利，还是商标权利。
