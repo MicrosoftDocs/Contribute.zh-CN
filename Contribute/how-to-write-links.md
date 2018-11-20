@@ -1,13 +1,15 @@
 ---
 title: 如何在文档中使用链接
 description: 本文指导如何在 docs.microsoft.com 中创建内容链接。
-ms.date: 06/29/2017
-ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+author: gewarren
+ms.author: gewarren
+ms.date: 10/31/2018
+ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805760"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609421"
 ---
 # <a name="using-links-in-documentation"></a>在文档中使用链接
 本文介绍如何使用 docs.microsoft.com 上托管页面的超链接。 通过几种不同的约定，便可轻松地将链接添加到 markdown。 链接将用户指向相同页面中的内容、其他相邻页面或外部站点和 URL。
@@ -22,7 +24,7 @@ docs.microsoft.com 站点后端使用实现 DocFX Flavored Markdown (DFM) 的公
 链接文本中使用的关键字应反映相关内容。 换言之，它们应为一般中文关键字或所链接到的页面的标题。
 
 > [!IMPORTANT]
-> 请勿使用“单击此处”。 这不利于 SEO，也不能充分地描述目标网页。
+> 请勿使用“单击此处”。 这不利于搜索引擎优化，也不能充分地描述目标网页。
 
 **正确：**
 
@@ -56,7 +58,7 @@ docs.microsoft.com 站点后端使用实现 DocFX Flavored Markdown (DFM) 的公
 
   `[link text](../directory/article-name.md)`
 
-- 跨 docset 链接的文章（即使在同一存储库中）：`[link text](./directory/article-name)`
+- 跨 docset 链接的文章（即使在同一存储库中）： `[link text](./directory/article-name)`
 
 > [!IMPORTANT]
 > 上述示例中均未在链接中使用 `~/`。 如果要链接到存储库的根路径，请以 `/` 开头。 如果包含 `~/`，当在 GitHub 上导航源存储库时会生成无效的链接。 使路径以 `/` 开头便可有效解决此问题。
@@ -84,17 +86,23 @@ docs.microsoft.com 站点后端使用实现 DocFX Flavored Markdown (DFM) 的公
 
 包含文件位于另一个目录中，因此，必须使用较长的相对路径。 若要从包含文件链接到某一篇文章，请使用以下格式：
 
-    [link text](../articles/folder/article-name.md)
+   ```markdown
+   [link text](../articles/folder/article-name.md)
+   ```
 
 ## <a name="links-in-selectors"></a>选择器中的链接
 
-如果你的选择器嵌入在包含文件中（如同 Azure 文档团队处理的那样），则使用以下链接结构：
+选择器是导航组件，以下拉列表的形式在文档文章中显示。 当读者选择下拉列表中的值时，浏览器将打开所选文章。 通常情况下，选择器列表包含密切相关文章的链接，例如，多种编程语言中的相同主题，或密切相关的文章系列。 
 
-    > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
-    - [(Text1 | Example1 )](../articles/folder/article-name1.md)
-    - [(Text1 | Example2 )](../articles/folder/article-name2.md)
-    - [(Text2 | Example3 )](../articles/folder/article-name3.md)
-    - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+如果你的选择器嵌入在包含文件中，则使用以下链接结构：
+
+   ```markdown
+   > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
+   - [(Text1 | Example1 )](../articles/folder/article-name1.md)
+   - [(Text1 | Example2 )](../articles/folder/article-name2.md)
+   - [(Text2 | Example3 )](../articles/folder/article-name3.md)
+   - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+   ```
 
 ## <a name="reference-style-links"></a>引用样式链接
 
@@ -102,23 +110,29 @@ docs.microsoft.com 站点后端使用实现 DocFX Flavored Markdown (DFM) 的公
 
 内联文本：
 
-    I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```markdown
+   I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```
 
 文章末尾部分的链接引用：
 
-    <!--Reference links in article-->
-    [1]: http://google.com/
-    [2]: http://search.yahoo.com/
-    [3]: http://search.msn.com/
-
+   ```markdown
+   <!--Reference links in article-->
+   [1]: http://google.com/
+   [2]: http://search.yahoo.com/
+   [3]: http://search.msn.com/
+   ```
+   
 请务必在链接前的冒号后加入空格。 链接到其他技术文章时，如果忘记加入空格，链接会在发布文章中被破坏。
 
 ## <a name="links-to-pages-that-are-not-part-of-the-technical-documentation-set"></a>链接到不属于技术文档集的页面
 
 若要链接到另一个 Microsoft 属性（例如定价页、SLA 页或其他非文档文章的页面），请使用绝对 URL，但要忽略区域设置。 这样做是为了使链接在 GitHub 和显示链接的网站上正常工作：
 
-    [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
-
+   ```markdown
+   [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
+   ```
+   
 ## <a name="links-to-third-party-sites"></a>指向第三方网站的链接
 
 为了实现最佳用户体验，最好尽量减少将用户定向到另一个网站的次数。 因此，如果确实需要，可在以下信息基础上实现到第三方网站的任何链接：
@@ -146,7 +160,7 @@ URL 结构：
   - `/powershell/azure/<topic-file-name>[?view=<moniker-name>]`
   - `/powershell/azure/<service-name>/<topic-file-name>[?view=<moniker-name>]`
 
-&lt;moniker-name&gt; 部分是可选的。 如果省略这一部分，会将用户定向到最新版本的内容。 &lt;service-name&gt; 部分是以下基 URL 中显示的其中一个示例：
+`<moniker-name>` 部分是可选的。 如果省略这一部分，会将用户定向到最新版本的内容。 `<service-name>` 部分是以下基 URL 中显示的其中一个示例：
 
 - Azure PowerShell (AzureRM) 内容：[https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
 - Azure PowerShell (ASM) 内容：[https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)

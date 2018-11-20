@@ -8,16 +8,16 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: e248eafb0247b200313ba198f2545eca947f5627
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805871"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609536"
 ---
 # <a name="markdown-reference-for-ops"></a>OPS 的 Markdown 引用
 
-Markdown 是一种轻型标记语言，采用纯文本格式语法。 OPS 支持 Markdown 的 CommonMark 标准，以及一些旨在为 docs.microsoft.com 提供更丰富内容的自定义 Markdown 扩展。 本文介绍在 OPS 中为 docs.microsoft.com 使用 Markdown 的字母顺序引用。
+Markdown 是一种轻型标记语言，采用纯文本格式语法。 Open Publishing Services (OPS) 支持 Markdown 的 CommonMark 标准，以及一些旨在为 docs.microsoft.com 提供更丰富内容的自定义 Markdown 扩展。 本文介绍在 OPS 中为 docs.microsoft.com 使用 Markdown 的字母顺序引用。
 
 可以使用任何文本编辑器创作 Markdown。 对于可同时插入标准 Markdown 语法和自定义 OPS 扩展的编辑器，建议使用已安装 [ 创作包](https://aka.ms/DocsAuthoringPack)的 [VS Code](https://code.visualstudio.com/)。
 
@@ -25,7 +25,7 @@ OPS 已为所有新存储库对 Markdig 进行标准化，且旧存储库将迁�
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>警报（备注、提示、重要提示、提醒、警告）
 
-告诉特定于 OPS 的 Markdown 扩展创建在 docs.microsoft.com 上呈现的块引用，其中包含指示内容重要性的颜色和图标。 支持以下警报类型：
+警报特定于 OPS 的 Markdown 扩展，用于创建在 docs.microsoft.com 上呈现的块引用，其中包含指示内容重要性的颜色和图标。 支持以下警报类型：
 
 ```markdown
 > [!NOTE]
