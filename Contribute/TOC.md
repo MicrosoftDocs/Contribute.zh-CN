@@ -16,6 +16,7 @@
 ### [参与 .NET 文档撰写](dotnet-contribute-process.md)
 ### [.NET 文档风格约定](dotnet-style-guide.md)
 ### [语音语调指南](dotnet-voice-tone.md)
+# [其他资源](additional-resources.md)
 
 <!--
 ## Creating new content
@@ -79,4 +80,3 @@
 
      Open question: How to keep this up to date?
    -->
-## [其他资源](additional-resources.md)
