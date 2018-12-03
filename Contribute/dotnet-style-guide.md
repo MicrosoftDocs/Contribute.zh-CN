@@ -2,12 +2,12 @@
 title: 适用于 .NET 文章的模板和速查表
 description: 本文包含一个便捷的模板，可用于针对 .NET 文档存储库创建新文章
 ms.date: 11/07/2018
-ms.openlocfilehash: 8980f5e39213d8f2edd1d29e66d900f2c3d04bbc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609730"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299651"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>适用于 .NET 文档的元数据和 Markdown 模板
 
@@ -79,9 +79,11 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 - 在大多数情况下，我们使用相对链接，并且不鼓励在链接中使用 `~/` GitHub 上的源进行解析。 然而，每当我们链接到独立存储库中的文件时，都将使用 `~/` 字符提供路径。 因为独立存储库中的文件位于 GitHub 中的不同位置，因此使用相对链接无法正确解析，无论其编写方式如何。
 - C# 语言规范和 Visual Basic 语言规范通过来自语言存储库中的源，包括在 .NET 文档中。 Markdown 源托管于 [csharplang](https://github.com/dotnet/csharplang) 和 [vblang](https://github.com/dotnet/vblang) 存储库中。
 
-规范的链接必须指向其中包括这些规范的源目录。 对于 C#，它是 ~/_csharplang/spec，而对于 VB，它是 ~/_vblang/spec。
+规范的链接必须指向其中包括这些规范的源目录。 对于 C#，它是 ~/_csharplang/spec，而对于 VB，它是 ~/_vblang/spec如下例所示：
 
-- 示例：`[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)`
+```markdown
+[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
+```
 
 ### <a name="links-to-apis"></a>链接到 API
 
@@ -111,13 +113,13 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 - System.Exception.\#ctor 变为 `System.Exception.%23ctor`
 - System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) 变为 `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`
 
-可以在 `https://xref.docs.microsoft.com/autocomplete` 中查找类型的 UID、成员重载列表或特定的重载成员。 查询字符串“?text=\<type-member-name>”可标识要查看其 UID 的类型或成员。 例如，`https://xref.docs.microsoft.com/autocomplete?text=string.format` 将检索 [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) 重载。 该工具可在 UID 的任意部分中搜索提供的 `text` 查询参数。 例如，可以搜索成员名称 (ToString)、部分成员名称 (ToStri)、类型和成员名称 (Double.ToString) 等。
+可以在 `https://xref.docs.microsoft.com/autocomplete` 中查找类型的 UID、成员重载列表或特定的重载成员。 查询字符串 `?text=*\<type-member-name>*` 可标识要查看其 UID 的类型或成员。 例如，`https://xref.docs.microsoft.com/autocomplete?text=string.format` 将检索 [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) 重载。 该工具可在 UID 的任意部分中搜索提供的 `text` 查询参数。 例如，可以搜索成员名称 (ToString)、部分成员名称 (ToStri)、类型和成员名称 (Double.ToString) 等。
 
-如果在 UID 后面添加 \*（或 %2A），该链接则表示重载页面，而不是特定 API。 例如，若要通过一般方式链接到 [List\<T>.BinarySearch 方法](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch)页面，而不是通过 [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_) 等特定重载，可以使用它。 此外，如果未重载成员，还可以使用 \* 链接到成员页，这可消除在 UID 中包括参数列表的需求。
+如果在 UID 后面添加 \*（或 `%2A`），该链接则表示重载页面，而不是特定 API。 例如，若要通过一般方式链接到 [List\<T>.BinarySearch 方法](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch)页面，而不是通过 [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_) 等特定重载，可以使用它。 此外，如果未重载成员，还可以使用 \* 链接到成员页，这可消除在 UID 中包括参数列表的需求。
 
 若要链接到特定的方法重载，必须包括每个方法参数的完全限定的类型名称。 例如，\<xref:System.DateTime.ToString> 可链接到无参数的 [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) 方法，而 \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> 可链接到 [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) 方法。
 
-若要链接到泛型类型，例如 [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1)，可使用 \` (%60) 字符，其后紧跟泛型类型参数的数量。 例如，\<xref:System.Nullable%601> 可链接到 [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) 类型，而 \<xref:System.Func%602> 可链接到 [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) 委托。
+若要链接到泛型类型（例如 [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1)），可使用 \` (`%60`) 字符，其后紧跟泛型类型参数的数量。 例如，`<xref:System.Nullable%601>` 可链接到 [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) 类型，而 `<xref:System.Func%602>` 可链接到 [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) 委托。
 
 ## <a name="code"></a>代码
 
