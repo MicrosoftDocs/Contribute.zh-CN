@@ -2,12 +2,12 @@
 title: 参与 .NET 文档存储库撰写的流程
 description: 本文简要介绍如何参与撰写 .NET 文档存储库。 本文将介绍所用的存储库，整理内容的流程和用于管理代码示例和其他资产的策略。
 ms.date: 11/07/2018
-ms.openlocfilehash: b83a3080f1abd4df8caaa9d10859760006216e86
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 0e7199b72cf9b94d00a09fb180ffef0558c59a53
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609753"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245840"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>参与 .NET 文档撰写的过程
 
@@ -24,7 +24,7 @@ ms.locfileid: "51609753"
 
 ## <a name="make-a-contribution-to-net-docs"></a>参与 .NET 文档撰写
 
-步骤 1：对于小更改，请跳过此步骤。 如果有兴趣编写新内容或仔细修订现有内容，请创建描述你想做的事情的[问题](https://github.com/dotnet/docs/issues)。
+**步骤 1：** 对于小更改，请跳过此步骤。 如果有兴趣编写新内容或仔细修订现有内容，请创建描述你想做的事情的[问题](https://github.com/dotnet/docs/issues)。
 
 “Docs”文件夹中的内容组织成部分，在目录 (TOC) 中进行反映。 定义主题在 TOC 中所处的位置。 获取有关建议的反馈。
 
@@ -42,11 +42,11 @@ ms.locfileid: "51609753"
 
 选择要处理的任务后，请按照[入门](get-started-setup-github.md)指南操作，创建 GitHub 帐户并设置环境。
 
-步骤 2：根据需要，创建 `/dotnet/docs`、`dotnet/samples`、`dotnet/dotnet-api-docs`、`dotnet/roslyn-api-docs` 或 `dotnet/ml-api-docs` 存储库的分支，并针对更改创建分支。
+**步骤 2：** 根据需要，创建 `/dotnet/docs`、`dotnet/samples`、`dotnet/dotnet-api-docs`、`dotnet/roslyn-api-docs` 或 `dotnet/ml-api-docs` 存储库的分支，并针对更改创建分支。
 
 对于小更改，请在参与者指南的[主页](index.md#quick-edits-to-existing-documents)中查看在 GitHub 中编辑的说明。
 
-步骤 3：在此新分支上进行更改。
+**步骤 3：** 在此新分支上进行更改。
 
 如果它是新主题，则可以使用此[模板文件](dotnet-style-guide.md)，作为起始点。 它包含编写准则，并且还解释每篇文章需要的元数据（例如，作者信息）。
 
@@ -65,7 +65,7 @@ ms.locfileid: "51609753"
             /porting-overview
                 portability_report.png
 
-步骤 4：从分支向主分支提交拉取请求 (PR)。
+**步骤 4：** 从分支向主分支提交拉取请求 (PR)。
 
 > [!IMPORTANT]
 > 任何 .NET 文档存储库中的[评论自动化](how-to-write-workflows-major.md#review-and-sign-off)功能均暂不可用。 .NET 文档团队成员将评审和合并 PR。
@@ -76,7 +76,7 @@ ms.locfileid: "51609753"
 
 .NET 团队将评审 PR 并告知你是否存在必需的其他任何更新/更改，以进行审批。
 
-步骤 5：与团队讨论时，对分支进行任何必需的更新。
+**步骤 5：** 与团队讨论时，对分支进行任何必需的更新。
 
 反馈应用后且更改得到审批后，维护程序会将 PR 合并为主分支。
 
@@ -131,6 +131,7 @@ ms.locfileid: "51609753"
 2. 编写解释示例中演示的概念的主题（例如：`docs/standard/linq/where-clause.md`）。
 3. 编写示例（例如：`WhereClause-Sample1.cs`）。
 4. 使用调用示例的主要入口点创建 Program.cs。 如果已有一个，则添加对示例的调用：
+
     ```csharp
     public class Program
     {
@@ -143,6 +144,7 @@ ms.locfileid: "51609753"
         }
     }
     ```
+
 使用 .NET Core CLI 生成任何 .NET Core 代码片段或示例，可与 [.NET Core SDK](https://www.microsoft.com/net/download) 一起安装。 生成并运行示例：
 
 1. 转到示例文件夹和生成，查看其中的错误：
