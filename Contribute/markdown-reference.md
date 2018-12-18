@@ -1,6 +1,6 @@
 ---
-title: OPS 和 docs.microsoft.com 的 Markdown 引用
-description: OPS 平台指南，介绍 Markdown 和 DocFX Flavored Markdown (DFM) 扩展。
+title: docs.microsoft.com 的 Markdown 引用
+description: Markdown 的 Docs 平台指南。
 author: meganbradley
 ms.author: mbradley
 manager: jemash
@@ -8,24 +8,24 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 1023f3036e5c1facd0bcd4c31069e6faf3c95483
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609536"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245863"
 ---
-# <a name="markdown-reference-for-ops"></a>OPS 的 Markdown 引用
+# <a name="markdown-reference"></a>Markdown 引用
 
-Markdown 是一种轻型标记语言，采用纯文本格式语法。 Open Publishing Services (OPS) 支持 Markdown 的 CommonMark 标准，以及一些旨在为 docs.microsoft.com 提供更丰富内容的自定义 Markdown 扩展。 本文介绍在 OPS 中为 docs.microsoft.com 使用 Markdown 的字母顺序引用。
+Markdown 是一种轻型标记语言，采用纯文本格式语法。 Docs 平台支持 Markdown 的 CommonMark 标准，以及一些旨在为 docs.microsoft.com 提供更丰富内容的自定义 Markdown 扩展。 本文针对 docs.microsoft.com 的 Markdown 使用，介绍其字母顺序引用。
 
-可以使用任何文本编辑器创作 Markdown。 对于可同时插入标准 Markdown 语法和自定义 OPS 扩展的编辑器，建议使用已安装 [ 创作包](https://aka.ms/DocsAuthoringPack)的 [VS Code](https://code.visualstudio.com/)。
+可以使用任何文本编辑器创作 Markdown。 对于可同时插入标准 Markdown 语法和自定义 Docs 扩展的编辑器，建议使用已安装 [Docs 创作包](https://aka.ms/DocsAuthoringPack)的 [VS Code](https://code.visualstudio.com/)。
 
-OPS 已为所有新存储库对 Markdig 进行标准化，且旧存储库将迁移到 Markdig。 可在 [https://babelmark.github.io/](https://babelmark.github.io/) 测试 Markdig 与其他引擎中的 Markdown 渲染效果。
+Docs 使用 Markdig Markdown 引擎。 可在 [https://babelmark.github.io/](https://babelmark.github.io/) 测试 Markdig 与其他引擎中的 Markdown 渲染效果。
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>警报（备注、提示、重要提示、提醒、警告）
 
-警报特定于 OPS 的 Markdown 扩展，用于创建在 docs.microsoft.com 上呈现的块引用，其中包含指示内容重要性的颜色和图标。 支持以下警报类型：
+警报是用于创建块引用 Docs Markdown 扩展，这些块引用与指示内容重要性的颜色和图标共同呈现在 docs.microsoft.com 上。 支持以下警报类型：
 
 ```markdown
 > [!NOTE]
@@ -71,7 +71,7 @@ OPS 已为所有新存储库对 Markdig 进行标准化，且旧存储库将迁�
 
 ## <a name="headings"></a>标题
 
-OPS 支持 6 级 Markdown 标题：
+Docs 支持六个级别的 Markdown 标题：
 
 ```markdown
 # This is a first level heading (H1)
@@ -92,7 +92,7 @@ OPS 支持 6 级 Markdown 标题：
 
 ## <a name="html"></a>HTML
 
-虽然 Markdown 支持内联式 HTML，但不建议通过 OPS 发布 HTML，除了数量有限的一系列值以外，其他值会导致生成错误或警告。 <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+虽然 Markdown 支持内联式 HTML，但不建议使用 HTML 将内容发布到 Docs，除了数量有限的一系列值以外，其他值会导致生成错误或警告。 <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
 
 ## <a name="images"></a>图像
 
@@ -116,7 +116,7 @@ Example:
 
 ## <a name="links"></a>链接
 
-大多数情况下，OPS 使用指向其他文件和页面的标准 Markdown 链接。 以下各小节将介绍各链接类型。
+大多数情况下，Docs 使用指向其他文件和页面的标准 Markdown 链接。 以下各小节将介绍各链接类型。
 
 > [!TIP]
 > 适用于 VS Code 的 Docs 创作包有助于正确插入相关链接和书签，免去了寻找路径的麻烦！
@@ -132,7 +132,7 @@ Example:
 
 ### <a name="relative-links-to-files-in-the-same-doc-set"></a>同一文档集中的文件的相对链接
 
-相对路径是指相对于当前文件的目标文件路径。 在 OPS 中，可使用相对路径链接到同一文档集中的其他文件。 相对路径的语法如下：
+相对路径是指相对于当前文件的目标文件路径。 在 Docs 中，可使用相对路径链接到同一文档集中的其他文件。 相对路径的语法如下：
 
 ```markdown
 [link text](../../folder/filename.md)
@@ -142,7 +142,7 @@ Example:
 
 - 相对路径将在生成过程中解析，包括删除 .md 扩展名。
 - 可使用“../”链接到父文件夹中的文件，但该文件必须位于同一文档集。 不能使用“../”链接到其他文档集文件夹中的文件。
-- OPS 还支持以“~”开头的特殊形式的相对路径（例如，~/foo/bar.md）。 此语法表示相对于文档集根文件夹的文件。 此类路径也将在生成过程中进行验证和解析。
+- Docs 还支持以“~”开头的特殊形式的相对路径（例如，~/foo/bar.md）。 此语法表示相对于文档集根文件夹的文件。 此类路径也将在生成过程中进行验证和解析。
 
 > [!IMPORTANT]
 > 包括相对路径中的文件扩展名。 生成可验证该相对路径的目标文件是否存在。 如果相对路径不包括文件扩展名，生成很可能会报告断开的链接警告。 例如，使用：
@@ -153,7 +153,7 @@ Example:
 >
 > `[link text](../../folder/filename)`
 
-### <a name="absolute-links-to-other-files-in-ops"></a>OPS 中其他文件的绝对链接
+### <a name="site-relative-links-to-other-files-on-docs"></a>站点相对链接到 Docs 上的其他文件
 
 ```markdown
 [Azure and Linux](/articles/virtual-machines/linux/overview)
@@ -252,7 +252,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 若要创建编号列表，可全部使用 1，它们将在发布时呈现为有序列表。 为提高源可读性，可增加列表。
 
-请勿在列表中使用字母，也勿使用嵌套列表。 通过 OPS 发布时，它们无法正确呈现。 使用编号的嵌套列表在发布时将呈现为小写字母。 例如：
+请勿在列表中使用字母，也勿使用嵌套列表。 发布到 Docs 时，它们无法正确呈现。使用编号的嵌套列表在发布时将呈现为小写字母。 例如：
 
 ```markdown
 1. This is
@@ -423,14 +423,6 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
 > - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
 
-<!-- uncomment and link when Cory's topic is live
-## Tabbed content
-
-Tabs are a Markdown extension for docs.microsoft.com that allow us to present different versions of content, such as procedural steps to accomplish the same task on different platforms, in a tabbed format.
-
-Because the syntax and requirements for tabbed content are fairly complex, they are documented separately in Tabbed Content.
--->
-
 ## <a name="tables"></a>表格
 
 使用 Markdown 创建表的最简单方法是借助垂直线和行。 若要创建带标头的标准表格，请在第一行后使用虚线：
@@ -535,13 +527,13 @@ Because the syntax and requirements for tabbed content are fairly complex, they 
 
 ### <a name="embedding-videos-into-a-markdown-page"></a>将视频嵌入 Markdown 页面
 
-目前，OPS 支持以下 3 个站点中发布的视频：
+目前，Docs 支持以下 3 个站点中发布的视频：
 
 - YouTube
 - Channel 9
 - Microsoft 自己的“One Playe”系统
 
-可使用以下语法嵌入视频，然后 OPS 将呈现它。
+可使用以下语法嵌入视频，Docs 随即将其呈现。
 
 ```markdown
 > [!VIDEO <embedded_video_link>]

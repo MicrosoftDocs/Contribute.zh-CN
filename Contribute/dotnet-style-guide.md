@@ -2,12 +2,12 @@
 title: 适用于 .NET 文章的模板和速查表
 description: 本文包含一个便捷的模板，可用于针对 .NET 文档存储库创建新文章
 ms.date: 11/07/2018
-ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
-ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
+ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
+ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52299651"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53264493"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>适用于 .NET 文档的元数据和 Markdown 模板
 
@@ -144,7 +144,7 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
   * 用于指定如何从文件中检索代码：
     * `#`：`#{tagname}`（标记名称）或 `#L{startlinenumber}-L{endlinenumber}`（行范围）。
     不鼓励使用行号，因为它们很脆弱。 标记名称是引用代码片段的首选方式。 请使用有意义的标记名称。 （由于许多代码片段迁移自上一个平台，并且标记具有 `Snippet1`、`Snippet2` 等名称。因此维持此做法要困难得多。）
-    * `range`: `?range=1,3-5` 行的范围。 此示例包含第 1、3、4 和 5 行。
+    * `range`：`?range=1,3-5` 行的范围。 此示例包含第 1、3、4 和 5 行。
 
 建议在可能的情况下使用标记名称。 标记名称是区域或代码注释的名称，在源代码中以 `Snippettagname` 格式存在。 以下示例说明如何引用标记名称 `BasicThrow`：
 
@@ -244,13 +244,13 @@ docs.microsoft 可提供 GitHub Flavored Markdown 的一些额外扩展。
 
 ```markdown
 > [!div class="button"]
-[button links](dotnet-contribute.md)
+> [button links](dotnet-contribute.md)
 ```
 
 这将呈现为：
 
 > [!div class="button"]
-[按钮链接](dotnet-contribute.md)
+> [按钮链接](dotnet-contribute.md)
 
 可在 [Visual Studio 文档](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio)中查看有效的按钮示例。
 
@@ -258,8 +258,8 @@ docs.microsoft 可提供 GitHub Flavored Markdown 的一些额外扩展。
 
 ```markdown
 >[!div class="step-by-step"]
-[Pre](../docs/csharp/expression-trees-interpreting.md)
-[Next](../docs/csharp/expression-trees-translating.md)
+> [Pre](../docs/csharp/expression-trees-interpreting.md)
+> [Next](../docs/csharp/expression-trees-translating.md)
 ```
 
 可在 [C# 指南](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure)中查看有效的分步操作示例。
