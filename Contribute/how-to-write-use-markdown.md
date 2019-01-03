@@ -2,12 +2,12 @@
 title: 如何使用 Markdown 撰写 Docs
 description: 本文提供用于撰写 docs.microsoft.com 文章的 Markdown 语言的基础知识和参考信息。
 ms.date: 07/13/2017
-ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
-ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
+ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
+ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245886"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53615826"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 撰写 Docs
 
@@ -232,7 +232,8 @@ Markdown 不仅支持将代码片段内联在某个句子中，还支持将它�
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
-|Power Apps Formula|powerappsfl|
+|PowerApps（小数点分隔符）|powerapps-dot|
+|PowerApps（逗号分隔符）|powerapps-comma|
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
