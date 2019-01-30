@@ -14,7 +14,7 @@ ms.locfileid: "51609352"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 参与者指南概述
 
-欢迎查看 [docs.microsoft.com](https://docs.microsoft.com) (Docs) 风格指南！
+欢迎查看 [docs.microsoft.com](https://docs.microsoft.com) (Docs) 参与者指南！
 
 我们的一些文档集是开放源代码，托管在 GitHub 上。 Microsoft 的更多团队一直在采用这种模式。 即使文档集不完全开放源代码，也有面向公众的存储库，其中用户受邀发出拉取请求。 这种模式简化并改善了产品工程师、内容团队和我们的客户之间的通信。 开放式工作有以下几点好处：
 
@@ -44,7 +44,7 @@ ms.locfileid: "51609352"
 
 在 Web 编辑器中进行更改。 可以单击“预览更改”选项卡来检查更改的格式。
 
-做出更改后，将滚动到页面底部。 为 PR 输入标题和描述，并单击“建议文件更改”，如下图所示：
+做出更改后，请滚动到页面底部。为 PR 输入标题和说明，并单击“建议文件更改”，如下图所示：
 
 ![建议更改](./media/index/submit-pull-request.png)
 
