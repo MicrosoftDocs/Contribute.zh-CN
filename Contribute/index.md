@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4a9a7573a62cfc7d5187b90de7e1fe147825273e
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609352"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712846"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 参与者指南概述
 
@@ -37,7 +37,7 @@ ms.locfileid: "51609352"
 
 接下来，单击“铅笔”图标（如下图所示）编辑文章。
 
-![铅笔图标的位置](./media/index/editicon.png)
+![铅笔图标的位置](./media/index/edit-icon.png)
 
 > [!NOTE]
 > 如果铅笔图标显示为灰色，需要登录到 GitHub 帐户，或者创建一个新帐户。
