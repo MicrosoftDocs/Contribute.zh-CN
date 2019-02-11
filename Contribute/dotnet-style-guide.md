@@ -2,12 +2,12 @@
 title: 适用于 .NET 文章的模板和速查表
 description: 本文包含一个便捷的模板，可用于针对 .NET 文档存储库创建新文章
 ms.date: 11/07/2018
-ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
-ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
+ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53264493"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712915"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>适用于 .NET 文档的元数据和 Markdown 模板
 
@@ -123,7 +123,7 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 
 ## <a name="code"></a>代码
 
-包括代码的最佳方式是包括工作示例中的代码片段。 请遵循[参与 .NET](dotnet-contribute-process.md#contributing-to-samples) 一文中的说明，创建示例。 包括代码的基本规则位于有关[代码](how-to-write-use-markdown.md#code-includes)的通用指南中。
+包括代码的最佳方式是包括工作示例中的代码片段。 请遵循[参与 .NET](dotnet-contribute-process.md#contributing-to-samples) 一文中的说明，创建示例。 包括代码的基本规则位于有关[代码](how-to-write-use-markdown.md#code-snippets)的通用指南中。
 
 可使用以下语法，包括代码：
 
