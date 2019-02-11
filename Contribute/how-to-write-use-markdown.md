@@ -1,24 +1,19 @@
 ---
 title: 如何使用 Markdown 撰写 Docs
 description: 本文提供用于撰写 docs.microsoft.com 文章的 Markdown 语言的基础知识和参考信息。
-ms.date: 07/13/2017
-ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
-ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
+ms.date: 01/29/2019
+ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53615826"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887289"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 撰写 Docs
 
 [Docs.microsoft.com](http://docs.microsoft.com) 文章采用名为 [Markdown](https://daringfireball.net/projects/markdown/) 的轻型标记语言撰写，这种语言可读性强且简单易学。 正因为如此，Markdown 已迅速成为行业标准。
 
-由于 Doc 内容存储在 GitHub 中，因此可以使用 Markdown 超集（称为 [GitHub 风格的 Markdown (GFM)](https://help.github.com/categories/writing-on-github/)），它为常用格式需求提供了附加功能。 此外， Open Publishing Services (OPS) 还将实现 Markdig Markdown 分析程序。 Markdig 与 GFM 高度兼容，并添加了实现 Docs 特定功能的功能。
-
-* Markdig 是一种适用于 .NET 的 Markdown 分析程序，它运行快速、功能强大且兼容 CommonMark。
-* https://github.com/lunet-io/markdig
-* 更好的社区支持
-* 更好的标准支持
+docs.microsoft.com 站点后端使用开放发布服务 (OPS)，支持通过 [Markdig](https://github.com/lunet-io/markdig) 解析的兼容 [CommonMark](https://commonmark.org/) 的 Markdown，并且还支持 [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/)。 这些 Markdown 风格大多与 [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 兼容，因为大多数 docs 存储在 GitHub 中，并可以在 GitHub 中进行编辑。 通过 Markdown 扩展添加一些功能。
 
 ## <a name="markdown-basics"></a>Markdown 基础知识
 
@@ -220,6 +215,7 @@ Markdown 不仅支持将代码片段内联在某个句子中，还支持将它�
 |控制台|console|
 |CSHTML|cshtml|
 |DAX|dax|
+|Docker|dockerfile|
 |F#|fsharp|
 |Go|go|
 |HTML|html|
@@ -227,8 +223,8 @@ Markdown 不仅支持将代码片段内联在某个句子中，还支持将它�
 |Java|java|
 |JavaScript|javascript|
 |JSON|json|
+|Kusto 查询语言|kusto|
 |Markdown|md|
-|NodeJS|nodejs|
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
@@ -243,7 +239,6 @@ Markdown 不仅支持将代码片段内联在某个句子中，还支持将它�
 |Swift|swift|
 |TypeScript|typescript|
 |VB|vb|
-|VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
 

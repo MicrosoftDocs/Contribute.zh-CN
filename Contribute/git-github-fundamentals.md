@@ -2,12 +2,12 @@
 title: Git 和 GitHub 的文档概要
 description: 本文概述了 Git、GitHub 存储库、组织内容的方式和用于 docs.microsoft.com 的命名约定。
 ms.date: 06/30/2017
-ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: b7eb82f299d3efcdb1e49649fb77367ef8ba3fae
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805691"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712869"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Git 和 GitHub 的 Docs 概要
 
@@ -25,7 +25,7 @@ GitHub 是 Git 存储库基于 Web 的托管服务，例如用于存储 [docs.mi
 
 Git 还使用分层结构来存储和管理项目的内容：
 
-- *存储库 (Repository)*：英文缩写为“repo”，它是最大的存储单元。 存储库包括一个或多个分支。
+- *存储库*：(Repository) 的英文缩写为“repo”，它是最大的存储单元。 存储库包括一个或多个分支。
 - *分支*：一个存储单元，包含构成项目内容集的文件和文件夹。 分支分隔工作流（通常称为版本）。 始终提供发布内容并将范围限定为特定分支。 所有存储库都包含一个默认分支（通常命名为“主”分支）和一个或多个注定要并入主分支的其他分支。 主分支充当项目的当前版本和“单一事实来源”。 它是创建存储库中其他所有分支所依据的父级。
 
 参与者与 Git 进行交互，更新和处理本地和 GitHub 级别的存储库：
@@ -58,7 +58,7 @@ Git 还使用分层结构来存储和管理项目的内容：
 
 只要在两个或多个文章间有共享的可重用内容，就可将其放入主`articles`目录的 `/includes` 子目录中。 在使用包含文件的 Markdown 文件中，相应的“include”Markdown 扩展名放置在需要引用包含文件的位置。
 
-请参阅[如何使用 Markdown：包含](how-to-write-use-markdown.md#includes)以获得更多指导。
+有关其他指南，请参阅[如何使用 Markdown：包含文件](how-to-write-use-markdown.md#include-files)。
 
 ### <a name="markdown-file-template"></a>Markdown 文件模板
 

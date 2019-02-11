@@ -16,6 +16,7 @@
 ### [参与 .NET 文档撰写](dotnet-contribute-process.md)
 ### [.NET 文档风格约定](dotnet-style-guide.md)
 ### [语音语调指南](dotnet-voice-tone.md)
+### [拉取请求评审流程](dotnet-pr-review.md)
 # [其他资源](additional-resources.md)
 
 <!--
