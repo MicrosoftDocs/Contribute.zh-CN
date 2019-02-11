@@ -1,16 +1,44 @@
 items:
-- name: PR 验证服务参考
+- name: Docs 验证引用
   href: index.md
   items:
+  - name: author-missing
+    href: author-missing.md
   - name: 特定于区域设置的链接
     href: locale-specific-links.md
   - name: Markdown 标题
     href: markdown-headings.md
+  - name: ms-author-missing
+    href: ms-author-missing.md
+  - name: ms-component-deprecated
+    href: ms-component-deprecated.md
+  - name: ms-date-invalid
+    href: ms-date-invalid.md
+  - name: ms-date-missing
+    href: ms-date-missing.md
+  - name: ms-date-too-late
+    href: ms-date-too-late.md
+  - name: ms-prod-and-service
+    href: ms-prod-and-service.md
+  - name: ms-prod-missing
+    href: ms-prod-missing.md
+  - name: ms-prod-or-service-missing
+    href: ms-prod-or-service-missing.md
+  - name: ms-prod-service-mismatch
+    href: ms-prod-service-mismatch.md
+  - name: ms-prod-technology-invalid
+    href: ms-prod-technology-invalid.md
+  - name: ms-service-missing
+    href: ms-service-missing.md
+  - name: ms-service-subservice-invalid
+    href: ms-service-subservice-invalid.md
   - name: 选项卡式概念
     href: tabbed-conceptual.md
-ms.openlocfilehash: 002053f828f28d209c08a077cb03d6f906a79afb
-ms.sourcegitcommit: 95d79c9d38fe5c2d67c6cc82ced6589aa551ed75
+  - name: title-missing
+    href: title-missing.md
+ms.openlocfilehash: adf989e152a543ee039c234e79b350951ea0ad66
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53319203"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887220"

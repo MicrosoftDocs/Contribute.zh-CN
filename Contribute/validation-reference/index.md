@@ -1,29 +1,17 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: fa048980afcf3c50f7d990f9c88064df6ee5ebb5
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: 5488ba364ea561a732357bcebf9bf66039c26542
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084439"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712777"
 ---
-# <a name="docs-pr-validation-service"></a><span data-ttu-id="6abfe-101">Docs PR 验证服务</span><span class="sxs-lookup"><span data-stu-id="6abfe-101">Docs PR validation service</span></span>
+# <a name="docs-validation-reference"></a><span data-ttu-id="17165-101">Docs 验证引用</span><span class="sxs-lookup"><span data-stu-id="17165-101">Docs validation reference</span></span>
 
-<span data-ttu-id="6abfe-102">Docs PR 验证服务是一个 GitHub 应用，用于对 PR 中的文件执行验证规则。</span><span class="sxs-lookup"><span data-stu-id="6abfe-102">The Docs PR validation service is a GitHub app that runs validation rules on the files in a PR.</span></span>
+<span data-ttu-id="17165-102">本部分中的文章提供了有关在向 docs.microsoft.com 存储库提交 PR 时或在生成要发布到 docs.microsoft.com 的存储库时可能会看到的错误、警告和建议的信息。</span><span class="sxs-lookup"><span data-stu-id="17165-102">The articles in this section provide information about Errors, Warnings, and Suggestions you might see when submitting a PR to a docs.microsoft.com repo, or when building a repo to publish to docs.microsoft.com.</span></span>
 
-<span data-ttu-id="6abfe-103">在存储库上启用验证服务后，将看到以下行为：</span><span class="sxs-lookup"><span data-stu-id="6abfe-103">When the validation service is enabled on a repo, you'll see the following behavior:</span></span>
+<span data-ttu-id="17165-103">请注意，并非所有存储库会启用所有问题，一些问题是特定于某些内容集的。</span><span class="sxs-lookup"><span data-stu-id="17165-103">Note that not all issues will be enabled on all repos; some are specific to certain content sets.</span></span> <span data-ttu-id="17165-104">修复了生成报告中列出的问题，而不是在本引用中描述的每个问题。</span><span class="sxs-lookup"><span data-stu-id="17165-104">Fix the issues listed in your build report, not every issue described in this reference.</span></span>
 
-1. <span data-ttu-id="6abfe-104">提交 PR。</span><span class="sxs-lookup"><span data-stu-id="6abfe-104">You submit a PR.</span></span>
-1. <span data-ttu-id="6abfe-105">在指示 PR 状态的 GitHub 注释中，将看到存储库上已启用“检查”状态。</span><span class="sxs-lookup"><span data-stu-id="6abfe-105">In the GitHub comment that indicates the status of your PR, you'll see the status of "checks" enabled on the repo.</span></span> <span data-ttu-id="6abfe-106">请注意，本示例启用了两个检查，“提交验证”和“OpenPublishing.Build”：</span><span class="sxs-lookup"><span data-stu-id="6abfe-106">Note that in this example, there are two checks enabled, "Commit Validation" and "OpenPublishing.Build":</span></span>
-
-   ![部分检查失败](media/validation-failed.png)
-
-   <span data-ttu-id="6abfe-108">即使提交验证失败，版本也可以通过。</span><span class="sxs-lookup"><span data-stu-id="6abfe-108">Build can pass even if commit validation fails.</span></span>
-
-1. <span data-ttu-id="6abfe-109">单击“详细信息”以了解更多信息。</span><span class="sxs-lookup"><span data-stu-id="6abfe-109">Click **Details** for more information.</span></span>
-1. <span data-ttu-id="6abfe-110">在“详细信息”页面上，将看到所有失败的验证检查，以及有关如何解决问题的信息：</span><span class="sxs-lookup"><span data-stu-id="6abfe-110">On the Details page, you'll see all the validation checks that failed, with information about how to fix the issues:</span></span>
-
-   ![验证消息](media/validation-details.png)
-
-<span data-ttu-id="6abfe-112">有关服务中当前验证的列表，请参阅本文左侧的 TOC。</span><span class="sxs-lookup"><span data-stu-id="6abfe-112">See the left-hand TOC of this article for the list of validations currently in the service.</span></span>
+<span data-ttu-id="17165-105">另请注意，此引用尚未完成 - 后续将会不断添加新文章并链接到生成报告错误代码中。</span><span class="sxs-lookup"><span data-stu-id="17165-105">Also note that this reference is not complete - new articles will be added and linked from build report error codes as an ongoing effort.</span></span> <span data-ttu-id="17165-106">虽然生成报告是公开的，但修复某些问题所需的一些信息并不在 Microsoft 外部提供。</span><span class="sxs-lookup"><span data-stu-id="17165-106">Although build reports are public, some of the information required to fix some issues is not available outside of Microsoft.</span></span> <span data-ttu-id="17165-107">如果找不到有关错误或警告的文档、消息或文档不清楚，或者你是非 Microsoft 参与者且无法访问其他信息，请使用下面的文档反馈按钮提交一个 GitHub 问题。</span><span class="sxs-lookup"><span data-stu-id="17165-107">If you can't find documentation for an Error or Warning, if the message or documentation isn't clear, or if you're a non-Microsoft contributor and can't access additional information, use the documentation feedback button below to file a GitHub issue.</span></span>
