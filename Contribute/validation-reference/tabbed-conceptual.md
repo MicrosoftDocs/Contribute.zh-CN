@@ -1,23 +1,23 @@
-# <a name="tabbed-conceptual"></a><span data-ttu-id="a24ea-101">选项卡式概念</span><span class="sxs-lookup"><span data-stu-id="a24ea-101">Tabbed conceptual</span></span>
+# <a name="tabbed-conceptual"></a><span data-ttu-id="803df-101">选项卡式概念</span><span class="sxs-lookup"><span data-stu-id="803df-101">Tabbed conceptual</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="a24ea-102">选项卡式概念语法已弃用，不得添加新选项卡。</span><span class="sxs-lookup"><span data-stu-id="a24ea-102">The tabbed conceptual syntax has been deprecated and new tabs should not be added.</span></span> <span data-ttu-id="a24ea-103">本文中描述的验证适用于已获准使用选项卡式概念（在出现可用的替换功能之前）的内容集。</span><span class="sxs-lookup"><span data-stu-id="a24ea-103">The validations described in this article apply to content sets that have been approved to use tabbed conceptual until replacement functionality is available.</span></span>
+> <span data-ttu-id="803df-102">选项卡式概念语法已弃用，不得添加新选项卡。</span><span class="sxs-lookup"><span data-stu-id="803df-102">The tabbed conceptual syntax has been deprecated and new tabs should not be added.</span></span> <span data-ttu-id="803df-103">本文中描述的验证适用于已获准使用选项卡式概念（在出现可用的替换功能之前）的内容集。</span><span class="sxs-lookup"><span data-stu-id="803df-103">The validations described in this article apply to content sets that have been approved to use tabbed conceptual until replacement functionality is available.</span></span>
 
-## <a name="tab-syntax"></a><span data-ttu-id="a24ea-104">选项卡语法</span><span class="sxs-lookup"><span data-stu-id="a24ea-104">Tab syntax</span></span>
+## <a name="tab-syntax"></a><span data-ttu-id="803df-104">选项卡语法</span><span class="sxs-lookup"><span data-stu-id="803df-104">Tab syntax</span></span>
 
-<span data-ttu-id="a24ea-105">选项卡的语法如下所示：</span><span class="sxs-lookup"><span data-stu-id="a24ea-105">The syntax for tabs is as follows:</span></span>
+<span data-ttu-id="803df-105">选项卡的语法如下所示：</span><span class="sxs-lookup"><span data-stu-id="803df-105">The syntax for tabs is as follows:</span></span>
 
-<span data-ttu-id="a24ea-106">单级别选项卡：</span><span class="sxs-lookup"><span data-stu-id="a24ea-106">Single level tab:</span></span>
+<span data-ttu-id="803df-106">单级别选项卡：</span><span class="sxs-lookup"><span data-stu-id="803df-106">Single level tab:</span></span>
 
 `# [Tab Display Name](#tab/tab-id)`
 
-<span data-ttu-id="a24ea-107">可选依赖选项卡：</span><span class="sxs-lookup"><span data-stu-id="a24ea-107">Optional dependent tab:</span></span>
+<span data-ttu-id="803df-107">可选依赖选项卡：</span><span class="sxs-lookup"><span data-stu-id="803df-107">Optional dependent tab:</span></span>
 
 `# [Tab Display Name](#tab/tab-id/tab-condition)`
 
-<span data-ttu-id="a24ea-108">具有两个选项卡和选项卡组终止符 (---) 的单级别选项卡分区示例：</span><span class="sxs-lookup"><span data-stu-id="a24ea-108">Example of a single-level tab section with two tabs and the tab group terminator (---):</span></span>
+<span data-ttu-id="803df-108">具有两个选项卡和选项卡组终止符 (---) 的单级别选项卡分区示例：</span><span class="sxs-lookup"><span data-stu-id="803df-108">Example of a single-level tab section with two tabs and the tab group terminator (---):</span></span>
 
-```
+```markdown
 # [Linux](#tab/linux)
 
 Content for Linux...
@@ -29,7 +29,7 @@ Content for Windows...
 ---
 ```
 
-<span data-ttu-id="a24ea-109">可选择选项卡中是否包含辅助选项卡或依赖选项卡。</span><span class="sxs-lookup"><span data-stu-id="a24ea-109">Tabs can optionally contain secondary tabs, or dependency tabs.</span></span> <span data-ttu-id="a24ea-110">如果包含，则选项卡将依赖于另一组选项卡的选择。</span><span class="sxs-lookup"><span data-stu-id="a24ea-110">This makes tabs dependent on the selection in another set of tabs.</span></span> <span data-ttu-id="a24ea-111">示例如下：</span><span class="sxs-lookup"><span data-stu-id="a24ea-111">Here's an example:</span></span>
+<span data-ttu-id="803df-109">可选择选项卡中是否包含辅助选项卡或依赖选项卡。</span><span class="sxs-lookup"><span data-stu-id="803df-109">Tabs can optionally contain secondary tabs, or dependency tabs.</span></span> <span data-ttu-id="803df-110">如果包含，则选项卡将依赖于另一组选项卡的选择。</span><span class="sxs-lookup"><span data-stu-id="803df-110">This makes tabs dependent on the selection in another set of tabs.</span></span> <span data-ttu-id="803df-111">示例如下：</span><span class="sxs-lookup"><span data-stu-id="803df-111">Here's an example:</span></span>
 
 ```markdown
 # [Azure CLI](#tab/azure-cli/linux)
@@ -51,22 +51,22 @@ PowerShell content for Windows...
 ---
 ```
 
-<span data-ttu-id="a24ea-112">以下验证适用于选项卡语法：</span><span class="sxs-lookup"><span data-stu-id="a24ea-112">The following validations apply to tab syntax:</span></span>
+<span data-ttu-id="803df-112">以下验证适用于选项卡语法：</span><span class="sxs-lookup"><span data-stu-id="803df-112">The following validations apply to tab syntax:</span></span>
 
-- <span data-ttu-id="a24ea-113">选项卡语法必须正确。</span><span class="sxs-lookup"><span data-stu-id="a24ea-113">Tab syntax must be correct.</span></span>
-- <span data-ttu-id="a24ea-114">必须在先前的选项卡组中定义依赖选项卡。</span><span class="sxs-lookup"><span data-stu-id="a24ea-114">Dependent tabs must have been defined in a previous tab group.</span></span>
-- <span data-ttu-id="a24ea-115">只允许一个级别的依赖项。</span><span class="sxs-lookup"><span data-stu-id="a24ea-115">Only one level of dependency is allowed.</span></span>
-- <span data-ttu-id="a24ea-116">允许的选项卡数量不得少于 2 个。</span><span class="sxs-lookup"><span data-stu-id="a24ea-116">No fewer than two tabs are allowed.</span></span>
-- <span data-ttu-id="a24ea-117">允许的选项卡数量不得超过 4 个。</span><span class="sxs-lookup"><span data-stu-id="a24ea-117">No more than four tabs are allowed.</span></span>
-- <span data-ttu-id="a24ea-118">选项卡必须列入白名单。</span><span class="sxs-lookup"><span data-stu-id="a24ea-118">Tabs must be whitelisted.</span></span>
-- <span data-ttu-id="a24ea-119">选项卡/ID 对必须有效。</span><span class="sxs-lookup"><span data-stu-id="a24ea-119">Tab/ID pairs must be valid.</span></span>
-- <span data-ttu-id="a24ea-120">一个选项卡组中不能多次使用同一选项卡 ID。</span><span class="sxs-lookup"><span data-stu-id="a24ea-120">Cannot have the same tab ID multiple times in one tab group.</span></span>
+- <span data-ttu-id="803df-113">选项卡语法必须正确。</span><span class="sxs-lookup"><span data-stu-id="803df-113">Tab syntax must be correct.</span></span>
+- <span data-ttu-id="803df-114">必须在先前的选项卡组中定义依赖选项卡。</span><span class="sxs-lookup"><span data-stu-id="803df-114">Dependent tabs must have been defined in a previous tab group.</span></span>
+- <span data-ttu-id="803df-115">只允许一个级别的依赖项。</span><span class="sxs-lookup"><span data-stu-id="803df-115">Only one level of dependency is allowed.</span></span>
+- <span data-ttu-id="803df-116">允许的选项卡数量不得少于 2 个。</span><span class="sxs-lookup"><span data-stu-id="803df-116">No fewer than two tabs are allowed.</span></span>
+- <span data-ttu-id="803df-117">允许的选项卡数量不得超过 4 个。</span><span class="sxs-lookup"><span data-stu-id="803df-117">No more than four tabs are allowed.</span></span>
+- <span data-ttu-id="803df-118">选项卡必须列入白名单。</span><span class="sxs-lookup"><span data-stu-id="803df-118">Tabs must be whitelisted.</span></span>
+- <span data-ttu-id="803df-119">选项卡/ID 对必须有效。</span><span class="sxs-lookup"><span data-stu-id="803df-119">Tab/ID pairs must be valid.</span></span>
+- <span data-ttu-id="803df-120">一个选项卡组中不能多次使用同一选项卡 ID。</span><span class="sxs-lookup"><span data-stu-id="803df-120">Cannot have the same tab ID multiple times in one tab group.</span></span>
 
-## <a name="tab-whitelist"></a><span data-ttu-id="a24ea-121">选项卡白名单</span><span class="sxs-lookup"><span data-stu-id="a24ea-121">Tab whitelist</span></span>
+## <a name="tab-whitelist"></a><span data-ttu-id="803df-121">选项卡白名单</span><span class="sxs-lookup"><span data-stu-id="803df-121">Tab whitelist</span></span>
 
-<span data-ttu-id="a24ea-122">以下选项卡名称/选项卡 ID 对已列入白名单。</span><span class="sxs-lookup"><span data-stu-id="a24ea-122">The following tab name/tab ID pairs are whitelisted.</span></span> <span data-ttu-id="a24ea-123">依赖选项卡 ID 未配对，但根据选项卡 ID 列，其必定有效。</span><span class="sxs-lookup"><span data-stu-id="a24ea-123">Dependent tab IDs are not paired but must be valid per the Tab ID column.</span></span> <span data-ttu-id="a24ea-124">这些值区分大小写</span><span class="sxs-lookup"><span data-stu-id="a24ea-124">The values are case-sensitive</span></span>
+<span data-ttu-id="803df-122">以下选项卡名称/选项卡 ID 对已列入白名单。</span><span class="sxs-lookup"><span data-stu-id="803df-122">The following tab name/tab ID pairs are whitelisted.</span></span> <span data-ttu-id="803df-123">依赖选项卡 ID 未配对，但根据选项卡 ID 列，其必定有效。</span><span class="sxs-lookup"><span data-stu-id="803df-123">Dependent tab IDs are not paired but must be valid per the Tab ID column.</span></span> <span data-ttu-id="803df-124">这些值区分大小写</span><span class="sxs-lookup"><span data-stu-id="803df-124">The values are case-sensitive</span></span>
 
-|<span data-ttu-id="a24ea-125">选项卡名称</span><span class="sxs-lookup"><span data-stu-id="a24ea-125">Tab name</span></span>              |<span data-ttu-id="a24ea-126">选项卡 ID</span><span class="sxs-lookup"><span data-stu-id="a24ea-126">Tab ID</span></span>            |
+|<span data-ttu-id="803df-125">选项卡名称</span><span class="sxs-lookup"><span data-stu-id="803df-125">Tab name</span></span>              |<span data-ttu-id="803df-126">选项卡 ID</span><span class="sxs-lookup"><span data-stu-id="803df-126">Tab ID</span></span>            |
 |----------------------|------------------|
 |`[.NET]`              |`(#tab/dotnet)`   |
 |`[.NET Core 1.x]`     |`(#tab/netcore1x)`|
