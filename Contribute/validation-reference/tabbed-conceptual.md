@@ -17,7 +17,7 @@
 
 具有两个选项卡和选项卡组终止符 (---) 的单级别选项卡分区示例：
 
-```
+```markdown
 # [Linux](#tab/linux)
 
 Content for Linux...

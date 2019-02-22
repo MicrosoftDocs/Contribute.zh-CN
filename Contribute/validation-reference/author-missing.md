@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 12/12/2018
 ms.prod: non-product-specific
-ms.openlocfilehash: cba9788c113101fc93bffa674702b2bed95afbcb
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 89725dcfbd4ec266071c45a003748021b480bbc2
+ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713030"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56431521"
 ---
 # <a name="author-missing"></a>author-missing
 
@@ -29,7 +29,7 @@ ms.locfileid: "55713030"
 
 请将作者的 GitHub ID 添加到 YML 标头：
 
-```markdown
+```yml
 ---
 author: meganbradley
 ms.author: mbradley
