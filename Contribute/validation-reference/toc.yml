@@ -4,14 +4,14 @@ items:
   items:
   - name: author-missing
     href: author-missing.md
+  - name: deprecated-attribute
+    href: deprecated-attribute.md
   - name: 特定于区域设置的链接
     href: locale-specific-links.md
   - name: Markdown 标题
     href: markdown-headings.md
   - name: ms-author-missing
     href: ms-author-missing.md
-  - name: ms-component-deprecated
-    href: ms-component-deprecated.md
   - name: ms-date-invalid
     href: ms-date-invalid.md
   - name: ms-date-missing
@@ -32,13 +32,19 @@ items:
     href: ms-service-missing.md
   - name: ms-service-subservice-invalid
     href: ms-service-subservice-invalid.md
+  - name: ms-topic-invalid
+    href: ms-topic-invalid.md
+  - name: ms-topic-missing
+    href: ms-topic-missing.md
+  - name: multiple-values
+    href: multiple-values.md
   - name: 选项卡式概念
     href: tabbed-conceptual.md
   - name: title-missing
     href: title-missing.md
-ms.openlocfilehash: adf989e152a543ee039c234e79b350951ea0ad66
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.openlocfilehash: 5e0b438e903e264fd1073143d61546aacc91d96d
+ms.sourcegitcommit: ae71ca811c143deb6214147c7eea8704444a6093
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887220"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56465130"
