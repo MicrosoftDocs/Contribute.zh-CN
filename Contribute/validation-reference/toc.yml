@@ -80,8 +80,6 @@ items:
     href: redirection-invalid.md
   - name: snippet-not-found
     href: snippet-not-found.md
-  - name: tab-group-invalid
-    href: tab-group-invalid.md
   - name: 选项卡式概念
     href: tabbed-conceptual.md
   - name: title-missing
@@ -92,9 +90,9 @@ items:
     href: yaml-header-invalid.md
   - name: zone-invalid
     href: zone-invalid.md
-ms.openlocfilehash: a5c197a4ad74cfd57c38859e5a884505d5312980
-ms.sourcegitcommit: 89eb357721b26710e00d9b8fdab3e7628c34bdb6
+ms.openlocfilehash: 241d36765ec04580c72d62f4a7fcfac33f2ec1db
+ms.sourcegitcommit: 67d564e22a19a16b8f8bd1e05780404eb8ff82c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57459156"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58197870"
