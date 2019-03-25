@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987804"
+---
 # <a name="tabbed-conceptual"></a>选项卡式概念
 
 > [!IMPORTANT]
@@ -58,13 +66,13 @@ PowerShell content for Windows...
 - 只允许一个级别的依赖项。
 - 允许的选项卡数量不得少于 2 个。
 - 允许的选项卡数量不得超过 4 个。
-- 选项卡必须列入白名单。
+- 必须批准选项卡。
 - 选项卡/ID 对必须有效。
 - 一个选项卡组中不能多次使用同一选项卡 ID。
 
-## <a name="tab-whitelist"></a>选项卡白名单
+## <a name="approved-tabs"></a>已批准的选项卡
 
-以下选项卡名称/选项卡 ID 对已列入白名单。 依赖选项卡 ID 未配对，但根据选项卡 ID 列，其必定有效。 这些值区分大小写
+已批准以下选项卡名称/选项卡 ID 对。 依赖选项卡 ID 未配对，但根据选项卡 ID 列，其必定有效。 这些值区分大小写
 
 |选项卡名称              |选项卡 ID            |
 |----------------------|------------------|

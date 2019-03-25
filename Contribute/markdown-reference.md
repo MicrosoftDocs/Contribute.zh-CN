@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
-ms.openlocfilehash: 17bc6d3bf2de5077f490bea2f03cddf23d925b78
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: b4ac631a4ebdf7daf00bc39be80fe2e479720392
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712938"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987873"
 ---
 # <a name="markdown-reference"></a>Markdown 引用
 
@@ -90,7 +90,7 @@ Docs 支持六个级别的 Markdown 标题：
 
 ## <a name="html"></a>HTML
 
-虽然 Markdown 支持内联式 HTML，但不建议使用 HTML 将内容发布到 Docs，除了数量有限的一系列值以外，其他值会导致生成错误或警告。 <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+虽然 Markdown 支持内联式 HTML，但不建议使用 HTML 将内容发布到 Docs，除了数量有限的一系列值以外，其他值会导致生成错误或警告。
 
 ## <a name="images"></a>图像
 
@@ -110,7 +110,7 @@ Example:
 - .jpg
 - .png
 
-可通过将其他图像类型作为资源添加到文档集的 docfx.json文件中 <!--add link to reference when available-->，添加对它们的支持。
+可通过将其他图像类型作为资源添加到文档集的 docfx.json文件中，<!--add link to reference when available--> 添加对它们的支持。
 
 ## <a name="links"></a>链接
 
@@ -169,7 +169,7 @@ Example:
 
 ### <a name="bookmark-links"></a>书签链接
 
-同一存储库中其他文件标题的书签链接：
+同一存储库中其他文件标题的书签链接。 例如：
 
 ```markdown
 [Managed Disks](../../linux/overview.md#managed-disks)
@@ -181,7 +181,12 @@ Example:
 [Managed Disks](#managed-disks)
 ```
 
-使用哈希标记，后跟标题文字（需删除标点符号，并用短划线替换空格）。
+使用哈希标记 `#`，后跟标头的字词。 要将标题文本更改为链接文本，请执行以下操作：
+- 使用所有小写字符
+- 删除标点
+- 将空格替换为短划线
+
+例如，如果标题名称为“2.2 安全问题”，则书签链接文本是“#22-安全-问题”。
 
 ### <a name="explicit-anchor-links"></a>显式定位标记链接
 
@@ -336,7 +341,8 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 ## <a name="section-definition"></a>节定义
 
-<!-- more info about this would be helpful! -->可能需要定义节。 这种语法最常用于代码表。
+<!-- more info about this would be helpful! -->
+可能需要定义节。 这种语法最常用于代码表。
 请参阅以下示例：
 
 ````
@@ -360,7 +366,8 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 ## <a name="selectors"></a>选择器
 
-<!-- could be more clear! -->要连接同一文章的不同页面，可使用选择器。 如此，读者即可在这些页面之间切换。
+<!-- could be more clear! -->
+要连接同一文章的不同页面，可使用选择器。 如此，读者即可在这些页面之间切换。
 
 > [!NOTE]
 > 此扩展在 docs.microsoft.com 和 MSDN 中的作用不同。 <!-- should we keep info about MSDN? If so say how they differ?-->
