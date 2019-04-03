@@ -1,12 +1,13 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: 5488ba364ea561a732357bcebf9bf66039c26542
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.date: 03/29/2019
+ms.openlocfilehash: a854a835dc13da81e8b121f0ef0e0aa73cc8cb6c
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712777"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653450"
 ---
 # <a name="docs-validation-reference"></a>Docs 验证引用
 

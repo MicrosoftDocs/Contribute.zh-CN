@@ -6,16 +6,14 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/2/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 7c5860d9ef50598ad5b3e9546100af0ba436e69f
-ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.openlocfilehash: 17e2e272e3a21e14e038e27ff68866afe28bee60
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57987712"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58636692"
 ---
 # <a name="ms-service-missing"></a>ms-service-missing
-
-**即将推出！**
 
 [!INCLUDE [suggestion-note](includes/suggestion-note.md)]
 

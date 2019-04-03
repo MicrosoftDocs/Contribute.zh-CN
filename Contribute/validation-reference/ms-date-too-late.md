@@ -6,16 +6,14 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: b38392e9f297e4ee4147ca7fc65f938b5cd53403
-ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
+ms.openlocfilehash: 4cb5da1da2fee59302791e729e5fcfb8e84170e5
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56431475"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637382"
 ---
 # <a name="ms-date-too-late"></a>ms-date-too-late
-
-**即将推出！**
 
 ## <a name="warning"></a>警告
 

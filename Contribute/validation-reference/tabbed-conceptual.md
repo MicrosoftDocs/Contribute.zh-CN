@@ -1,10 +1,11 @@
 ---
-ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
-ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.date: 03/29/2019
+ms.openlocfilehash: 4e07ecf777f1361e21343b7b80f59ad9c5e86b3e
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57987804"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653404"
 ---
 # <a name="tabbed-conceptual"></a>选项卡式概念
 
