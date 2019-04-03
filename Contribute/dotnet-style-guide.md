@@ -2,12 +2,12 @@
 title: 适用于 .NET 文章的模板和速查表
 description: 本文包含一个便捷的模板，可用于针对 .NET 文档存储库创建新文章
 ms.date: 11/07/2018
-ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 9b57abd96093940c96f90a4a01b9f81eae063ffb
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712915"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653611"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>适用于 .NET 文档的元数据和 Markdown 模板
 
@@ -132,7 +132,7 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 ```
 
 * `-<language>`（是可选的，但建议采用）
-  * 要引用的代码片段的语言。 有关支持值的列表，请参阅[支持的语言](#supported-languages)。
+  * 要引用的代码片段的语言。
 
 * `<name>`（可选）
   * 代码片段的名称。 这不会对输出 HTML 产生影响，但可用于增强 Markdown 源的可读性。
