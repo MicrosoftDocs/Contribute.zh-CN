@@ -4,13 +4,18 @@ description: 本文介绍参与 Microsoft 文档站点 docs.microsoft.com 的方
 author: billwagner
 ms.author: wiwagn
 ms.date: 02/19/2019
+ms.openlocfilehash: 9b091f864f5191c9f7a00900ec11a4a1cffdb698
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653496"
 ---
-
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 参与者指南概述
 
 欢迎查看 [docs.microsoft.com](https://docs.microsoft.com) (Docs) 参与者指南！
 
-一些 Microsoft 文档集是开放源代码，托管在 GitHub 上。 一些文档集不是完全开放源代码，但有许多文档集有面向公众的存储库，你在其中受邀发出拉取请求。 这种模式简化并改善了产品工程师、内容团队和我们的客户之间的通信。 开放式工作有以下几点好处：
+一些 Microsoft 文档集是开放源代码，托管在 GitHub 上。 并非所有文档集都是完全开放源代码，但有许多文档集有面向公众的存储库，可在其中通过拉取请求进行建议的更改。 这种开放源代码方法简化了产品工程师、内容团队和客户之间的沟通流程，并相应地提高效率，它还具有其他优势：
 
 - 开源存储库以公开方式计划，通过反馈得知哪些文档是最需要的。
 - 开源存储库以公开方式评审，在我们首个版本中发布最具帮助意义的内容。
@@ -72,7 +77,7 @@ GitHub 编辑界面会响应你在存储库上的权限。 前面的图片适用
 
 许多 Microsoft 文档页的底部都有“反馈”部分，可以单击此部分来提供“产品反馈”或“内容反馈”，以跟踪相应文章专属问题。
 
-通过问题可以开始就所需的内容展开对话。 内容团队将对这些问题作出回应，同时提议我们可以添加的内容，并征求你的意见。 当我们创建草稿时，会请求你[对拉取请求进行评审](#review-open-PRs)。
+通过问题可以开始就所需的内容展开对话。 内容团队将对这些问题作出回应，同时提议我们可以添加的内容，并征求你的意见。 当我们创建草稿时，会请求你[对拉取请求进行评审](#review-open-prs)。
 
 ## <a name="get-more-involved"></a>参与更多内容
 

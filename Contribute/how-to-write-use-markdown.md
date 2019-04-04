@@ -1,19 +1,18 @@
 ---
 title: 如何使用 Markdown 撰写 Docs
 description: 本文提供用于撰写 docs.microsoft.com 文章的 Markdown 语言的基础知识和参考信息。
-ms.date: 01/29/2019
-ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.date: 03/26/2019
+ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887289"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637474"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 撰写 Docs
 
-[Docs.microsoft.com](http://docs.microsoft.com) 文章采用名为 [Markdown](https://daringfireball.net/projects/markdown/) 的轻型标记语言撰写，这种语言可读性强且简单易学。 正因为如此，Markdown 已迅速成为行业标准。
+[Docs.microsoft.com](http://docs.microsoft.com) 文章采用名为 [Markdown](https://daringfireball.net/projects/markdown/) 的轻型标记语言撰写，这种语言可读性强且简单易学。 正因为如此，Markdown 已迅速成为行业标准。 Docs 站点使用 Markdown 的 [Markdig 风格](#markdown-flavor)。
 
-docs.microsoft.com 站点后端使用开放发布服务 (OPS)，支持通过 [Markdig](https://github.com/lunet-io/markdig) 解析的兼容 [CommonMark](https://commonmark.org/) 的 Markdown，并且还支持 [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/)。 这些 Markdown 风格大多与 [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 兼容，因为大多数 docs 存储在 GitHub 中，并可以在 GitHub 中进行编辑。 通过 Markdown 扩展添加一些功能。
 
 ## <a name="markdown-basics"></a>Markdown 基础知识
 
@@ -162,7 +161,6 @@ This is text is both ***bold and italic***.
 
 有关创建表格的详细信息，请参阅：
 
-- Markdig [表格换行功能](#table-wrapping)，有助于设置宽表格的格式。
 - GitHub 的[使用表格整理信息](https://help.github.com/articles/organizing-information-with-tables/)。
 - [Markdown 表格生成器](https://www.tablesgenerator.com/markdown_tables) Web 应用。
 - [Adam Pritchard 的 Markdown 备忘单](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)。
@@ -207,6 +205,7 @@ Markdown 不仅支持将代码片段内联在某个句子中，还支持将它�
 |AzCopy|azcopy|
 |Azure CLI|azurecli|
 |Azure PowerShell|azurepowershell|
+|Bash|bash|
 |C++|cpp|
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
@@ -430,6 +429,10 @@ Markdig 支持通过代码片段扩展以一种高级方式将代码加入文章
 通常使用尖括号来表示占位符。 在文本（而不是代码）中执行此操作时，必须对尖括号进行编码。 否则，Markdown 会认为它们是一个 HTML 标记。
 
 例如，将 `<script name>` 编码为 `&lt;script name&gt;`
+
+## <a name="markdown-flavor"></a>Markdown 风格
+
+docs.microsoft.com 站点后端使用开放发布服务 (OPS)，支持通过 [Markdig](https://github.com/lunet-io/markdig) 分析引擎分析的 [CommonMark](https://commonmark.org/) 兼容 Markdown。 Markdown 风格大多与 [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 兼容，因为大多数 docs 存储在 GitHub 中，并可以在 GitHub 中进行编辑。 通过 Markdown 扩展添加一些功能。
 
 ## <a name="see-also"></a>另请参阅：
 
