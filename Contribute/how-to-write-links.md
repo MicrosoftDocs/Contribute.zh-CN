@@ -4,17 +4,17 @@ description: 本文指导如何在 docs.microsoft.com 中创建内容链接。
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: 9dc1b6dc2ac19b8f28a5a137817245f9a8c34eaf
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.openlocfilehash: 464c6b2ae8976252828d73390f9cbeea67f4e3ce
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887243"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637543"
 ---
 # <a name="using-links-in-documentation"></a>在文档中使用链接
 本文介绍如何使用 docs.microsoft.com 上托管页面的超链接。 通过几种不同的约定，便可轻松地将链接添加到 markdown。 链接将用户指向相同页面中的内容、其他相邻页面或外部站点和 URL。
 
-docs.microsoft.com 站点后端使用开放发布服务 (OPS)，支持通过 [Markdig](https://github.com/lunet-io/markdig) 解析的兼容 [CommonMark](https://commonmark.org/) 的 Markdown，并且还支持 [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/)。 这些 Markdown 风格大多与 [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 兼容，因为大多数 docs 存储在 GitHub 中，并可以在 GitHub 中进行编辑。 通过 Markdown 扩展添加一些功能。
+docs.microsoft.com 站点后端使用开放发布服务 (OPS)，支持通过 [Markdig](https://github.com/lunet-io/markdig) 分析引擎分析的 [CommonMark](https://commonmark.org/) 兼容 Markdown。 Markdown 风格大多与 [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 兼容，因为大多数 docs 存储在 GitHub 中，并可以在 GitHub 中进行编辑。 通过 Markdown 扩展添加一些功能。
 
 > [!IMPORTANT]
 > 只要目标支持（绝大多数都应支持），所有链接均必须是安全的（`https` 与 `http`）。
