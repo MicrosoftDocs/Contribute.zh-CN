@@ -15,13 +15,13 @@ ms.locfileid: "58653496"
 
 欢迎查看 [docs.microsoft.com](https://docs.microsoft.com) (Docs) 参与者指南！
 
-一些 Microsoft 文档集是开放源代码，托管在 GitHub 上。 并非所有文档集都是完全开放源代码，但有许多文档集有面向公众的存储库，可在其中通过拉取请求进行建议的更改。 这种开放源代码方法简化了产品工程师、内容团队和客户之间的沟通流程，并相应地提高效率，它还具有其他优势：
+一些 Microsoft 文档集是开放源代码，托管在 GitHub 上的。 虽然并非所有文档集都是完全开放源代码，但有许多文档集有面向公众的存储库，可在其中通过拉取请求提交建议的更改。 这种开放源代码方法简化了产品工程师、内容团队和客户之间的沟通流程，并相应地提高效率，它还具有其他优势：
 
 - 开源存储库以公开方式计划，通过反馈得知哪些文档是最需要的。
 - 开源存储库以公开方式评审，在我们首个版本中发布最具帮助意义的内容。
 - 开源存储库以公开方式更新，让持续改进内容变得更加方便。
 
-[docs.microsoft.com](https://docs.microsoft.com) 上的用户体验直接集成 [GitHub](https://github.com) 工作流，操作更简单。 你可以从[编辑正在查看的文档](#quick-edits-to-existing-documents)开始， 或通过[查看新主题](#review-open-prs)或[创建质量问题](#create-quality-issues)来提供帮助。
+[docs.microsoft.com](https://docs.microsoft.com) 上的用户体验直接集成了 [GitHub](https://github.com) 工作流使操作更简单。 你可以从[编辑正在查看的文档](#quick-edits-to-existing-documents)开始， 或通过[查看新主题](#review-open-prs)或[创建质量问题](#create-quality-issues)来提供帮助。
 
 > [!IMPORTANT]
 > 发布到 docs.microsoft.com 的所有仓库均遵循 [Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)或 [.NET 基础行为准则](https://dotnetfoundation.org/code-of-conduct)。 有关详细信息，请参阅[行为准则常见问题解答](https://opensource.microsoft.com/codeofconduct/faq/)。 或如有任何疑问或意见，请联系 [opencode@microsoft.com](mailto:opencode@microsoft.com) 或 [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org)。<br>
