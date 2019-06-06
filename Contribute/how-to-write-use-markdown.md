@@ -2,12 +2,12 @@
 title: 如何使用 Markdown 撰写 Docs
 description: 本文提供用于撰写 docs.microsoft.com 文章的 Markdown 语言的基础知识和参考信息。
 ms.date: 03/26/2019
-ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: 9fcd76e6103761465815784e4bf24e7042fb9f34
+ms.sourcegitcommit: 5f7212a091e9fc4e9cd1320fdfa8efaff51384c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637474"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373109"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 撰写 Docs
 
@@ -29,7 +29,7 @@ ms.locfileid: "58637474"
 
 应使用 atx 样式完成标题，即在行的开头使用 1-6 个哈希字符 (#) 指示标题，对应 HTML 标题级别 H1 到 H6。 上述示例使用的是一级到四级的标题。
 
-主题中只能有一个一级标题 (H1)，将显示为页面内标题。
+主题中只能有一个一级标题 (H1)，将显示为页面内标题  。
 
 如果标题以 `#` 字符结尾，则需要在末尾添加额外的 `#` 字符，使标题正确呈现。 例如，`# Async Programming in F# #`。
 
@@ -37,13 +37,13 @@ ms.locfileid: "58637474"
 
 ### <a name="bold-and-italic-text"></a>粗体和斜体文本
 
-要将文本设置为粗体格式，请用两个星号括住文本：
+要将文本设置为粗体格式，请用两个星号括住文本  ：
 
 ```markdown
 This text is **bold**.
 ```
 
-要将文本设置为斜体格式，请用一个星号括住文本：
+要将文本设置为斜体格式，请用一个星号括住文本  ：
 
 ```markdown
 This text is *italic*.
