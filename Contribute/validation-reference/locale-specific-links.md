@@ -2,12 +2,13 @@
 author: meganbradley
 ms.author: mbradley
 ms.date: 03/29/2019
-ms.openlocfilehash: a3b383021046412620c616882b19cb06f4dc59f8
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+title: 特定于区域设置的链接
+ms.openlocfilehash: f42a26da45b48972bfc595cb26c67ab0acfe8603
+ms.sourcegitcommit: 1e53d17639277bebd89b2e7cabeb45bdad526354
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653542"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66841250"
 ---
 # <a name="locale-specific-links"></a>特定于区域设置的链接
 
