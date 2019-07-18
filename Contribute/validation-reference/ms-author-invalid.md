@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/28/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 6d6c77b9b378865913e2055abf2b64ccba8ca482
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: 1ae01c34ea60cec30698d7e11264d05c3f398d1c
+ms.sourcegitcommit: 1311ccbbf38312bfe6947082870bc9e90d38c986
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58636715"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791559"
 ---
 # <a name="ms-author-invalid"></a>ms-author-invalid
 
@@ -23,7 +23,7 @@ ms.locfileid: "58636715"
 
 ## <a name="resolution"></a>解决方法
 
-验证 `ms.author` 值是有效的 Microsoft 别名。 如果别名是通讯组列表，还必须位于允许列表中。
+验证 `ms.author` 值是当前作者的 Microsoft 有效别名。 如果别名是通讯组列表，还必须位于允许列表中。
 
 可以在[此 Microsoft 内部网站](https://docsmetadatatool.azurewebsites.net/allowlists)上找到 DL 的有效值。
 

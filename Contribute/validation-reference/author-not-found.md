@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/26/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 9e48cafc0ebfce7c4c32615356431aa651763c56
-ms.sourcegitcommit: 4053577bd0478d711257a283ee661d618b49c2df
+ms.openlocfilehash: af4145b4f6be07f07a22842e6ded279e8390b054
+ms.sourcegitcommit: 1311ccbbf38312bfe6947082870bc9e90d38c986
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57427232"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791566"
 ---
 # <a name="author-not-found"></a>author-not-found
 
@@ -21,7 +21,9 @@ ms.locfileid: "57427232"
 
 ## <a name="resolution"></a>解决方法
 
-添加有效的 GitHub ID 作为 `author` 值。
+将当前作者的 GitHub ID 添加为 `author` 值。
+
+注意，如果所有权发生变更，则应该是此文章的当前作者，而不是原作者  。
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
