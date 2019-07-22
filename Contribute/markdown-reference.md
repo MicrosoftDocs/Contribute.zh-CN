@@ -45,19 +45,19 @@ Docs 使用 Markdig Markdown 引擎。 可在 [https://babelmark.github.io/](htt
 这些警报在 docs.microsoft.com 上如下所示：
 
 > [!NOTE]
-> 用户即使略读也应注意到的信息。
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> 帮助用户取得更佳成果的可选信息。
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> 用户成功必需的基本信息。
+> Essential information required for user success.
 
 > [!CAUTION]
-> 操作可能造成的消极后果。
+> Negative potential consequences of an action.
 
 > [!WARNING]
-> 操作必然造成的危险后果。
+> Dangerous certain consequences of an action.
 
 ## <a name="code-snippets"></a>代码片段
 
@@ -124,7 +124,7 @@ Example:
 >
 > `[Microsoft](https://www.microsoft.com)`
 >
-> Not：
+> 而不是：
 >
 > `[Microsoft](https://www.microsoft.com/en-us/)`
 
@@ -147,7 +147,7 @@ Example:
 >
 > `[link text](../../folder/filename.md)`
 >
-> Not：
+> 而不是：
 >
 > `[link text](../../folder/filename)`
 
@@ -190,7 +190,7 @@ Example:
 
 ### <a name="explicit-anchor-links"></a>显式定位标记链接
 
-使用 `<a>` HTML 标记的显式定位标记链接并非必需，也不推荐使用，但在中心和登录页面中除外。 在常规 Markdown 文件中使用上述书签。 对于中心和登录页面，使用如下所示的定位标记：
+使用 `<a>` HTML 标记的显式定位标记链接并非必需，也不推荐使用，但在中心和登录页面中除外  。 在常规 Markdown 文件中使用上述书签。 对于中心和登录页面，使用如下所示的定位标记：
 
 `## <a id="AnchorText"> </a>Header text` 或 `## <a name="AnchorText"> </a>Header text`
 
@@ -267,10 +267,10 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 这将呈现为：
 
-1. 这是
-1. 一个父级编号列表
-   1. 而这是
-   1. 一个嵌套编号列表
+1. This is
+1. a parent numbered list
+   1. and this is
+   1. a nested numbered list
 1. (fin)
 
 ### <a name="bulleted-list"></a>项目符号列表
@@ -287,11 +287,11 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 这将呈现为：
 
-- 这是
-- 一个父级项目符号列表
-  - 而这是
-  - 一个嵌套项目符号列表
-- 全部完成！
+- This is
+- a parent bulleted list
+  - and this is
+  - a nested bulleted list
+- All done!
 
 ### <a name="checklist"></a>清单
 
@@ -307,9 +307,9 @@ Using XREF may require some configuration. For more information, see XREF Servic
 此示例在 docs.microsoft.com 上呈现为：
 
 > [!div class="checklist"]
-> * 列表项目 1
-> * 列表项目 2
-> * 列表项目 3
+> * List item 1
+> * List item 2
+> * List item 3
 
 在文章开头或结尾使用清单，总结“将要学习的内容”或“所学内容”。 请勿在整篇文章中添加随机清单。
 <!-- is this guidance still accurate? -->
@@ -389,12 +389,12 @@ Using XREF may require some configuration. For more information, see XREF Servic
 ... 将呈现为：
 
 > [!div class="op_single_selector"]
-> - [通用 Windows](how-to-write-use-markdown.md)
+> - [Universal Windows](how-to-write-use-markdown.md)
 > - [Windows Phone](how-to-write-use-markdown.md)
 > - [iOS](how-to-write-use-markdown.md)
 > - [Android](how-to-write-use-markdown.md)
 > - [Kindle](how-to-write-use-markdown.md)
-> - [百度](how-to-write-use-markdown.md)
+> - [Baidu](how-to-write-use-markdown.md)
 > - [Xamarin.iOS](how-to-write-use-markdown.md)
 > - [Xamarin.Android](how-to-write-use-markdown.md)
 
@@ -419,8 +419,8 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > [!div class="op_multi_selector" title1="Platform" title2="Backend"]
 > - [(iOS | .NET)](how-to-write-workflows-major.md)
 > - [(iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows 通用 C# | .NET)](how-to-write-workflows-major.md)
-> - [(Windows 通用 C# | Javascript)](how-to-write-workflows-major.md)
+> - [(Windows universal C# | .NET)](how-to-write-workflows-major.md)
+> - [(Windows universal C# | Javascript)](how-to-write-workflows-major.md)
 > - [(Windows Phone | .NET)](how-to-write-workflows-major.md)
 > - [(Windows Phone | Javascript)](how-to-write-workflows-major.md)
 > - [(Android | .NET)](how-to-write-workflows-major.md)
@@ -428,7 +428,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
 > - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
 
-## <a name="tables"></a>表格
+## <a name="tables"></a>表
 
 使用 Markdown 创建表的最简单方法是借助垂直线和行。 若要创建带标头的标准表格，请在第一行后使用虚线：
 
@@ -441,10 +441,10 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 这将呈现为：
 
-|这是   |简单的   |表格标头|
+|This is   |a simple   |table header|
 |----------|-----------|------------|
-|表格     |数据       |此处        |
-|它不需要|确实   |完美对齐！||
+|table     |data       |here        |
+|it doesn't|actually   |have to line up nicely!||
 
 此外，还可创建不含标头的表格。 例如，创建多列列表：
 
@@ -459,8 +459,8 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 |   |   |
 | - | - |
-| 此 | 表格 |
-| 没有 | 标头 |
+| This | table |
+| has no | header |
 
 可使用冒号来对齐列：
 
@@ -476,9 +476,9 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 |                  |
 |------------------|
-|    右对齐:|
-|:左对齐     |
-|:居中:|
+|    right aligned:|
+|:left aligned     |
+|:centered        :|
 
 > [!TIP]
 > 使用 VS Code 的 Docs 创作扩展，可轻松添加基本 Markdown 表格！
@@ -578,7 +578,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 应按照以下流程上传任何新视频：
 
-1. 加入 IDWEB 上的 docs_video_users 组。
+1. 加入 IDWEB 上的 docs_video_users 组  。
 1. 转到 https://aka.ms/VideoUploadRequest 并填写视频的详细信息。 需填写以下内容（请注意各项内容均非公开所见）：
     1. 视频标题。
     1. 与视频相关的产品/服务列表。
@@ -586,7 +586,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
     1. 视频 MP4 文件的链接（如果没有用于放置该文件的位置，可暂时将其放于此处：`\\scratch2\scratch\apex`）。 MP4 文件应为 720p 或更高。
     1. 视频说明。
 1. 提交（保存）该项。
-1. 视频将在两个工作日内上传。 嵌入所需的链接将放置于工作项内，并将在解析后返回给你。
+1. 视频将在两个工作日内上传。 嵌入所需的链接将放置于工作项内，并将在解析后返回给你  。
 1. 获取视频链接后，关闭工作项。
 1. 然后，可使用以下语法，将视频链接添加到文章中：
 
