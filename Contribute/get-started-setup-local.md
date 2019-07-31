@@ -4,12 +4,12 @@ description: 本文介绍创建本地 Git 存储库和提供文档的指南，�
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 5373bf34399105c15caabe0abdc1ea0692c46a4a
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 1053900b0af5a0ea3dec99ccd27114f16b828406
+ms.sourcegitcommit: c6a5a715af1b915ecd4ef64d40f7d18c6035c858
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609490"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68669903"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>设置本地 Git 文档存储库
 
@@ -24,7 +24,7 @@ ms.locfileid: "51609490"
 > * 配置上游远程值
 
 > [!IMPORTANT]
-> 如果要对文章进行次要更改，无需完成本文中的相关步骤。 可直接转到[快速更改工作流](index.md#quick-edits-to-existing-documents)。
+> 如果要对文章进行次要更改，无需完成本文中的相关步骤  。 可直接转到[快速更改工作流](index.md#quick-edits-to-existing-documents)。
 >
 
 ## <a name="overview"></a>概述
@@ -41,7 +41,7 @@ ms.locfileid: "51609490"
 
 在 [docs.microsoft.com](https://docs.microsoft.com) 上托管的文档驻留在 [github.com](https://www.github.com) 上的多个不同存储库中。
 
-1. 如果不确定要使用的存储库，请使用 Web 浏览器访问 [docs.microsoft.com](https://docs.microsoft.com) 上的文章。 选择文章右上方的“编辑”链接（铅笔图标）。
+1. 如果不确定要使用的存储库，请使用 Web 浏览器访问 [docs.microsoft.com](https://docs.microsoft.com) 上的文章。 选择文章右上方的“编辑”  链接（铅笔图标）。
 
    ![单击“编辑”来确定存储库和文件位置。](media/index/edit-article.png)
 
@@ -55,13 +55,14 @@ ms.locfileid: "51609490"
    - Visual Studio 文档 [https://github.com/MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs)
    - .NET 文档 [https://github.com/dotnet/docs](https://github.com/dotnet/docs)
    - Azure .Net SDK 文档 [https://github.com/azure/azure-docs-sdk-dotnet](https://github.com/azure/azure-docs-sdk-dotnet)
+   - ConfigMgr 文档 [https://github.com/MicrosoftDocs/SCCMdocs ] (https://github.com/MicrosoftDocs/SCCMdocs/)
 
 ## <a name="fork-the-repository"></a>为存储库创建分支
 使用合适的存储库，通过 GitHub 网站，将存储库的一个分支创建到自己的 GitHub 帐户中。
 
-由于所有主文档存储库均提供只读访问权限，因此需具备个人分支。 要进行更改，必须将[拉取请求](git-github-fundamentals.md#pull-requests)从自己的分支提交到存储库。 为推进此过程，首先需要自己拥有一个存储库副本并对其具有写入权限。 GitHub 分支就很适合该用途。
+由于所有主文档存储库均提供只读访问权限，因此需具备个人分支。 要进行更改，必须将[拉取请求](git-github-fundamentals.md#pull-requests)从自己的分支提交到存储库。 为推进此过程，首先需要自己拥有一个存储库副本并对其具有写入权限。 GitHub 分支就很适合该用途  。
 
-1. 转到主存储库的 GitHub 页面，然后单击右上角的“创建分支”按钮。
+1. 转到主存储库的 GitHub 页面，然后单击右上角的“创建分支”按钮  。
 
    ![GitHub 个人资料示例](./media/contribute-get-started-setup-local/fork.png)
 
@@ -89,19 +90,19 @@ ms.locfileid: "51609490"
 
 ## <a name="create-a-local-clone"></a>创建本地克隆
 
-使用 Git Bash，准备运行 clone 命令，将存储库（分支）副本下载到当前目录上的设备。 
+使用 Git Bash，准备运行 clone 命令，将存储库（分支）副本下载到当前目录上的设备  。 
 
 ### <a name="authenticate-by-using-git-credential-manager"></a>使用 Git 凭据管理器进行身份验证
 如果安装了适用于 Windows 的 Git 的最新版本并接受了默认安装，则默认启用 Git 凭据管理器。 Git 凭据管理器使身份验证更加简便，因为在使用 GitHub 重新建立经过身份验证的连接和远程时，不需要撤回个人访问令牌。
 
-1. 通过提供存储库名称来运行 clone 命令。 克隆在本地计算机上下载（克隆）分支存储库。 
+1. 通过提供存储库名称来运行 clone 命令  。 克隆在本地计算机上下载（克隆）分支存储库。 
 
     > [!Tip]
-    > 可以通过 GitHub UI 中的“克隆或下载”按钮获取分支的克隆命令的 GitHub URL：
+    > 可以通过 GitHub UI 中的“克隆或下载”按钮获取分支的克隆命令的 GitHub URL  ：
     >
     > ![克隆或下载](./media/contribute-get-started-setup-local/clone-or-download.png)
 
-    确保在克隆期间指定分支的路径，而不是在其中创建分支的主存储库。 否则，无法提供更改。 通过个人 GitHub 用户帐户引用分支，例如 `github.com/<github-username>/<repo>`。
+    确保在克隆期间指定分支的路径，而不是在其中创建分支的主存储库  。 否则，无法提供更改。 通过个人 GitHub 用户帐户引用分支，例如 `github.com/<github-username>/<repo>`。
 
     ```bash
     git clone https://github.com/<github-username>/<repo>.git
@@ -127,16 +128,16 @@ ms.locfileid: "51609490"
 4. 克隆命令运行分支的存储库文件副本并将其下载到本地磁盘上的新文件夹中。 在当前文件夹中创建新的文件夹。 这可能需要花费几分钟，具体取决于存储库大小。 可以浏览文件夹，查看完成后的结构。
 
 ## <a name="configure-remote-upstream"></a>配置远程上游
-克隆存储库后，为名为“上游”的主存储库设置只读的远程连接。 利用此上游 URL，使本地存储库与其他人所做的最新更改保持同步。 git remote 命令用于设值配置值。 使用 fetch 命令从上游存储库刷新分支信息。
+克隆存储库后，为名为“上游”的主存储库设置只读的远程连接  。 利用此上游 URL，使本地存储库与其他人所做的最新更改保持同步。 git remote 命令用于设值配置值  。 使用 fetch 命令从上游存储库刷新分支信息  。
 
-1. 如果使用的是 Git 凭据管理器，请使用以下命令。 替换 \<repo\> 和 \<organization\> 占位符。
+1. 如果使用的是 Git 凭据管理器，请使用以下命令  。 替换 \<repo\> 和 \<organization\> 占位符。
    ```bash
    cd <repo>
    git remote add upstream https://github.com/<organization>/<repo>.git
    git fetch upstream
    ```
 
-2. 查看配置值并确认 URL 是正确的。 确保“源”URL 指向个人分支。 确保“上游”URL 指向主存储库，例如 MicrosoftDocs 或 Azure。 
+2. 查看配置值并确认 URL 是正确的。 确保“源”URL 指向个人分支  。 确保“上游”URL 指向主存储库，例如 MicrosoftDocs 或 Azure  。 
    ```bash
    git remote -v 
    ```
