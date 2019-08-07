@@ -6,18 +6,18 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 6/5/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 00461768491c25b9bafaff6b117a356d9e291e22
-ms.sourcegitcommit: 412ce4ab23e758d41947043f1463e96595ba3bfe
+ms.openlocfilehash: bb58c472371c429002cf5b35b7d6157ffb28b5cd
+ms.sourcegitcommit: 495d49f10df51a8897687940aa653e906c48c2a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033289"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68817415"
 ---
 # <a name="validation-timeout"></a>validation-timeout
 
 ## <a name="warning"></a>警告
 
-`The call to the validation service timed out and validation was not completed. This happens when there's an issue with the service and continuing to retry the call could cause build delays. You might have content issues that were not reported. To retry validation, close and re-open your PR, or rebuild your branch via Docs Portal (requires admin permissions). If you need admin help or  If you continue to see this message, file an issue via https://SiteHelp.`
+`The call to the validation service timed out and validation was not completed. This happens when there's an issue with the service and continuing to retry the call could cause build delays. You might have content issues that were not reported. To retry validation, close and re-open your PR, or rebuild your branch via Docs Portal (requires admin permissions). If you need admin help or if you continue to see this message, file an issue via https://SiteHelp.`
 
 有时，验证服务中的暂时性问题（例如，服务器处于错误状态）会阻止 Docs 生成成功调用该服务。 多次尝试后，调用超时并取消验证，以避免生成延迟和阻塞生成管道。
 
