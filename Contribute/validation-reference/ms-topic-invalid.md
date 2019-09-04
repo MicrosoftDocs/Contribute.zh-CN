@@ -6,18 +6,16 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/19/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 2940a2cfca292c9c77ba267b48c344160cc449e4
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: 411e5a9cb87b847be3d8e013bdea66fda9033acd
+ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58636853"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236152"
 ---
 # <a name="ms-topic-invalid"></a>ms-topic-invalid
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>建议
+## <a name="warning"></a>警告
 
 `Invalid value for ms.topic: '{value}'.`
 

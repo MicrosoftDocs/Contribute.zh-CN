@@ -6,18 +6,16 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/19/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 479472abfb771ae5b4dc77cab2bf94633f3ead5c
-ms.sourcegitcommit: fdaff82fec769f4ce9153ff1e0f968d3ea97a76d
+ms.openlocfilehash: 515a8cd76cbd3d9bd117b1d0d59492f4a77bea4c
+ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899650"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236469"
 ---
 # <a name="multiple-values"></a>multiple-values
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>建议
+## <a name="warning"></a>警告
 
 `Single-valued attribute {attribute} has multiple values. Remove additional values.`
 

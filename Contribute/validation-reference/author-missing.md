@@ -6,18 +6,16 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 12/12/2018
 ms.prod: non-product-specific
-ms.openlocfilehash: 33d704d64f4a3a1d96792bb01b403aefb3143eb8
-ms.sourcegitcommit: 1311ccbbf38312bfe6947082870bc9e90d38c986
+ms.openlocfilehash: c10bf7936968f876d983c77e64c2a8cb809baae2
+ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791506"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236318"
 ---
 # <a name="author-missing"></a>author-missing
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>建议
+## <a name="warning"></a>警告
 
 `Missing attribute: author. Add the current author's GitHub ID.`
 

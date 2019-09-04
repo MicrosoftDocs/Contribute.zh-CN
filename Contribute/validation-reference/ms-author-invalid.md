@@ -6,18 +6,16 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/28/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 1ae01c34ea60cec30698d7e11264d05c3f398d1c
-ms.sourcegitcommit: 1311ccbbf38312bfe6947082870bc9e90d38c986
+ms.openlocfilehash: 25428f93eaa7d36a5bbe35d77434ef33972e8944
+ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791559"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236536"
 ---
 # <a name="ms-author-invalid"></a>ms-author-invalid
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>建议
+## <a name="warning"></a>警告
 
 `Invalid value for ms.author: '{value}' is not a valid Microsoft alias, or is not an allowed distribution list.`
 

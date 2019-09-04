@@ -6,18 +6,16 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 22b903c2a670124c272fc5b1e26088c516ded306
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: 2f34a0e510d7d006c598ae163217a117a72f1de2
+ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637405"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236172"
 ---
 # <a name="ms-date-invalid"></a>ms-date-invalid
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>建议
+## <a name="warning"></a>警告
 
 `Invalid value for ms.date: '{value}'. Must be a date in format MM/DD/YYYY.`
 
