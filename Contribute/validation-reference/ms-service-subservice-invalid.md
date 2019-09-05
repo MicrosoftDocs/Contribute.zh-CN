@@ -6,18 +6,16 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 3f165d16eed7e937c7db912a9c5e0ee0809e3031
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: a6059d592212b271780344a086ee68c7133e15cd
+ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637290"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236525"
 ---
 # <a name="ms-service-and-subservice-invalid"></a>ms-service-and-subservice-invalid
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>建议
+## <a name="warning"></a>警告
 
 `Invalid value for ms.service: '{value}'.`
 
@@ -29,7 +27,7 @@ ms.locfileid: "58637290"
 
 请确认文章的 `ms.service` 值正确无误。 然后选择有效的 `ms.subservice` 值。
 
-可以在[此 Microsoft 内部网站](https://docsmetadatatool.azurewebsites.net/allowlists)上找到有效值。
+可以在[此 Microsoft 内部网站](https://docsmetadatatool.azurewebsites.net/allowlists)上找到有效值。 要请求新值，请按照[此过程](https://review.docs.microsoft.com/help/contribute/metadata-changes?branch=master)操作。
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
