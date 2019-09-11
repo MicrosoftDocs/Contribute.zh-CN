@@ -4,14 +4,14 @@ description: 有关 Docs 生成问题 author-missin 的解释和解决方案。
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 12/12/2018
+ms.date: 09/10/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: c10bf7936968f876d983c77e64c2a8cb809baae2
-ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
+ms.openlocfilehash: 904ec2ad495945d882e581a240f6a72ca650c37e
+ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70236318"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70848584"
 ---
 # <a name="author-missing"></a>author-missing
 

@@ -6,16 +6,18 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 12/12/2018
 ms.prod: non-product-specific
-ms.openlocfilehash: bb07235f7cd1ba6d45418c48a4190255bdd9a428
-ms.sourcegitcommit: 4053577bd0478d711257a283ee661d618b49c2df
+ms.openlocfilehash: 691d72a3aee9204ba3fe55a398e954c7719f3680
+ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57427173"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70848553"
 ---
 # <a name="h1-empty"></a>h1-empty
 
-## <a name="warning"></a>警告
+[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
+
+## <a name="suggestion"></a>建议
 
 `H1 is required. Add content to your top-level heading.`
 

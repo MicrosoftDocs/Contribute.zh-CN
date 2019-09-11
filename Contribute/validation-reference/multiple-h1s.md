@@ -6,16 +6,18 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 12/12/2018
 ms.prod: non-product-specific
-ms.openlocfilehash: 55ce6260cb4d1e09f63e0540528576ed3fa165f8
-ms.sourcegitcommit: 4053577bd0478d711257a283ee661d618b49c2df
+ms.openlocfilehash: a1006d9d75ebd53751c9ab81aa016d67d6e5df57
+ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57427237"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70848600"
 ---
 # <a name="multiple-h1"></a>multiple-h1
 
-## <a name="warning"></a>警告
+[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
+
+## <a name="suggestion"></a>建议
 
 `Multiple H1s are not allowed. You can only have one top-level heading.`
 
