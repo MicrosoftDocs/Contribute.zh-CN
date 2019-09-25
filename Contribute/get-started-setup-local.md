@@ -4,12 +4,12 @@ description: 本文介绍创建本地 Git 存储库和提供文档的指南，�
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 1053900b0af5a0ea3dec99ccd27114f16b828406
-ms.sourcegitcommit: c6a5a715af1b915ecd4ef64d40f7d18c6035c858
+ms.openlocfilehash: 285c25fe0e5df067ceeaa5a42da1bad5533d2c84
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68669903"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247394"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>设置本地 Git 文档存储库
 
@@ -55,7 +55,7 @@ ms.locfileid: "68669903"
    - Visual Studio 文档 [https://github.com/MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs)
    - .NET 文档 [https://github.com/dotnet/docs](https://github.com/dotnet/docs)
    - Azure .Net SDK 文档 [https://github.com/azure/azure-docs-sdk-dotnet](https://github.com/azure/azure-docs-sdk-dotnet)
-   - ConfigMgr 文档 [https://github.com/MicrosoftDocs/SCCMdocs ] (https://github.com/MicrosoftDocs/SCCMdocs/)
+   - ConfigMgr 文档 [https://github.com/MicrosoftDocs/SCCMdocs](https://github.com/MicrosoftDocs/SCCMdocs/)
 
 ## <a name="fork-the-repository"></a>为存储库创建分支
 使用合适的存储库，通过 GitHub 网站，将存储库的一个分支创建到自己的 GitHub 帐户中。

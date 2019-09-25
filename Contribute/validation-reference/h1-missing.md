@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 12/12/2018
 ms.prod: non-product-specific
-ms.openlocfilehash: 677127d09349445bb80778dfb501d7d4294ea46b
-ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
+ms.openlocfilehash: 2d0b766bba5b5ba32bff68f7ac185ab639fc7557
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70848465"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247426"
 ---
 # <a name="h1-missing"></a>h1-missing
 
@@ -36,7 +36,9 @@ ms.author: mbradley
 ```
 
 > [!NOTE]
-> 此规则不适用于包含的文件。 如果在包含的文件中收到 H1 警告，则很可能需要将包含的文件移动到 `includes` 文件夹。 `includes` 文件夹可以是文件路径中的任何级别。 根据路径，Docs 生成会将该文件识别为包含文件，并且不会运行 H1 验证。
+> 此规则不适用于包含的文件。 如果在包含的文件中收到 H1 结果，则很可能需要将包含的文件移动到 `includes` 文件夹。 `includes` 文件夹可以是文件路径中的任何级别。 根据路径，Docs 生成会将该文件识别为包含文件，并且不会运行 H1 验证。
+>
+> 父文件中缺少 H1 的常见原因是误用了包含的文件：H1 在包含的文件中，而不在父文件中。 不允许这样做，因为在包含的文件中使用 H1 要么意味着父文件中存在重复的 H1，要么包含的文件仅使用了一次。 H1 在内容集中应唯一，并且包含的文件仅应用于在多个文件之间共享内容。 如果由于 H1 在包含的文件中而获得 `h1-missing` 结果，则解决方案是将 H1 和所有包含的内容（如果包含的文件仅使用一次）移动到父文件中。 有关 Docs 中包含的文件的详细信息，请参阅 Microsoft 内部文章[在文章中包含可重用的内容](https://review.docs.microsoft.com/en-us/help/contribute/includes-best-practices?branch=master)。
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
