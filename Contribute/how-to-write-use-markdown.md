@@ -2,16 +2,16 @@
 title: 如何使用 Markdown 撰写 Docs
 description: 本文提供用于撰写 docs.microsoft.com 文章的 Markdown 语言的基础知识和参考信息。
 ms.date: 03/26/2019
-ms.openlocfilehash: 9fcd76e6103761465815784e4bf24e7042fb9f34
-ms.sourcegitcommit: 5f7212a091e9fc4e9cd1320fdfa8efaff51384c7
+ms.openlocfilehash: 7a42aa88bab65846ce54e2444387ac3a578779c0
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373109"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247347"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 撰写 Docs
 
-[Docs.microsoft.com](http://docs.microsoft.com) 文章采用名为 [Markdown](https://daringfireball.net/projects/markdown/) 的轻型标记语言撰写，这种语言可读性强且简单易学。 正因为如此，Markdown 已迅速成为行业标准。 Docs 站点使用 Markdown 的 [Markdig 风格](#markdown-flavor)。
+[Docs.microsoft.com](https://docs.microsoft.com) 文章采用名为 [Markdown](https://daringfireball.net/projects/markdown/) 的轻型标记语言撰写，这种语言可读性强且简单易学。 正因为如此，Markdown 已迅速成为行业标准。 Docs 站点使用 Markdown 的 [Markdig 风格](#markdown-flavor)。
 
 
 ## <a name="markdown-basics"></a>Markdown 基础知识

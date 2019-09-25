@@ -1,9 +1,18 @@
+---
+ms.openlocfilehash: 22a09e3b1c3fc3ef4b36eb2397e33df3a3e29ebe
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247373"
+---
 # <a name="legal-notices"></a>法律声明
+
 Microsoft 和任何参与者根据 [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode)（知识共享署名 4.0 国际公共许可）授予你使用此存储库中 Microsoft 文档和其他内容的许可证（请参阅[许可](LICENSE)文件），并根据 [MIT 许可](https://opensource.org/licenses/MIT)授予你使用此存储库中所有代码的许可证（请参阅[许可代码](LICENSE-CODE)文件）。
 
 Microsoft、Windows、Microsoft Azure 和/或本文档中引用的其他 Microsoft 产品和服务可能是 Microsoft 在美国和/或其他国家/地区的商标或注册商标。
 此项目的许可证不授予你使用任何 Microsoft 名称、徽标或商标的权利。
-可在 http://go.microsoft.com/fwlink/?LinkID=254653 找到 Microsoft 的通用商标指南。
+可在 https://go.microsoft.com/fwlink/?LinkID=254653 找到 Microsoft 的通用商标指南。
 
 可在 https://privacy.microsoft.com/ 找到隐私信息
 

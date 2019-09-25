@@ -2,12 +2,12 @@
 title: 参与 .NET 文档存储库撰写的流程
 description: 本文简要介绍如何参与撰写 .NET 文档存储库。 本文将介绍所用的存储库，整理内容的流程和用于管理代码示例和其他资产的策略。
 ms.date: 11/07/2018
-ms.openlocfilehash: 121f6c885ef6d292968e5bb3961cae8e9c22942b
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: a5429864efe56e2004ccfeac4443dc74fbf15dc3
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637497"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247321"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>参与 .NET 文档撰写的过程
 
@@ -26,7 +26,7 @@ ms.locfileid: "58637497"
 
 **步骤 1：** 对于小更改，请跳过此步骤。 如果有兴趣编写新内容或仔细修订现有内容，请创建描述你想做的事情的[问题](https://github.com/dotnet/docs/issues)。
 
-“Docs”文件夹中的内容组织成部分，在目录 (TOC) 中进行反映。 定义主题在 TOC 中所处的位置。 获取有关建议的反馈。
+“Docs”文件夹中的内容组织成部分，在目录 (TOC) 中进行反映  。 定义主题在 TOC 中所处的位置。 获取有关建议的反馈。
 
 -或-
 
@@ -50,7 +50,7 @@ ms.locfileid: "58637497"
 
 如果它是新主题，则可以使用此[模板文件](dotnet-style-guide.md)，作为起始点。 它包含编写准则，并且还解释每篇文章需要的元数据（例如，作者信息）。
 
-导航到对应针对步骤 1 中的文章确定的目录位置的文件夹。 该文件夹包含针对该部分中所有文章的 Markdown 文件。 如有必要，新建一个文件夹，放置存储内容的文件。 该部分的主要文章称为 index.md。 对于映像和其他静态资源，请在包含文章的文件夹中创建称为“media”的子文件夹（如果尚不存在）。 在“media”文件夹内，创建具有文章名称的子文件夹（索引文件除外）。 如有关[示例](#contributing-to-samples)的部分中所述，代码示例应位于 `dotnet/samples` 存储库中。
+导航到对应针对步骤 1 中的文章确定的目录位置的文件夹。 该文件夹包含针对该部分中所有文章的 Markdown 文件。 如有必要，新建一个文件夹，放置存储内容的文件。 该部分的主要文章称为 index.md  。 对于映像和其他静态资源，请在包含文章的文件夹中创建称为“media”的子文件夹（如果尚不存在）  。 在“media”文件夹内，创建具有文章名称的子文件夹（索引文件除外）  。 如有关[示例](#contributing-to-samples)的部分中所述，代码示例应位于 `dotnet/samples` 存储库中。
 
 请务必遵循适当的 Markdown 语法。 有关常见示例，请参阅[模板和标记速查表](dotnet-style-guide.md)。
 
@@ -93,29 +93,29 @@ ms.locfileid: "58637497"
 
 所有代码均位于 [dotnet/示例](https://github.com/dotnet/samples)存储库中。 我们正在努力构建一个模型，其中示例文件夹结构匹配文档文件夹结构。 所遵循的标准有：
 
-- 顶层“snippets”文件夹包含小型、重点示例的代码片段。
-- API 引用示例位于遵循此模式的文件夹中：snippets/\<>/api/\<namespace>/\<apiname>。
-- 其他顶层文件夹与文档存储库中的顶层文件夹匹配。 例如，文档存储库包含“machine-learning/tutorials”文件夹，并且机器学习教程的示例位于“samples/machine-learning/tutorials”文件夹中。
+- 顶层“snippets”文件夹包含小型、重点示例的代码片段  。
+- API 引用示例位于遵循此模式的文件夹中：snippets/\<>/api/\<namespace>/\<apiname>  。
+- 其他顶层文件夹与文档存储库中的顶层文件夹匹配  。 例如，文档存储库包含“machine-learning/tutorials”文件夹，并且机器学习教程的示例位于“samples/machine-learning/tutorials”文件夹中   。
 
-此外，核心和标准文件夹下的所有示例都应在 .NET Core 支持的所有平台上生成并运行。 CI 生成系统将强制执行该操作。 顶层“framework”文件夹包含仅在 Windows 上生成和验证的示例。
+此外，核心和标准文件夹下的所有示例都应在 .NET Core 支持的所有平台上生成并运行   。 CI 生成系统将强制执行该操作。 顶层“framework”文件夹包含仅在 Windows 上生成和验证的示例  。
 
 示例项目应在针对给定示例可能的最广泛的一组平台上生成和运行。 实际上，这表示在可能的位置生成基于 .NET Core 的控制台应用程序。 特定于 Web 或 UI 框架的示例应根据需要添加这些工具。 示例有 Web 应用程序、移动应用、WPF 或 WinForms 应用等。
 
 我们正在努力实现适用于所有代码的 CI 系统。 当对示例进行任何更新时，请确保每个更新都属于可生成项目。 理想情况下，还可添加针对示例正确性的测试。
 
-创建的每个完整示例都应包含 readme.md 文件。 此文件应包含有关示例的简短说明（一到两个段落）。 Readme.md 应告知读者通过浏览此示例，可以学到什么内容。 此外，readme.md 文件还应包含一个链接，指向 [.NET 文档站点](https://docs.microsoft.com/dotnet/welcome)上的实时文档。 若要确定存储库中给定文件映射到该站点的位置，请将存储库路径中的 `/docs` 替换为 `http://docs.microsoft.com/dotnet`。
+创建的每个完整示例都应包含 readme.md 文件  。 此文件应包含有关示例的简短说明（一到两个段落）。 Readme.md 应告知读者通过浏览此示例，可以学到什么内容  。 此外，readme.md 文件还应包含一个链接，指向 [.NET 文档站点](https://docs.microsoft.com/dotnet/welcome)上的实时文档  。 若要确定存储库中给定文件映射到该站点的位置，请将存储库路径中的 `/docs` 替换为 `https://docs.microsoft.com/dotnet`。
 
 此外，主题还将包含指向该示例的链接。 直接链接到 GitHub 上的示例文件夹。
 
 ### <a name="writing-a-new-snippet-or-sample"></a>编写新的代码片段或示例
 
-1. 示例必须属于可生成项目的一部分。 如果可能，应在 .NET Core 支持的所有平台上生成项目。 此情况的例外是演示平台特定功能或平台特定工具的示例。
+1. 示例必须属于可生成项目的一部分  。 如果可能，应在 .NET Core 支持的所有平台上生成项目。 此情况的例外是演示平台特定功能或平台特定工具的示例。
 
 2. 示例应符合 [corefx 编码样式](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md)，以保持一致性。
 
     - 此外，演示不需要初始化新对象的内容时，我们首选 `static` 方法，而不是实例方法。
 
-3. 示例应包括适当的异常处理。 它应处理可能在示例的上下文中引发的所有异常。 例如，当输入字符串以参数形式传递给方法时，调用 [Console.ReadLine](https://docs.microsoft.com/dotnet/api/system.console.readline) 方法以检索用户输入的示例应使用适当的异常处理。 同样，如果示例需要方法调用失败，则必须处理导致的异常。 请始终处理方法引发的特定异常，而不是基类异常，例如 [Exception](https://docs.microsoft.com/dotnet/api/system.exception) 或 [SystemException](https://docs.microsoft.com/dotnet/api/system.systemexception)。
+3. 示例应包括适当的异常处理  。 它应处理可能在示例的上下文中引发的所有异常。 例如，当输入字符串以参数形式传递给方法时，调用 [Console.ReadLine](https://docs.microsoft.com/dotnet/api/system.console.readline) 方法以检索用户输入的示例应使用适当的异常处理。 同样，如果示例需要方法调用失败，则必须处理导致的异常。 请始终处理方法引发的特定异常，而不是基类异常，例如 [Exception](https://docs.microsoft.com/dotnet/api/system.exception) 或 [SystemException](https://docs.microsoft.com/dotnet/api/system.systemexception)。
 
 4. 如果示例生成独立包，除示例所用的任何运行时外，还必须包含 CI 生成系统所用的运行时：
     - `win7-x64`
@@ -158,7 +158,7 @@ ms.locfileid: "58637497"
     dotnet run
     ```
 
-3. 向示例的根目录添加 readme.md。 
+3. 向示例的根目录添加 readme.md。
 
    这应包括代码的简短说明，并使用户参考引用该示例的文章。
 
