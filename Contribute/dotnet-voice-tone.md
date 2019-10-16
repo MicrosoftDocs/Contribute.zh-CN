@@ -1,13 +1,16 @@
 ---
 title: .NET 文档参与的语音语调准则
 description: 通过将风格示例与不遵循准则的示例进行比较，了解语音语调准则。
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: cf78bb5d476d35b9b168b619e90e8f372103cb93
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4108019ac50d703c6dd509eca7a6394cc1c9dc18
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609684"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288483"
 ---
 # <a name="voice-and-tone-guidelines"></a>语音语调准则
 

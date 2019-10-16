@@ -4,14 +4,14 @@ description: 有关 Docs 生成问题 author-not-found 的解释和解决方法
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 09/10/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 1a41dbc8efc5ba6cadbec3ee9f17cbc6c64ab116
-ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
+ms.date: 09/10/2019
+ms.openlocfilehash: c90b9577f3d8ab38b94871e4c73f669bafe34460
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70848635"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72287848"
 ---
 # <a name="author-not-found"></a>author-not-found
 
