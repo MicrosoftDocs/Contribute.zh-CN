@@ -1,13 +1,16 @@
 ---
 title: 适用于 .NET 文章的模板和速查表
 description: 本文包含一个便捷的模板，可用于针对 .NET 文档存储库创建新文章
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 9b57abd96093940c96f90a4a01b9f81eae063ffb
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.openlocfilehash: 998ebf90c8a162451dd4ca2e7c8a55833ed9d408
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653611"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288379"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>适用于 .NET 文档的元数据和 Markdown 模板
 
@@ -29,14 +32,14 @@ ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
 # The H1 should not be the same as the title, but should describe the article contents
 ```
 
-- 冒号 (:) 和元数据元素值之间必须有空格。
+- 冒号 (:) 和元数据元素值之间必须有空格  。
 - 值（例如，标题）中的冒号可中断元数据分析器。 在此情况下，使用双引号将标题括起来（例如，`title: "Writing .NET Core console apps: An advanced step-by-step guide"`）。
 - **标题**：在搜索引擎结果中显示。 该标题不应与 H1 标题中的标题相同，并且应包含不超过 60 个字符。
 - **说明**：概括文章的内容。 它通常在搜索结果页中显示，并且不用于搜索排名。 它的长度应为 115-145 个字符（含空格）。
-- **作者**：“作者”字段应包含作者的 GitHub 用户名。
+- **作者**：“作者”字段应包含作者的 GitHub 用户名  。
 - **ms.date**：上一次重要更新的日期。 如果已评审和更新整篇文章，请在现有文章中更新此内容。 不保证更新拼写错误或类似的小修复。
 
-其他元数据附加于每篇文章，但我们通常在文件夹级别应用大多数元数据值，如 docfx.json 中所示。
+其他元数据附加于每篇文章，但我们通常在文件夹级别应用大多数元数据值，如 docfx.json 中所示  。
 
 ## <a name="basic-markdown-gfm-and-special-characters"></a>基本 Markdown、GFM 和特殊字符
 
@@ -64,9 +67,9 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 
 ## <a name="text-styling"></a>文本样式
 
-斜体：用于文件、文件夹、路径（对于较长项，拆分成其自己的行）、新术语。
+斜体：用于文件、文件夹、路径（对于较长项，拆分成其自己的行）、新术语  。
 
-粗体：用于 UI 元素。
+粗体：用于 UI 元素  。
 
 `Code` 用于内联代码、语言关键字、NuGet 包名称、命令行命令、数据库表和列名称，以及不希望可单击的 URL。
 
@@ -79,7 +82,7 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 - 在大多数情况下，我们使用相对链接，并且不鼓励在链接中使用 `~/` GitHub 上的源进行解析。 然而，每当我们链接到独立存储库中的文件时，都将使用 `~/` 字符提供路径。 因为独立存储库中的文件位于 GitHub 中的不同位置，因此使用相对链接无法正确解析，无论其编写方式如何。
 - C# 语言规范和 Visual Basic 语言规范通过来自语言存储库中的源，包括在 .NET 文档中。 Markdown 源托管于 [csharplang](https://github.com/dotnet/csharplang) 和 [vblang](https://github.com/dotnet/vblang) 存储库中。
 
-规范的链接必须指向其中包括这些规范的源目录。 对于 C#，它是 ~/_csharplang/spec，而对于 VB，它是 ~/_vblang/spec如下例所示：
+规范的链接必须指向其中包括这些规范的源目录。 对于 C#，它是 ~/_csharplang/spec，而对于 VB，它是 ~/_vblang/spec如下例所示   ：
 
 ```markdown
 [C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
@@ -131,18 +134,18 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 [!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
 ```
 
-* `-<language>`（是可选的，但建议采用）
+* `-<language>`（是可选的，但建议采用）  
   * 要引用的代码片段的语言。
 
-* `<name>`（可选）
+* `<name>`（可选） 
   * 代码片段的名称。 这不会对输出 HTML 产生影响，但可用于增强 Markdown 源的可读性。
 
-* `<pathToFile>`（必需）
+* `<pathToFile>`（必需） 
   * 文件系统中的相对路径，指示将引用的代码片段文件。 根据组成 .NET 文档集的不同存储库，这可能很复杂。 .NET 示例位于 dotnet/示例存储库。 所有代码片段路径都会以 `~/samples` 开头，路径其余部分为该存储库的根目录中的源路径。
 
-* `<queryoption>`（可选）
+* `<queryoption>`（可选） 
   * 用于指定如何从文件中检索代码：
-    * `#`：`#{tagname}`（标记名称）或 `#L{startlinenumber}-L{endlinenumber}`（行范围）。
+    * `#`：`#{tagname}`（标记名称）或 `#L{startlinenumber}-L{endlinenumber}`（行范围）  。
     不鼓励使用行号，因为它们很脆弱。 标记名称是引用代码片段的首选方式。 请使用有意义的标记名称。 （由于许多代码片段迁移自上一个平台，并且标记具有 `Snippet1`、`Snippet2` 等名称。因此维持此做法要困难得多。）
     * `range`：`?range=1,3-5` 行的范围。 此示例包含第 1、3、4 和 5 行。
 
@@ -152,7 +155,7 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 [!code-csharp[csrefKeyword#1](~/samples/snippets/snippets/csharp/language-reference/operators/ConditionalExamples.csConditionalRef)]
 ```
 
-dotnet/示例存储库中源的相对路径遵循 `~/samples` 路径。
+dotnet/示例存储库中源的相对路径遵循 `~/samples` 路径  。
 
 并且，可在[此源文件](https://github.com/dotnet/samples/blob/master/snippets/csharp/language-reference/operators/ConditionalExamples.cs)中了解代码片段标记的构成方式。 有关按语言在代码片段源文件中呈现标记名称的详细信息，请参阅 [DocFX 准则](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file)。
 
@@ -190,7 +193,7 @@ dotnet/示例存储库中源的相对路径遵循 `~/samples` 路径。
 > [!VIDEO <channel9_video_link>]
 ```
 
-若要获取视频的正确 URL，请选择视频框架下方的“嵌入”，然后复制 `<iframe>` 元素中的 URL。 例如：
+若要获取视频的正确 URL，请选择视频框架下方的“嵌入”，然后复制 `<iframe>` 元素中的 URL  。 例如：
 
 ```markdown
 > [!VIDEO https://channel9.msdn.com/Blogs/dotnet/NET-Core-20-Released/player]
@@ -198,7 +201,7 @@ dotnet/示例存储库中源的相对路径遵循 `~/samples` 路径。
 
 ### <a name="youtube"></a>YouTube
 
-若要获取视频的正确 URL，右键单击视频，选择“复制嵌入代码”，然后复制 `<iframe>` 元素中的 URL。
+若要获取视频的正确 URL，右键单击视频，选择“复制嵌入代码”，然后复制 `<iframe>` 元素中的 URL  。
 
 ```markdown
 > [!VIDEO <youtube_video_link>]

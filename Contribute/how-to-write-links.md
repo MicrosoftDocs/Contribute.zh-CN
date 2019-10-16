@@ -1,15 +1,18 @@
 ---
 title: 如何在文档中使用链接
 description: 本文指导如何在 docs.microsoft.com 中创建内容链接。
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: 464c6b2ae8976252828d73390f9cbeea67f4e3ce
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: 69371cd201d156b2d0ce5e3e38527d77baca5a8a
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637543"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288570"
 ---
 # <a name="using-links-in-documentation"></a>在文档中使用链接
 本文介绍如何使用 docs.microsoft.com 上托管页面的超链接。 通过几种不同的约定，便可轻松地将链接添加到 markdown。 链接将用户指向相同页面中的内容、其他相邻页面或外部站点和 URL。
@@ -137,12 +140,12 @@ docs.microsoft.com 站点后端使用开放发布服务 (OPS)，支持通过 [Ma
 
 为了实现最佳用户体验，最好尽量减少将用户定向到另一个网站的次数。 因此，如果确实需要，可在以下信息基础上实现到第三方网站的任何链接：
 
-- **责任性**：当要共享的信息是第三方信息时，链接到第三方内容。 例如，告知用户如何使用 Android 开发人员工具并不是 Microsoft 的职责，此类信息可以通过 Google 获取。 如有需要，我们可以介绍如何将 Android 开发人员工具与 Azure 结合使用，但对于如何使用该工具，应向 Google 寻求帮助。
+- **责任性**：当要共享的信息是第三方信息时，链接到第三方内容。 例如，告知用户如何使用 Android 开发人员工具并不是 Microsoft 的职责，此类信息可以通过 Google 获取。 如有需要，我们可以介绍如何将 Android 开发人员工具与  Azure 结合使用，但对于如何使用该工具，应向 Google 寻求帮助。
 - **PM 签名**：请求 Microsoft 在第三方内容上签名。 链接到此内容即表明我们信任此内容，并且有责任和义务让用户按说明操作。
 - **新鲜度评审**：确保第三方信息仍为最新、正确且相关的版本，并确保链接未经任何更改。
 - **跳转提醒**：确保用户知道他们即将转到另一个网站。 如果上下文未明确指出这一点，请添加一个限定性句子。 例如：“先决条件包括 Android 开发人员工具，你可以在 Android Studio 网站上进行下载。”
 - **后续步骤**：在“后续步骤”部分，最好添加一个指向类似于 MVP 博客等内容的链接。 再次提醒，请务必使用户了解他们会离开当前网站。
-- **合法性**：合法遵守每个 ms.com 页面页脚“使用条款”中的“链接到第三方网站”规定。
+- **合法性**：合法遵守每个 ms.com 页面页脚“使用条款”  中的“链接到第三方网站”  规定。
 
 ## <a name="links-to-msdn-or-technet"></a>链接到 MSDN 或 TechNet
 
