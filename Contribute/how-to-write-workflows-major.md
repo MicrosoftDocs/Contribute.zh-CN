@@ -1,20 +1,23 @@
 ---
 title: 主要或持续更改的 GitHub 参与工作流
 description: 本文介绍如何使用“主要”参与者工作流参与 docs.microsoft.com 文章的供稿。
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 87c31979e60a957586ea623b22be190bfdaa41d9
+ms.sourcegitcommit: d357977935b432381f3df6297164417ed59ab434
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609382"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310287"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>主要或持续更改的 GitHub 参与工作流
 
 > [!IMPORTANT]
 > 发布到 docs.microsoft.com 的所有存储库均遵循 [Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)或 [.NET 基础行为准则](https://dotnetfoundation.org/code-of-conduct)。 有关详细信息，请参阅[行为准则常见问题解答](https://opensource.microsoft.com/codeofconduct/faq/)。 或如有任何疑问或意见，请联系 [opencode@microsoft.com](mailto:opencode@microsoft.com) 或 [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org)。<br>
 >
-> [docs.microsoft.com 使用条款](https://docs.microsoft.com/legal/termsofuse)涵盖公共存储库中对文档和代码示例所做的轻微更正和澄清。 如果你不是 Microsoft 的员工，那么新更改或重大更改会在拉取请求中生成一条注释，要求提交一份在线参与许可协议 (CLA)。 在合并拉取请求之前，你需要填写这份在线表单。
+> [docs.microsoft.com 使用条款](https://docs.microsoft.com/legal/termsofuse)适用于对公共存储库中文档和代码示例所做的小修订和澄清。 如果你不是 Microsoft 的员工，那么新更改或重大更改会在拉取请求中生成一条注释，要求提交一份在线参与许可协议 (CLA)。 在合并拉取请求之前，你需要填写这份在线表单。
 
 ## <a name="overview"></a>概述
 
@@ -59,4 +62,4 @@ ms.locfileid: "51609382"
 
 就这么简单！ 你已完成参与 docs.microsoft.com 内容的供稿！
 
-- 继续查看撰写要领部分，了解特定主题（如 Markdown 和 Markdown 扩展语法等）的详细信息。
+- 继续查看[撰写要领](how-to-write-use-markdown.md)一文，了解特定主题（如 Markdown 和 Markdown 扩展语法等）的详细信息。

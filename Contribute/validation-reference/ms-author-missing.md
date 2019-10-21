@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 12/20/2018
 ms.prod: non-product-specific
-ms.openlocfilehash: eb969487a432014795920b9c40025ec899cf3e1c
-ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
+ms.openlocfilehash: 6b313bd6b168b913d82721607126fcd4e6255009
+ms.sourcegitcommit: 57eb071bdc55ef71fa3f8ac979326c3f8fbe9c45
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70236451"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72246251"
 ---
 # <a name="ms-author-missing"></a>ms-author-missing
 
@@ -21,9 +21,11 @@ ms.locfileid: "70236451"
 
 ## <a name="resolution"></a>解决方法
 
-对于 `ms.author`，添加当前作者的 Microsoft 别名。 它应该是文章的个人作者，或指定的团队别名。
+对于 `ms.author`，添加当前作者的 Microsoft 别名。 注意，如果所有权发生变更，则应该是此文章的当前作者，而不是原作者  。 建议指定的作者为全职员工或团队通讯组列表 (DL)，而不是短期供应商。 
 
-注意，如果所有权发生变更，则应该是此文章的当前作者，而不是原作者  。
+如果别名是 DL，还必须位于 `ms.author` 允许列表中。
+
+可以在 [Microsoft 内部网站](https://docsmetadatatool.azurewebsites.net/allowlists)上找到 `ms.author` DL 的有效值。
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

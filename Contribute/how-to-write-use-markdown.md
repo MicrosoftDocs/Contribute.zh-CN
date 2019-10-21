@@ -1,13 +1,16 @@
 ---
 title: 如何使用 Markdown 撰写 Docs
 description: 本文提供用于撰写 docs.microsoft.com 文章的 Markdown 语言的基础知识和参考信息。
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: 7a42aa88bab65846ce54e2444387ac3a578779c0
-ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
+ms.openlocfilehash: c823e086ba61e7ddfe643da13afc8597e5ea280c
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71247347"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288420"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 撰写 Docs
 
@@ -291,10 +294,10 @@ CREATE TABLE T1 (
 );
 ```
 
-## <a name="ops-custom-markdown-extensions"></a>OPS 自定义 Markdown 扩展
+## <a name="docs-custom-markdown-extensions"></a>Docs 自定义 Markdown 扩展
 
 > [!NOTE]
-> Open Publishing Services(OPS) 可实现 Markdown Markdig 分析程序，它与 GitHub 风格的 Markdown (GFM) 高度兼容。 Markdig 通过 Markdown 扩展添加一些功能。 就这一点而言，本指南从完整的《OPS 创作指南》中选用了几篇文章，以供参考。 （例如，请参阅目录中的“Markdig 和 Markdown 扩展”以及“代码片段”。）
+> Docs.Microsoft.com (Docs) 可实现 Markdown Markdig 分析程序，它与 GitHub 风格的 Markdown (GFM) 高度兼容。 Markdig 通过 Markdown 扩展添加一些功能。 就这一点而言，本指南从完整的《OPS 创作指南》中选用了几篇文章，以供参考。 （例如，请参阅目录中的“Markdig 和 Markdown 扩展”以及“代码片段”。）
 
 Doc 文章使用 GFM 完成大多文章的格式设置，如段落、链接、列表和标题。 要想实现更丰富的格式设置功能，文章可以使用 Markdig 功能，例如：
 
@@ -432,7 +435,7 @@ Markdig 支持通过代码片段扩展以一种高级方式将代码加入文章
 
 ## <a name="markdown-flavor"></a>Markdown 风格
 
-docs.microsoft.com 站点后端使用开放发布服务 (OPS)，支持通过 [Markdig](https://github.com/lunet-io/markdig) 分析引擎分析的 [CommonMark](https://commonmark.org/) 兼容 Markdown。 Markdown 风格大多与 [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 兼容，因为大多数 docs 存储在 GitHub 中，并可以在 GitHub 中进行编辑。 通过 Markdown 扩展添加一些功能。
+docs.microsoft.com 网站后端支持通过 [Markdig](https://github.com/lunet-io/markdig) 分析引擎分析的 [CommonMark](https://commonmark.org/) 兼容 markdown。 Markdown 风格大多与 [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 兼容，因为大多数 docs 存储在 GitHub 中，并可以在 GitHub 中进行编辑。 通过 Markdown 扩展添加一些功能。
 
 ## <a name="see-also"></a>另请参阅：
 

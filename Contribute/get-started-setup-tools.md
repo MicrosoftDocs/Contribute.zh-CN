@@ -1,16 +1,18 @@
 ---
 title: 安装内容创作工具
 description: 本文将介绍如何下载并安装用于 Git 和编辑标记文件所需的客户端工具。
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 715634a9a2342311eb1d358cb8379f90a7074d80
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 24d47c4e094c318be75a27dbaaec11d8ead94452
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609375"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288549"
 ---
 # <a name="install-content-authoring-tools"></a>安装内容创作工具
 
@@ -23,7 +25,7 @@ ms.locfileid: "51609375"
 >[!IMPORTANT]
 > 如果只对文章进行小的更改，则*不*需要完成本文中的步骤，可以直接继续进行[快速更改工作流](index.md#quick-edits-to-existing-documents)。
 >
-> 建议主要参与者完成这些步骤，以便你能够使用[主要/持续更改的工作流](how-to-write-workflows-major.md)。 即使具有针对主存储库的写入权限，也强烈建议（同时本指南假定）为存储库创建分支并克隆存储库，以便具有读/写权限在分支中存储建议的更改。
+> 建议主要参与者完成这些步骤，以便你能够使用[主要/持续更改的工作流](how-to-write-workflows-major.md)。 即使具有针对主存储库的写入权限，也强烈建议（同时本指南假定）为存储库创建分支并克隆存储库  ，以便具有读/写权限在分支中存储建议的更改。
 
 ## <a name="install-git-client-tools"></a>安装 Git 客户端工具 
 
@@ -39,7 +41,7 @@ ms.locfileid: "51609375"
 
 在下一篇文章中，你将[设置本地 Git 存储库](get-started-setup-local.md)。
 
-   下面提供了更多的 Git 资源：[Git 术语](https://help.github.com/articles/github-glossary) | [Git 基础知识](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [学习 Git 和 GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
+   其他 Git 资源可在此处找到：[Git terminology](https://help.github.com/articles/github-glossary)（Git 术语） | [Git 基本信息](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [了解 Git 和 GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
 
 ## <a name="understand-markdown-editors"></a>了解 Markdown 编辑器
 
@@ -65,7 +67,7 @@ Markdown 文本将保存为扩展名为 .md 的文件。
 ## <a name="docs-authoring-pack"></a>Docs 创作包
 安装 Visual Studio Code Docs 创作包。 这组扩展包括在编写 Markdown 时提供帮助的基本创作协助，以及一个预览功能，方便用户看到 docs.microsoft.com 网站风格的 Markdown 外观。
 
-   访问此[市场页](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)，并选择“安装”，或者在 VS Code 窗口的扩展列表中搜索 `docsmsft.docs-authoring-pack`。 
+   访问此[市场页](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)，并选择“安装”  ，或者在 VS Code 窗口的扩展列表中搜索 `docsmsft.docs-authoring-pack`。 
 
    可以通过在 VS Code 中按 Alt+M 键来访问 Docs 创作包。 工具栏默认隐藏，但可以显示。 编辑 VS Code 设置（Ctrl+逗号），并添加用户设置 `"markdown.showToolbar": true` 来显示工具栏。
 
