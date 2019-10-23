@@ -6,16 +6,17 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 10/1/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: b97d4c4a0f61e5f3448331a56fe4bde442ff1cca
-ms.sourcegitcommit: 0cb0177c209abab1a72af4f411ef527fa5cf10f9
+ms.openlocfilehash: c22404e624ae85369d7b0b95f44e37d51f847368
+ms.sourcegitcommit: ab31cbb17c64a06cab4ffb37b157fd812417a499
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379508"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587681"
 ---
 # <a name="insecure-link"></a>insecure-link
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
+> [!IMPORTANT]
+> 此规则最初作为“建议”启用，以便内容团队有时间衡量影响并制定清理其存储库的计划。 **它将于 2019 年 12 月 20 日提升为“警告”** 。
 
 ## <a name="suggestion"></a>建议
 
