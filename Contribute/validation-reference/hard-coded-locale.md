@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 10/18/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 0fbc7634e00202fdfdf607b9504744a6d9846792
-ms.sourcegitcommit: 836d4d6127fabb5569ffc0809db5fb25e46038b5
+ms.openlocfilehash: 1ab511398cbd622906ccb0a67e2b24968ee29374
+ms.sourcegitcommit: 55624c641bea5367bcfa08655c085bc950e8beae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72590873"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73166825"
 ---
 # <a name="hard-coded-locale"></a>hard-coded-locale
 
@@ -20,7 +20,7 @@ ms.locfileid: "72590873"
 
 ## <a name="suggestion"></a>建议
 
-`Link '{URL}' contains locale code '{code}'. For localizability, remove '{code}' from links to Microsoft sites.`
+`Link '{URL}' contains locale code '{code}'. For localizability, remove '{code}' from links to most Microsoft sites.`
 
 区域设置代码（例如 `en-us`）不应包含在指向某些 Microsoft 站点的链接中。 如果在英语内容的链接中包含区域设置代码，它也将包含在本地化链接中，这会导致糟糕的本地化体验。 例如，如果德语本地化内容中的链接包含 `en-us`，则德语客户会发现即使有德语版本，自己也被链接到了英文文章。
 
@@ -28,7 +28,7 @@ ms.locfileid: "72590873"
 
 - azure.microsoft.com
 - docs.microsoft.com
-- msdn.microsoft.com
+- msdn.microsoft.com（不包括 social.msdn.com，它需要区域设置来确保链接到正确的论坛）
 - technet.microsoft.com
 
 ## <a name="resolution"></a>解决方法
