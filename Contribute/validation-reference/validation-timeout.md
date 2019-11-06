@@ -6,24 +6,42 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 6/5/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: bb58c472371c429002cf5b35b7d6157ffb28b5cd
-ms.sourcegitcommit: 495d49f10df51a8897687940aa653e906c48c2a0
+ms.openlocfilehash: 9f8074d3746ea375e29704853c82f48d95273cdc
+ms.sourcegitcommit: 55624c641bea5367bcfa08655c085bc950e8beae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68817415"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73166760"
 ---
-# <a name="validation-timeout"></a><span data-ttu-id="a5fcf-103">validation-timeout</span><span class="sxs-lookup"><span data-stu-id="a5fcf-103">validation-timeout</span></span>
+# <a name="validation-timeout"></a><span data-ttu-id="eba32-103">validation-timeout</span><span class="sxs-lookup"><span data-stu-id="eba32-103">validation-timeout</span></span>
 
-## <a name="warning"></a><span data-ttu-id="a5fcf-104">警告</span><span class="sxs-lookup"><span data-stu-id="a5fcf-104">Warning</span></span>
+## <a name="warning"></a><span data-ttu-id="eba32-104">警告</span><span class="sxs-lookup"><span data-stu-id="eba32-104">Warning</span></span>
 
-`The call to the validation service timed out and validation was not completed. This happens when there's an issue with the service and continuing to retry the call could cause build delays. You might have content issues that were not reported. To retry validation, close and re-open your PR, or rebuild your branch via Docs Portal (requires admin permissions). If you need admin help or if you continue to see this message, file an issue via https://SiteHelp.`
+`The call to the validation service timed out and validation was not completed. This happens when there's an issue with the service and continuing to retry the call could cause build delays. You might have content issues that were not reported. To retry validation, close and re-open your PR, or force a full build of your branch via https://ops.microsoft.com. Note that forcing a full build requires admin permissions to the repo. If you don’t know who your repo admin is, or if you continue to see this message after a forced build, file an issue via https://SiteHelp.`
 
-<span data-ttu-id="a5fcf-105">有时，验证服务中的暂时性问题（例如，服务器处于错误状态）会阻止 Docs 生成成功调用该服务。</span><span class="sxs-lookup"><span data-stu-id="a5fcf-105">Sometimes transient issues in the validation service, such as a server in a bad state, prevent Docs Build from successfully calling the service.</span></span> <span data-ttu-id="a5fcf-106">多次尝试后，调用超时并取消验证，以避免生成延迟和阻塞生成管道。</span><span class="sxs-lookup"><span data-stu-id="a5fcf-106">After several tries, the call times out and validation is canceled to avoid build delays and clogging the build pipeline.</span></span>
+<span data-ttu-id="eba32-105">有时，验证服务中的暂时性问题（例如，服务器处于错误状态）会阻止 Docs 生成成功调用该服务。</span><span class="sxs-lookup"><span data-stu-id="eba32-105">Sometimes transient issues in the validation service, such as a server in a bad state, prevent Docs Build from successfully calling the service.</span></span> <span data-ttu-id="eba32-106">多次尝试后，调用超时并取消验证，以避免生成延迟和阻塞生成管道。</span><span class="sxs-lookup"><span data-stu-id="eba32-106">After several tries, the call times out and validation is canceled to avoid build delays and clogging the build pipeline.</span></span>
 
-## <a name="resolution"></a><span data-ttu-id="a5fcf-107">解决方法</span><span class="sxs-lookup"><span data-stu-id="a5fcf-107">Resolution</span></span>
+## <a name="resolution"></a><span data-ttu-id="eba32-107">解决方法</span><span class="sxs-lookup"><span data-stu-id="eba32-107">Resolution</span></span>
 
-<span data-ttu-id="a5fcf-108">请尝试关闭再重新打开拉取请求 (PR)，或通过 Docs 门户重新运行手动生成（仅限存储库管理员）。</span><span class="sxs-lookup"><span data-stu-id="a5fcf-108">Try closing and re-opening your PR, or re-running a manual build via Docs Portal (repo admins only).</span></span> <span data-ttu-id="a5fcf-109">通常会在初始重试后清理服务问题本身。</span><span class="sxs-lookup"><span data-stu-id="a5fcf-109">Often service issues clear themselves up after the initial retry.</span></span> <span data-ttu-id="a5fcf-110">如需管理员提供帮助或者仍然收到此消息，请通过 [https://SiteHelp](https://SiteHelp) 提出问题（针对 Microsoft 员工），或者在 PR 中通过 @ 提及文章作者来获取帮助（针对外部参与者）。</span><span class="sxs-lookup"><span data-stu-id="a5fcf-110">If you need help from an admin or if you continue to get this message, file an issue via [https://SiteHelp](https://SiteHelp) if you're a Microsoft employee, or @ mention the author of an article in your PR for assistance if you're an external contributor.</span></span>
+<span data-ttu-id="eba32-108">请尝试关闭再重新打开 PR，或者通过 [Docs 门户](https://ops.microsoft.com/#/)强制进行完全生成。</span><span class="sxs-lookup"><span data-stu-id="eba32-108">Try closing and re-opening your PR, or forcing a full build via [Docs Portal](https://ops.microsoft.com/#/).</span></span> <span data-ttu-id="eba32-109">通常会在初始重试后清理服务问题本身。</span><span class="sxs-lookup"><span data-stu-id="eba32-109">Often service issues clear themselves up after the initial retry.</span></span>
+
+<span data-ttu-id="eba32-110">请注意，只有存储库管理员才可通过 Docs 门户强制进行生成。</span><span class="sxs-lookup"><span data-stu-id="eba32-110">Note that you must be a repo admin to force a build via Docs Portal.</span></span> <span data-ttu-id="eba32-111">如果你不知道谁是存储库管理员，或者你在强制生成后仍然收到此消息，则请通过 [https://SiteHelp](https://SiteHelp) 提出问题（针对 Microsoft 员工），或者在 PR 中通过 @ 提及文章作者来获取帮助（针对外部参与者）。</span><span class="sxs-lookup"><span data-stu-id="eba32-111">If you don't know who your repo admin is, or if you continue to get this message after a forced build, file an issue via [https://SiteHelp](https://SiteHelp) if you're a Microsoft employee, or @ mention the author of an article in your PR for assistance if you're an external contributor.</span></span>
+
+<span data-ttu-id="eba32-112">如果你是存储库管理员，则可如下强制进行完全生成：</span><span class="sxs-lookup"><span data-stu-id="eba32-112">If you're a repo admin, you can force a full build as follows:</span></span>
+
+1. <span data-ttu-id="eba32-113">转到 [Docs 门户](https://ops.microsoft.com/#/)并登录。</span><span class="sxs-lookup"><span data-stu-id="eba32-113">Go to [Docs Portal](https://ops.microsoft.com/#/) and sign in.</span></span>
+1. <span data-ttu-id="eba32-114">在左上角搜索找到你的存储库，然后选中它。</span><span class="sxs-lookup"><span data-stu-id="eba32-114">Find your repo by searching in the upper left corner, and select it.</span></span>
+
+   <span data-ttu-id="eba32-115">:::image type="content" source="media/find-repo.png" alt-text="通过“Docs 门户”搜索框查找你的存储库":::</span><span class="sxs-lookup"><span data-stu-id="eba32-115">:::image type="content" source="media/find-repo.png" alt-text="find your repo via the Docs Portal search box":::</span></span>
+1. <span data-ttu-id="eba32-116">在“生成历史记录”选项卡中，单击“+手动发布”   。</span><span class="sxs-lookup"><span data-stu-id="eba32-116">On the **Build History** tab, click **+ Manual Publish**.</span></span>
+1. <span data-ttu-id="eba32-117">选择收到警告的分支，例如主分支。</span><span class="sxs-lookup"><span data-stu-id="eba32-117">Select the branch that's getting the Warning, such as Master.</span></span>
+1. <span data-ttu-id="eba32-118">对于目标，请保留默认设置，即“Docs 网站”  。</span><span class="sxs-lookup"><span data-stu-id="eba32-118">For target, keep the default, **Docs site**.</span></span>
+1. <span data-ttu-id="eba32-119">选中“强制发布”复选框  。</span><span class="sxs-lookup"><span data-stu-id="eba32-119">Check the **Force Publish** checkbox.</span></span>
+1. <span data-ttu-id="eba32-120">单击“发布”  。</span><span class="sxs-lookup"><span data-stu-id="eba32-120">Click **Publish**.</span></span>
+
+   <span data-ttu-id="eba32-121">:::image type="content" source="media/force-build.png" alt-text="强制完全生成的步骤":::</span><span class="sxs-lookup"><span data-stu-id="eba32-121">:::image type="content" source="media/force-build.png" alt-text="steps to force a full build":::</span></span>
+
+<span data-ttu-id="eba32-122">这将在分支上强制进行完全生成。</span><span class="sxs-lookup"><span data-stu-id="eba32-122">This will force a full build on the branch.</span></span>
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
