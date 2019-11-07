@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 6/5/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 9f8074d3746ea375e29704853c82f48d95273cdc
-ms.sourcegitcommit: 55624c641bea5367bcfa08655c085bc950e8beae
+ms.openlocfilehash: f75f005ce9ab0cf332667d5c8b7778ba4ef35a0a
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73166760"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592539"
 ---
 # <a name="validation-timeout"></a>validation-timeout
 
@@ -33,11 +33,11 @@ ms.locfileid: "73166760"
 1. 在左上角搜索找到你的存储库，然后选中它。
 
    :::image type="content" source="media/find-repo.png" alt-text="通过“Docs 门户”搜索框查找你的存储库":::
-1. 在“生成历史记录”选项卡中，单击“+手动发布”   。
+1. 在“生成历史记录”选项卡中，单击“+手动发布”。
 1. 选择收到警告的分支，例如主分支。
-1. 对于目标，请保留默认设置，即“Docs 网站”  。
-1. 选中“强制发布”复选框  。
-1. 单击“发布”  。
+1. 对于目标，请保留默认设置，即“Docs 网站”。
+1. 选中“强制发布”复选框。
+1. 单击“发布”。
 
    :::image type="content" source="media/force-build.png" alt-text="强制完全生成的步骤":::
 

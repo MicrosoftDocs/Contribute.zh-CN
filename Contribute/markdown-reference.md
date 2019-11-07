@@ -7,12 +7,12 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 3142b1aee8cadb69f82bfbcd3f89c701fac5b356
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: a5ff6c5122a08d2b611fd6b0344a6f5740d93928
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288309"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592571"
 ---
 # <a name="markdown-reference"></a>Markdown 引用
 
@@ -26,7 +26,7 @@ Docs 使用 Markdig Markdown 引擎。 可在 [https://babelmark.github.io/](htt
 
 警报是用于创建块引用 Docs Markdown 扩展，这些块引用与指示内容重要性的颜色和图标共同呈现在 docs.microsoft.com 上。 支持以下警报类型：
 
-```markdown
+```md
 > [!NOTE]
 > Information the user should notice even if skimming.
 
@@ -45,26 +45,13 @@ Docs 使用 Markdig Markdown 引擎。 可在 [https://babelmark.github.io/](htt
 
 这些警报在 docs.microsoft.com 上如下所示：
 
-> [!NOTE]
-> Information the user should notice even if skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]
-> Essential information required for user success.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-
-> [!WARNING]
-> Dangerous certain consequences of an action.
+![展示上一示例中的警报在使用不同图标和颜色的 Docs 页面发布版中的显示情况](media/alerts-rendering.png)
 
 ## <a name="code-snippets"></a>代码片段
 
 可在 Markdown 文件中嵌入代码片段：
 
-```markdown
+```md
 [!code-<language>[<name>](<codepath><queryoption><queryoptionvalue> "<title>")]
 ```
 
@@ -72,7 +59,7 @@ Docs 使用 Markdig Markdown 引擎。 可在 [https://babelmark.github.io/](htt
 
 Docs 支持六个级别的 Markdown 标题：
 
-```markdown
+```md
 # This is a first level heading (H1)
 
 ## This is a second level heading (H2)
@@ -97,7 +84,7 @@ Docs 支持六个级别的 Markdown 标题：
 
 用于包含图像的语法是：
 
-```markdown
+```md
 ![[alt text]](<folderPath>)
 
 Example:
@@ -133,7 +120,7 @@ Example:
 
 相对路径是指相对于当前文件的目标文件路径。 在 Docs 中，可使用相对路径链接到同一文档集中的其他文件。 相对路径的语法如下：
 
-```markdown
+```md
 [link text](../../folder/filename.md)
 ```
 
@@ -154,7 +141,7 @@ Example:
 
 ### <a name="site-relative-links-to-other-files-on-docs"></a>站点相对链接到 Docs 上的其他文件
 
-```markdown
+```md
 [Azure and Linux](/articles/virtual-machines/linux/overview)
 ```
 
@@ -162,7 +149,7 @@ Example:
 
 ### <a name="links-to-external-sites"></a>外部站点链接
 
-```markdown
+```md
 [Microsoft](https://www.microsoft.com)
 ```
 
@@ -172,13 +159,13 @@ Example:
 
 同一存储库中其他文件标题的书签链接。 例如：
 
-```markdown
+```md
 [Managed Disks](../../linux/overview.md#managed-disks)
 ```
 
 当前文件标题的书签链接：
 
-```markdown
+```md
 [Managed Disks](#managed-disks)
 ```
 
@@ -191,13 +178,13 @@ Example:
 
 ### <a name="explicit-anchor-links"></a>显式定位标记链接
 
-使用 `<a>` HTML 标记的显式定位标记链接并非必需，也不推荐使用，但在中心和登录页面中除外  。 在常规 Markdown 文件中使用上述书签。 对于中心和登录页面，使用如下所示的定位标记：
+使用 `<a>` HTML 标记的显式定位标记链接并非必需，也不推荐使用，但在中心和登录页面中除外。 在常规 Markdown 文件中使用上述书签。 对于中心和登录页面，使用如下所示的定位标记：
 
 `## <a id="AnchorText"> </a>Header text` 或 `## <a name="AnchorText"> </a>Header text`
 
 若要链接到显式定位标记，请使用以下语法：
 
-```markdown
+```md
 To go to a section on the same page:
 [text](#AnchorText)
 
@@ -258,7 +245,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 请勿在列表中使用字母，也勿使用嵌套列表。 发布到 Docs 时，它们无法正确呈现。使用编号的嵌套列表在发布时将呈现为小写字母。 例如：
 
-```markdown
+```md
 1. This is
 1. a parent numbered list
    1. and this is
@@ -278,7 +265,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 若要创建项目符号列表，请使用 `-`，其后每行开头跟一个空格：
 
-```markdown
+```md
 - This is
 - a parent bulleted list
   - and this is
@@ -298,7 +285,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 清单仅可通过自定义 Markdown 扩展在 docs.microsoft.com 上使用：
 
-```markdown
+```md
 > [!div class="checklist"]
 > * List item 1
 > * List item 2
@@ -321,14 +308,14 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 语法如下所示：
 
-```markdown
+```md
 > [!div class="nextstepaction"]
 > [button text](link to topic)
 ```
 
 例如：
 
-```markdown
+```md
 > [!div class="nextstepaction"]
 > [Learn about basic style](style-quick-start.md)
 ```
@@ -433,7 +420,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 使用 Markdown 创建表的最简单方法是借助垂直线和行。 若要创建带标头的标准表格，请在第一行后使用虚线：
 
-```markdown
+```md
 |This is   |a simple   |table header|
 |----------|-----------|------------|
 |table     |data       |here        |
@@ -449,7 +436,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 此外，还可创建不含标头的表格。 例如，创建多列列表：
 
-```markdown
+```md
 |   |   |
 | - | - |
 | This | table |
@@ -465,7 +452,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 可使用冒号来对齐列：
 
-```markdown
+```md
 |                  |
 |------------------|
 |    right aligned:|
@@ -495,7 +482,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 下面是一个 3 行表格的 Markdown 示例，它通过使用类名为 `mx-tdBreakAll` 的 `div` 实现表格换行。
 
-```markdown
+```md
 > [!div class="mx-tdBreakAll"]
 > |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
@@ -541,13 +528,13 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 可使用以下语法嵌入视频，Docs 随即将其呈现。
 
-```markdown
+```md
 > [!VIDEO <embedded_video_link>]
 ```
 
 示例：
 
-```markdown
+```md
 > [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
 
 > [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
@@ -579,7 +566,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 应按照以下流程上传任何新视频：
 
-1. 加入 IDWEB 上的 docs_video_users 组  。
+1. 加入 IDWEB 上的 docs_video_users 组。
 1. 转到 https://aka.ms/VideoUploadRequest 并填写视频的详细信息。 需填写以下内容（请注意各项内容均非公开所见）：
     1. 视频标题。
     1. 与视频相关的产品/服务列表。
@@ -587,10 +574,10 @@ Using XREF may require some configuration. For more information, see XREF Servic
     1. 视频 MP4 文件的链接（如果没有用于放置该文件的位置，可暂时将其放于此处：`\\scratch2\scratch\apex`）。 MP4 文件应为 720p 或更高。
     1. 视频说明。
 1. 提交（保存）该项。
-1. 视频将在两个工作日内上传。 嵌入所需的链接将放置于工作项内，并将在解析后返回给你  。
+1. 视频将在两个工作日内上传。 嵌入所需的链接将放置于工作项内，并将在解析后返回给你。
 1. 获取视频链接后，关闭工作项。
 1. 然后，可使用以下语法，将视频链接添加到文章中：
 
-   ```markdown
+   ```md
    > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
    ```

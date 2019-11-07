@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: c823e086ba61e7ddfe643da13afc8597e5ea280c
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: ffc44f07929890ef17b3878ba389dfeea82691a6
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288420"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592451"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 撰写 Docs
 
@@ -23,7 +23,7 @@ ms.locfileid: "72288420"
 
 要创建标题，请使用井号标记 (#)，如下所示：
 
-```markdown
+```md
 # This is heading 1
 ## This is heading 2
 ### This is heading 3
@@ -32,7 +32,7 @@ ms.locfileid: "72288420"
 
 应使用 atx 样式完成标题，即在行的开头使用 1-6 个哈希字符 (#) 指示标题，对应 HTML 标题级别 H1 到 H6。 上述示例使用的是一级到四级的标题。
 
-主题中只能有一个一级标题 (H1)，将显示为页面内标题  。
+主题中只能有一个一级标题 (H1)，将显示为页面内标题。
 
 如果标题以 `#` 字符结尾，则需要在末尾添加额外的 `#` 字符，使标题正确呈现。 例如，`# Async Programming in F# #`。
 
@@ -40,21 +40,21 @@ ms.locfileid: "72288420"
 
 ### <a name="bold-and-italic-text"></a>粗体和斜体文本
 
-要将文本设置为粗体格式，请用两个星号括住文本  ：
+要将文本设置为粗体格式，请用两个星号括住文本：
 
-```markdown
+```md
 This text is **bold**.
 ```
 
-要将文本设置为斜体格式，请用一个星号括住文本  ：
+要将文本设置为斜体格式，请用一个星号括住文本：
 
-```markdown
+```md
 This text is *italic*.
 ```
 
 要将文本同时设置为粗体和斜体格式，请用三个星号括住文本：
 
-```markdown
+```md
 This is text is both ***bold and italic***.
 ```
 
@@ -62,7 +62,7 @@ This is text is both ***bold and italic***.
 
 块引用使用 `>` 字符创建：
 
-```markdown
+```md
 > The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 ```
 
@@ -76,7 +76,7 @@ This is text is both ***bold and italic***.
 
 要为无序列表/项目符号列表设置格式，可以使用星号或短划线。 例如，以下 Markdown：
 
-```markdown
+```md
 - List item 1
 - List item 2
 - List item 3
@@ -90,7 +90,7 @@ This is text is both ***bold and italic***.
 
 要将一个列表嵌套在另一个列表中，请缩进子列表项。 例如，以下 Markdown：
 
-```markdown
+```md
 - List item 1
   - List item A
   - List item B
@@ -108,7 +108,7 @@ This is text is both ***bold and italic***.
 
 要设置有序/分阶段列表的格式，可以使用相应的编号。 例如，以下 Markdown：
 
-```markdown
+```md
 1. First instruction
 1. Second instruction
 1. Third instruction
@@ -122,7 +122,7 @@ This is text is both ***bold and italic***.
 
 要将一个列表嵌套在另一个列表中，请缩进子列表项。 例如，以下 Markdown：
 
-```markdown
+```md
 1. First instruction
    1. Sub-instruction
    1. Sub-instruction
@@ -144,7 +144,7 @@ This is text is both ***bold and italic***.
 
 例如，以下 Markdown：
 
-```markdown
+```md
 | Fun                  | With                 | Tables          |
 | :------------------- | -------------------: |:---------------:|
 | left-aligned column  | right-aligned column | centered column |
@@ -322,33 +322,26 @@ Doc 文章使用 GFM 完成大多文章的格式设置，如段落、链接、�
 
 示例：
 
-```markdown
+```md
 > [!NOTE]
-> This is a NOTE
-
-> [!WARNING]
-> This is a WARNING
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> This is a TIP
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> This is IMPORTANT
+> Essential information required for user success.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+> [!WARNING]
+> Dangerous certain consequences of an action.
 ```
 
-这些呈现结果如下：
+这些警报在 docs.microsoft.com 上如下所示：
 
-> [!NOTE]
-> This is a NOTE
-
-> [!WARNING]
-> This is a WARNING
-
-> [!TIP]
-> This is a TIP
-
-> [!IMPORTANT]
-> This is IMPORTANT
+![展示上一示例中的警报在使用不同图标和颜色的 Docs 页面发布版中的显示情况](media/alerts-rendering.png)
 
 ### <a name="include-files"></a>包含文件
 
@@ -373,7 +366,7 @@ Doc 文章使用 GFM 完成大多文章的格式设置，如段落、链接、�
 
 示例：
 
-```markdown
+```md
 [!INCLUDE[sample include file](../includes/sampleinclude.md)]
 ```
 
@@ -385,7 +378,7 @@ Doc 文章使用 GFM 完成大多文章的格式设置，如段落、链接、�
 
 下面展示了一个示例选择器：
 
-```markdown
+```md
 > [!div class="op_single_selector"]
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/with-visual-studio.md)
@@ -406,13 +399,13 @@ Markdig 支持通过代码片段扩展以一种高级方式将代码加入文章
 
 无法正确显示带下划线的替换文字。 例如，与使用以下下划线相比：
 
-```markdown
+```md
 ![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 转义下划线，如下所示：
 
-```markdown
+```md
 ![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
@@ -435,7 +428,7 @@ Markdig 支持通过代码片段扩展以一种高级方式将代码加入文章
 
 ## <a name="markdown-flavor"></a>Markdown 风格
 
-docs.microsoft.com 网站后端支持通过 [Markdig](https://github.com/lunet-io/markdig) 分析引擎分析的 [CommonMark](https://commonmark.org/) 兼容 markdown。 Markdown 风格大多与 [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 兼容，因为大多数 docs 存储在 GitHub 中，并可以在 GitHub 中进行编辑。 通过 Markdown 扩展添加一些功能。
+docs.microsoft.com 网站后端支持通过 [Markdig](https://github.com/lunet-io/markdig) 分析引擎进行分析的与 [CommonMark](https://commonmark.org/) 兼容的 Markdown。 Markdown 风格大多与 [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 兼容，因为大多数 docs 存储在 GitHub 中，并可以在 GitHub 中进行编辑。 通过 Markdown 扩展添加一些功能。
 
 ## <a name="see-also"></a>另请参阅：
 
