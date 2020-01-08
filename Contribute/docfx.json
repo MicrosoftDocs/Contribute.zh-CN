@@ -39,7 +39,9 @@
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
       "titleSuffix": "Contributor Guide",
-      "searchScope": ["Contribute"],
+      "searchScope": [
+        "Contribute"
+      ],
       "hideScope": false,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/Contribute.zh-cn",
@@ -49,8 +51,14 @@
       "manager": "wpickett",
       "ms.prod": "non-product-specific",
       "ms.topic": "contributor-guide",
-      "ms.custom": "external-contributor-guide"
-          },
+      "ms.custom": "external-contributor-guide",
+      "disable_contribution_on_translation_quality": [
+        "MT",
+        "MTE75",
+        "MTE95",
+        "Blank"
+      ]
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "ContributionGuide"
