@@ -7,14 +7,15 @@ ms.custom: external-contributor-guide
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: 69371cd201d156b2d0ce5e3e38527d77baca5a8a
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 970f80b4e6ce795e0e2f15192d31680d7de6d35b
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288570"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188337"
 ---
-# <a name="using-links-in-documentation"></a>在文档中使用链接
+# <a name="use-links-in-documentation"></a>在文档中使用链接
+
 本文介绍如何使用 docs.microsoft.com 上托管页面的超链接。 通过几种不同的约定，便可轻松地将链接添加到 markdown。 链接将用户指向相同页面中的内容、其他相邻页面或外部站点和 URL。
 
 docs.microsoft.com 站点后端使用开放发布服务 (OPS)，支持通过 [Markdig](https://github.com/lunet-io/markdig) 分析引擎分析的 [CommonMark](https://commonmark.org/) 兼容 Markdown。 Markdown 风格大多与 [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 兼容，因为大多数 docs 存储在 GitHub 中，并可以在 GitHub 中进行编辑。 通过 Markdown 扩展添加一些功能。
@@ -43,28 +44,35 @@ docs.microsoft.com 站点后端使用开放发布服务 (OPS)，支持通过 [Ma
 
 ## <a name="links-from-one-article-to-another"></a>从一篇文章链接到另一篇文章
 
-要在同一 docset 中创建从一篇 Docs 技术文章到另一篇 Docs 技术文章的内联链接，请使用以下链接语法：
+要在同一 docset 中创建从一篇 Docs 技术文章到另一篇 Docs 技术文章的内联链接，请使用以下链接语法  ：
 
-- 目录中的一篇文章链接到同一目录中的另一篇文章：
+- 一篇文章链接到同一目录中的另一篇文章：
 
   `[link text](article-name.md)`
 
-- 子目录中的一篇文章链接到根目录中的一篇文章：
+- 一篇文章链接到当前目录的父目录中的一篇文章：
 
   `[link text](../article-name.md)`
 
-- 根目录中的一篇文章链接到子目录中的一篇文章：
+- 一篇文章链接到当前目录的子目录中的一篇文章：
 
-  `[link text](./directory/article-name.md)`
+  `[link text](directory/article-name.md)`
 
-- 子目录中的一篇文章链接到另一个子目录中的一篇文章：
+- 一篇文章链接到当前目录的父目录的子目录中的一篇文章：
 
   `[link text](../directory/article-name.md)`
 
-- 跨 docset 链接的文章（即使在同一存储库中）： `[link text](./directory/article-name)`
+> [!NOTE]
+> 上述示例中均未在链接中使用 `~/`。 若要链接到以存储库根目录开头的绝对路径，请启用包含 `/` 的链接。 如果包含 `~/`，当在 GitHub 上导航源存储库时会生成无效的链接。 使路径以 `/` 开头便可有效解决此问题。
 
-> [!IMPORTANT]
-> 上述示例中均未在链接中使用 `~/`。 如果要链接到存储库的根路径，请以 `/` 开头。 如果包含 `~/`，当在 GitHub 上导航源存储库时会生成无效的链接。 使路径以 `/` 开头便可有效解决此问题。
+若要链接到其他 docset 中的文章，即使该文件位于同一存储库中，也请使用以下语法：
+
+`[link text](/docset-root/directory/article-name)`
+   
+例如，如果根 URL 为 `https://docs.microsoft.com/dotnet` 的文章链接到根 URL 为 `https://docs.microsoft.com/visualstudio` 的文章，则该链接将类似于 `[link text](/visualstudio/directory/article-name)`。
+
+> [!TIP]
+> 同一 docset 中的文章在“docs.microsoft.com”之后具有相同的 URL 片段  。 例如，`https://docs.microsoft.com/dotnet/core/get-started` 和 `https://docs.microsoft.com/dotnet/framework/install` 位于同一 docset 中，而 `https://docs.microsoft.com/dotnet/core/get-started` 和 `https://docs.microsoft.com/visualstudio/whats-new` 位于不同的 docset 中。
 
 ## <a name="links-to-anchors"></a>链接到锚点
 
@@ -75,12 +83,7 @@ docs.microsoft.com 站点后端使用开放发布服务 (OPS)，支持通过 [Ma
   `[link](#the-text-of-the-H2-section-separated-by-hyphens)`
   `[Create cache](#create-cache)`
 
-- 链接到同一子目录中另一篇文章中的锚点：
-
-  `[link text](article-name.md#anchor-name)`
-  `[Configure your profile](media-services-create-account.md#configure-your-profile)`
-
-- 链接到另一个服务子目录中的锚点：
+- 要链接到另一篇文章中的锚点：
 
   `[link text](../directory/article-name.md#anchor-name)`
   `[Configure your profile](../directory/media-services-create-account.md#configure-your-profile)`
@@ -147,10 +150,6 @@ docs.microsoft.com 站点后端使用开放发布服务 (OPS)，支持通过 [Ma
 - **后续步骤**：在“后续步骤”部分，最好添加一个指向类似于 MVP 博客等内容的链接。 再次提醒，请务必使用户了解他们会离开当前网站。
 - **合法性**：合法遵守每个 ms.com 页面页脚“使用条款”  中的“链接到第三方网站”  规定。
 
-## <a name="links-to-msdn-or-technet"></a>链接到 MSDN 或 TechNet
-
-如果需要链接到 MSDN 或 TechNet，请使用主题的完整链接，并从链接中删除“en-us”语言区域设置。
-
 ## <a name="links-to-azure-powershell-reference-content"></a>链接到 Azure PowerShell 引用内容
 
 自 2016 年 11 月以来，Azure PowerShell 引用内容已经经历了若干次变更。 使用以下准则从 docs.microsoft.com 的其他文章链接到此内容。
@@ -172,20 +171,17 @@ URL 结构：
 - Azure 信息保护 PowerShell：[https://docs.microsoft.com/powershell/azure/_aip_](https://docs.microsoft.com/powershell/azure/aip)
 - Azure 弹性数据库作业 PowerShell：[https://docs.microsoft.com/powershell/azure/_elasticdbjobs_](https://docs.microsoft.com/powershell/azure/elasticdbjobs)
 
-在使用这些 URL 时，会将用户重定向到最新版本的内容。 这样就不必指定版本名字对象。 并且不会有指向版本更改时必须进行更新的概念内容的链接。
+在使用这些 URL 时，会将用户重定向到最新版本的内容。 这样就不必指定版本名字对象。 此外，不会有指向版本更改时必须进行更新的概念内容的链接。
 
-若要创建正确的链接，可以在浏览器中找到要链接的页面并复制 URL。
-然后，删除 `https://docs.microsoft.com` 和区域设置信息。
-
-从 TOC 进行链接时，必须使用完整的 URL（不包含区域设置信息）。
+若要创建正确的链接，请在浏览器中找到要链接的页面、复制 URL 并删除区域设置代码，例如 en-us  。
 
 示例 Markdown：
 
 ```markdown
-[Get-AzureRmResourceGroup](/powershell/module/azurerm.resources/get-azurermresourcegroup)
-[Get-AzureRmResourceGroup](/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-4.1.0)
-[New-AzureVM](/powershell/module/azure/new-azurevm?view=azuresmps-4.0.0)
-[New-AzureRmVM](/powershell/module/azurerm.compute/new-azurermvm)
-[Install Azure PowerShell for Service Management](/powershell/azure/servicemanagement/install-azurerm-ps)
-[Install Azure PowerShell](/powershell/azure/install-azurerm-ps)
+[Get-AzureRmResourceGroup](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup)
+[Get-AzureRmResourceGroup](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-4.1.0)
+[New-AzureVM](https://docs.microsoft.com/powershell/module/azure/new-azurevm?view=azuresmps-4.0.0)
+[New-AzureRmVM](https://docs.microsoft.com/powershell/module/azurerm.compute/new-azurermvm)
+[Install Azure PowerShell for Service Management](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azurerm-ps)
+[Install Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps)
 ```

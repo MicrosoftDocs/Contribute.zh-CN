@@ -7,12 +7,12 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: a5ff6c5122a08d2b611fd6b0344a6f5740d93928
-ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
+ms.openlocfilehash: 452cbf97db748532ae2b0e09b4bb558c8f757a61
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592571"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188273"
 ---
 # <a name="markdown-reference"></a>Markdown 引用
 
@@ -178,7 +178,7 @@ Example:
 
 ### <a name="explicit-anchor-links"></a>显式定位标记链接
 
-使用 `<a>` HTML 标记的显式定位标记链接并非必需，也不推荐使用，但在中心和登录页面中除外。 在常规 Markdown 文件中使用上述书签。 对于中心和登录页面，使用如下所示的定位标记：
+使用 `<a>` HTML 标记的显式定位标记链接并非必需，也不推荐使用，但在中心和登录页面中除外  。 在常规 Markdown 文件中使用上述书签。 对于中心和登录页面，使用如下所示的定位标记：
 
 `## <a id="AnchorText"> </a>Header text` 或 `## <a name="AnchorText"> </a>Header text`
 
@@ -566,7 +566,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 应按照以下流程上传任何新视频：
 
-1. 加入 IDWEB 上的 docs_video_users 组。
+1. 加入 IDWEB 上的 docs_video_users 组  。
 1. 转到 https://aka.ms/VideoUploadRequest 并填写视频的详细信息。 需填写以下内容（请注意各项内容均非公开所见）：
     1. 视频标题。
     1. 与视频相关的产品/服务列表。
@@ -574,7 +574,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
     1. 视频 MP4 文件的链接（如果没有用于放置该文件的位置，可暂时将其放于此处：`\\scratch2\scratch\apex`）。 MP4 文件应为 720p 或更高。
     1. 视频说明。
 1. 提交（保存）该项。
-1. 视频将在两个工作日内上传。 嵌入所需的链接将放置于工作项内，并将在解析后返回给你。
+1. 视频将在两个工作日内上传。 嵌入所需的链接将放置于工作项内，并将在解析后返回给你  。
 1. 获取视频链接后，关闭工作项。
 1. 然后，可使用以下语法，将视频链接添加到文章中：
 
