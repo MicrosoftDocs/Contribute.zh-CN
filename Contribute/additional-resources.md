@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: billwagner
 ms.author: wiwagn
 ms.date: 03/29/2019
-ms.openlocfilehash: 63192315c66eb05750c5a59751c339f671985314
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 862bf048b30584a5dc51c1b0758ffc7d41a406f5
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288267"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188363"
 ---
 # <a name="additional-git-and-github-resources"></a>其他 Git 和 GitHub 资源
 
@@ -25,7 +25,7 @@ ms.locfileid: "72288267"
 - [Pro Git 电子书 (PDF)](https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf)：与前面的链接相同，采用 PDF 形式。
 - [从 Codecademy 学习 Git 课程](https://www.codecademy.com/learn/learn-git)：Codeacademy 中的 Git 教程。
 - [从 Pluralsight 上的 Code School 尝试学习 Git 课程](https://www.pluralsight.com/courses/code-school-git-real)：Pluralsight 的 Code School 中的 Git 教程。
-- [Udacity 中的 Git 和 Github 课程](https://www.udacity.com/course/how-to-use-git-and-github--ud775)：Udacity 中的 Git 和 Github 教程
+- [Udacity 中的 Git 和 Github 课程](https://www.udacity.com/course/how-to-use-git-and-github--ud775)：Udacity 中的 Git 和 Github 教程。
 
 ## <a name="github-resources"></a>GitHub 资源
 

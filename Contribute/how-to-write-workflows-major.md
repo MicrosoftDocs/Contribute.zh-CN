@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 87c31979e60a957586ea623b22be190bfdaa41d9
-ms.sourcegitcommit: d357977935b432381f3df6297164417ed59ab434
+ms.openlocfilehash: 997f313e94e4858f37501736c1ec0be2fa8fd552
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72310287"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188238"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>主要或持续更改的 GitHub 参与工作流
 
@@ -54,7 +54,55 @@ ms.locfileid: "72310287"
 >[!TIP]
 >在主分支中进行更改并不是最佳做法  。 想象一下，如果你使用主分支为定时功能发布引入一组更改。 你已完成更改，并等待发布更改。 然后，在过渡期间，你收到一个需要修复某些内容的紧急请求，因此你将在主分支中更改一个文件，然后发布该更改。 在本示例中，你可能无意中发布了修正和更改，而这些内容本应在特定日期发布  。
 
-现在，让我们在本地存储库中创建一个新的工作分支，以获取你所建议的更改。 每个 Git 客户端都不同，因此有关首选客户端，请咨询帮助。 你可以在 [GitHub 流](https://guides.github.com/introduction/flow/)上的 GitHub 指南中查看过程概览。
+现在，让我们在本地存储库中创建一个新的工作分支，以获取你所建议的更改。 如果已设置 Git Bash（请参阅[安装内容创作工具](get-started-setup-tools.md)），则可以创建新的分支，并使用一个命令从克隆的存储库中“签出”该分支：
+
+````
+git checkout -b "branchname"
+````
+
+每个 Git 客户端都不同，因此有关首选客户端，请咨询帮助。 你可以在 [GitHub 流](https://guides.github.com/introduction/flow/)上的 GitHub 指南中查看过程概览。
+
+## <a name="making-your-changes"></a>执行更改
+
+获得了 Microsoft 存储库的副本（“克隆”）并创建了分支后，现在即可随时使用任何文本或 Markdown 编辑器执行可能对社区有益的任何更改（如[安装内容创作工具](get-started-setup-tools.md)页面所述）。  可以在本地保存更改，而无需将更改提交到 Microsoft，准备就绪后再提交即可。
+
+## <a name="saving-changes-to-your-repository"></a>将更改保存到存储库
+
+向作者发送更改之前，必须先将更改保存到 Github 存储库。  同样，尽管所有工具都是不同的，但如果使用的是 Git Bash 命令行，则只需几个简单步骤即可完成此操作。
+
+首先，在存储库中，需要暂存所有要提交的更改  。  可以通过执行以下命令完成此操作：
+
+````
+git add --all
+````
+
+接下来，需要将保存的更改提交到本地存储库。  可以通过运行以下命令在 Git Bash 中完成此操作：
+
+````
+git commit -m "Short Description of Changes Made"
+````
+
+最后，由于此分支在本地计算机上创建，因此需要使 GitHub.com 帐户中的分支知道此分支的存在。  如果使用的是 Git Bash，可通过运行以下命令完成此操作：
+
+````
+git push --set-upstream origin <branchname>
+````
+
+大功告成！  你的代码现在将在 GitHub 存储库中，并可用于创建拉取请求。  
+
+>[!TIP]
+> 尽管更改在推送后即会在个人 GitHub 帐户中可见，但不需要立即提交拉取请求。  如果想要停止并稍后返回进行其他调整，这完全没问题！
+
+需要修复已提交的内容？  没问题！  只需在同一分支中进行更改，然后重新提交并推送即可（无需对同一分支的后续推送设置上游服务器）。
+
+需要执行更多与此分支无关的更改？  切换回主分支并使用 Git Bash 签出其他新分支，此过程非常简单，执行以下命令即可：
+
+````
+git checkout master
+git checkout -b "branchname"
+````
+
+现已位于新分支中，你即将成为主要供稿人。
 
 [!INCLUDE[contribute-how-to-write-workflows-pull-request-processing](includes/contribute-how-to-write-workflows-pull-request-processing.md)]
 

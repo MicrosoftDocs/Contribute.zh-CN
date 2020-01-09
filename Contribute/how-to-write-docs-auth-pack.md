@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: meganbradley
 ms.author: mbradley
 ms.date: 10/22/2018
-ms.openlocfilehash: 11f18ce4f769b478108d399b780937f927e0e12d
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 1552ecc3e17e52439a7faa72973813099ce4d253
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288326"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188302"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>用于 VS Code 的 Docs 创作包
 
@@ -32,7 +32,7 @@ Docs 创作包是 Visual Studio Code 扩展集合，用于辅助 docs.microsoft.
 
 ## <a name="how-to-use-the-docs-markdown-extension"></a>如何使用 Docs Markdown 扩展
 
-要访问 Docs Markdown 菜单，请键入 `ALT+M`。 可以单击或使用向上/向下箭头选择想要的功能，或通过键入来启用筛选，当想要的功能在菜单中突出显示时，点击 `ENTER`。 以下是可用的功能：
+要访问 Docs Markdown 菜单，请按 `ALT+M`。 可以单击或使用向上/向下箭头选择想要的功能，或通过键入来启用筛选，当想要的功能在菜单中突出显示时，点击 `ENTER`。 以下是可用的功能：
 
 |功能     |说明           |
 |-------------|----------------------|

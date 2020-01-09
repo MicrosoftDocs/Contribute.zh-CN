@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: ffc44f07929890ef17b3878ba389dfeea82691a6
-ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
+ms.openlocfilehash: 1f43cecb450c988e4f546aa5ecc5907061521f34
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592451"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188285"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 撰写 Docs
 
@@ -32,7 +32,7 @@ ms.locfileid: "73592451"
 
 应使用 atx 样式完成标题，即在行的开头使用 1-6 个哈希字符 (#) 指示标题，对应 HTML 标题级别 H1 到 H6。 上述示例使用的是一级到四级的标题。
 
-主题中只能有一个一级标题 (H1)，将显示为页面内标题。
+主题中只能有一个一级标题 (H1)，将显示为页面内标题  。
 
 如果标题以 `#` 字符结尾，则需要在末尾添加额外的 `#` 字符，使标题正确呈现。 例如，`# Async Programming in F# #`。
 
@@ -40,13 +40,13 @@ ms.locfileid: "73592451"
 
 ### <a name="bold-and-italic-text"></a>粗体和斜体文本
 
-要将文本设置为粗体格式，请用两个星号括住文本：
+要将文本设置为粗体格式，请用两个星号括住文本  ：
 
 ```md
 This text is **bold**.
 ```
 
-要将文本设置为斜体格式，请用一个星号括住文本：
+要将文本设置为斜体格式，请用一个星号括住文本  ：
 
 ```md
 This text is *italic*.
@@ -196,7 +196,7 @@ Markdown 不仅支持将代码片段内联在某个句子中，还支持将它�
     ...
     ```
 
-开头的三个撇号 (`) 字符后面的别名定义要使用的语法高亮显示。 下面列出了 Docs 内容中常用的编程语言以及匹配的标签：
+开头的三个撇号 (\`) 字符后面的别名定义要使用的语法高亮显示。 下面列出了 Docs 内容中常用的编程语言以及匹配的标签：
 
 这些语言支持友好名称并且大多数都可以突出显示语言。
 
@@ -230,6 +230,7 @@ Markdown 不仅支持将代码片段内联在某个句子中，还支持将它�
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
+|protobuf|protobuf|
 |PowerApps（小数点分隔符）|powerapps-dot|
 |PowerApps（逗号分隔符）|powerapps-comma|
 |PowerShell|powershell|
