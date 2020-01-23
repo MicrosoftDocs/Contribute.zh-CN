@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: 1f43cecb450c988e4f546aa5ecc5907061521f34
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 086972acaef9647709fbe43f07c07abde71c7d9f
+ms.sourcegitcommit: fd92198ec2d0ce2d6687b6f1521a82b3fefc60e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188285"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111066"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 撰写 Docs
 
@@ -389,10 +389,312 @@ Doc 文章使用 GFM 完成大多文章的格式设置，如段落、链接、�
 
 ### <a name="code-include-references"></a>代码包含引用
 
-Markdig 支持通过代码片段扩展以一种高级方式将代码加入文章中。 它提供了一种高级的呈现方式，这种方式基于 GFM 功能（例如编程语言选择和语法着色）以及以下一些出色的功能生成：
+通过 Docs 代码片段 Markdown 扩展，可在文章中嵌入代码示例，并使用语言特定的语法着色来呈现它们。 你可包含来自当前存储库中的代码，也可包含来自其他存储库中的代码。 下面的说明概述了如何将此功能与 [docs.microsoft.com 创作包](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)一起使用。 在 Visual Studio Code 中，可打开“预览”来预览代码片段  。 预览中不可使用突出显示和交互功能。
 
-- 通过外部存储库加入集中式代码示例/片段。
-- 选项卡式 UI，可采用不同语言显示多个版本的代码示例。
+> [!NOTE]
+> 此扩展不支持内联包含代码内容 - 这是通过标准的 triple-tick Markdown 约定实现的。
+
+#### <a name="code-from-current-repository"></a>来自当前存储库的代码
+
+1. 在 Visual Studio Code 中，单击 Alt + M 或 Option + M，再选择“片段”   。
+2. 选择片段后，系统将提示你进行完全搜索、范围搜索或跨存储库引用。 要在本地搜索，请选择“完整本地搜索”。
+3. 要查找文件，请输入搜索词。 找到文件后，将其选中。
+4. 接下来，选择一个选项来确定应在片段中包含哪些代码行。 选项包括：“ID”、“范围”和“无”    。
+5. 根据在步骤 4 中选择的设置，必要时提供一个值。
+
+显示整个代码文件：
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs":::
+```
+
+通过指定行号来显示代码文件的一部分：
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+按片段名称显示代码文件的一部分：
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" id="snippet_Create":::
+```
+
+#### <a name="code-from-another-repository"></a>来自其他存储库的代码
+
+1. 在 Visual Studio Code 中，单击 Alt + M 或 Option + M，再选择“片段”   。
+2. 选择片段后，系统将提示你进行完全搜索、范围搜索或跨存储库引用。 要跨存储库进行搜索，请选择“跨存储库引用”。
+3. 将显示 .openpublishing.publish.config.json 中的存储库供你选择  。 选择存储库。
+3. 要查找文件，请输入搜索词。 找到文件后，将其选中。
+4. 接下来，选择一个选项来确定应在片段中包含哪些代码行。 选项包括：“ID”、“范围”和“无”    。
+5. 根据在步骤 5 中选择的设置，必要时提供一个值。
+
+你的片段引用将如下所示：
+
+```markdown
+:::code language="csharp" source="~/samples-durable-functions/samples/csx/shared/Location.csx" highlight="2,5":::
+```
+
+#### <a name="path-to-code-file"></a>代码文件路径
+
+示例：
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+本示例摘自 ASP.NET 文档存储库，[aspnetcore/data/ef-mvc/crud.md](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/crud.md) 文章文件。 此代码文件通过同一存储库中的 [aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs) 相对路径进行引用。
+
+#### <a name="selected-line-numbers"></a>选定行号
+
+示例：
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+此示例仅显示了 StudentController.cs 代码文件中的第 2-24 行和第 26 行  。
+
+更倾向于代码段而不是硬编码的行号，如下一节中所述。
+
+#### <a name="named-snippet"></a>命名的代码段
+
+示例：
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" id="snippet_Create":::
+```
+
+仅在名称中使用字母和下划线。
+
+本示例显示代码文件的 `snippet_Create` 部分。 本示例中的代码文件具有名为 `snippet_Create` 的 C# 区域：
+
+```cs
+// code excluded from the snippet
+// <snippet_Create>
+// code included in the snippet
+// </snippet_Create>
+// code excluded from the snippet
+```
+
+在可能的情况下，请参考命名的部分，而不是指定行号。 行号引用不太稳妥，因为在更改行号时，代码文件不可避免地会发生更改。
+不一定会收到此类更改的通知。 最终，文章开始显示错误行，并且你完全不知道发生的任何变更。
+
+#### <a name="highlighting-selected-lines"></a>突出显示选定行
+
+示例：
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26" highlight="2,5":::
+```
+
+本示例突出显示第 2 行和第 5 行，从显示的代码段开头开始计数。 （要突出显示的行号并不从代码文件的开头开始计数。）也就是说，代码文件的第 3 行和第 6 行会突出显示。
+
+#### <a name="interactive-code-snippets"></a>交互式代码片段
+
+可以为通过引用包含的代码段启用交互模式。 示例如下：
+
+```markdown
+:::code language="powershell" source="PowerShell.ps1" interactive="cloudshell-powershell":::
+```
+
+```markdown
+:::code language="bash" source="Bash.sh" interactive="cloudshell-bash":::
+```
+
+要为特定代码块启用此功能，请使用 `interactive` 属性。 可用的属性值如下：
+
+- `cloudshell-powershell` - 启用 Azure PowerShell Cloud Shell，如前例所示
+- `cloudshell-bash` - 启用 Azure Cloud Shell
+- `try-dotnet` - 启用 Try .NET
+- `try-dotnet-class` - 使用类基架启用 Try .NET
+- `try-dotnet-method` - 使用方法基架启用 Try .NET
+
+存在兼容的 `language` 和 `interactive` 对。 例如，如果 `interactive` 是 `try-dotnet`，则语言必须是 `csharp`。 同样，`cloudshell-powershell` 仅适用于`powershell`，而 `cloudshell-bash` 仅使用 `bash` 作为语言。
+
+对于 Azure Cloud Shell 和 PowerShell Cloud Shell，用户可以只针对自己的 Azure 帐户运行命令。
+
+通过 [Try .NET](https://github.com/dotnet/try) 可在浏览器中实现 .NET 代码 (C#) 的交互式执行。 对于 Try .NET，有三个选项可实现交互：`try-dotnet`、`try-dotnet-class` 和 `try-dotnet-method`。 无需在代码片段中进行额外配置即可使用这些选项。 当前默认可用的命名空间包括：
+
+- System
+- System.Linq
+- System.Collections.Generic
+- System.Text
+- System.Globalization
+- System.Text.RegularExpressions
+
+用户可通过 `try-dotnet` 属性值在浏览器中运行 C# 代码，而无需将该代码包装在任何自定义代码中。
+
+示例：
+
+```md
+:::code language="csharp" source="relative/path/source.cs" interactive="try-dotnet":::
+```
+
+`try-dotnet-class` 值将类级别基架应用于传递到交互式组件的代码。
+
+```md
+:::code language="csharp" source="relative/path/source.cs" id="snippet-tag" interactive="try-dotnet-class":::
+```
+
+示例：
+
+未应用类基架的代码片段
+
+```md
+public static void Main()
+    {  
+        // Specify the data source.  
+        int[] scores = new int[] { 97, 92, 81, 60 };        // Define the query expression.
+
+        IEnumerable<int> scoreQuery =
+            from score in scores  
+            where score > 80  
+            select score;
+
+        // Execute the query.  
+        foreach (int i in scoreQuery)
+        {  
+            Console.Write(i + " ");
+        }
+    }  
+}
+```
+
+应用了类基架的代码片段
+
+```md
+class NameOfClass {
+
+   public static void Main()
+    {
+        // Specify the data source.
+        int[] scores = new int[] { 97, 92, 81, 60 };
+
+        // Define the query expression.
+        IEnumerable<int> scoreQuery =
+            from score in scores
+            where score > 80
+            select score;
+
+        // Execute the query.
+        foreach (int i in scoreQuery)
+        {
+            Console.Write(i + " ");
+        }
+    }  
+}
+```
+
+`try-dotnet-method` 值将方法级别基架应用于传递到交互式组件的代码。
+
+```md
+:::code language="csharp" source="relative/path/source.cs" id="snippet-tag" interactive="try-dotnet-method":::
+```
+
+示例：
+
+未应用方法基架的代码片段
+
+```md
+/*Print some string in C#*/
+
+Console.WriteLine("Hello C#.);
+```
+
+应用了方法基架的代码片段
+
+```md
+public static void Main(string args[]) {
+
+/*Print some string in C#*/
+
+Console.WriteLine("Hello C#.);
+}
+```
+
+#### <a name="snippet-syntax-reference"></a>片段语法引用
+
+通过使用指定的代码语言，可引用存储库中存储的代码片段。 指定代码路径的内容将扩展并包含到你的文件中。
+
+代码片段的文件夹结构不受限制。 可将代码片段当作普通源代码进行管理。
+
+语法：
+
+```md
+:::code language="<language>" source="<path>" <attribute>="<attribute-value>":::
+```
+
+> [!IMPORTANT]
+> 此语法是块 Markdown 扩展。 必须在自己的行中使用它。
+
+- `<language>`（可选） 
+  - 代码片段的语言。 有关详细信息，请参阅本文后面的[支持的语言](#supported-languages)部分。
+
+- `<path>`（必需） 
+  - 文件系统中的相对路径，指示将引用的代码片段文件。
+
+- `<attribute>` 和 `<attribute-value>`（可选） 
+  - 配合使用以指定如何从文件中检索代码：
+    - `range`：`1,3-5` 行的范围。 此示例包含第 1、3、4 和 5 行。
+    - `id`：`snippet_Create`：需要从代码文件中插入的片段的 ID。 该值不能与范围共存。
+    - `highlight`：`2-4,6`：需要在生成的代码片段中突出显示的范围和/或行数。 编号是与代码片段本身相对的，不与导入的范围相对。
+    - `interactive`：`cloudshell-powershell`、`cloudshell-bash`、`try-dotnet`、`try-dotnet-class`、`try-dotnet-method` 字符串值确定启用了哪些类型的交互。
+
+#### <a name="supported-languages"></a>支持的语言
+
+|名称|Markdown 标签|
+|-----|-------|
+|.NET Core CLI|`dotnetcli`|
+|结合使用 ASP.NET 和 C#|`aspx-csharp`|
+|结合使用 ASP.NET 和 VB|`aspx-vb`|
+|Azure CLI|`azurecli`|
+|浏览器中的 Azure CLI|`azurecli-interactive`|
+|浏览器中的 Azure PowerShell|`azurepowershell-interactive`|
+|AzCopy|`azcopy`|
+|Bash|`bash`|
+|C++|`cpp`|
+|C#|`csharp`|
+|浏览器中的 C#|`csharp-interactive`|
+|控制台|`console`|
+|CSHTML|`cshtml`|
+|DAX|`dax`|
+|Docker|`Dockerfile`|
+|F#|`fsharp`|
+|HTML|`html`|
+|Java|`java`|
+|JavaScript|`javascript`|
+|JSON|`json`|
+|Kusto 查询语言|`kusto`|
+|Markdown|`md`|
+|Objective-C|`objc`|
+|PHP|`php`|
+|PowerShell|`powershell`|
+|Power Query M|`powerquery-m`|
+|protobuf|`protobuf`|
+|Python|`python`|
+|Ruby|`ruby`|
+|SQL|`sql`|
+|Swift|`swift`|
+|VB|`vb`|
+|XAML|`xaml`|
+|XML|`xml`|
+|YAML|`yml`|
+
+#### <a name="code-extensions"></a>代码扩展
+
+|名称|Markdown 标签|文件扩展|
+|-----|-------|-----|
+|C#|csharp|.cs、.csx|
+|C++|cpp|.cpp、.h|
+|F#|fsharp|.fs|
+|Java|java|.java|
+|JavaScript|javascript|.js|
+|Python|python|.py|
+|SQL|sql|.sql|
+|VB|vb|.vb|
+|XAML|xaml|.xaml|
+|XML|xml|.xml|
 
 ## <a name="gotchas-and-troubleshooting"></a>难题和故障排除
 
