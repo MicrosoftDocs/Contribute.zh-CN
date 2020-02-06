@@ -20,6 +20,8 @@
       href: markdown-reference.md
     - name: 风格和语调快速入门
       href: style-quick-start.md
+    - name: 风格指南
+      href: /style-guide/
     - name: 链接
       href: how-to-write-links.md
     - name: Docs 创作包
