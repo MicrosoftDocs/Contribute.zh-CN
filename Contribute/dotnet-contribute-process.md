@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: e54ade313f026b5ea512c0f783d3f8ad83979390
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 161f831bf3f31428f78d3a828b12b4c9ecaffb0e
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288352"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331747"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>参与 .NET 文档撰写的过程
 
@@ -169,7 +169,7 @@ ms.locfileid: "72288352"
 
 ## <a name="the-c-interactive-experience"></a>C# 交互式体验
 
-文章中包括的所有示例均使用[语言标记](how-to-write-use-markdown.md#code-snippets)指示源语言。 采用 C# 的短代码示例可使用 `csharp-interactive` 语言标记指定在浏览器中运行的 C# 示例。 （内联代码示例使用 `csharp-interactive` 标记，对于源中包括的代码示例，请使用 `code-csharp-interactive` 标记。）这些代码示例在文中显示一个代码窗口和一个输出窗口。 输出窗口显示用户运行示例后，执行交互式代码的任何输出。
+文章中包括的所有示例均使用[语言标记](code-in-docs.md)指示源语言。 采用 C# 的短代码示例可使用 `csharp-interactive` 语言标记指定在浏览器中运行的 C# 示例。 （内联代码示例使用 `csharp-interactive` 标记，对于源中包括的代码示例，请使用 `code-csharp-interactive` 标记。）这些代码示例在文中显示一个代码窗口和一个输出窗口。 输出窗口显示用户运行示例后，执行交互式代码的任何输出。
 
 C# 交互式体验改变了我们使用示例的方式。 访问者可运行示例，查看结果。 有许多因素有助于确定示例或对应的文本是否应包括输出的相关信息。
 
