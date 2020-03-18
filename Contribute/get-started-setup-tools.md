@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 04/30/2018
-ms.openlocfilehash: 24d47c4e094c318be75a27dbaaec11d8ead94452
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: ba7e511d756f43acfa5cfbbd228f793d7fbce727
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288549"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331851"
 ---
 # <a name="install-content-authoring-tools"></a>安装内容创作工具
 
@@ -49,7 +49,7 @@ Markdown 是一种轻量级标记语言，既易于阅读也易于理解。 因�
 
 Markdown 文本将保存为扩展名为 .md 的文件。
 
-有关如何使用 Markdown 进行编写的其他详细信息（包括 Markdown 基础知识和 Open Publishing Services (OPS) 自定义 Markdown 扩展支持的功能），请参阅[如何使用 Markdown 撰写文档](how-to-write-use-markdown.md)和 [OPS 的 Markdown 引用](markdown-reference.md)文章。
+有关如何使用 Markdown 进行编写的其他详细信息（包括 Markdown 基础知识和 Open Publishing Services (OPS) 自定义 Markdown 扩展支持的功能），请查看 [Markdown 引用](markdown-reference.md)一文。
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 

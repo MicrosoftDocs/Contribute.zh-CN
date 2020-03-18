@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 997f313e94e4858f37501736c1ec0be2fa8fd552
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 5231b68f04caa94d3ff2ff26afc38e3218ca06b8
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188238"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331897"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>主要或持续更改的 GitHub 参与工作流
 
@@ -110,4 +110,4 @@ git checkout -b "branchname"
 
 就这么简单！ 你已完成参与 docs.microsoft.com 内容的供稿！
 
-- 继续查看[撰写要领](how-to-write-use-markdown.md)一文，了解特定主题（如 Markdown 和 Markdown 扩展语法等）的详细信息。
+- 继续查看 [Markdown 引用](markdown-reference.md)一文，详细了解 Markdown 和 Markdown 扩展语法等主题。

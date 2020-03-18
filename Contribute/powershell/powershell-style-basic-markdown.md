@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: sdwheeler
 ms.author: sewhee
 ms.date: 10/09/2019
-ms.openlocfilehash: e7ee9295794adfde78a2d500f0de3309dd3c821a
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 073a44240b1aa4baa9e655dab069097d21cdd66d
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72290348"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331920"
 ---
 # <a name="markdown-style-guide-for-powershell-docs"></a>PowerShell-Docs 的 Markdown 风格指南
 
@@ -59,7 +59,7 @@ PowerShell 有多个变体。 此表定义用于讨论 PowerShell 的一些不�
 
 ## <a name="basic-markdown-gfm-and-special-characters"></a>基本 Markdown、GFM 和特殊字符
 
-可在有关 [Markdown](../how-to-write-use-markdown.md) 和 [Markdown 参考](../markdown-reference.md)的一般性文章中了解 Markdown、GitHub Flavored Markdown (GFM) 和 OPS 特定扩展的基础知识。
+可在 [Markdown 引用](../markdown-reference.md)一文中了解 Markdown、GitHub Flavored Markdown (GFM) 和 OPS 特定扩展的基础知识。
 
 Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 如果要在内容中包括其中一个字符，必须执行以下两项操作之一：
 

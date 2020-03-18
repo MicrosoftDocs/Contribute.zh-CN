@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 998ebf90c8a162451dd4ca2e7c8a55833ed9d408
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 8d4d8c572435b9261038017c04dcad78ec83fe67
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288379"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331736"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>适用于 .NET 文档的元数据和 Markdown 模板
 
@@ -43,7 +43,7 @@ ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
 
 ## <a name="basic-markdown-gfm-and-special-characters"></a>基本 Markdown、GFM 和特殊字符
 
-可在有关 [Markdown](how-to-write-use-markdown.md) 和 [Markdown 参考](markdown-reference.md)的一般性文章中了解 Markdown、GitHub Flavored Markdown (GFM) 和 OPS 特定扩展的基础知识。
+可在 [Markdown 引用](markdown-reference.md)一文中了解 Markdown、GitHub Flavored Markdown (GFM) 和 OPS 特定扩展的基础知识。
 
 Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 如果要在内容中包括其中一个字符，必须执行以下两项操作之一：
 
@@ -126,7 +126,7 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 
 ## <a name="code"></a>代码
 
-包括代码的最佳方式是包括工作示例中的代码片段。 请遵循[参与 .NET](dotnet-contribute-process.md#contributing-to-samples) 一文中的说明，创建示例。 包括代码的基本规则位于有关[代码](how-to-write-use-markdown.md#code-snippets)的通用指南中。
+包括代码的最佳方式是包括工作示例中的代码片段。 请遵循[参与 .NET](dotnet-contribute-process.md#contributing-to-samples) 一文中的说明，创建示例。 包括代码的基本规则位于有关[代码](code-in-docs.md)的通用指南中。
 
 可使用以下语法，包括代码：
 

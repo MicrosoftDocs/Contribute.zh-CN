@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 06/30/2017
-ms.openlocfilehash: 5154b80102069f1d5526b744637f8ba854f1fe3f
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: c099a458718ade11840c314542c530dd6669402d
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288441"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331874"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Git 和 GitHub 的 Docs 概要
 
@@ -61,7 +61,7 @@ Git 还使用分层结构来存储和管理项目的内容：
 
 只要在两个或多个文章间有共享的可重用内容，就可将其放入主`articles`目录的 `/includes` 子目录中。 在使用包含文件的 Markdown 文件中，相应的“include”Markdown 扩展名放置在需要引用包含文件的位置。
 
-有关其他指南，请参阅[如何使用 Markdown：包含文件](how-to-write-use-markdown.md#include-files)。
+请参阅 [Markdown 引用：包含文件](markdown-reference.md#included-markdown-files)。
 
 ### <a name="markdown-file-template"></a>Markdown 文件模板
 
