@@ -7,12 +7,12 @@ ms.date: 01/30/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 14cc9f0912149eb342c97d0dd7d2776bd54c84e7
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.openlocfilehash: c1568264c687ebaf26048f5432fdea7d5132c012
+ms.sourcegitcommit: 216ef77ca2cd1eeb31c6c89d96778b178fc0d540
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78331945"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80070079"
 ---
 # <a name="docs-markdown-reference"></a>Docs Markdown 引用
 
@@ -627,6 +627,19 @@ Markdown 中较长的单词可能会扩展到右侧导航栏，导致表不可�
 ### <a name="line-breaks-within-words-in-second-column-table-cells"></a>第二列表格单元格中单词内的换行符
 
 你可能只希望换行符自动插入到表格第二列中的单词内。 若要限制在第二列换行，请按前述所示使用 `div` 包装语法来应用类 `mx-tdCol2BreakAll`。
+
+### <a name="data-matrix-tables"></a>数据矩阵表
+
+数据矩阵表同时包含一个标头和加权第一列，这在左上方创建了一个带有空单元格的矩阵。 Docs 具有适用于数据矩阵表的自定义 Markdown：
+
+```md
+|                  |Header 1 |Header 2|
+|------------------|---------|--------|
+|**First column A**|Cell 1A  |Cell 2A |
+|**First column B**|Cell 1B  |Cell 2B |
+```
+
+第一列中的每个条目都必须设置为粗体样式（`**bold**`）；否则，屏幕阅读器将无法访问这些表格，Docs 也无法使用这些表。
 
 ### <a name="html-tables"></a>HTML 表
 
