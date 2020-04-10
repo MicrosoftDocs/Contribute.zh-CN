@@ -3,16 +3,16 @@ title: docs.microsoft.com 的 Markdown 引用
 description: 了解 Microsoft Docs 平台中使用的 Markdown 功能和语法。
 author: meganbradley
 ms.author: mbradley
-ms.date: 01/30/2020
+ms.date: 03/31/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: c1568264c687ebaf26048f5432fdea7d5132c012
-ms.sourcegitcommit: 216ef77ca2cd1eeb31c6c89d96778b178fc0d540
+ms.openlocfilehash: f0aed4ebb57ee1ce34f55d9085bab718fd4511cb
+ms.sourcegitcommit: 5ef2dc72e2ff8bddf873415a3f4b816eb16029dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80070079"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80624736"
 ---
 # <a name="docs-markdown-reference"></a>Docs Markdown 引用
 
@@ -70,7 +70,7 @@ ms.locfileid: "80070079"
 
 ## <a name="apostrophes-and-quotation-marks"></a>撇号和引号
 
-如果将文本从 Word 复制到 Markdown 编辑器，文本可能包含“弯”撇号或弯引号。 需要将这些内容编码或更改为基本撇号或单引号。 否则，发布文件时，最终将得到：Itâ€™s
+如果将文本从 Word 复制到 Markdown 编辑器，文本可能包含“弯”撇号或弯引号。 需要将这些内容编码或更改为基本撇号或单引号。 否则，发布文件时，最终将得到：Itâ&euro;&trade;s
 
 下面是关于这些“弯”版本标点符号的编码：
 
@@ -187,11 +187,11 @@ Docs 支持六个级别的 Markdown 标题：
 - H1 标题必须是 YML 元数据块之后的文件中的第一个内容。
 - H2 标题将自动显示在已发布文件右侧的导航菜单中。 而后的低级标题则不会显示，因此策略性地使用 H2 可帮助读者进行内容导航。
 - 不建议使用 HTML 标题（如 `<h1>`），它们在某些情况下会导致出现生成警告。
-- 可通过[书签链接](how-to-write-links.md#links-to-anchors)链接到文件中的各个标题。
+- 可通过[书签链接](how-to-write-links.md#explicit-anchor-links)链接到文件中的各个标题。
 
 ## <a name="html"></a>HTML
 
-虽然 Markdown 支持内联式 HTML，但不建议使用 HTML 将内容发布到 Docs，除了数量有限的一系列值以外，其他值会导致生成错误或警告。 
+虽然 Markdown 支持内联式 HTML，但不建议使用 HTML 将内容发布到 Docs，除了数量有限的一系列值以外，其他值会导致生成错误或警告。
 
 ## <a name="images"></a>图像
 

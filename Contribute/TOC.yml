@@ -53,28 +53,16 @@
     - name: .NET 文档
       items:
         - name: 如何参与 .NET 文档撰写
-          href: dotnet-contribute.md
-        - name: 参与 .NET 文档撰写
-          href: dotnet-contribute-process.md
+          href: dotnet/dotnet-contribute.md
+        - name: 标签和项目路线图
+          href: dotnet/labels-projects.md
         - name: .NET 文档风格约定
-          href: dotnet-style-guide.md
+          href: dotnet/dotnet-style-guide.md
         - name: 语音语调指南
-          href: dotnet-voice-tone.md
+          href: dotnet/dotnet-voice-tone.md
         - name: 拉取请求评审流程
-          href: dotnet-pr-review.md
-    - name: PowerShell 文档
-      items:
-        - name: 如何参与 PowerShell 文档撰写
-          href: powershell\powershell-contribute.md
-        - name: 参与 PowerShell 撰写的过程
-          href: powershell\powershell-contribute-process.md
-        - name: 有关编写 PowerShell 文章的快速入门
-          href: powershell\powershell-style-basic-markdown.md
-        - name: PowerShell 脚本示例风格指南
-          href: powershell\powershell-style-code.md
-        - name: PowerShell Cmdlet 引用风格指南
-          href: powershell\powershell-style-reference.md
-        - name: 提交 PowerShell 的拉取请求
-          href: powershell\powershell-pull-requests.md
+          href: dotnet/dotnet-pr-review.md
+    - name: PowerShell-Docs
+      href: powershell-overview.md
 - name: 其他资源
   href: additional-resources.md
