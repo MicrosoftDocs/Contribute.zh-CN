@@ -7,12 +7,12 @@ ms.date: 02/19/2019
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 3efe66a71a4a61b84ff513a6253777cb2d21bc9e
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 95dadff41bb31e0b34ee34f85ae47708297954f1
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288653"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81784283"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 参与者指南概述
 
@@ -39,7 +39,7 @@ ms.locfileid: "72288653"
 
    ![“编辑”链接的位置](./media/index/edit-article.png)
 
-2. 接下来，单击铅笔图标来编辑文章，如下所示。 如果铅笔图标显示为灰色，你需要登录到 GitHub 帐户，或者创建一个新帐户。 
+2. 接下来，单击铅笔图标来编辑文章，如下所示。 如果铅笔图标呈灰显，则你需要登录到 GitHub 帐户，或者创建一个新帐户。 
 
    ![铅笔图标的位置](./media/index/edit-icon.png)
 
@@ -68,7 +68,7 @@ GitHub 编辑界面会根据你在存储库上的权限做出响应。 前面的
 > 如果可用，你可以编辑一篇文章的任何语言版本，而且根据编辑的类型将出现以下情况： 
 > 1. 任何经过批准的语言更改也将用于帮助改进我们的机器翻译引擎
 > 2. 任何显著修改文章内容的编辑都将在内部进行处理，以便针对同一文章的英语版本提交更改，从而在获得批准后，将编辑内容本地化为其他语言。
-> 因此，你建议的改进不仅给你自己语言的文章带来正面影响，还会影响其他所有可用语言。
+> 你建议的改进不仅会给你自己语言的文章带来正面影响，还会影响其他所有可用语言。
 
 ## <a name="review-open-prs"></a>评审待定的拉取请求
 

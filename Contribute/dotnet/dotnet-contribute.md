@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: d52d681987e26fddc89a33075b3d35279608ac04
-ms.sourcegitcommit: bf2f4c7d9050b480d4db306df19d4c9f8714eff0
+ms.openlocfilehash: d97d72e8458a53ab11b01cbd4bb5df3b8458b048
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80759576"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81784315"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>了解如何参与 .NET 文档存储库撰写
 
@@ -203,6 +203,10 @@ C# 交互式体验改变了我们使用示例的方式。 访问者可运行示�
 
 > [!NOTE]
 > 你可能已注意到，部分主题当前不遵循此处指定的所有准则。 我们正在努力实现整个网站中的一致性。 查看我们目前正在针对该特定目标跟踪的[未决问题](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3Abookmark_tabs%3A+Information+Architecture%22)列表。
+
+### <a name="contributing-to-international-content"></a>参与全球内容   
+
+当前不接受参与机器翻译 (MT) 内容。 为了提高 MT 内容的质量，我们进行了转换，现使用神经 MT 引擎。 我们接受并鼓励参与人工翻译 (HT) 内容，该内容用来训练神经 MT 引擎。 随着时间的推移，对 HT 内容的参与将提高 HT 和 MT 这两者的质量。 MT 主题将包含一条免责声明，其中指出主题的一部分可能是机器翻译，而由于已禁止编辑，因此将不显示“编辑”按钮  。   
 
 ## <a name="contributor-license-agreement"></a>参与者许可协议
 
