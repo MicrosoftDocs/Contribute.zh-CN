@@ -7,10 +7,10 @@ ms.topic: contributor-guide
 ms.date: 03/03/2020
 ms.author: dapine
 ms.openlocfilehash: b4bd1761dc1bd9326275f011bb1935f6b695404d
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336741"
 ---
 # <a name="sort-selection"></a>排序所选内容
@@ -19,7 +19,7 @@ ms.locfileid: "78336741"
 
 ## <a name="summary"></a>摘要
 
-在 Markdown (\*.md) 文件中，进行选择后，现有两个排序上下文菜单项  。 右键单击所选内容可打开上下文菜单。 你将看到类似以下菜单项的内容：
+在 Markdown ( *.md) 文件中，进行选择后，现有两个排序上下文菜单项\** 。 右键单击所选内容可打开上下文菜单。 你将看到类似以下菜单项的内容：
 
 :::image type="content" source="media/sort-selection-menu.png" alt-text="排序所选内容上下文菜单":::
 
@@ -34,7 +34,7 @@ ms.locfileid: "78336741"
 
 选择“按降序对所选内容进行排序 (Z 到 A)”选项会按字母顺序从 Z 到 A（降序）对整个所选内容进行排序  。
 
-## <a name="considerations"></a>注意事项
+## <a name="considerations"></a>考虑事项
 
 基本排序机制使用自然语言排序  。 这使得它比标准排序的功能更强大且更全面。 请考虑下列表：
 

@@ -8,10 +8,10 @@ author: meganbradley
 ms.author: mbradley
 ms.date: 03/05/2020
 ms.openlocfilehash: 5bbf51af52069d5636715ffb2bd3f59bf459d5b9
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336397"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>用于 VS Code 的 Docs 创作包
@@ -29,19 +29,19 @@ Docs 创作包是 VS Code 扩展的集合，用于辅助 docs.microsoft.com 的 
 
 ## <a name="prerequisites-and-assumptions"></a>前提条件和假设
 
-要使用 Docs Markdown 扩展插入相关链接、图像和其他嵌入内容，必须将 VS Code 工作区的范围限定于所克隆的公开发布系统 (OPS) 存储库的根路径。 例如，如果已将文档存储库克隆到 `C:\git\SomeDocsRepo\`，请在 VS Code 中打开该文件夹或子文件夹：选择“文件” > “打开文件夹”菜单，或使用命令行中的 `code C:\git\SomeDocsRepo\`   。
+要使用 Docs Markdown 扩展插入相关链接、图像和其他嵌入内容，必须将 VS Code 工作区的范围限定于所克隆的公开发布系统 (OPS) 存储库的根路径。 例如，如果已将文档存储库克隆到 `C:\git\SomeDocsRepo\`，请在 VS Code 中打开该文件夹或子文件夹：选择“文件” > “打开文件夹”菜单，或使用命令行中的 `code C:\git\SomeDocsRepo\`。
 
 扩展支持的一些语法（如警报和片段）是 OPS 的自定义 Markdown。 除非已通过 OPS 发布，否则将无法正确呈现自定义 Markdown。
 
 ## <a name="how-to-use-the-docs-markdown-extension"></a>如何使用 Docs Markdown 扩展
 
-要访问 Docs Markdown 菜单，请键入 <kbd>ALT+M</kbd>  。 可单击或使用上下箭头来选择所需的命令。 或者，可键入内容以开始筛选，然后当你所需的功能在菜单中突出显示时按 <kbd>Enter</kbd>。
+要访问 Docs Markdown 菜单，请键入 <kbd>ALT+M</kbd>。 可单击或使用上下箭头来选择所需的命令。 或者，可键入内容以开始筛选，然后当你所需的功能在菜单中突出显示时按 <kbd>Enter</kbd>。
 
 请参阅 [Docs Markdown 自述文件](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown)以获取最新的命令列表。
 
 ## <a name="how-to-generate-a-master-redirect-file"></a>如何生成主重定向文件
 
-Docs Markdown 扩展包括一个脚本，用于基于单个文件中的 `redirect_url` 元数据生成或更新存储库的主重定向文件。 此脚本可检查存储库中每个 Markdown 文件是否具有 `redirect_url`、将重定向元数据添加到存储库的主重定向文件 (.openpublishing.redirection.json)，还可将已重定向的文件移至存储库以外的文件夹  。 要运行脚本，请执行以下操作：
+Docs Markdown 扩展包括一个脚本，用于基于单个文件中的 `redirect_url` 元数据生成或更新存储库的主重定向文件。 此脚本可检查存储库中每个 Markdown 文件是否具有 `redirect_url`、将重定向元数据添加到存储库的主重定向文件 (.openpublishing.redirection.json)，还可将已重定向的文件移至存储库以外的文件夹。 要运行脚本，请执行以下操作：
 
 1. 选择 <kbd>F1</kbd> 打开 VS Code 命令面板。
 2. 开始键入“Docs:生成…”
@@ -51,15 +51,15 @@ Docs Markdown 扩展包括一个脚本，用于基于单个文件中的 `redirec
 
 ## <a name="how-to-assign-keyboard-shortcuts"></a>如何分配键盘快捷方式
 
-1. 依次键入 <kbd>Ctrl+K</kbd> 和 <kbd>Ctrl+S</kbd>，打开键盘快捷方式列表  。
+1. 依次键入 <kbd>Ctrl+K</kbd> 和 <kbd>Ctrl+S</kbd>，打开键盘快捷方式列表。
 1. 搜索要创建自定义键绑定的命令，例如 `formatBold`。
 1. 鼠标悬停在该行上时，单击命令名称旁边出现的加号。
 1. 在显示新的输入框后，键入想要绑定到特定命令的键盘快捷方式。 例如，要将常见快捷方式用于加粗操作，则键入 <kbd>Ctrl+B</kbd>。
-1. 在键绑定中插入 `when` 子句是个不错的主意，这样便无法在 Markdown 以外的文件中使用该快捷方式。 为此，请打开 keybindings.json，在命令名称下方插入以下行（请确保在行之间添加逗号）  ：
+1. 在键绑定中插入 `when` 子句是个不错的主意，这样便无法在 Markdown 以外的文件中使用该快捷方式。 为此，请打开 keybindings.json，在命令名称下方插入以下行（请确保在行之间添加逗号）：
 
     `"when": "editorTextFocus && editorLangId == 'markdown'"`
 
-    自定义键绑定完成后，在 keybindings.json 中看起来应如下所示  ：
+    自定义键绑定完成后，在 keybindings.json 中看起来应如下所示：
 
     ```json
     [
@@ -74,7 +74,7 @@ Docs Markdown 扩展包括一个脚本，用于基于单个文件中的 `redirec
     > [!TIP]
     > 将键绑定放在此文件中以覆盖默认值
 
-1. 保存 keybindings.json  。
+1. 保存 keybindings.json。
 
 有关键绑定的详细信息，请参阅 [VS Code 文档](https://code.visualstudio.com/docs/getstarted/keybindings)。
 
@@ -82,13 +82,13 @@ Docs Markdown 扩展包括一个脚本，用于基于单个文件中的 `redirec
 
 名为“Gauntlet”的扩展代码的前用户会注意到，安装 Docs Markdown 扩展时，在 VS Code 窗口的底部不再显示创作工具栏。 这是因为工具栏占据了 VS Code 状态栏的大量空间，而且未遵循扩展 UX 的最佳做法，因此在新扩展中被弃用。 但是，可以通过更新 VS Code settings.json 文件来选择性地显示工具栏，如下所示：
 
-1. 在 VS Code 中，转到“文件” > “首选项” > “设置”，或者选择 <kbd>Ctrl+,</kbd>    。
-1. 选择“用户设置”，更改所有 VS Code 工作区的设置，或选择“工作区设置”，更改当前工作区的相关设置   。
-1. 选择“扩展” > “Docs Markdown 扩展配置”，然后选择“在底部状态栏中显示旧工具栏”    。
+1. 在 VS Code 中，转到“文件” > “首选项” > “设置”，或者选择 <kbd>Ctrl+,</kbd>。
+1. 选择“用户设置”，更改所有 VS Code 工作区的设置，或选择“工作区设置”，更改当前工作区的相关设置。
+1. 选择“扩展” > “Docs Markdown 扩展配置”，然后选择“在底部状态栏中显示旧工具栏”。
 
    ![在 VS Code 中显示旧工具栏设置](docs-authoring/media/show-gauntlet-bar.png)
 
-做出选择后，VS Code 会更新 settings.json 文件  。 系统将提示你重新加载窗口，以使更改生效。
+做出选择后，VS Code 会更新 settings.json 文件。 系统将提示你重新加载窗口，以使更改生效。
 
 添加到扩展的更新的命令在工具栏中不可用。
 
@@ -114,10 +114,10 @@ Templates 扩展支持三个动态元数据字段：author、ms.author 和 ms.da
 
 ### <a name="to-set-author-andor-msauthor"></a>设置 author 和/或 ms.author
 
-1. 在 VS Code 中，转到“文件” > “首选项” > “设置”，或者选择 <kbd>Ctrl+,</kbd>    。
-1. 选择“用户设置”，更改所有 VS Code 工作区的设置，或选择“工作区设置”，更改当前工作区的相关设置   。
-1. 在左侧的“默认设置”窗格中，找到“Docs 文章模板扩展配置”，单击所需设置旁边的铅笔图标，然后单击“设置”中的“替换”  。
-1. “用户设置”窗格将并排打开，底部附带一个新条目  。
+1. 在 VS Code 中，转到“文件” > “首选项” > “设置”，或者选择 <kbd>Ctrl+,</kbd>。
+1. 选择“用户设置”，更改所有 VS Code 工作区的设置，或选择“工作区设置”，更改当前工作区的相关设置。
+1. 在左侧的“默认设置”窗格中，找到“Docs 文章模板扩展配置”，单击所需设置旁边的铅笔图标，然后单击“设置”中的“替换”。
+1. “用户设置”窗格将并排打开，底部附带一个新条目。
 1. 根据需要，添加 GitHub ID 或 Microsoft 电子邮件别名，然后保存该文件。
 1. 可能需要关闭并重启 VS Code 才能使更改生效。
 1. 现在，在应用使用动态字段的模板时，你的 GitHub ID 和/或 Microsoft 别名自动填充到元数据标头中。

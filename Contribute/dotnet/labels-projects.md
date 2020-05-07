@@ -6,10 +6,10 @@ ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/24/2020
 ms.openlocfilehash: 0dcac28db04378730b186c0f23064c1433d9f80e
-ms.sourcegitcommit: bf2f4c7d9050b480d4db306df19d4c9f8714eff0
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "80760367"
 ---
 # <a name="labels-and-projects-roadmap"></a>标签和项目路线图

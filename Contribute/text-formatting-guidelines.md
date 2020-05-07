@@ -8,10 +8,10 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 7b6927918c81fdc41e3c3887f94339b225e2a6e6
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336499"
 ---
 # <a name="text-formatting-guidelines"></a>文本格式指南
@@ -24,9 +24,9 @@ ms.locfileid: "78336499"
 
 ### <a name="examples"></a>示例
 
-* 正确示例  ：在**解决方案资源管理器**中，右键单击项目节点，然后选择**添加 > 新建项**。
-* 错误示例  ：在解决方案资源管理器中，右键单击项目节点，然后选择添加 > 新建项。
-* 错误示例  ：在*解决方案资源管理器*中，右键单击项目节点，然后选择*添加 > 新建项*。
+* 正确示例：在**解决方案资源管理器**中，右键单击项目节点，然后选择**添加 > 新建项**。
+* 错误示例：在解决方案资源管理器中，右键单击项目节点，然后选择添加 > 新建项。
+* 错误示例：在*解决方案资源管理器*中，右键单击项目节点，然后选择*添加 > 新建项*。
 
 ## <a name="italics"></a>斜体
 
@@ -38,12 +38,12 @@ ms.locfileid: "78336499"
 
 ### <a name="examples"></a>示例
 
-* 正确示例  ：在应用服务中，应用在*应用服务计划*中运行。 应用服务计划定义要运行 Web 应用的一组计算资源。
-* 错误示例  ：在应用服务中，应用在“应用服务计划”中运行。 应用服务计划定义要运行 Web 应用的一组计算资源。
-* 正确示例  ：将 *HttpTriggerCSharp.cs* 中的代码替换为以下代码。
-* 错误示例  ：将 `HttpTriggerCSharp.cs` 中的代码替换为以下代码。
-* 正确示例  ：输入 *ContosoUniversity* 作为**名称**，然后选择“**添加**”。
-* 错误示例  ：输入“ContosoUniversity”作为**名称**，然后选择“**添加**”。
+* 正确示例：在应用服务中，应用在*应用服务计划*中运行。 应用服务计划定义要运行 Web 应用的一组计算资源。
+* 错误示例：在应用服务中，应用在“应用服务计划”中运行。 应用服务计划定义要运行 Web 应用的一组计算资源。
+* 正确示例：将 *HttpTriggerCSharp.cs* 中的代码替换为以下代码。
+* 错误示例：将 `HttpTriggerCSharp.cs` 中的代码替换为以下代码。
+* 正确示例：输入 *ContosoUniversity* 作为**名称**，然后选择“**添加**”。
+* 错误示例：输入“ContosoUniversity”作为**名称**，然后选择“**添加**”。
 
 ## <a name="code-style"></a>代码样式
 
@@ -59,18 +59,18 @@ ms.locfileid: "78336499"
 
 **为什么？** 旧版样式指南指定对许多此类文本元素使用粗体。 但是，大多数文章都已本地化，代码样式会告诉翻译人员将这部分文本保留不译。
 
-代码样式可以为内联（包括在 \` 中）或跨多行的隔离代码块（包括在 \`\`\` 中）   。 请将较长的代码片段和路径放在隔离代码块中。
+代码样式可以为内联（包括在 \` 中）或跨多行的隔离代码块（包括在 \`\`\` 中）。 请将较长的代码片段和路径放在隔离代码块中。
 
 ### <a name="examples-using-inline-styles"></a>使用内联样式的示例
 
-* 正确示例  ：默认情况下，实体框架将名为 `Id` 或 `ClassnameID` 的属性解释为主键。
-* 错误示例  ：默认情况下，实体框架将名为 *Id* 或 *ClassnameID* 的属性解释为主键。
-* 正确示例  ：`Microsoft.EntityFrameworkCore` 包为 EF Core 提供运行时支持。
-* 错误示例  ：*Microsoft.EntityFrameworkCore* 包为 EF Core 提供运行时支持。
+* 正确示例：默认情况下，实体框架将名为 `Id` 或 `ClassnameID` 的属性解释为主键。
+* 错误示例：默认情况下，实体框架将名为 *Id* 或 *ClassnameID* 的属性解释为主键。
+* 正确示例：`Microsoft.EntityFrameworkCore` 包为 EF Core 提供运行时支持。
+* 错误示例：*Microsoft.EntityFrameworkCore* 包为 EF Core 提供运行时支持。
 
 ### <a name="examples-of-fenced-code-blocks"></a>隔离代码块示例
 
-* 正确示例  ：没有命令通过只更改 `IQueryable` 的语句发送到数据库，例如以下代码：
+* 正确示例：没有命令通过只更改 `IQueryable` 的语句发送到数据库，例如以下代码：
 
   ```markdown
       ```csharp
@@ -78,9 +78,9 @@ ms.locfileid: "78336499"
       ```
   ```
 
-* 错误示例  ：没有命令通过只更改 **IQueryable** 的语句（例如 **var students = context.Students.Where(s => s.LastName == "Davolio")** ）发送到数据库。
+* 错误示例：没有命令通过只更改 **IQueryable** 的语句（例如 **var students = context.Students.Where(s => s.LastName == "Davolio")**）发送到数据库。
 
-* 正确示例  ：例如，若要在 `C:\Scripts` 目录运行 `Get-ServiceLog.ps1` 脚本，请键入：
+* 正确示例：例如，若要在 `C:\Scripts` 目录运行 `Get-ServiceLog.ps1` 脚本，请键入：
 
   ```markdown
       ```powershell
@@ -88,9 +88,9 @@ ms.locfileid: "78336499"
       ```
   ```
 
-* 错误示例  ：例如，若要在 **C:\Scripts** 目录运行 **Get-ServiceLog.ps1** 脚本，请键入："C:\Scripts\Get-ServiceLog.ps1."
+* 错误示例：例如，若要在 **C:\Scripts** 目录运行 **Get-ServiceLog.ps1** 脚本，请键入："C:\Scripts\Get-ServiceLog.ps1."
 
-* 所有隔离代码块都必须具有已批准的语言标记  。 有关支持语言标记的列表，请参阅[如何在文档中包含代码](./code-in-docs.md#supported-languages)。
+* 所有隔离代码块都必须具有已批准的语言标记。 有关支持语言标记的列表，请参阅[如何在文档中包含代码](./code-in-docs.md#supported-languages)。
 
 ## <a name="headings-and-link-text"></a>标题和链接文本
 
@@ -102,16 +102,16 @@ ms.locfileid: "78336499"
 
 ### <a name="examples"></a>示例
 
-* 正确示例  ：*function.json* 文件是由 NuGet 包 [Microsoft.NET.Sdk.Functions](http://www.nuget.org/packages/Microsoft.NET.Sdk.Functions) 生成的。
-* 错误示例  ：*function.json* 文件是由 NuGet package [`Microsoft.NET.Sdk.Functions`](http://www.nuget.org/packages/Microsoft.NET.Sdk.Functions) 生成的。
+* 正确示例：*function.json* 文件是由 NuGet 包 [Microsoft.NET.Sdk.Functions](http://www.nuget.org/packages/Microsoft.NET.Sdk.Functions) 生成的。
+* 错误示例：*function.json* 文件是由 NuGet package [`Microsoft.NET.Sdk.Functions`](http://www.nuget.org/packages/Microsoft.NET.Sdk.Functions) 生成的。
 
-* 正确示例  ：
+* 正确示例：
 
   ```markdown
   ### The Microsoft.NET.Sdk.Functions package
   ```
 
-* 错误示例  ：
+* 错误示例：
 
   ```markdown
   ### The `Microsoft.NET.Sdk.Functions` package
@@ -127,9 +127,9 @@ ms.locfileid: "78336499"
 
 ### <a name="examples"></a>示例
 
-* 正确示例  ：选择 Alt+Ctrl+S。
-* 错误示例  ：按 **ALT+CTRL+S**。
-* 错误示例  ：点击 `ALT+CTRL+S`。
+* 正确示例：选择 Alt+Ctrl+S。
+* 错误示例：按 **ALT+CTRL+S**。
+* 错误示例：点击 `ALT+CTRL+S`。
 
 有关详细信息，请参阅[描述与 UI 的交互](https://styleguides.azurewebsites.net/StyleGuide/Read?id=2700&topicid=26472)。
 

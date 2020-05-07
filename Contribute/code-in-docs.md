@@ -8,10 +8,10 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 4aa34196f59a69651dd19add35a0351dd9b5d59b
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336472"
 ---
 # <a name="how-to-include-code-in-docs"></a>如何在文档中包含代码
@@ -140,7 +140,7 @@ ms.locfileid: "78336472"
 
 仅当不能通过引用代码文件来显示代码时，才使用内联代码块。 与代码文件（完整项目的一部分）相比，内联代码通常更难测试且更难保持最新。  并且内联代码可能忽略可帮助开发人员理解和使用代码的上下文。 这些注意事项主要适用于编程语言。 内联代码块还可用于输出和输入（如 JSON）、查询语言（如 SQL）和脚本语言（如 PowerShell）。
   
-可以通过以下两种方法在文章文件中指出文本的一部分是一个代码块：使用三个反斜杠 (\`\`\`) 将其隔开  或缩进。 隔离是首选方法，因为它允许指定语言。 避免使用缩进，因为这样极易出错，并且当其他编写者需要编辑你的文章时，可能很难理解你的意图。
+可以通过以下两种方法在文章文件中指出文本的一部分是一个代码块：使用三个反斜杠 (\`\`\`) 将其隔开或缩进。 隔离是首选方法，因为它允许指定语言。 避免使用缩进，因为这样极易出错，并且当其他编写者需要编辑你的文章时，可能很难理解你的意图。
 
 语言指示紧跟开头的三个反斜杠后，如以下示例所示：
 
@@ -182,7 +182,7 @@ Markdown：
 1. 在 Visual Studio Code 中，单击 Alt + M 或 Option + M，再选择“片段”<kbd></kbd><kbd></kbd>。
 2. 选择片段后，系统将提示你进行完全搜索、范围搜索或跨存储库引用。 要在本地搜索，请选择“完整搜索”。
 3. 要查找文件，请输入搜索词。 找到文件后，将其选中。
-4. 接下来，选择一个选项来确定应在片段中包含哪些代码行。 选项包括：“ID”、“范围”和“无”    。
+4. 接下来，选择一个选项来确定应在片段中包含哪些代码行。 选项包括：“ID”、“范围”和“无”。
 5. 根据在步骤 4 中选择的设置，必要时提供一个值。
 
 显示整个代码文件：
@@ -230,7 +230,7 @@ Markdown：
 :::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
 ```
 
-此示例仅显示了 StudentController.cs 代码文件中的第 2-24 行和第 26 行  。
+此示例仅显示了 StudentController.cs 代码文件中的第 2-24 行和第 26 行。
 
 更倾向于命名的代码片段而不是硬编码的行号，如下一部分所述。
 
@@ -269,11 +269,11 @@ Markdown：
 
 ## <a name="out-of-repo-snippet-references"></a>存储库外的代码段引用
 
-如果要引用的代码文件在另一个存储库中，请将代码储存库设置为“从属存储库”  。 在执行此操作时，请为它指定一个名称。 然后，该名称会作为一个文件夹名称用于代码引用。
+如果要引用的代码文件在另一个存储库中，请将代码储存库设置为“从属存储库”。 在执行此操作时，请为它指定一个名称。 然后，该名称会作为一个文件夹名称用于代码引用。
 
-例如，文档存储库是 Azure/azure-docs  ，代码存储库是 Azure/azure-functions-durable-extension  。
+例如，文档存储库是 Azure/azure-docs，代码存储库是 Azure/azure-functions-durable-extension。
 
-在 azure-docs  的根文件夹中，在 .openpublishing.publish.config.json  中添加以下部分：
+在 azure-docs 的根文件夹中，在 .openpublishing.publish.config.json 中添加以下部分：
 
 ```json
     {
@@ -284,15 +284,15 @@ Markdown：
     },
 ```
 
-现在，当你引用 sample-durable-functions（如同它是 azure-docs 中的一个文件夹）时，你实际上引用的是 azure-functions-durable-extension 存储库中的根文件夹    。
+现在，当你引用 sample-durable-functions（如同它是 azure-docs 中的一个文件夹）时，你实际上引用的是 azure-functions-durable-extension 存储库中的根文件夹。
 
 可手动使用三冒号格式 (:\:\:) 或在 Visual Studio Code 中借助 [docs.microsoft.com 创作包](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)来包含代码。
 
 1. 在 Visual Studio Code 中，单击 Alt + M 或 Option + M，再选择“片段”<kbd></kbd><kbd></kbd>。
 2. 选择片段后，系统将提示你进行完全搜索、范围搜索或跨存储库引用。 要跨存储库进行搜索，请选择“跨存储库引用”。
-3. 将显示 .openpublishing.publish.config.json 中的存储库供你选择  。 选择存储库。
+3. 将显示 .openpublishing.publish.config.json 中的存储库供你选择。 选择存储库。
 4. 要查找文件，请输入搜索词。 找到文件后，将其选中。
-5. 接下来，选择一个选项来确定应在片段中包含哪些代码行。 选项包括：“ID”、“范围”和“无”    。
+5. 接下来，选择一个选项来确定应在片段中包含哪些代码行。 选项包括：“ID”、“范围”和“无”。
 6. 根据在步骤 5 中选择的设置，提供一个值。
 
 你的片段引用将如下所示：
@@ -301,10 +301,10 @@ Markdown：
 :::code language="csharp" source="~/samples-durable-functions/samples/csx/shared/Location.csx" highlight="2,5":::
 ```
 
-在 azure-functions-durable-extension  存储库中，该代码文件位于 samples/csx/shared  文件夹中。 [如前](#highlighting-selected-lines)所述，突出显示的行号对应于代码片段的开头而非文件的开头。
+在 azure-functions-durable-extension 存储库中，该代码文件位于 samples/csx/shared 文件夹中。 [如前](#highlighting-selected-lines)所述，突出显示的行号对应于代码片段的开头而非文件的开头。
 
 > [!NOTE]
-> 分配给从属存储库的名称对应于主存储库的根目录，但波形符 (~) 是指文档集的根目录。 文档集根目录由 .openpublishing.publish.config.json 中的 `build_source_folder` 确定  。 上一示例中代码片段的路径可在 azure-docs 存储库中使用，因为 `build_source_folder` 指的是存储库根目录 (`.`)。 如果 `build_source_folder` 为 `articles`，则路径将以 `~/../samples-durable-functions` 而非 `~/samples-durable-functions` 开头。
+> 分配给从属存储库的名称对应于主存储库的根目录，但波形符 (~) 是指文档集的根目录。 文档集根目录由 .openpublishing.publish.config.json 中的 `build_source_folder` 确定。 上一示例中代码片段的路径可在 azure-docs 存储库中使用，因为 `build_source_folder` 指的是存储库根目录 (`.`)。 如果 `build_source_folder` 为 `articles`，则路径将以 `~/../samples-durable-functions` 而非 `~/samples-durable-functions` 开头。
 
 ## <a name="interactive-code-snippets"></a>交互式代码片段
 
@@ -316,7 +316,7 @@ Markdown：
 * Azure PowerShell Cloud Shell
 * C# REPL
 
-启用交互模式后，呈现的代码框会出现“尝试”  或“运行”  按钮。 例如：
+启用交互模式后，呈现的代码框会出现“尝试”或“运行”按钮。 例如：
 
 ```markdown
     ```azurepowershell-interactive
@@ -371,13 +371,13 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 > [!IMPORTANT]
 > 此语法是块 Markdown 扩展。 必须在自己的行中使用它。
 
-* `<language>`（可选） 
+* `<language>`（可选）
   * 代码片段的语言。 有关详细信息，请参阅本文后面的[支持的语言](#supported-languages)部分。
 
-* `<path>`（必需） 
+* `<path>`（必需）
   * 文件系统中的相对路径，指示将引用的代码片段文件。
 
-* `<attribute>` 和 `<attribute-value>`（可选） 
+* `<attribute>` 和 `<attribute-value>`（可选）
   * 配合使用以指定如何从文件中检索代码以及如何显示代码：
     * `range`：`1,3-5` 行的范围。 此示例包含第 1、3、4 和 5 行。
     * `id`：`snippet_Create`：需要从代码文件中插入的片段的 ID。 该值不能与范围共存。

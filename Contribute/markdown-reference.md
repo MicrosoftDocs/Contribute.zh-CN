@@ -8,10 +8,10 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.openlocfilehash: f0aed4ebb57ee1ce34f55d9085bab718fd4511cb
-ms.sourcegitcommit: 5ef2dc72e2ff8bddf873415a3f4b816eb16029dd
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "80624736"
 ---
 # <a name="docs-markdown-reference"></a>Docs Markdown 引用
@@ -93,13 +93,13 @@ ms.locfileid: "80624736"
 
 ## <a name="bold-and-italic-text"></a>粗体和斜体文本
 
-要将文本设置为粗体格式，请用两个星号括住文本  ：
+要将文本设置为粗体格式，请用两个星号括住文本：
 
 ```markdown
 This text is **bold**.
 ```
 
-要将文本设置为斜体格式，请用一个星号括住文本  ：
+要将文本设置为斜体格式，请用一个星号括住文本：
 
 ```markdown
 This text is *italic*.
@@ -117,7 +117,7 @@ Docs Markdown 不仅支持将代码片段内联在某个句子中，还支持将
 
 ## <a name="columns"></a>列
 
-通过名为“列”的 Markdown 扩展，Docs 作者可添加基于列的内容布局，这些布局比基本 Markdown 表更灵活、功能更强大，而基本 Markdown 表只适用于真正的表格数据  。 最多可添加 4 列，并需使用可选的 `span` 属性来合并两个或更多列。
+通过名为“列”的 Markdown 扩展，Docs 作者可添加基于列的内容布局，这些布局比基本 Markdown 表更灵活、功能更强大，而基本 Markdown 表只适用于真正的表格数据。 最多可添加 4 列，并需使用可选的 `span` 属性来合并两个或更多列。
 
 列的语法如下所示：
 
@@ -157,12 +157,12 @@ Docs Markdown 不仅支持将代码片段内联在某个句子中，还支持将
 
 :::row:::
    :::column span="2":::
-      这是包含大量文本的跨两列的列  。
+      这是包含大量文本的跨两列的列。
 
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum mollis nunc ornare commodo. Nullam ac metus imperdiet, rutrum justo vel, vulputate leo. Donec rutrum non eros eget consectetur.
    :::column-end:::
    :::column span="":::
-      这是包含图像的单个列  。
+      这是包含图像的单个列。
 
       ![Doc.U.Ment](media/markdown-reference/document.png)
    :::column-end:::
@@ -270,7 +270,7 @@ Docs 自定义 `:::image:::` 扩展支持标准图像、复杂图像和图标。
 - 内联：重用内联在某句子中的常用文本片段。
 - 块：将整个 Markdown 文件作为一个块重用，嵌套在文章的某一部分中。
 
-“内联”和“块”包含文件是 Markdown (.md) 文件。 它可以包含任何有效的 Markdown。 包含文件通常位于存储库根目录中的公共包含子目录中  。 发布文章时，加入的文件会无缝集成到其中。
+“内联”和“块”包含文件是 Markdown (.md) 文件。 它可以包含任何有效的 Markdown。 包含文件通常位于存储库根目录中的公共包含子目录中。 发布文章时，加入的文件会无缝集成到其中。
 
 ### <a name="includes-syntax"></a>包含文件语法
 
@@ -294,7 +294,7 @@ Text before [!INCLUDE [<title>](<filepath>)] and after.
 - 包含文件不会在文章的 GitHub 呈现视图中显示，因为它们依赖于 Docs 扩展。 它们在发布后才会显示。
 - 确保包含文件中的所有文本都是完整的句子或者段落，并且与引用该包含文件的文章的前后文没有关联。 如果不遵循此指导原则，则会在文章中创建无法转换的字符串。
 - 请勿在其他包含文件中嵌入包含文件。
-- 将媒体文件放在特定于包含文件子目录的媒体文件夹中，例如 `<repo>`/includes/media 文件夹  。 媒体目录不应在根目录中包含任何图像  。 如果包含文件不包含图像，则不需要相应的媒体目录  。
+- 将媒体文件放在特定于包含文件子目录的媒体文件夹中，例如 `<repo>`/includes/media 文件夹。 媒体目录不应在根目录中包含任何图像。 如果包含文件不包含图像，则不需要相应的媒体目录。
 - 对于常规文章，请勿在各包含文件之间共享媒体。 对于每个包含文件和文章，请使用具有唯一名称的单独文件。 将媒体文件存储在与包含文件关联的媒体文件夹中。
 - 请勿将包含文件用作文章的唯一内容。  包含文件主要用作文章其余内容的补充内容。
 
@@ -427,7 +427,7 @@ no-loc: [Global, Strings, to be, Ignored]
 ```
 
 > [!NOTE]
-> 在 docfx.json 文件中，不支持将不可本地化的元数据作为全局元数据  。 本地化管道不会读取 docfx.json 文件，因此必须将不可本地化的元数据添加到每个单独的源文件中  。
+> 在 docfx.json 文件中，不支持将不可本地化的元数据作为全局元数据。 本地化管道不会读取 docfx.json 文件，因此必须将不可本地化的元数据添加到每个单独的源文件中。
 
 在下示例中，本地化过程中将同时忽略元数据 `title` 和 Markdown 标头中的 `Document` 一词。
 

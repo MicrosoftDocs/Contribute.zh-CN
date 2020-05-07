@@ -7,10 +7,10 @@ ms.topic: contributor-guide
 ms.date: 03/03/2020
 ms.author: dapine
 ms.openlocfilehash: 07c95f2a0d24a49f59eaffe1bec64ee872530c2f
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336764"
 ---
 # <a name="reformat-markdown-tables"></a>重新设置 Markdown 表的格式
@@ -19,7 +19,7 @@ ms.locfileid: "78336764"
 
 ## <a name="summary"></a>摘要
 
-在 Markdown (\*.md) 文件中，选择一个完整的表时，现有两个表格式设置上下文菜单项  。 右键单击所选的 Markdown 表可打开上下文菜单。 你将看到类似以下菜单项的内容：
+在 Markdown ( *.md) 文件中，选择一个完整的表时，现有两个表格式设置上下文菜单项\** 。 右键单击所选的 Markdown 表可打开上下文菜单。 你将看到类似以下菜单项的内容：
 
 :::image type="content" source="media/reformat-table-menu.png" alt-text="重新设置表上下文菜单的格式":::
 
@@ -34,7 +34,7 @@ ms.locfileid: "78336764"
 
 选择“平均分布所选表”选项将计算每列的最长值，并使用空格相应地平均分布所有其他值  。
 
-## <a name="considerations"></a>注意事项
+## <a name="considerations"></a>考虑事项
 
 此功能不会影响表的呈现，但将有助于提高表的可读性，从而更易于维护。 重新设置表格式的功能将保持列对齐方式不变。
 

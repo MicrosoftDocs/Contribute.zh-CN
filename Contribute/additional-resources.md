@@ -8,10 +8,10 @@ author: billwagner
 ms.author: wiwagn
 ms.date: 03/29/2019
 ms.openlocfilehash: 862bf048b30584a5dc51c1b0758ffc7d41a406f5
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2019
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "75188363"
 ---
 # <a name="additional-git-and-github-resources"></a>其他 Git 和 GitHub 资源

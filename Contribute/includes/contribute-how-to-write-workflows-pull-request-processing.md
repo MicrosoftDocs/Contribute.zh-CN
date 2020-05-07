@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 9cb0ba651d40d2834081d32443a8fd2b1152003d
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "53286063"
+---
 ## <a name="pull-request-processing"></a>拉取请求处理
 
 之前的部分介绍了提交建议更改的过程，提交时所用的方式是将建议更改绑定在已添加到目标存储库拉取请求队列的新拉取请求 (PR) 中。 拉取请求通过请求将工作分支的更改拉取和合并到其他分支，从而实现 GitHub 的协作模型。 大多数情况下，其他分支就是主存储库中的默认/主分支。

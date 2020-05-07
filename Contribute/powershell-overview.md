@@ -1,6 +1,6 @@
 ---
 title: 参与 PowerShell 文档撰写
-description: 本文概述了作为 PowerShell 文档的参与者的入门知识。
+description: 本文概述了作为 PowerShell 文档参与者的入门知识。
 ms.date: 03/05/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
@@ -8,10 +8,10 @@ ms.custom: external-contributor-guide
 author: sdwheeler
 ms.author: sewhee
 ms.openlocfilehash: df7bad93dfc7b75c2d4fcb6bd3344dd787246cab
-ms.sourcegitcommit: 5ef2dc72e2ff8bddf873415a3f4b816eb16029dd
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "80625157"
 ---
 # <a name="contributing-to-powershell-documentation"></a>参与 PowerShell 文档撰写

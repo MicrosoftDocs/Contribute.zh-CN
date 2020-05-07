@@ -8,10 +8,10 @@ author: jasonwhowell
 ms.author: jasonh
 ms.date: 04/30/2018
 ms.openlocfilehash: ba7e511d756f43acfa5cfbbd228f793d7fbce727
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78331851"
 ---
 # <a name="install-content-authoring-tools"></a>安装内容创作工具
@@ -41,7 +41,7 @@ ms.locfileid: "78331851"
 
 在下一篇文章中，你将[设置本地 Git 存储库](get-started-setup-local.md)。
 
-   其他 Git 资源可在此处找到：[Git terminology](https://help.github.com/articles/github-glossary)（Git 术语） | [Git 基本信息](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [了解 Git 和 GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
+   下面提供了更多的 Git 资源：[Git 术语](https://help.github.com/articles/github-glossary) | [Git 基础知识](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [学习 Git 和 GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
 
 ## <a name="understand-markdown-editors"></a>了解 Markdown 编辑器
 

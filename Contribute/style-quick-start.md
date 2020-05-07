@@ -6,10 +6,10 @@ ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 07/25/2017
 ms.openlocfilehash: 28c10e52db304b599e1b4f5cf40acc2f886971ff
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2019
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "72288658"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs 风格和语调快速入门
@@ -40,7 +40,7 @@ ms.locfileid: "72288658"
 - **尽量确保句子简洁明了**：复合句或者大量从句会使翻译难度增加。 尽量将句子拆分为短句，不要出现过于冗长或者看起来很奇怪的句子。 我们希望使用自然语言撰写文章。
 - **使用简单一致的句子构造**：翻译一致性会更高。 避免插入语和边注，尽量直接切入正题。 签出几篇已发布的文章。 如果某篇文章采用友好、便于阅读的风格，请用作范本。
 - **措辞和大小写一致**：再次强调，一致性很重要。 如果不是在句首或者不属于专有名词，切勿使用大写形式。
-- **包含“小词”** ：在英语中，“小词”即我们认为较小且不重要的那些单词（例如“a”、“the”、“that”和“is”），它们可以帮助理解上下文，对于机器翻译而言至关重要。 请务必加入这些单词。
+- **包含“小词”**：在英语中，“小词”即我们认为较小且不重要的那些单词（例如“a”、“the”、“that”和“is”），它们可以帮助理解上下文，对于机器翻译而言至关重要。 请务必加入这些单词。
 
 ## <a name="other-style-and-voice-issues-to-watch-for"></a>需要注意的其他风格和语调问题
 

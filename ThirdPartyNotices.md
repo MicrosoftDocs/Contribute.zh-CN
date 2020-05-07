@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 22a09e3b1c3fc3ef4b36eb2397e33df3a3e29ebe
-ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2019
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "71247373"
 ---
 # <a name="legal-notices"></a>法律声明

@@ -8,10 +8,10 @@ ms.custom: external-contributor-guide
 author: sdwheeler
 ms.author: sewhee
 ms.openlocfilehash: b4982d82d8de8c076daf85876810a0324d036c40
-ms.sourcegitcommit: 5ef2dc72e2ff8bddf873415a3f4b816eb16029dd
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "80625065"
 ---
 # <a name="contributing-to-powershell-documentation"></a>参与 PowerShell 文档撰写
