@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: d97d72e8458a53ab11b01cbd4bb5df3b8458b048
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 948c96a63754566fc73e54c722998739984977d6
+ms.sourcegitcommit: 43a4f52ab827a7cf4609cc592483595efde3ceae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "81784315"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83203066"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>了解如何参与 .NET 文档存储库撰写
 
@@ -45,7 +45,7 @@ ms.locfileid: "81784315"
 
 **步骤 1：** 对于小更改，请跳过此步骤。 如果有兴趣编写新内容或仔细修订现有内容，请创建描述你想做的事情的[问题](https://github.com/dotnet/docs/issues)。
 
-“Docs”文件夹中的内容组织成部分，在目录 (TOC) 中进行反映。 定义主题在 TOC 中所处的位置。 获取有关建议的反馈。
+“Docs”文件夹中的内容组织成部分，在目录 (TOC) 中进行反映  。 定义主题在 TOC 中所处的位置。 获取有关建议的反馈。
 
 -或-
 
@@ -69,7 +69,11 @@ ms.locfileid: "81784315"
 
 如果它是新主题，则可以使用此[模板文件](dotnet-style-guide.md)，作为起始点。 它包含编写准则，并且还解释每篇文章需要的元数据（例如，作者信息）。
 
-导航到对应针对步骤 1 中的文章确定的目录位置的文件夹。 该文件夹包含针对该部分中所有文章的 Markdown 文件。 如有必要，新建一个文件夹，放置存储内容的文件。 该部分的主要文章称为 index.md。 对于映像和其他静态资源，请在包含文章的文件夹中创建称为“media”的子文件夹（如果尚不存在）。 在“media”文件夹内，创建具有文章名称的子文件夹（索引文件除外）。 如有关[示例](#contributing-to-samples)的部分中所述，代码示例应位于 `dotnet/samples` 存储库中。
+导航到对应针对步骤 1 中的文章确定的目录位置的文件夹。 该文件夹包含针对该部分中所有文章的 Markdown 文件。 如有必要，新建一个文件夹，放置存储内容的文件。 该部分的主要文章称为 index.md  。
+
+对于映像和其他静态资源，请在包含文章的文件夹中创建称为“media”的子文件夹（如果尚不存在）  。 在“media”文件夹内，创建具有文章名称的子文件夹（索引文件除外）  。 
+
+对于代码片段，请在包含你的文章的文件夹中创建一个名为“snippets”的子文件夹（如果尚不存在）   。 在大多数情况下，你将具有全部三种主要的 .NET 语言（C#、F# 和 Visual Basic）的代码片段。 在此情况下，请为三个项目中的每一个分别创建名为“csharp”、“fsharp”和“vb”的子文件夹    。 为简单起见，请在 C#、F# 和 Visual Basic 指南中对你的项目使用“snippets”文件夹  。 这些区域通常包含一种语言的片段。 代码片段很小，侧重于展示文章中所述概念的代码的示例。 用于下载和查看的更大型程序应放置在 [dotnet/samples](https://github.com/dotnet/samples) 存储库中。 所有示例都在[参与撰写示例](#contributing-to-samples)部分中有所介绍。
 
 请务必遵循适当的 Markdown 语法。 有关常见示例，请参阅[模板和标记速查表](dotnet-style-guide.md)。
 
@@ -83,6 +87,24 @@ ms.locfileid: "81784315"
           /media
             /porting-overview
                 portability_report.png
+          /snippets
+            /porting-overview
+              /csharp
+                porting.csproj
+                porting-overview.cs
+                Program.cs
+              /fsharp
+                porting.fsproj
+                porting-overview.fs
+                Program.fs
+               /vb
+                porting.vbproj
+                porting-overview.vb
+                Program.vb
+
+上面所示结构包含一张图像 portability_report.png，还有三个包含代码片段的代码项目，它们都包含在 porting-overview.md 文章中    。 在所接受的备用结构中，每种语言都有一个项目，其中包含该文件夹中所有文章的所有片段。 这一备用结构已在语言参考区域中使用，因为用非常小的片段来展示语言语法。 建议不要在其他区域中使用此结构。
+
+由于历史原因，很多包含的片段存储在 dotnet/docs 存储库的 /samples 文件夹下   。 如果要对某篇文章进行重大更改，应将这些片段移到新的结构。 如果是细小改动，则不要移动片段。
 
 **步骤 4：** 从分支向主分支提交拉取请求 (PR)。
 
@@ -105,36 +127,36 @@ ms.locfileid: "81784315"
 
 [dotnet/示例](https://github.com/dotnet/samples)存储库包含属于 .NET 文档下的任何主题的所有代码示例。 存在组织成子文件夹的多个不同项目。 这些子文件夹的组织方式类似于 .NET 文档的组织方式。
 
-我们对存在于存储库中的代码进行以下区分：
+我们对支持我们内容的代码进行了以下区分：
 
 - 示例：读者可以下载并运行示例。 所有示例都应是完整的应用程序或库。 如果示例创建库，该库应包括单元测试或允许读者运行代码的应用程序。 它们通常使用多种技术、功能或工具包。 每个示例的 readme.md 文件都将引用文章，使你能够深入了解每个示例中涉及的概念。
 - 代码片段：说明较小概念或任务。 它们进行编译但不打算成为完整的应用程序。 它们应正常运行，但不是典型方案的示例应用程序。 相反，它们旨在尽可能小，以说明单个概念或功能。 这些应只是一个屏幕的代码。
 
-所有代码均位于 [dotnet/示例](https://github.com/dotnet/samples)存储库中。 我们正在努力构建一个模型，其中示例文件夹结构匹配文档文件夹结构。 所遵循的标准有：
+示例存储在 [dotnet/samples](https://github.com/dotnet/samples) 存储库中。 我们正在努力构建一个模型，其中示例文件夹结构匹配文档文件夹结构。 所遵循的标准有：
 
-- 顶层“snippets”文件夹包含小型、重点示例的代码片段。
-- API 引用示例位于遵循此模式的文件夹中：snippets/\<>/api/\<namespace>/\<apiname>。
-- 其他顶层文件夹与文档存储库中的顶层文件夹匹配。 例如，文档存储库包含“machine-learning/tutorials”文件夹，并且机器学习教程的示例位于“samples/machine-learning/tutorials”文件夹中。
+- 顶层文件夹与 docs 存储库中的顶层文件夹相匹配  。 例如，文档存储库包含“machine-learning/tutorials”文件夹，并且机器学习教程的示例位于“samples/machine-learning/tutorials”文件夹中   。
 
-此外，核心和标准文件夹下的所有示例都应在 .NET Core 支持的所有平台上生成并运行。 CI 生成系统将强制执行该操作。 顶层“framework”文件夹包含仅在 Windows 上生成和验证的示例。
+此外，核心和标准文件夹下的所有示例都应在 .NET Core 支持的所有平台上生成并运行   。 CI 生成系统将强制执行该操作。 顶层“framework”文件夹包含仅在 Windows 上生成和验证的示例  。
 
 示例项目应在针对给定示例可能的最广泛的一组平台上生成和运行。 实际上，这表示在可能的位置生成基于 .NET Core 的控制台应用程序。 特定于 Web 或 UI 框架的示例应根据需要添加这些工具。 示例有 Web 应用程序、移动应用、WPF 或 WinForms 应用等。
 
 我们正在努力实现适用于所有代码的 CI 系统。 当对示例进行任何更新时，请确保每个更新都属于可生成项目。 理想情况下，还可添加针对示例正确性的测试。
 
-创建的每个完整示例都应包含 readme.md 文件。 此文件应包含有关示例的简短说明（一到两个段落）。 Readme.md 应告知读者通过浏览此示例，可以学到什么内容。 此外，readme.md 文件还应包含一个链接，指向 [.NET 文档站点](https://docs.microsoft.com/dotnet/welcome)上的实时文档。 若要确定存储库中给定文件映射到该站点的位置，请将存储库路径中的 `/docs` 替换为 `https://docs.microsoft.com/dotnet`。
+创建的每个完整示例都应包含 readme.md 文件  。 此文件应包含有关示例的简短说明（一到两个段落）。 Readme.md 应告知读者通过浏览此示例，可以学到什么内容  。 此外，readme.md 文件还应包含一个链接，指向 [.NET 文档站点](https://docs.microsoft.com/dotnet/welcome)上的实时文档  。 若要确定存储库中给定文件映射到该站点的位置，请将存储库路径中的 `/docs` 替换为 `https://docs.microsoft.com/dotnet`。
 
 此外，主题还将包含指向该示例的链接。 直接链接到 GitHub 上的示例文件夹。
 
-### <a name="writing-a-new-snippet-or-sample"></a>编写新的代码片段或示例
+### <a name="writing-a-new-sample"></a>编写新示例
 
-1. 示例必须属于可生成项目的一部分。 如果可能，应在 .NET Core 支持的所有平台上生成项目。 此情况的例外是演示平台特定功能或平台特定工具的示例。
+示例是可供下载的完整程序和库。 它们的范围可能很小，但以一种用户能自行浏览和试验的方式对概念进行了展示。 示例指南确保读者可下载和浏览。 请查看[并行 LINQ (PLINQ)](https://github.com/dotnet/samples/tree/master/csharp/parallel/PLINQ) 示例，它们是每份指南中的例子。
+
+1. 示例必须属于可生成项目的一部分  。 如果可能，应在 .NET Core 支持的所有平台上生成项目。 此情况的例外是演示平台特定功能或平台特定工具的示例。
 
 2. 示例应符合 [corefx 编码样式](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md)，以保持一致性。
 
     - 此外，演示不需要初始化新对象的内容时，我们首选 `static` 方法，而不是实例方法。
 
-3. 示例应包括适当的异常处理。 它应处理可能在示例的上下文中引发的所有异常。 例如，当输入字符串以参数形式传递给方法时，调用 [Console.ReadLine](https://docs.microsoft.com/dotnet/api/system.console.readline) 方法以检索用户输入的示例应使用适当的异常处理。 同样，如果示例需要方法调用失败，则必须处理导致的异常。 请始终处理方法引发的特定异常，而不是基类异常，例如 [Exception](https://docs.microsoft.com/dotnet/api/system.exception) 或 [SystemException](https://docs.microsoft.com/dotnet/api/system.systemexception)。
+3. 示例应包括适当的异常处理  。 它应处理可能在示例的上下文中引发的所有异常。 例如，当输入字符串以参数形式传递给方法时，调用 [Console.ReadLine](https://docs.microsoft.com/dotnet/api/system.console.readline) 方法以检索用户输入的示例应使用适当的异常处理。 同样，如果示例需要方法调用失败，则必须处理导致的异常。 请始终处理方法引发的特定异常，而不是基类异常，例如 [Exception](https://docs.microsoft.com/dotnet/api/system.exception) 或 [SystemException](https://docs.microsoft.com/dotnet/api/system.systemexception)。
 
 4. 如果示例生成独立包，除示例所用的任何运行时外，还必须包含 CI 生成系统所用的运行时：
     - `win7-x64`
@@ -179,7 +201,29 @@ ms.locfileid: "81784315"
 
 3. 向示例的根目录添加 readme.md。
 
-   这应包括代码的简短说明，并使用户参考引用该示例的文章。
+   这应包括代码的简短说明，并使用户参考引用该示例的文章。 readme.md 的顶端必须具有[示例浏览器](https://docs.microsoft.com/samples)所需的元数据  。 头信息块应包含以下字段：
+
+   ```yml
+   ---
+   name: "really cool sample"
+   description: "Learn everything about this really cool sample."
+   page_type: sample
+   languages:
+     - csharp
+     - fsharp
+     - vbnet
+   products:
+     - dotnet-core
+     - dotnet
+     - dotnet-standard
+     - aspnet
+     - aspnet-core
+     - ef-core
+   ---
+   ```
+
+   - `languages` 集合应只包含可用于你的示例的语言。
+   - `products` 集合应只包括与你的示例相关的产品。
 
 备注除外，所有示例均通过 .NET Core 支持的任何平台上的命令行生成。 有一些特定于 Visual Studio 的示例，需要 Visual Studio 2017 或更高版本。 此外，部分示例还展示了平台特定的功能，并且需要特定的平台。 其他示例和代码片段需要 .NET Framework，且将在 Windows 平台上运行，需要适用于目标 Framework 版本的开发人员工具包。
 
@@ -204,9 +248,9 @@ C# 交互式体验改变了我们使用示例的方式。 访问者可运行示�
 > [!NOTE]
 > 你可能已注意到，部分主题当前不遵循此处指定的所有准则。 我们正在努力实现整个网站中的一致性。 查看我们目前正在针对该特定目标跟踪的[未决问题](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3Abookmark_tabs%3A+Information+Architecture%22)列表。
 
-### <a name="contributing-to-international-content"></a>参与全球内容   
+### <a name="contributing-to-international-content"></a>参与全球内容
 
-当前不接受参与机器翻译 (MT) 内容。 为了提高 MT 内容的质量，我们进行了转换，现使用神经 MT 引擎。 我们接受并鼓励参与人工翻译 (HT) 内容，该内容用来训练神经 MT 引擎。 随着时间的推移，对 HT 内容的参与将提高 HT 和 MT 这两者的质量。 MT 主题将包含一条免责声明，其中指出主题的一部分可能是机器翻译，而由于已禁止编辑，因此将不显示“编辑”按钮。   
+当前不接受参与机器翻译 (MT) 内容。 为了提高 MT 内容的质量，我们进行了转换，现使用神经 MT 引擎。 我们接受并鼓励参与人工翻译 (HT) 内容，该内容用来训练神经 MT 引擎。 随着时间的推移，对 HT 内容的参与将提高 HT 和 MT 这两者的质量。 MT 主题将包含一条免责声明，其中指出主题的一部分可能是机器翻译，而由于已禁止编辑，因此将不显示“编辑”按钮  。
 
 ## <a name="contributor-license-agreement"></a>参与者许可协议
 
