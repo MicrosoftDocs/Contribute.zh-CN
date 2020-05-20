@@ -19,7 +19,7 @@ ms.locfileid: "78336764"
 
 ## <a name="summary"></a>摘要
 
-在 Markdown (\*.md) 文件中，选择一个完整的表时，现有两个表格式设置上下文菜单项  。 右键单击所选的 Markdown 表可打开上下文菜单。 你将看到类似以下菜单项的内容：
+在 Markdown (\*.md) 文件中，选择一个完整的表时，现有两个表格式设置上下文菜单项。 右键单击所选的 Markdown 表可打开上下文菜单。 你将看到类似以下菜单项的内容：
 
 :::image type="content" source="media/reformat-table-menu.png" alt-text="重新设置表上下文菜单的格式":::
 

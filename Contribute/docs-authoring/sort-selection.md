@@ -19,7 +19,7 @@ ms.locfileid: "78336741"
 
 ## <a name="summary"></a>摘要
 
-在 Markdown (\*.md) 文件中，进行选择后，现有两个排序上下文菜单项  。 右键单击所选内容可打开上下文菜单。 你将看到类似以下菜单项的内容：
+在 Markdown (\*.md) 文件中，进行选择后，现有两个排序上下文菜单项。 右键单击所选内容可打开上下文菜单。 你将看到类似以下菜单项的内容：
 
 :::image type="content" source="media/sort-selection-menu.png" alt-text="排序所选内容上下文菜单":::
 

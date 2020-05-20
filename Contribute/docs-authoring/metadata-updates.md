@@ -19,17 +19,17 @@ ms.locfileid: "78336626"
 
 ## <a name="summary"></a>摘要
 
-在 Markdown (\*.md) 文件中，有两个特定于元数据的上下文菜单项  。 右键单击文本编辑器中的任意位置时，会看到类似以下菜单项的内容：
+在 Markdown (\*.md) 文件中，有两个特定于元数据的上下文菜单项。 右键单击文本编辑器中的任意位置时，会看到类似以下菜单项的内容：
 
 :::image type="content" source="media/update-metadata-menu.png" alt-text="更新元数据上下文菜单":::
 
 ## <a name="update-msdate-metadata-value"></a>更新 `ms.date` 元数据值
 
-选择“更新 `ms.date` 元数据值”选项会将当前的 Markdown 文件 `ms.date` 值设为当天的日期  。 如果文档不包含 `ms.date` 元数据字段，则不执行任何操作。
+选择“更新 `ms.date` 元数据值”选项会将当前的 Markdown 文件 `ms.date` 值设为当天的日期。 如果文档不包含 `ms.date` 元数据字段，则不执行任何操作。
 
 ## <a name="update-implicit-metadata-values"></a>更新隐式元数据值
 
-选择“更新隐式元数据值”选项将查找并替换可能隐式指定的所有可能的元数据值  。 元数据值是在 `build/fileMetadata` 节点下的 docfx.json 文件中隐式指定的  。 `fileMetadata` 节点中的每个键值对均表示元数据默认值。 例如，top-level/sub-folder 目录中忽略 `ms.author` 元数据值的 Markdown 文件可能会隐式指定要在 `fileMetadata` 节点中使用的默认值  。
+选择“更新隐式元数据值”选项将查找并替换可能隐式指定的所有可能的元数据值  。 元数据值是在 `build/fileMetadata` 节点下的 docfx.json 文件中隐式指定的。 `fileMetadata` 节点中的每个键值对均表示元数据默认值。 例如，top-level/sub-folder 目录中忽略 `ms.author` 元数据值的 Markdown 文件可能会隐式指定要在 `fileMetadata` 节点中使用的默认值。
 
 ```json
 {
@@ -55,7 +55,7 @@ ms.author: someone-else
 # Content
 ```
 
-如果在此文件上执行了“更新隐式元数据值”选项，则元数据值上方的假设的 docfx.json 内容将更新为 `ms.author: dapine`  。
+如果在此文件上执行了“更新隐式元数据值”选项，则元数据值上方的假设的 docfx.json 内容将更新为 `ms.author: dapine`。
 
 ```markdown
 ---
