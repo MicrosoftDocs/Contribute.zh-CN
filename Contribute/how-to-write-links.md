@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: gewarren
 ms.author: gewarren
 ms.date: 03/31/2020
-ms.openlocfilehash: ca29d4b9e81f8af3b680367b210bd1734860687d
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 94ba4cefd9aff70b38502aa397a3761127c8089f
+ms.sourcegitcommit: 9852045bac75fd5d90c0ffc88d2a17dd45ba015f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80624747"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85107105"
 ---
 # <a name="use-links-in-documentation"></a>在文档中使用链接
 
@@ -44,11 +44,11 @@ docs.microsoft.com 站点后端使用开放发布服务 (OPS)，支持通过 [Ma
 
 ## <a name="links-from-one-article-to-another"></a>从一篇文章链接到另一篇文章
 
-发布系统支持两种类型的超链接：URL 和文件链接   。
+发布系统支持两种类型的超链接：URL 和文件链接**** ****。
 
 URL 链接可以是相对于 docs.microsoft.com 根的 URL 路径，也可以是包含完整 URL 语法（例如 `https://github.com/MicrosoftDocs/PowerShell-Docs`）的绝对 URL。
 
-- 链接到当前 docset 之外的内容时，或在 docset 中的自动生成的参考和概念文章之间链接时，请使用 URL 链接  。
+- 链接到当前 docset 之外的内容时，或在 docset 中的自动生成的参考和概念文章之间链接时，请使用 URL 链接__。
 - 创建相对链接的最简单方法是从浏览器复制 URL，然后从粘贴到 Markdown 中的值中删除 `https://docs.microsoft.com/en-us`。
    - 请勿在 Microsoft 属性的 URL 中包括区域设置（例如，从 URL 中删除“/en-us”）。
 
@@ -97,7 +97,7 @@ https://docs.microsoft.com/en-us/powershell/azure/overview?view=azurermps-5.1.1
 - `[?view=\<view-name>]` -（可选）具有多个可用版本的内容的版本选择器使用的视图名称（例如 azps-3.5.0）
 
 > [!TIP]
-> 大多数情况下，同一 docset 中的文章具有相同的 `<product-service>` URL 片段  。 例如：
+> 大多数情况下，同一 docset 中的文章具有相同的 `<product-service>` URL 片段__。 例如：
 > - 相同 docset
 >   - `https://docs.microsoft.com/dotnet/core/get-started`
 >   - `https://docs.microsoft.com/dotnet/framework/install`
@@ -107,7 +107,7 @@ https://docs.microsoft.com/en-us/powershell/azure/overview?view=azurermps-5.1.1
 
 ## <a name="bookmark-links"></a>书签链接
 
-对于当前文件中标题的书签链接，请使用哈希符号，后跟标题的小写字词  。 删除标题中的标点符号并将空格替换为短划线：
+对于当前文件中标题的书签链接，请使用哈希符号，后跟标题的小写字词**。 删除标题中的标点符号并将空格替换为短划线：
 
 ```markdown
 [Managed Disks](#managed-disks)
@@ -173,7 +173,7 @@ XRef 链接是链接到 API 的推荐方式，因为它们在生成时经过验�
    <xref:UID?displayProperty=nameWithType>
    ```
 
-   默认情况下，链接文本仅显示成员名称或类型名称。 可选 `displayProperty=nameWithType` 查询参数生成完全限定的链接文本，即类型 namespace.type，以及类型成员（包括枚举类型成员）type.member   。
+   默认情况下，链接文本仅显示成员名称或类型名称。 可选 `displayProperty=nameWithType` 查询参数生成完全限定的链接文本，即类型 namespace.type，以及类型成员（包括枚举类型成员）type.member**** ****。
 
 - Markdown 样式链接：
 
@@ -185,13 +185,13 @@ XRef 链接是链接到 API 的推荐方式，因为它们在生成时经过验�
 
 示例：
 
-- \<xref:System.String> 显示为 <xref:System.String> 
+- \<xref:System.String> 显示为 <xref:System.String>****
 
-- \<xref:System.String?displayProperty=nameWithType> 显示为 <xref:System.String?displayProperty=nameWithType> 
+- \<xref:System.String?displayProperty=nameWithType> 显示为 <xref:System.String?displayProperty=nameWithType>****
 
-- \[String class](xref:System.String) 显示为 [String class](xref:System.String)  。
+- \[String class](xref:System.String) 显示为 [String class](xref:System.String)****。
 
-`displayProperty=fullName` 查询参数的工作方式与类的 `displayProperty=nameWithType` 相同。 也就是说，链接文本将成为 namespace.classname  。 但是，对于成员，链接文本显示为 namespace.classname.membername，这可能不可取  。
+`displayProperty=fullName` 查询参数的工作方式与类的 `displayProperty=nameWithType` 相同。 也就是说，链接文本将成为 namespace.classname****。 但是，对于成员，链接文本显示为 namespace.classname.membername，这可能不可取****。
 
 > [!NOTE]
 > UID 是区分大小写的。 例如，`<xref:System.Object>` 会正确解析，但 `<xref:system.object>` 不会正确解析。
@@ -204,15 +204,15 @@ XRef 链接是链接到 API 的推荐方式，因为它们在生成时经过验�
 
 UID 通常是完全限定的类或成员名称。 确定 UID 的方法至少有两种：
 
-- 右键单击某一类型或成员的 [Docs][docs] 页，选择“查看源”，然后复制 ms.assetid 的“内容”值    ：
+- 右键单击某一类型或成员的 [Docs][docs] 页，选择“查看源”，然后复制 ms.assetid 的“内容”值**** **** ****：
 
   ![网页源中的 ms.assetid](media/how-to-write-links/ms-assetid.png)
 
-- 通过将类型的部分或全部名称追加到 URL 中，使用[自动完成网站][]。 例如，在浏览器的地址栏中输入 `https://xref.docs.microsoft.com/autocomplete?text=Writeline` 会显示所有类型和方法，这些类型和方法的名称中包含 Writeline 及其 UID  。
+- 通过将类型的部分或全部名称追加到 URL 中，使用[自动完成网站][]。 例如，在浏览器的地址栏中输入 `https://xref.docs.microsoft.com/autocomplete?text=Writeline` 会显示所有类型和方法，这些类型和方法的名称中包含 Writeline 及其 UID****。
 
 #### <a name="verify-the-uid"></a>验证 UID
 
-若要测试你是否具有正确的 UID，请将以下 URL 中的 System.String 替换为你的 UID，然后将其粘贴到浏览器的地址栏中  ：
+若要测试你是否具有正确的 UID，请将以下 URL 中的 System.String 替换为你的 UID，然后将其粘贴到浏览器的地址栏中****：
 
 `https://xref.docs.microsoft.com/query?uid=System.String`
 
@@ -241,7 +241,7 @@ UID 中的特殊字符需要进行 HTML 编码，如下所示：
 
 编码示例：
 
-- `System.Threading.Tasks.Task``1` 编码为 `System.Threading.Tasks.Task%601`（请参阅[泛型类型部分](#generic-types)）
+- ``System.Threading.Tasks.Task`1`` 编码为 `System.Threading.Tasks.Task%601`（请参阅[泛型类型部分](#generic-types)）
 
 - `System.Exception.#ctor` 编码为 `System.Exception.%23ctor`
 
@@ -253,7 +253,7 @@ UID 中的特殊字符需要进行 HTML 编码，如下所示：
 
 `https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1`
 
-若要链接到泛型类型（如 List\<T>），将 \` 反单引号符号编码为 %60，如以下示例中所示    ：
+要链接到泛型类型（如 List\<T>），请将 \` 反单引号符号编码为 %60，如以下示例中所示**** **** ****：
 
 ```markdown
 <xref:System.Collections.Generic.List%601>
@@ -327,12 +327,12 @@ UID 中的特殊字符需要进行 HTML 编码，如下所示：
 
 为了实现最佳用户体验，最好尽量减少将用户定向到另一个网站的次数。 因此，如果确实需要，可在以下信息基础上实现到第三方网站的任何链接：
 
-- **责任性**：当要共享的信息是第三方信息时，链接到第三方内容。 例如，告知用户如何使用 Android 开发人员工具并不是 Microsoft 的职责，此类信息可以通过 Google 获取。 如有需要，我们可以介绍如何将 Android 开发人员工具与  Azure 结合使用，但对于如何使用该工具，应向 Google 寻求帮助。
+- **责任性**：当要共享的信息是第三方信息时，链接到第三方内容。 例如，告知用户如何使用 Android 开发人员工具并不是 Microsoft 的职责，此类信息可以通过 Google 获取。 如有需要，我们可以介绍如何将 Android 开发人员工具与** Azure 结合使用，但对于如何使用该工具，应向 Google 寻求帮助。
 - **PM 签名**：请求 Microsoft 在第三方内容上签名。 链接到此内容即表明我们信任此内容，并且有责任和义务让用户按说明操作。
 - **新鲜度评审**：确保第三方信息仍为最新、正确且相关的版本，并确保链接未经任何更改。
 - **跳转提醒**：确保用户知道他们即将转到另一个网站。 如果上下文未明确指出这一点，请添加一个限定性句子。 例如：“先决条件包括 Android 开发人员工具，你可以在 Android Studio 网站上进行下载。”
 - **后续步骤**：在“后续步骤”部分，最好添加一个指向类似于 MVP 博客等内容的链接。 再次提醒，请务必使用户了解他们会离开当前网站。
-- **合法性**：合法遵守每个 microsoft.com 页面页脚“使用条款”中的“链接到第三方网站”规定   。
+- **合法性**：合法遵守每个 microsoft.com 页面页脚“使用条款”中的“链接到第三方网站”规定**** ****。
 
 <!-- link references -->
 [CommonMark]: https://commonmark.org/
