@@ -52,11 +52,11 @@
   items:
     - name: .NET 文档
       items:
-        - name: 如何参与 .NET 文档撰写
+        - name: 如何参与
           href: dotnet/dotnet-contribute.md
         - name: 标签和项目路线图
           href: dotnet/labels-projects.md
-        - name: .NET 文档风格约定
+        - name: 样式约定
           href: dotnet/dotnet-style-guide.md
         - name: 语音语调指南
           href: dotnet/dotnet-voice-tone.md
