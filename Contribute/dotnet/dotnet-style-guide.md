@@ -5,18 +5,18 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: a520112cd77f4c4807e7719c2c4dbd43a762f062
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 926516895798757bde0861a345e0b5d0f95218a4
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80759537"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290902"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>适用于 .NET 文档的元数据和 Markdown 模板
 
 此 dotnet/docs 模板包含 Markdown 语法的示例，以及有关设置元数据的指导。
 
-创建 Markdown 文件时，应将包括的模板复制到新文件，按如下所示填充元数据，并将上面的 H1 标题设为文章的标题。
+创建 Markdown 文件时，需要将包括的模板复制到新文件，按如下所示填充元数据，并将上面的 H1 标题设为文章的标题。
 
 ## <a name="metadata"></a>元数据
 
@@ -32,14 +32,14 @@ ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
 # The H1 should not be the same as the title, but should describe the article contents
 ```
 
-- 冒号 (:) 和元数据元素值之间必须有空格  。
+- 冒号 (:) 和元数据元素值之间必须有空格。
 - 值（例如，标题）中的冒号可中断元数据分析器。 在此情况下，使用双引号将标题括起来（例如，`title: "Writing .NET Core console apps: An advanced step-by-step guide"`）。
 - **标题**：在搜索引擎结果中显示。 该标题不应与 H1 标题中的标题相同，并且应包含不超过 60 个字符。
 - **说明**：概括文章的内容。 它通常在搜索结果页中显示，并且不用于搜索排名。 它的长度应为 115-145 个字符（含空格）。
-- **作者**：“作者”字段应包含作者的 GitHub 用户名  。
+- **作者**：“作者”字段应包含作者的 GitHub 用户名。
 - **ms.date**：上一次重要更新的日期。 如果已评审和更新整篇文章，请在现有文章中更新此内容。 不保证更新拼写错误或类似的小修复。
 
-其他元数据附加于每篇文章，但我们通常在文件夹级别应用大多数元数据值，如 docfx.json 中所示  。
+其他元数据附加于每篇文章，但我们通常在文件夹级别应用大多数元数据值，如 docfx.json 中所示。
 
 ## <a name="basic-markdown-gfm-and-special-characters"></a>基本 Markdown、GFM 和特殊字符
 
@@ -67,11 +67,14 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 
 ## <a name="text-styling"></a>文本样式
 
-斜体：用于文件、文件夹、路径（对于较长项，拆分成其自己的行）、新术语  。
+*斜体*\
+用于文件、文件夹、路径（对于较长项，拆分成其自己的行）、新术语。
 
-粗体：用于 UI 元素  。
+**粗体**\
+用于 UI 元素。
 
-`Code` 用于内联代码、语言关键字、NuGet 包名称、命令行命令、数据库表和列名称，以及不希望可单击的 URL。
+`Code`\
+用于内联代码、语言关键字、NuGet 包名称、命令行命令、数据库表和列名称，以及不希望可单击的 URL。
 
 ## <a name="links"></a>链接
 
@@ -79,10 +82,10 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 
 .NET 文档团队使用以下约定：
 
-- 在大多数情况下，我们使用相对链接，并且不鼓励在链接中使用 `~/` GitHub 上的源进行解析。 然而，每当我们链接到独立存储库中的文件时，都将使用 `~/` 字符提供路径。 因为独立存储库中的文件位于 GitHub 中的不同位置，因此使用相对链接无法正确解析，无论其编写方式如何。
+- 在大多数情况下，我们使用相对链接，并且不鼓励在链接中使用 `~/` GitHub 上的源进行解析。 然而，每当我们链接到独立存储库中的文件时，都会使用 `~/` 字符提供路径。 因为独立存储库中的文件位于 GitHub 中的不同位置，因此使用相对链接无法正确解析，无论其编写方式如何。
 - C# 语言规范和 Visual Basic 语言规范通过来自语言存储库中的源，包括在 .NET 文档中。 Markdown 源托管于 [csharplang](https://github.com/dotnet/csharplang) 和 [vblang](https://github.com/dotnet/vblang) 存储库中。
 
-规范的链接必须指向其中包括这些规范的源目录。 对于 C#，它是 ~/_csharplang/spec，而对于 VB，它是 ~/_vblang/spec如下例所示   ：
+规范的链接必须指向其中包括这些规范的源目录。 对于 C#，它是 ~/_csharplang/spec，而对于 VB，它是 ~/_vblang/spec如下例所示 ：
 
 ```markdown
 [C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
@@ -120,13 +123,13 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 
 如果在 UID 后面添加 \*（或 `%2A`），该链接则表示重载页面，而不是特定 API。 例如，若要通过一般方式链接到 [List\<T>.BinarySearch 方法](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch)页面，而不是通过 [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_) 等特定重载，可以使用它。 此外，如果未重载成员，还可以使用 \* 链接到成员页，这可消除在 UID 中包括参数列表的需求。
 
-若要链接到特定的方法重载，必须包括每个方法参数的完全限定的类型名称。 例如，\<xref:System.DateTime.ToString> 可链接到无参数的 [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) 方法，而 \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> 可链接到 [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) 方法。
+若要链接到特定的方法重载，必须包括每个方法参数的完全限定的类型名称。 例如，\<xref:System.DateTime.ToString> 链接到无参数 [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) 方法，而 \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> 链接到 [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) 方法。
 
 若要链接到泛型类型（例如 [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1)），可使用 \` (`%60`) 字符，其后紧跟泛型类型参数的数量。 例如，`<xref:System.Nullable%601>` 可链接到 [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) 类型，而 `<xref:System.Func%602>` 可链接到 [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) 委托。
 
 ## <a name="code"></a>代码
 
-包括代码的最佳方式是包括工作示例中的代码片段。 请遵循[参与 .NET](dotnet-contribute.md#contributing-to-samples) 一文中的说明，创建示例。 包括代码的基本规则位于有关[代码](../code-in-docs.md)的通用指南中。
+包括代码的最佳方式是包括工作示例中的代码片段。 请遵循[参与 .NET](dotnet-contribute.md#contribute-to-samples) 一文中的说明，创建示例。 包括代码的基本规则位于有关[代码](../code-in-docs.md)的通用指南中。
 
 可使用以下语法，包括代码：
 
@@ -134,18 +137,18 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 [!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
 ```
 
-* `-<language>`（是可选的，但建议采用）  
+* `-<language>`（是可选的，但建议采用） 
   * 要引用的代码片段的语言。
 
-* `<name>`（可选） 
+* `<name>`（可选）
   * 代码片段的名称。 这不会对输出 HTML 产生影响，但可用于增强 Markdown 源的可读性。
 
-* `<pathToFile>`（必需） 
+* `<pathToFile>`（必需）
   * 文件系统中的相对路径，指示将引用的代码片段文件。 根据组成 .NET 文档集的不同存储库，这可能很复杂。 .NET 示例位于 dotnet/示例存储库。 所有代码片段路径都会以 `~/samples` 开头，路径其余部分为该存储库的根目录中的源路径。
 
-* `<queryoption>`（可选） 
+* `<queryoption>`（可选）
   * 用于指定如何从文件中检索代码：
-    * `#`：`#{tagname}`（标记名称）或 `#L{startlinenumber}-L{endlinenumber}`（行范围）  。
+    * `#`：`#{tagname}`（标记名称）或 `#L{startlinenumber}-L{endlinenumber}`（行范围）。
     不鼓励使用行号，因为它们很脆弱。 标记名称是引用代码片段的首选方式。 请使用有意义的标记名称。 （由于许多代码片段迁移自上一个平台，并且标记具有 `Snippet1`、`Snippet2` 等名称。因此维持此做法要困难得多。）
     * `range`：`?range=1,3-5` 行的范围。 此示例包含第 1、3、4 和 5 行。
 
@@ -155,7 +158,7 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 [!code-csharp[csrefKeyword#1](~/samples/snippets/snippets/csharp/language-reference/operators/ConditionalExamples.csConditionalRef)]
 ```
 
-dotnet/示例存储库中源的相对路径遵循 `~/samples` 路径  。
+dotnet/示例存储库中源的相对路径遵循 `~/samples` 路径。
 
 并且，可在[此源文件](https://github.com/dotnet/samples/blob/master/snippets/csharp/language-reference/operators/ConditionalExamples.cs)中了解代码片段标记的构成方式。 有关按语言在代码片段源文件中呈现标记名称的详细信息，请参阅 [DocFX 准则](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file)。
 
@@ -193,7 +196,7 @@ dotnet/示例存储库中源的相对路径遵循 `~/samples` 路径  。
 > [!VIDEO <channel9_video_link>]
 ```
 
-若要获取视频的正确 URL，请选择视频框架下方的“嵌入”，然后复制 `<iframe>` 元素中的 URL  。 例如：
+若要获取视频的正确 URL，请选择视频框架下方的“嵌入”，然后复制 `<iframe>` 元素中的 URL。 例如：
 
 ```markdown
 > [!VIDEO https://channel9.msdn.com/Blogs/dotnet/NET-Core-20-Released/player]
@@ -201,7 +204,7 @@ dotnet/示例存储库中源的相对路径遵循 `~/samples` 路径  。
 
 ### <a name="youtube"></a>YouTube
 
-若要获取视频的正确 URL，右键单击视频，选择“复制嵌入代码”，然后复制 `<iframe>` 元素中的 URL  。
+若要获取视频的正确 URL，右键单击视频，选择“复制嵌入代码”，然后复制 `<iframe>` 元素中的 URL。
 
 ```markdown
 > [!VIDEO <youtube_video_link>]
