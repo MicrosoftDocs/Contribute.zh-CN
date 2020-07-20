@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 05/14/2020
-ms.openlocfilehash: c4382a66035a10debb2a0aa05f61c549a3f97ee6
-ms.sourcegitcommit: 300ce72ffc8596213e82ae511b1b314c850841c9
+ms.openlocfilehash: fa905d17a39b5fa7737e06fce38659b7e1563635
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83404136"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290948"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>了解如何参与 .NET 文档存储库撰写
 
@@ -20,7 +20,7 @@ ms.locfileid: "83404136"
 
 .NET 文档站点根据多个存储库生成：
 
-- [.NET 概念性文章](https://github.com/dotnet/docs)
+- [.NET 概念文章和代码片段](https://github.com/dotnet/docs)
 - [代码示例和代码片段](https://github.com/dotnet/samples)
 - [.NET Standard、.NET Core、.NET Framework API 参考](https://github.com/dotnet/dotnet-api-docs)
 - [.NET Compiler Platform SDK 参考](https://github.com/dotnet/roslyn-api-docs)
@@ -30,34 +30,30 @@ ms.locfileid: "83404136"
 
 ## <a name="guidelines-for-contributions"></a>参与原则
 
-感谢社区参与文档撰写。以下列表显示部分参与 .NET 文档撰写时应记住的指导规则：
+感谢社区参与文档撰写。以下列表显示你参与 .NET 文档撰写时需要记住的指导规则：
 
 - 请**勿**向我们提出大量拉取请求。 相反，提出问题并发起讨论，在我们认同这一方向后你再投入大量的时间。
 - 请**务必**遵循这些说明以及[语音语调](dotnet-voice-tone.md)准则。
 - 请**务必**使用[模板](dotnet-style-guide.md)文件，作为工作的出发点。
 - 处理文章前，请**务必**在分支上创建单独的分支。
-- 请**务必**遵循 [GitHub 流工作流](https://guides.github.com/introduction/flow/)。
-- 请**务必**频繁发布有关参与的博客和推文（或者诸如此类）！
+- 请务必遵循 [GitHub 流](https://guides.github.com/introduction/flow/)。
+- 如果你愿意的话，请发布有关参与的博客和推文（或者诸如此类）！
 
 遵循这些指南可确保你和我们都能获得更好的体验。
 
 ## <a name="make-a-contribution-to-net-docs"></a>参与 .NET 文档撰写
 
-**步骤 1：** 对于小更改，请跳过此步骤。 如果有兴趣编写新内容或仔细修订现有内容，请创建描述你想做的事情的[问题](https://github.com/dotnet/docs/issues)。
-
-“Docs”文件夹中的内容组织成部分，在目录 (TOC) 中进行反映。 定义主题在 TOC 中所处的位置。 获取有关建议的反馈。
+**步骤 1：** 如果有兴趣编写新内容或仔细修订现有内容，请创建描述你想做的事情的[问题](https://github.com/dotnet/docs/issues)。 “Docs”文件夹中的内容组织成部分，在目录 (TOC) 中进行反映。 定义主题在 TOC 中所处的位置。 获取有关建议的反馈。
 
 -或-
 
-你还可以从现有问题中选择，欢迎参与社区讨论。 [适用于 .NET 社区参与者的项目](https://github.com/dotnet/docs/projects/35)列出了适用于社区参与者的诸多问题。 根据你的兴趣和承诺级别，可以从以下类别的问题中进行选择：
+选择现有问题并解决该问题。 可查看[未解决问题](https://github.com/dotnet/docs/issues)列表，并自愿处理感兴趣的主题：
 
-- **维护**。 此类别包括相当简单的参与，例如，修复断裂或错误的链接，添加缺少的代码示例或解决受限内容问题。 在某些情况下，这些问题可能涉及大量文件。 届时，你应在开始前告知我们想要处理的内容。 在问题上添加注释，以告知我们你正在处理。
+- 对于好的优先问题，通过 [good-first-issue](https://github.com/dotnet/docs/labels/good-first-issue) 标签进行筛选。
+- 对于适合社区参与的问题，通过 [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) 标签进行筛选。 这些问题通常需要的上下文很少。
+- 经验丰富的参与者可以处理任何感兴趣的问题。
 
-- **内容更新**。 鉴于文档集的巨大性，内容很容易过时，需要修订。 此外，出于各种原因，部分内容发生重复，甚至出现一式三份现象。 更新内容涉及确保各个主题为最新，或修订特色区域中的内容以消除重复，以及确保所有独特的内容均保存在较小文档集中。
-
-- **新内容创作**。 如果有兴趣创作自己的主题，这些问题列出了我们要向文档集添加的主题。 不过，请在处理某主题前，告知我们。 如果有兴趣编写此处未列出的主题，请创建一个问题。
-
-此外，还可查看[未决问题](https://github.com/dotnet/docs/issues)列表，并自愿处理感兴趣的主题。 我们使用 [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) 标签标记针对社区参与标识的问题。 这些通常需要最小上下文，并且非常适合首发问题。 我们鼓励社区中有经验的参与者查看感兴趣的任何问题。 如果找到问题，请添加评论，询问其是否未结。
+当你找到要处理的问题时，可以添加评论，询问是否未解决。
 
 选择要处理的任务后，请按照[入门](../get-started-setup-github.md)指南操作，创建 GitHub 帐户并设置环境。
 
@@ -67,40 +63,19 @@ ms.locfileid: "83404136"
 
 **步骤 3：** 在此新分支上进行更改。
 
-如果它是新主题，则可以使用此[模板文件](dotnet-style-guide.md)，作为起始点。 它包含编写准则，并且还解释每篇文章需要的元数据（例如，作者信息）。
+如果它是新主题，则可以使用此[模板文件](dotnet-style-guide.md)，作为起始点。 它包含编写准则，并且还解释每篇文章需要的元数据（例如，作者信息）。 要详细了解 docs.microsoft.com 站点中使用的 Markdown 语法，请参阅 [Markdown 参考](../markdown-reference.md)。
 
 导航到对应针对步骤 1 中的文章确定的目录位置的文件夹。 该文件夹包含针对该部分中所有文章的 Markdown 文件。 如有必要，新建一个文件夹，放置存储内容的文件。 该部分的主要文章称为 index.md。
 
-对于映像和其他静态资源，请在包含文章的文件夹中创建称为“media”的子文件夹（如果尚不存在）。 在“media”文件夹内，创建具有文章名称的子文件夹（索引文件除外）。 
+对于映像和其他静态资源，请在包含文章的文件夹中创建称为“media”的子文件夹（如果尚不存在）。 在“media”文件夹内，创建具有文章名称的子文件夹（索引文件除外）。
 
-对于代码片段，请在包含你的文章的文件夹中创建一个名为“snippets”的子文件夹（如果尚不存在） 。  在“代码片段”文件夹中，创建包含文章名称的子文件夹。 在大多数情况下，你将具有全部三种主要的 .NET 语言（C#、F# 和 Visual Basic）的代码片段。 在此情况下，请为三个项目中的每一个分别创建名为“csharp”、“fsharp”和“vb”的子文件夹  。 为简单起见，请在 C#、F# 和 Visual Basic 指南中对你的项目使用“snippets”文件夹。 这些区域通常包含一种语言的片段。 代码片段很小，侧重于展示文章中所述概念的代码的示例。 用于下载和查看的更大型程序应放置在 [dotnet/samples](https://github.com/dotnet/samples) 存储库中。 所有示例都在[参与撰写示例](#contributing-to-samples)部分中有所介绍。
+对于代码片段，请在包含你的文章的文件夹中创建一个名为“snippets”的子文件夹（如果尚不存在） 。 在“代码片段”文件夹中，创建包含文章名称的子文件夹。 在大多数情况下，你将具有全部三种主要的 .NET 语言（C#、F# 和 Visual Basic）的代码片段。 在此情况下，请为三个项目中的每一个分别创建名为“csharp”、“fsharp”和“vb”的子文件夹  。 如果要在 [docs/csharp](https://github.com/dotnet/docs/tree/master/docs/csharp)、[docs/fsharp](https://github.com/dotnet/docs/tree/master/docs/fsharp) 或 [docs/visual-basic](https://github.com/dotnet/docs/tree/master/docs/visual-basic) 文件夹下为一篇文章创建代码片段，此代码片段只能采用一种语言，你才能忽略语言子文件夹。
 
-请务必遵循适当的 Markdown 语法。 有关常见示例，请参阅[模板和标记速查表](dotnet-style-guide.md)。
+代码片段很小，侧重于展示文章中所述概念的代码的示例。 用于下载和查看的更大型程序应放置在 [dotnet/samples](https://github.com/dotnet/samples) 存储库中。 所有示例都在[参与撰写示例](#contribute-to-samples)部分中有所介绍。
 
-## <a name="example-structure"></a>示例结构
+## <a name="example-folder-structure"></a>文件夹结构示例
 
-    docs
-      /about
-      /core
-        /porting
-          porting-overview.md
-          /media
-            /porting-overview
-                portability_report.png
-          /snippets
-            /porting-overview
-              /csharp
-                porting.csproj
-                porting-overview.cs
-                Program.cs
-              /fsharp
-                porting.fsproj
-                porting-overview.fs
-                Program.fs
-               /vb
-                porting.vbproj
-                porting-overview.vb
-                Program.vb
+docs /about /core /porting porting-overview.md /media /porting-overview portability_report.png /snippets /porting-overview /csharp porting.csproj porting-overview.cs Program.cs /fsharp porting.fsproj porting-overview.fs Program.fs /vb porting.vbproj porting-overview.vb Program.vb
 
 上面所示结构包含一张图像 portability_report.png，还有三个包含代码片段的代码项目，它们都包含在 porting-overview.md 文章中。 在所接受的备用结构中，每种语言都有一个项目，其中包含该文件夹中所有文章的所有片段。 这一备用结构已在语言参考区域中使用，因为用非常小的片段来展示语言语法。 建议不要在其他区域中使用此结构。
 
@@ -121,11 +96,9 @@ ms.locfileid: "83404136"
 
 反馈应用后且更改得到审批后，维护程序会将 PR 合并为主分支。
 
-我们将定期从主分支将所有提交推送到实时分支，然后便能够在 https://docs.microsoft.com/dotnet/ 实时查看你的参与。 通常我们会在工作周期间每日发布。 发布可能因维护活动延迟数天。
+我们将定期从主分支将所有提交推送到实时分支，然后便能够在 https://docs.microsoft.com/dotnet/ 实时查看你的参与。 通常我们会在工作周期间每日发布。
 
-## <a name="contributing-to-samples"></a>参与撰写示例
-
-[dotnet/示例](https://github.com/dotnet/samples)存储库包含属于 .NET 文档下的任何主题的所有代码示例。 存在组织成子文件夹的多个不同项目。 这些子文件夹的组织方式类似于 .NET 文档的组织方式。
+## <a name="contribute-to-samples"></a>参与示例撰写
 
 我们对支持我们内容的代码进行了以下区分：
 
@@ -146,7 +119,7 @@ ms.locfileid: "83404136"
 
 此外，主题还将包含指向该示例的链接。 直接链接到 GitHub 上的示例文件夹。
 
-### <a name="writing-a-new-sample"></a>编写新示例
+### <a name="write-a-new-sample"></a>编写新示例
 
 示例是可供下载的完整程序和库。 它们的范围可能很小，但以一种用户能自行浏览和试验的方式对概念进行了展示。 示例指南确保读者可下载和浏览。 请查看[并行 LINQ (PLINQ)](https://github.com/dotnet/samples/tree/master/csharp/parallel/PLINQ) 示例，它们是每份指南中的例子。
 
@@ -154,7 +127,7 @@ ms.locfileid: "83404136"
 
 2. 示例应符合 [corefx 编码样式](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md)，以保持一致性。
 
-    - 此外，演示不需要初始化新对象的内容时，我们首选 `static` 方法，而不是实例方法。
+   此外，演示不需要初始化新对象的内容时，我们首选 `static` 方法，而不是实例方法。
 
 3. 示例应包括适当的异常处理。 它应处理可能在示例的上下文中引发的所有异常。 例如，当输入字符串以参数形式传递给方法时，调用 [Console.ReadLine](https://docs.microsoft.com/dotnet/api/system.console.readline) 方法以检索用户输入的示例应使用适当的异常处理。 同样，如果示例需要方法调用失败，则必须处理导致的异常。 请始终处理方法引发的特定异常，而不是基类异常，例如 [Exception](https://docs.microsoft.com/dotnet/api/system.exception) 或 [SystemException](https://docs.microsoft.com/dotnet/api/system.systemexception)。
 

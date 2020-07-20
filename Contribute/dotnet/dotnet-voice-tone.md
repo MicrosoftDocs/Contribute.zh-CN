@@ -5,16 +5,16 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 4108019ac50d703c6dd509eca7a6394cc1c9dc18
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 49b0e60ec9f4368bf50317dfe4a6b17bd30a82a5
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80625180"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290810"
 ---
 # <a name="voice-and-tone-guidelines"></a>语音语调准则
 
-各种读者（包括 IT 专业人员和开发人员）都会阅读你的文档，为的是了解 .NET 并在其日常工作中运用它。 因此，你的目标就是要创建精美的文档，帮助读者实现这一过程。 而我们的准则就有助于实现这一目标。 我们的风格指南包含以下建议：
+各种读者（包括 IT 专业人员和开发人员）都会阅读 .NET 文档，为的是了解 .NET 并在其日常工作中运用它。 因此，你的目标就是要创建精美的文档，帮助读者实现这一过程。 而我们的准则就有助于实现这一目标。 我们的风格指南包含以下建议：
 
 阅读本风格指南时，你可查看每条建议的相关示例。 本指南基于准则进行编写，提供了构建 .NET 文档时需遵循的示例。 此外，本指南还通过示例的对比，使你了解不遵循准则时文章的样子。
 
