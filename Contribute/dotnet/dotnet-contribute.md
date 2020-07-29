@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 05/14/2020
-ms.openlocfilehash: fa905d17a39b5fa7737e06fce38659b7e1563635
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: d1631f34ef9a3ceb10178792842421376fea97b0
+ms.sourcegitcommit: 3774d06ddc1f92b2bdb4c1d8babbd18357229298
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290948"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87264800"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>了解如何参与 .NET 文档存储库撰写
 
@@ -75,7 +75,30 @@ ms.locfileid: "86290948"
 
 ## <a name="example-folder-structure"></a>文件夹结构示例
 
-docs /about /core /porting porting-overview.md /media /porting-overview portability_report.png /snippets /porting-overview /csharp porting.csproj porting-overview.cs Program.cs /fsharp porting.fsproj porting-overview.fs Program.fs /vb porting.vbproj porting-overview.vb Program.vb
+```
+docs
+  /about
+  /core
+    /porting
+      porting-overview.md
+      /media
+        /porting-overview
+          portability_report.png
+      /snippets
+        /porting-overview
+          /csharp
+            porting.csproj
+            porting-overview.cs
+            Program.cs
+          /fsharp
+            porting.fsproj
+            porting-overview.fs
+            Program.fs
+          /vb
+            porting.vbproj
+            porting-overview.vb
+            Program.vb
+```
 
 上面所示结构包含一张图像 portability_report.png，还有三个包含代码片段的代码项目，它们都包含在 porting-overview.md 文章中。 在所接受的备用结构中，每种语言都有一个项目，其中包含该文件夹中所有文章的所有片段。 这一备用结构已在语言参考区域中使用，因为用非常小的片段来展示语言语法。 建议不要在其他区域中使用此结构。
 
