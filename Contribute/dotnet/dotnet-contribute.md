@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 05/14/2020
-ms.openlocfilehash: d1631f34ef9a3ceb10178792842421376fea97b0
-ms.sourcegitcommit: 3774d06ddc1f92b2bdb4c1d8babbd18357229298
+ms.openlocfilehash: 810a1335bf3c93b79952c701c44470d3e72fb124
+ms.sourcegitcommit: 940c84d6bc23a8fbec780244563af188d2620ed1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87264800"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88668634"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>了解如何参与 .NET 文档存储库撰写
 
@@ -100,6 +100,9 @@ docs
             Program.vb
 ```
 
+> [!NOTE]
+> 语言指南区域不需要代码段下的语言文件夹，它只会采用一种语言。
+
 上面所示结构包含一张图像 portability_report.png，还有三个包含代码片段的代码项目，它们都包含在 porting-overview.md 文章中。 在所接受的备用结构中，每种语言都有一个项目，其中包含该文件夹中所有文章的所有片段。 这一备用结构已在语言参考区域中使用，因为用非常小的片段来展示语言语法。 建议不要在其他区域中使用此结构。
 
 由于历史原因，很多包含的片段存储在 dotnet/docs 存储库的 /samples 文件夹下 。 如果要对某篇文章进行重大更改，应将这些片段移到新的结构。 如果是细小改动，则不要移动片段。
@@ -154,14 +157,6 @@ docs
 
 3. 示例应包括适当的异常处理。 它应处理可能在示例的上下文中引发的所有异常。 例如，当输入字符串以参数形式传递给方法时，调用 [Console.ReadLine](https://docs.microsoft.com/dotnet/api/system.console.readline) 方法以检索用户输入的示例应使用适当的异常处理。 同样，如果示例需要方法调用失败，则必须处理导致的异常。 请始终处理方法引发的特定异常，而不是基类异常，例如 [Exception](https://docs.microsoft.com/dotnet/api/system.exception) 或 [SystemException](https://docs.microsoft.com/dotnet/api/system.systemexception)。
 
-4. 如果示例生成独立包，除示例所用的任何运行时外，还必须包含 CI 生成系统所用的运行时：
-    - `win7-x64`
-    - `win8-x64`
-    - `win81-x64`
-    - `ubuntu.16.04-x64`
-
-我们将提供一个 CI 系统，以暂时生成这些项目。
-
 创建示例：
 
 1. 提交[问题](https://github.com/dotnet/docs/issues)，或向正在处理的现有问题添加注释。
@@ -186,12 +181,13 @@ docs
 
 1. 转到示例文件夹和生成，查看其中的错误：
 
-    ```console
+    ```dotnetcli
     dotnet build
     ```
+
 2. 运行示例：
 
-    ```console
+    ```dotnetcli
     dotnet run
     ```
 

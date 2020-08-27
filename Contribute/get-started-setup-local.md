@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: e73c60c439285f901c5c83e538f8971d795bd6c4
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 60da6e3d5db1486025643d5a5030402a5f2987d3
+ms.sourcegitcommit: 0d49b27c43974f6fecf4c92a659ec3c44ca55f7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "72288608"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88799789"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>设置本地 Git 文档存储库
 
