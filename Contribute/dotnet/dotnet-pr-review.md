@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 06/24/2020
-ms.openlocfilehash: 7a494b00c05251e70b74d874d13653db9ba9f6e9
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: b2c0cbb0ed72948ba49a7456e16df5659057f5e6
+ms.sourcegitcommit: 56505b3f7e670f6387d2c919f0326e9f4c571c8a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290971"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89201118"
 ---
 # <a name="pull-request-review-process-for-the-net-docs-repositories"></a>.NET docs 存储库的拉取请求评审流程
 
@@ -61,6 +61,10 @@ ms.locfileid: "86290971"
 ### <a name="review-draft-pull-requests"></a>评审草稿拉取请求
 
 你可能希望在此过程初期获得反馈。 打开草稿 PR 并添加请求之前评审的评论。 这些早期评审重点关注文章的结构：大纲、整体内容和示例。 这些评审不包括对语法和正确链接的全面检查。
+
+## <a name="explain-suggestions"></a>解释建议
+
+通过 GitHub，可以在类型为 `suggestion`、显示为差异且可通过单击按钮合并的三重反引号块中输入注释。 在短行上，GitHub 会很好地突出显示所做的更改。 在较长的行（如一行文本中的长段）上，GitHub 不会突出显示所做的更改。 为长行输入建议时，请注意是否已明确突出显示所做的更改。 如果未突出显示所做的更改，请在说明所做更改的建议块外添加注释。 如果没有说明，则后面的审阅者或 PR 作者通常需要花费很长时间来确定所做的更改。
 
 ## <a name="respond-to-reviews"></a>对评审的响应
 
