@@ -1,131 +1,139 @@
 ---
-title: 标签和项目路线图
-description: 本文介绍了如何在 dotnet/docs 存储库中使用标签和项目。
+title: 标签、项目和里程碑路线图
+description: 本文介绍了如何在 dotnet/docs 存储库中使用标签、项目和里程碑。
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.date: 03/24/2020
-ms.openlocfilehash: 0dcac28db04378730b186c0f23064c1433d9f80e
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.date: 08/06/2020
+ms.openlocfilehash: b8e9f2a33f9b4a8025aa36a890bff1017cf132c6
+ms.sourcegitcommit: abcc67cb3ec1f635a6374d7c47a4831e3eee9050
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80760367"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89559254"
 ---
-# <a name="labels-and-projects-roadmap"></a><span data-ttu-id="6ffb5-103">标签和项目路线图</span><span class="sxs-lookup"><span data-stu-id="6ffb5-103">Labels and projects roadmap</span></span>
+# <a name="labels-projects-and-milestones-roadmap"></a><span data-ttu-id="3337b-103">标签、项目和里程碑路线图</span><span class="sxs-lookup"><span data-stu-id="3337b-103">Labels, projects, and milestones roadmap</span></span>
 
-<span data-ttu-id="6ffb5-104">.NET 文档团队广泛使用 [ GitHub 标签](https://github.com/dotnet/docs/labels)来组织工作。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-104">The .NET docs team makes extensive use of [GitHub labels](https://github.com/dotnet/docs/labels) to organize our work.</span></span> <span data-ttu-id="6ffb5-105">通过筛选标签的组合，我们可以快速关注 [.NET 文档网站](https://docs.microsoft.com/dotnet)上我们所需的部分。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-105">By filtering on combinations of labels, we can quickly focus on sections of interest on the [.NET docs website](https://docs.microsoft.com/dotnet).</span></span>
+<span data-ttu-id="3337b-104">.NET 文档团队广泛使用 [ GitHub 标签](https://github.com/dotnet/docs/labels)来组织工作。</span><span class="sxs-lookup"><span data-stu-id="3337b-104">The .NET docs team makes extensive use of [GitHub labels](https://github.com/dotnet/docs/labels) to organize our work.</span></span> <span data-ttu-id="3337b-105">通过筛选标签的组合，我们可以快速关注 [.NET 文档网站](https://docs.microsoft.com/dotnet)上我们所需的部分。</span><span class="sxs-lookup"><span data-stu-id="3337b-105">By filtering on combinations of labels, we can quickly focus on sections of interest on the [.NET docs website](https://docs.microsoft.com/dotnet).</span></span> <span data-ttu-id="3337b-106">例如，我们可以筛选到 `P1` 通过查询 [is:issue is:open label:":books:Area - .NET Architecture Guide"](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3A%22%3Abooks%3A+Area+-+.NET+Architecture+Guide%22) 发出的所有开放优先级。</span><span class="sxs-lookup"><span data-stu-id="3337b-106">For example, we could filter to all of the open priority one `P1` issues with a query to [is:issue is:open label:":books: Area - .NET Architecture Guide"](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3A%22%3Abooks%3A+Area+-+.NET+Architecture+Guide%22).</span></span>
 
-<span data-ttu-id="6ffb5-106">我们还使用 [GitHub 项目](https://github.com/dotnet/docs/projects)来组织冲刺 (sprint) 和其他以目标为导向的长篇故事。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-106">We also use [GitHub projects](https://github.com/dotnet/docs/projects) to organize sprints and other goal-oriented epics.</span></span>
+<span data-ttu-id="3337b-107">我们使用 [GitHub 项目](https://github.com/dotnet/docs/projects)来组织冲刺 (sprint) 和其他以目标为导向的长篇故事。</span><span class="sxs-lookup"><span data-stu-id="3337b-107">We use [GitHub projects](https://github.com/dotnet/docs/projects) to organize sprints and other goal-oriented epics.</span></span> <span data-ttu-id="3337b-108">我们还使用 [GitHub 里程碑](https://github.com/dotnet/docs/milestones)来跟踪工作。</span><span class="sxs-lookup"><span data-stu-id="3337b-108">We also use [GitHub milestones](https://github.com/dotnet/docs/milestones) to track work.</span></span> <span data-ttu-id="3337b-109">最好考虑用于规划的项目（问题）和用于工作的里程碑（拉取请求）。</span><span class="sxs-lookup"><span data-stu-id="3337b-109">It is best to think of projects for planning (issues), and milestones for work (pull requests).</span></span>
 
-<span data-ttu-id="6ffb5-107">此路线图解释了我们如何使用这些组织工具，并提供一个用于查找所需领域的简便筛选器的链接。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-107">This roadmap explains how we use these organizational tools and has links to handy filters we use to find areas of interest.</span></span>
+<span data-ttu-id="3337b-110">此路线图说明了我们使用这些组织工具的方式，并提供了用于查找感兴趣内容的便捷筛选器的链接。</span><span class="sxs-lookup"><span data-stu-id="3337b-110">This roadmap explains how we use these organizational tools and has links to handy filters we use to find areas of interest.</span></span>
 
-## <a name="labels"></a><span data-ttu-id="6ffb5-108">标签</span><span class="sxs-lookup"><span data-stu-id="6ffb5-108">Labels</span></span>
+## <a name="labels"></a><span data-ttu-id="3337b-111">标签</span><span class="sxs-lookup"><span data-stu-id="3337b-111">Labels</span></span>
 
-<span data-ttu-id="6ffb5-109">如果这是你第一次体验参与[ dotnet/docs](https://github.com/dotnet/docs)，请从[ up-for-grabs ](https://github.com/dotnet/docs/labels/up-for-grabs)问题开始。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-109">If this is your first experience contributing to [dotnet/docs](https://github.com/dotnet/docs), start with the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) issues.</span></span> <span data-ttu-id="6ffb5-110">这些问题具有更集中的范围。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-110">These are issues that have a more focused scope.</span></span> <span data-ttu-id="6ffb5-111">它们是你第一次参与的好方式。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-111">They are a great way to make your first contribution.</span></span> <span data-ttu-id="6ffb5-112">从 up-for-grabs 视图中，你可以根据领域和优先级进一步筛选问题。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-112">From the up-for-grabs view, you can further filter issues based on areas and priority.</span></span> <span data-ttu-id="6ffb5-113">如果你第一次想尝试较小的参与，我们已经通过 [good-first-issue](https://github.com/dotnet/docs/labels/good-first-issue) 为初学者确定了好问题。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-113">We've identified good issues for beginners with the [good-first-issue](https://github.com/dotnet/docs/labels/good-first-issue) if you want to try a smaller first contribution.</span></span>
+<span data-ttu-id="3337b-112">如果这你是首次体验参与 [dotnet/docs](https://github.com/dotnet/docs)，请从[容易作答](https://github.com/dotnet/docs/labels/up-for-grabs)的问题开始。</span><span class="sxs-lookup"><span data-stu-id="3337b-112">If this is your first experience contributing to [dotnet/docs](https://github.com/dotnet/docs), start with the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) issues.</span></span> <span data-ttu-id="3337b-113">这些问题针对的范围更加集中。</span><span class="sxs-lookup"><span data-stu-id="3337b-113">These are issues that have a more focused scope.</span></span> <span data-ttu-id="3337b-114">从此类问题入手是完成首次参与的好方式。</span><span class="sxs-lookup"><span data-stu-id="3337b-114">They are a great way to make your first contribution.</span></span> <span data-ttu-id="3337b-115">从“容易作答”视图中，你可以进一步根据区域和优先级筛选问题。</span><span class="sxs-lookup"><span data-stu-id="3337b-115">From the up-for-grabs view, you can further filter issues based on areas and priority.</span></span> <span data-ttu-id="3337b-116">我们已使用 [good-first-issue](https://github.com/dotnet/docs/labels/good-first-issue) 标签标识出适合新手回答的问题，以便于你完成首次小小的参与。</span><span class="sxs-lookup"><span data-stu-id="3337b-116">We've identified good issues for beginners with the [good-first-issue](https://github.com/dotnet/docs/labels/good-first-issue) if you want to try a smaller first contribution.</span></span>
 
-<span data-ttu-id="6ffb5-114">我们使用标签以许多不同的方式对问题进行分类：</span><span class="sxs-lookup"><span data-stu-id="6ffb5-114">We use labels to classify issues in many different ways:</span></span>
+<span data-ttu-id="3337b-117">我们使用标签以多种不同方式来分类问题：</span><span class="sxs-lookup"><span data-stu-id="3337b-117">We use labels to classify issues in many different ways:</span></span>
 
-- <span data-ttu-id="6ffb5-115">[.NET 指南](#find-a-single-net-guide)和[指南章节](#search-one-section-of-a-guide)。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-115">[.NET Guides](#find-a-single-net-guide) and [sections of a guide](#search-one-section-of-a-guide).</span></span>
-- [<span data-ttu-id="6ffb5-116">目标版本</span><span class="sxs-lookup"><span data-stu-id="6ffb5-116">Target release</span></span>](#releases)
-- [<span data-ttu-id="6ffb5-117">优先级</span><span class="sxs-lookup"><span data-stu-id="6ffb5-117">Priority</span></span>](#priority)
+- <span data-ttu-id="3337b-118">[.NET 指南](#find-a-single-net-guide)和[指南章节](#search-one-section-of-a-guide)。</span><span class="sxs-lookup"><span data-stu-id="3337b-118">[.NET Guides](#find-a-single-net-guide) and [sections of a guide](#search-one-section-of-a-guide).</span></span>
+- [<span data-ttu-id="3337b-119">目标版本</span><span class="sxs-lookup"><span data-stu-id="3337b-119">Target release</span></span>](#releases)
+- [<span data-ttu-id="3337b-120">Priority</span><span class="sxs-lookup"><span data-stu-id="3337b-120">Priority</span></span>](#priority)
 
-<span data-ttu-id="6ffb5-118">可以组合每个集合（指南、版本、优先级）的标签，以创建较小范围的重点来查找要处理的问题。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-118">You can combine a label from each set (guide, release, priority) to create a narrow focus to find issues you want to work on.</span></span>
+<span data-ttu-id="3337b-121">你可以合并每组（指南、版本、优先级）中的标签，以缩小关注范围，查找你想要解决的问题。</span><span class="sxs-lookup"><span data-stu-id="3337b-121">You can combine a label from each set (guide, release, priority) to create a narrow focus to find issues you want to work on.</span></span>
 
-### <a name="find-a-single-net-guide"></a><span data-ttu-id="6ffb5-119">查找单个 .NET 指南</span><span class="sxs-lookup"><span data-stu-id="6ffb5-119">Find a single .NET guide</span></span>
+### <a name="find-a-single-net-guide"></a><span data-ttu-id="3337b-122">查找单个 .NET 指南</span><span class="sxs-lookup"><span data-stu-id="3337b-122">Find a single .NET guide</span></span>
 
-<span data-ttu-id="6ffb5-120">我们将标签用于每个体系结构电子书和每个 .NET 指南。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-120">We use labels for each of the architecture e-books and for each .NET Guide.</span></span>
+<span data-ttu-id="3337b-123">我们针对各个体系结构电子书以及各个 .NET 指南使用标签。</span><span class="sxs-lookup"><span data-stu-id="3337b-123">We use labels for each of the architecture e-books and for each .NET Guide.</span></span>
 
-<span data-ttu-id="6ffb5-121">![：书籍：浅绿色背景上的指南](./media/labels-projects/guide.png "体系结构指南标签的前缀")</span><span class="sxs-lookup"><span data-stu-id="6ffb5-121">![:book: guide on light green background](./media/labels-projects/guide.png "Prefix for architecture guide labels")</span></span>
+<span data-ttu-id="3337b-124">![:book: guide on light green background](./media/labels-projects/guide.png "体系结构指南标签的前缀")</span><span class="sxs-lookup"><span data-stu-id="3337b-124">![:book: guide on light green background](./media/labels-projects/guide.png "Prefix for architecture guide labels")</span></span>
 
-<span data-ttu-id="6ffb5-122">体系结构电子书使用 `:book: guide` 前缀进行标注，并且具有浅绿色背景。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-122">Architecture e-books are noted with the `:book: guide` prefix and have a light green background.</span></span> <span data-ttu-id="6ffb5-123">这些是涵盖推荐体系结构的长格式区域。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-123">These are the long-form areas that cover recommended architecture.</span></span> <span data-ttu-id="6ffb5-124">以下是针对每个 .NET 体系结构指南筛选的当前问题。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-124">Here are current issues filtered for each of the .NET architecture guides.</span></span>
+<span data-ttu-id="3337b-125">体系结构电子书标有 `:book: guide` 前缀，并且使用浅绿色背景。</span><span class="sxs-lookup"><span data-stu-id="3337b-125">Architecture e-books are noted with the `:book: guide` prefix and have a light green background.</span></span> <span data-ttu-id="3337b-126">这些是长格式区域，其中包含推荐的体系结构。</span><span class="sxs-lookup"><span data-stu-id="3337b-126">These are the long-form areas that cover recommended architecture.</span></span> <span data-ttu-id="3337b-127">以下是针对各个 .NET 体系结构指南筛选出的当前问题。</span><span class="sxs-lookup"><span data-stu-id="3337b-127">Here are current issues filtered for each of the .NET architecture guides.</span></span>
 
-- [<span data-ttu-id="6ffb5-125">ASP.NET Core Web 应用</span><span class="sxs-lookup"><span data-stu-id="6ffb5-125">ASP.NET Core web apps</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20ASP.NET%20Core%20web%20apps)
-- [<span data-ttu-id="6ffb5-126">Blazor</span><span class="sxs-lookup"><span data-stu-id="6ffb5-126">Blazor</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Blazor)
-- [<span data-ttu-id="6ffb5-127">云本机</span><span class="sxs-lookup"><span data-stu-id="6ffb5-127">Cloud Native</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Cloud%20Native)
-- [<span data-ttu-id="6ffb5-128">Docker 生命周期</span><span class="sxs-lookup"><span data-stu-id="6ffb5-128">Docker lifecycle</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Docker%20lifecycle)
-- [<span data-ttu-id="6ffb5-129">gRPC</span><span class="sxs-lookup"><span data-stu-id="6ffb5-129">gRPC</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20gRPC)
-- [<span data-ttu-id="6ffb5-130">通过 Windows 容器实现现代化</span><span class="sxs-lookup"><span data-stu-id="6ffb5-130">Modernizing w/ Windows containers</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Modernizing%20w%2F%20Windows%20containers)
-- [<span data-ttu-id="6ffb5-131">.NET 微服务</span><span class="sxs-lookup"><span data-stu-id="6ffb5-131">.NET Microservices</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20.NET%20Microservices)
-- [<span data-ttu-id="6ffb5-132">无服务器应用</span><span class="sxs-lookup"><span data-stu-id="6ffb5-132">Serverless apps</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Serverless%20apps)
+- [<span data-ttu-id="3337b-128">ASP.NET Core Web 应用</span><span class="sxs-lookup"><span data-stu-id="3337b-128">ASP.NET Core web apps</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20ASP.NET%20Core%20web%20apps)
+- [<span data-ttu-id="3337b-129">Blazor</span><span class="sxs-lookup"><span data-stu-id="3337b-129">Blazor</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Blazor)
+- [<span data-ttu-id="3337b-130">云本机</span><span class="sxs-lookup"><span data-stu-id="3337b-130">Cloud Native</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Cloud%20Native)
+- [<span data-ttu-id="3337b-131">Docker 生命周期</span><span class="sxs-lookup"><span data-stu-id="3337b-131">Docker lifecycle</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Docker%20lifecycle)
+- [<span data-ttu-id="3337b-132">gRPC</span><span class="sxs-lookup"><span data-stu-id="3337b-132">gRPC</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20gRPC)
+- [<span data-ttu-id="3337b-133">通过 Windows 容器实现现代化</span><span class="sxs-lookup"><span data-stu-id="3337b-133">Modernizing w/ Windows containers</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Modernizing%20w%2F%20Windows%20containers)
+- [<span data-ttu-id="3337b-134">.NET 微服务</span><span class="sxs-lookup"><span data-stu-id="3337b-134">.NET Microservices</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20.NET%20Microservices)
+- [<span data-ttu-id="3337b-135">无服务器应用</span><span class="sxs-lookup"><span data-stu-id="3337b-135">Serverless apps</span></span>](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Serverless%20apps)
 
-<span data-ttu-id="6ffb5-133">此标签样式也适用于[框架设计准则](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Framework%20Design%20Guidelines)。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-133">This label style is also applied to the [Framework design guidelines](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Framework%20Design%20Guidelines).</span></span> <span data-ttu-id="6ffb5-134">此区域具有相同的标签设计，但不建议使用社区 PR。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-134">This area has the same label design, but community PRs are discouraged.</span></span> <span data-ttu-id="6ffb5-135">这是经许可转载的材料，不应进行编辑。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-135">This is material reprinted with permission and should not be edited.</span></span>
+<span data-ttu-id="3337b-136">此标签样式也适用于 [Framework 设计准则](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Framework%20Design%20Guidelines)。</span><span class="sxs-lookup"><span data-stu-id="3337b-136">This label style is also applied to the [Framework design guidelines](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Framework%20Design%20Guidelines).</span></span> <span data-ttu-id="3337b-137">此区域使用相同的标签设计，但不建议对它执行社区拉取请求。</span><span class="sxs-lookup"><span data-stu-id="3337b-137">This area has the same label design, but community PRs are discouraged.</span></span> <span data-ttu-id="3337b-138">此为经许可后转载的材料，请勿进行编辑。</span><span class="sxs-lookup"><span data-stu-id="3337b-138">This is material reprinted with permission and should not be edited.</span></span>
 
-<span data-ttu-id="6ffb5-136">![：书籍：深蓝色背景上的区域](./media/labels-projects/area.png ".NET 指南区域标签的前缀")</span><span class="sxs-lookup"><span data-stu-id="6ffb5-136">![:books: Area on dark blue background](./media/labels-projects/area.png "Prefix for .NET Guide area labels")</span></span>
+<span data-ttu-id="3337b-139">![：书籍：深蓝色背景上的区域](./media/labels-projects/area.png ".NET 指南区域标签的前缀")</span><span class="sxs-lookup"><span data-stu-id="3337b-139">![:books: Area on dark blue background](./media/labels-projects/area.png "Prefix for .NET Guide area labels")</span></span>
 
-<span data-ttu-id="6ffb5-137">每个 .NET 指南都使用 `:books: Area` 前缀进行标注，并且具有深蓝色背景。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-137">Each .NET Guide is noted with the `:books: Area` prefix and has a dark blue background.</span></span> <span data-ttu-id="6ffb5-138">以下是针对每个 .NET 指南筛选的当前问题。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-138">Here are current issues filtered for each of the .NET guides.</span></span>
+<span data-ttu-id="3337b-140">每个 .NET 指南都标有 `:books: Area` 前缀，并且使用深蓝色背景。</span><span class="sxs-lookup"><span data-stu-id="3337b-140">Each .NET Guide is noted with the `:books: Area` prefix and has a dark blue background.</span></span> <span data-ttu-id="3337b-141">以下是针对各个 .NET 指南筛选出的当前问题。</span><span class="sxs-lookup"><span data-stu-id="3337b-141">Here are current issues filtered for each of the .NET guides.</span></span>
 
-- [<span data-ttu-id="6ffb5-139">API 参考</span><span class="sxs-lookup"><span data-stu-id="6ffb5-139">API Reference</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20API%20Reference)
-- [<span data-ttu-id="6ffb5-140">Azure .NET SDK</span><span class="sxs-lookup"><span data-stu-id="6ffb5-140">Azure .NET SDK</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Azure%20.NET%20SDk)
-- [<span data-ttu-id="6ffb5-141">C# 指南</span><span class="sxs-lookup"><span data-stu-id="6ffb5-141">C# Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20C%23%20Guide)
-- [<span data-ttu-id="6ffb5-142">桌面指南</span><span class="sxs-lookup"><span data-stu-id="6ffb5-142">Desktop Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Desktop%20Guide)
-- [<span data-ttu-id="6ffb5-143">F# 指南</span><span class="sxs-lookup"><span data-stu-id="6ffb5-143">F# Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20F%23%20Guide)
-- [<span data-ttu-id="6ffb5-144">ML.NET 指南</span><span class="sxs-lookup"><span data-stu-id="6ffb5-144">ML.NET Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20ML.NET%20Guide)
-- <span data-ttu-id="6ffb5-145">[.NET 体系结构指南](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Architecture%20Guide) - 可以删除</span><span class="sxs-lookup"><span data-stu-id="6ffb5-145">[.NET Architecture Guide](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Architecture%20Guide) - Could be removed</span></span>
-- [<span data-ttu-id="6ffb5-146">.NET Core 指南</span><span class="sxs-lookup"><span data-stu-id="6ffb5-146">.NET Core Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Core%20Guide)
-- [<span data-ttu-id="6ffb5-147">.NET for Apache Spark 指南</span><span class="sxs-lookup"><span data-stu-id="6ffb5-147">.NET for Apache Spark Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20for%20Apache%20Spark%20Guide)
-- [<span data-ttu-id="6ffb5-148">.NET Framework 指南</span><span class="sxs-lookup"><span data-stu-id="6ffb5-148">.NET Framework Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Framework%20Guide)
-- [<span data-ttu-id="6ffb5-149">.NET 指南</span><span class="sxs-lookup"><span data-stu-id="6ffb5-149">.NET Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Guide)
-- <span data-ttu-id="6ffb5-150">[Roslyn API 参考](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Roslyn%20API%20Reference) - 可以删除。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-150">[Roslyn API Reference](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Roslyn%20API%20Reference) - could be removed.</span></span>
-- [<span data-ttu-id="6ffb5-151">Visual Basic 指南</span><span class="sxs-lookup"><span data-stu-id="6ffb5-151">Visual Basic Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Visual%20Basic%20Guide)
+- [<span data-ttu-id="3337b-142">API 参考</span><span class="sxs-lookup"><span data-stu-id="3337b-142">API Reference</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20API%20Reference)
+- [<span data-ttu-id="3337b-143">Azure .NET SDK</span><span class="sxs-lookup"><span data-stu-id="3337b-143">Azure .NET SDK</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Azure%20.NET%20SDk)
+- [<span data-ttu-id="3337b-144">C# 指南</span><span class="sxs-lookup"><span data-stu-id="3337b-144">C# Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20C%23%20Guide)
+- [<span data-ttu-id="3337b-145">桌面指南</span><span class="sxs-lookup"><span data-stu-id="3337b-145">Desktop Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Desktop%20Guide)
+- [<span data-ttu-id="3337b-146">F# 指南</span><span class="sxs-lookup"><span data-stu-id="3337b-146">F# Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20F%23%20Guide)
+- [<span data-ttu-id="3337b-147">ML.NET 指南</span><span class="sxs-lookup"><span data-stu-id="3337b-147">ML.NET Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20ML.NET%20Guide)
+- <span data-ttu-id="3337b-148">[.NET 体系结构指南](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Architecture%20Guide) - 可以删除</span><span class="sxs-lookup"><span data-stu-id="3337b-148">[.NET Architecture Guide](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Architecture%20Guide) - Could be removed</span></span>
+- [<span data-ttu-id="3337b-149">.NET Core 指南</span><span class="sxs-lookup"><span data-stu-id="3337b-149">.NET Core Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Core%20Guide)
+- [<span data-ttu-id="3337b-150">.NET for Apache Spark 指南</span><span class="sxs-lookup"><span data-stu-id="3337b-150">.NET for Apache Spark Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20for%20Apache%20Spark%20Guide)
+- [<span data-ttu-id="3337b-151">.NET Framework 指南</span><span class="sxs-lookup"><span data-stu-id="3337b-151">.NET Framework Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Framework%20Guide)
+- [<span data-ttu-id="3337b-152">.NET 指南</span><span class="sxs-lookup"><span data-stu-id="3337b-152">.NET Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Guide)
+- <span data-ttu-id="3337b-153">[Roslyn API 参考](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Roslyn%20API%20Reference) - 可以删除。</span><span class="sxs-lookup"><span data-stu-id="3337b-153">[Roslyn API Reference](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Roslyn%20API%20Reference) - could be removed.</span></span>
+- [<span data-ttu-id="3337b-154">Visual Basic 指南</span><span class="sxs-lookup"><span data-stu-id="3337b-154">Visual Basic Guide</span></span>](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Visual%20Basic%20Guide)
 
-#### <a name="search-one-section-of-a-guide"></a><span data-ttu-id="6ffb5-152">搜索指南的一个部分</span><span class="sxs-lookup"><span data-stu-id="6ffb5-152">Search one section of a guide</span></span>
+#### <a name="search-one-section-of-a-guide"></a><span data-ttu-id="3337b-155">搜索指南的某个章节</span><span class="sxs-lookup"><span data-stu-id="3337b-155">Search one section of a guide</span></span>
 
-<span data-ttu-id="6ffb5-153">![：card_file_box：中蓝色背景上的区域](./media/labels-projects/technology.png ".NET 指南子区域标签的前缀")</span><span class="sxs-lookup"><span data-stu-id="6ffb5-153">![:card_file_box: Area on medium blue background](./media/labels-projects/technology.png "Prefix for .NET Guide sub-area labels")</span></span>
+<span data-ttu-id="3337b-156">![：card_file_box：中蓝色背景上的区域](./media/labels-projects/technology.png ".NET 指南子区域标签的前缀")</span><span class="sxs-lookup"><span data-stu-id="3337b-156">![:card_file_box: Area on medium blue background](./media/labels-projects/technology.png "Prefix for .NET Guide sub-area labels")</span></span>
 
-<span data-ttu-id="6ffb5-154">.NET 指南涵盖很多内容，因此这些标签会进一步限制指南的一个部分的范围。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-154">The .NET guides are large, so these labels further limit the scope by a section of a guide.</span></span> <span data-ttu-id="6ffb5-155">每个 .NET 指南子区域都使用 `:card_file_box: Technology` 前缀进行标注，并且具有中蓝色背景。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-155">Each .NET Guide subarea is noted with the `:card_file_box: Technology` prefix and has a medium blue background.</span></span> <span data-ttu-id="6ffb5-156">其中许多标签适用于多个指南，而其他标签只位于一个指南中。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-156">Many of these labels apply to multiple guides, while others are in only one guide.</span></span> <span data-ttu-id="6ffb5-157">筛选区域后，添加其中一个标签以进一步限制问题的范围。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-157">After filtering on an area, add one of these labels to further limit the scope of issues.</span></span>
+<span data-ttu-id="3337b-157">.NET 指南范围较大，因此，这些标签按指南章节对范围做了进一步限制。</span><span class="sxs-lookup"><span data-stu-id="3337b-157">The .NET guides are large, so these labels further limit the scope by a section of a guide.</span></span> <span data-ttu-id="3337b-158">每个 .NET 指南的子区域都标有 `:card_file_box: Technology` 前缀，并且使用中蓝色背景。</span><span class="sxs-lookup"><span data-stu-id="3337b-158">Each .NET Guide subarea is noted with the `:card_file_box: Technology` prefix and has a medium blue background.</span></span> <span data-ttu-id="3337b-159">其中许多标签适用于多个指南，而有些标签仅适用于一个指南。</span><span class="sxs-lookup"><span data-stu-id="3337b-159">Many of these labels apply to multiple guides, while others are in only one guide.</span></span> <span data-ttu-id="3337b-160">基于区域筛选后，添加其中一种标签，进一步限制问题的范围。</span><span class="sxs-lookup"><span data-stu-id="3337b-160">After filtering on an area, add one of these labels to further limit the scope of issues.</span></span>
 
-- <span data-ttu-id="6ffb5-158">AppCompat</span><span class="sxs-lookup"><span data-stu-id="6ffb5-158">AppCompat</span></span>
-- <span data-ttu-id="6ffb5-159">异步任务</span><span class="sxs-lookup"><span data-stu-id="6ffb5-159">Async Task</span></span>
-- <span data-ttu-id="6ffb5-160">C# 高级概念</span><span class="sxs-lookup"><span data-stu-id="6ffb5-160">C# Advanced concepts</span></span>
-- <span data-ttu-id="6ffb5-161">C# 编译器</span><span class="sxs-lookup"><span data-stu-id="6ffb5-161">C# compiler</span></span>
-- <span data-ttu-id="6ffb5-162">C# 基础知识</span><span class="sxs-lookup"><span data-stu-id="6ffb5-162">C# Fundamentals</span></span>
-- <span data-ttu-id="6ffb5-163">C# 入门</span><span class="sxs-lookup"><span data-stu-id="6ffb5-163">C# Get Started</span></span>
-- <span data-ttu-id="6ffb5-164">C# 语言参考</span><span class="sxs-lookup"><span data-stu-id="6ffb5-164">C# Language Reference</span></span>
-- <span data-ttu-id="6ffb5-165">C# Null 安全性</span><span class="sxs-lookup"><span data-stu-id="6ffb5-165">C# Null safety</span></span>
-- <span data-ttu-id="6ffb5-166">C# 新增功能</span><span class="sxs-lookup"><span data-stu-id="6ffb5-166">C# What's new</span></span>
-- <span data-ttu-id="6ffb5-167">CLI</span><span class="sxs-lookup"><span data-stu-id="6ffb5-167">CLI</span></span>
-- <span data-ttu-id="6ffb5-168">数据访问</span><span class="sxs-lookup"><span data-stu-id="6ffb5-168">Data Access</span></span>
-- <span data-ttu-id="6ffb5-169">Docker</span><span class="sxs-lookup"><span data-stu-id="6ffb5-169">Docker</span></span>
-- <span data-ttu-id="6ffb5-170">安装程序</span><span class="sxs-lookup"><span data-stu-id="6ffb5-170">Installers</span></span>
-- <span data-ttu-id="6ffb5-171">LINQ</span><span class="sxs-lookup"><span data-stu-id="6ffb5-171">LINQ</span></span>
-- <span data-ttu-id="6ffb5-172">NCL</span><span class="sxs-lookup"><span data-stu-id="6ffb5-172">NCL</span></span>
-- <span data-ttu-id="6ffb5-173">.NET Standard</span><span class="sxs-lookup"><span data-stu-id="6ffb5-173">.NET Standard</span></span>
-- <span data-ttu-id="6ffb5-174">Roslyn API</span><span class="sxs-lookup"><span data-stu-id="6ffb5-174">Roslyn APIs</span></span>
-- <span data-ttu-id="6ffb5-175">安全性</span><span class="sxs-lookup"><span data-stu-id="6ffb5-175">Security</span></span>
-- <span data-ttu-id="6ffb5-176">WCF</span><span class="sxs-lookup"><span data-stu-id="6ffb5-176">WCF</span></span>
-- <span data-ttu-id="6ffb5-177">WF</span><span class="sxs-lookup"><span data-stu-id="6ffb5-177">WF</span></span>
-- <span data-ttu-id="6ffb5-178">WIF</span><span class="sxs-lookup"><span data-stu-id="6ffb5-178">WIF</span></span>
-- <span data-ttu-id="6ffb5-179">WinForms</span><span class="sxs-lookup"><span data-stu-id="6ffb5-179">WinForms</span></span>
-- <span data-ttu-id="6ffb5-180">WPF</span><span class="sxs-lookup"><span data-stu-id="6ffb5-180">WPF</span></span>
+- <span data-ttu-id="3337b-161">AppCompat</span><span class="sxs-lookup"><span data-stu-id="3337b-161">AppCompat</span></span>
+- <span data-ttu-id="3337b-162">异步任务</span><span class="sxs-lookup"><span data-stu-id="3337b-162">Async Task</span></span>
+- <span data-ttu-id="3337b-163">C# 高级概念</span><span class="sxs-lookup"><span data-stu-id="3337b-163">C# Advanced concepts</span></span>
+- <span data-ttu-id="3337b-164">C# 编译器</span><span class="sxs-lookup"><span data-stu-id="3337b-164">C# compiler</span></span>
+- <span data-ttu-id="3337b-165">C# 基础知识</span><span class="sxs-lookup"><span data-stu-id="3337b-165">C# Fundamentals</span></span>
+- <span data-ttu-id="3337b-166">C# 入门</span><span class="sxs-lookup"><span data-stu-id="3337b-166">C# Get Started</span></span>
+- <span data-ttu-id="3337b-167">C# 语言参考</span><span class="sxs-lookup"><span data-stu-id="3337b-167">C# Language Reference</span></span>
+- <span data-ttu-id="3337b-168">C# Null 安全性</span><span class="sxs-lookup"><span data-stu-id="3337b-168">C# Null safety</span></span>
+- <span data-ttu-id="3337b-169">C# 新增功能</span><span class="sxs-lookup"><span data-stu-id="3337b-169">C# What's new</span></span>
+- <span data-ttu-id="3337b-170">CLI</span><span class="sxs-lookup"><span data-stu-id="3337b-170">CLI</span></span>
+- <span data-ttu-id="3337b-171">数据访问</span><span class="sxs-lookup"><span data-stu-id="3337b-171">Data Access</span></span>
+- <span data-ttu-id="3337b-172">Docker</span><span class="sxs-lookup"><span data-stu-id="3337b-172">Docker</span></span>
+- <span data-ttu-id="3337b-173">安装程序</span><span class="sxs-lookup"><span data-stu-id="3337b-173">Installers</span></span>
+- <span data-ttu-id="3337b-174">LINQ</span><span class="sxs-lookup"><span data-stu-id="3337b-174">LINQ</span></span>
+- <span data-ttu-id="3337b-175">NCL</span><span class="sxs-lookup"><span data-stu-id="3337b-175">NCL</span></span>
+- <span data-ttu-id="3337b-176">.NET Standard</span><span class="sxs-lookup"><span data-stu-id="3337b-176">.NET Standard</span></span>
+- <span data-ttu-id="3337b-177">Roslyn API</span><span class="sxs-lookup"><span data-stu-id="3337b-177">Roslyn APIs</span></span>
+- <span data-ttu-id="3337b-178">安全性</span><span class="sxs-lookup"><span data-stu-id="3337b-178">Security</span></span>
+- <span data-ttu-id="3337b-179">WCF</span><span class="sxs-lookup"><span data-stu-id="3337b-179">WCF</span></span>
+- <span data-ttu-id="3337b-180">WF</span><span class="sxs-lookup"><span data-stu-id="3337b-180">WF</span></span>
+- <span data-ttu-id="3337b-181">WIF</span><span class="sxs-lookup"><span data-stu-id="3337b-181">WIF</span></span>
+- <span data-ttu-id="3337b-182">WinForms</span><span class="sxs-lookup"><span data-stu-id="3337b-182">WinForms</span></span>
+- <span data-ttu-id="3337b-183">WPF</span><span class="sxs-lookup"><span data-stu-id="3337b-183">WPF</span></span>
 
-### <a name="releases"></a><span data-ttu-id="6ffb5-181">版本</span><span class="sxs-lookup"><span data-stu-id="6ffb5-181">Releases</span></span>
+### <a name="releases"></a><span data-ttu-id="3337b-184">版本</span><span class="sxs-lookup"><span data-stu-id="3337b-184">Releases</span></span>
 
-<span data-ttu-id="6ffb5-182">![：checkered_flag：版本：深黄色](./media/labels-projects/release.png "版本标签的前缀")</span><span class="sxs-lookup"><span data-stu-id="6ffb5-182">![:checkered_flag: Release: on dark yellow](./media/labels-projects/release.png "Prefix for release labels")</span></span>
+<span data-ttu-id="3337b-185">![：checkered_flag：版本：深黄色](./media/labels-projects/release.png "版本标签的前缀")</span><span class="sxs-lookup"><span data-stu-id="3337b-185">![:checkered_flag: Release: on dark yellow](./media/labels-projects/release.png "Prefix for release labels")</span></span>
 
-<span data-ttu-id="6ffb5-183">针对特定版本标记的问题使用 `:checkered_flag: Release:` 前缀标注，并具有深黄色背景。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-183">Issues tagged for a specific release are noted with the `:checkered_flag: Release:` prefix and have a dark yellow background.</span></span>
+<span data-ttu-id="3337b-186">针对特定版本标记的问题标有 `:checkered_flag: Release:` 前缀，并且使用深黄色背景。</span><span class="sxs-lookup"><span data-stu-id="3337b-186">Issues tagged for a specific release are noted with the `:checkered_flag: Release:` prefix and have a dark yellow background.</span></span>
 
-- <span data-ttu-id="6ffb5-184">.NET Core 2.2</span><span class="sxs-lookup"><span data-stu-id="6ffb5-184">.NET Core 2.2</span></span>
-- <span data-ttu-id="6ffb5-185">.NET Core 3.0</span><span class="sxs-lookup"><span data-stu-id="6ffb5-185">.NET Core 3.0</span></span>
-- <span data-ttu-id="6ffb5-186">.NET Framework 4.8</span><span class="sxs-lookup"><span data-stu-id="6ffb5-186">.NET Framework 4.8</span></span>
-- <span data-ttu-id="6ffb5-187">.NET 5</span><span class="sxs-lookup"><span data-stu-id="6ffb5-187">.NET 5</span></span>
+- <span data-ttu-id="3337b-187">.NET Core 2.2</span><span class="sxs-lookup"><span data-stu-id="3337b-187">.NET Core 2.2</span></span>
+- <span data-ttu-id="3337b-188">.NET Core 3.0</span><span class="sxs-lookup"><span data-stu-id="3337b-188">.NET Core 3.0</span></span>
+- <span data-ttu-id="3337b-189">.NET Framework 4.8</span><span class="sxs-lookup"><span data-stu-id="3337b-189">.NET Framework 4.8</span></span>
+- <span data-ttu-id="3337b-190">.NET 5</span><span class="sxs-lookup"><span data-stu-id="3337b-190">.NET 5</span></span>
 
-### <a name="priority"></a><span data-ttu-id="6ffb5-188">优先级</span><span class="sxs-lookup"><span data-stu-id="6ffb5-188">Priority</span></span>
+### <a name="priority"></a><span data-ttu-id="3337b-191">优先级</span><span class="sxs-lookup"><span data-stu-id="3337b-191">Priority</span></span>
 
-<span data-ttu-id="6ffb5-189">优先级标签全部为 `P`，后跟单个数字。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-189">Priority labels are all `P` followed by a single digit.</span></span> <span data-ttu-id="6ffb5-190">较小的数字表示较高的优先级：</span><span class="sxs-lookup"><span data-stu-id="6ffb5-190">Lower numbers are higher priority:</span></span>
+<span data-ttu-id="3337b-192">优先级标签由 `P` 及其后面的单个数字构成。</span><span class="sxs-lookup"><span data-stu-id="3337b-192">Priority labels are all `P` followed by a single digit.</span></span> <span data-ttu-id="3337b-193">数字越小表示优先级越高：</span><span class="sxs-lookup"><span data-stu-id="3337b-193">Lower numbers are higher priority:</span></span>
 
-- <span data-ttu-id="6ffb5-191">P0</span><span class="sxs-lookup"><span data-stu-id="6ffb5-191">P0</span></span>
-- <span data-ttu-id="6ffb5-192">P1</span><span class="sxs-lookup"><span data-stu-id="6ffb5-192">P1</span></span>
-- <span data-ttu-id="6ffb5-193">P2</span><span class="sxs-lookup"><span data-stu-id="6ffb5-193">P2</span></span>
-- <span data-ttu-id="6ffb5-194">P3</span><span class="sxs-lookup"><span data-stu-id="6ffb5-194">P3</span></span>
+- <span data-ttu-id="3337b-194">P0 - 指示优先级为严重的问题或 PR</span><span class="sxs-lookup"><span data-stu-id="3337b-194">P0 - Indicates issues or PRs that are critical priority</span></span>
+- <span data-ttu-id="3337b-195">P1 - 高优先级</span><span class="sxs-lookup"><span data-stu-id="3337b-195">P1 - High priority</span></span>
+- <span data-ttu-id="3337b-196">P2 - 中优先级</span><span class="sxs-lookup"><span data-stu-id="3337b-196">P2 - Medium priority</span></span>
+- <span data-ttu-id="3337b-197">P3 - 低优先级</span><span class="sxs-lookup"><span data-stu-id="3337b-197">P3 - Low priority</span></span>
 
-### <a name="what-about-the-other-labels"></a><span data-ttu-id="6ffb5-195">其他标签呢？</span><span class="sxs-lookup"><span data-stu-id="6ffb5-195">What about the other labels?</span></span>
+### <a name="what-about-the-other-labels"></a><span data-ttu-id="3337b-198">其他标签呢</span><span class="sxs-lookup"><span data-stu-id="3337b-198">What about the other labels</span></span>
 
-<span data-ttu-id="6ffb5-196">内容团队还使用许多其他标签来管理问题的不同分类。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-196">There are many other labels used by the content teams to manage different classifications of issues.</span></span> <span data-ttu-id="6ffb5-197">如果你不属于内容团队，则可以忽略这些其他标签。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-197">If you're not on the content team, you can ignore these other labels.</span></span>
+<span data-ttu-id="3337b-199">内容团队还使用了许多其他标签来管理各种问题分类。</span><span class="sxs-lookup"><span data-stu-id="3337b-199">There are many other labels used by the content teams to manage different classifications of issues.</span></span> <span data-ttu-id="3337b-200">如果你不属于内容团队，则可以忽略其他这些标签。</span><span class="sxs-lookup"><span data-stu-id="3337b-200">If you're not on the content team, you can ignore these other labels.</span></span>
 
-## <a name="projects"></a><span data-ttu-id="6ffb5-198">项目</span><span class="sxs-lookup"><span data-stu-id="6ffb5-198">Projects</span></span>
+## <a name="projects"></a><span data-ttu-id="3337b-201">项目</span><span class="sxs-lookup"><span data-stu-id="3337b-201">Projects</span></span>
 
-<span data-ttu-id="6ffb5-199">我们通过两种方式使用项目：</span><span class="sxs-lookup"><span data-stu-id="6ffb5-199">We use projects in two ways:</span></span>
+<span data-ttu-id="3337b-202">项目用于规划目的，在这种情况下，设置优先级的工作是通过看板自动完成的。</span><span class="sxs-lookup"><span data-stu-id="3337b-202">Projects are intended for planning purposes, where prioritized work is automated through a Kanban board.</span></span> <span data-ttu-id="3337b-203">项目应仅包含 GitHub 问题，而不应包含拉取请求。</span><span class="sxs-lookup"><span data-stu-id="3337b-203">Projects should only ever contain GitHub issues, _not_ pull requests.</span></span> <span data-ttu-id="3337b-204">项目不同于里程碑，因为里程碑只包含拉取请求。</span><span class="sxs-lookup"><span data-stu-id="3337b-204">Projects differ from milestones, in that milestones only contain pull requests.</span></span>
 
-- <span data-ttu-id="6ffb5-200">Month YYYY 项目类型：这些是每月工作计划的 Scrum 板。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-200">Month YYYY project types: These are scrum boards for each month's working plan.</span></span>
-- <span data-ttu-id="6ffb5-201">长时间运行的长篇故事：这些用于在工作持续几个月的情况下组织以目标为导向的任务。</span><span class="sxs-lookup"><span data-stu-id="6ffb5-201">Long-running epics: These are used to organize tasks toward a goal when the work will occur over several months.</span></span>
+<span data-ttu-id="3337b-205">我们通过两种方式使用项目：</span><span class="sxs-lookup"><span data-stu-id="3337b-205">We use projects in two ways:</span></span>
+
+- <span data-ttu-id="3337b-206">`Month YYYY` 项目类型：这些是每月工作计划的看板。</span><span class="sxs-lookup"><span data-stu-id="3337b-206">`Month YYYY` project types: These are Kanban boards for each month's working plan.</span></span>
+  - <span data-ttu-id="3337b-207">示例：[2020 年 7 月](https://github.com/dotnet/docs/projects/103)、[2020 年 8 月](https://github.com/dotnet/docs/projects/117)等。</span><span class="sxs-lookup"><span data-stu-id="3337b-207">Examples, [July 2020](https://github.com/dotnet/docs/projects/103), [August 2020](https://github.com/dotnet/docs/projects/117), and so on.</span></span>
+- <span data-ttu-id="3337b-208">长时间运行的长篇故事：这些用于在工作持续几个月的情况下组织以目标为导向的任务。</span><span class="sxs-lookup"><span data-stu-id="3337b-208">Long-running epics: These are used to organize tasks toward a goal when the work will occur over several months.</span></span>
+  - <span data-ttu-id="3337b-209">示例：[.NET 5 Wave - 重组](https://github.com/dotnet/docs/projects/105)、[.NET 语言 (.NET 5 Wave)](https://github.com/dotnet/docs/projects/106) 等。</span><span class="sxs-lookup"><span data-stu-id="3337b-209">Examples: [.NET 5 Wave - Reorganization](https://github.com/dotnet/docs/projects/105), [.NET Languages (.NET 5 wave) ](https://github.com/dotnet/docs/projects/106), and so on.</span></span>
+
+## <a name="milestones"></a><span data-ttu-id="3337b-210">里程碑</span><span class="sxs-lookup"><span data-stu-id="3337b-210">Milestones</span></span>
+
+<span data-ttu-id="3337b-211">里程碑通常遵循项目 `Month YYYY` 的相同命名约定，但不同于项目。</span><span class="sxs-lookup"><span data-stu-id="3337b-211">Milestones typically follow the same naming convention of projects `Month YYYY`, but they're different from projects.</span></span> <span data-ttu-id="3337b-212">我们使用里程碑来跟踪已完成的工作。</span><span class="sxs-lookup"><span data-stu-id="3337b-212">We use milestones to track completed work.</span></span> <span data-ttu-id="3337b-213">里程碑应不包含问题（可能的工作），但仅包含拉取请求。</span><span class="sxs-lookup"><span data-stu-id="3337b-213">Milestones should _not_ contain issues (potential work), but rather exclusively contain pull requests.</span></span> <span data-ttu-id="3337b-214">当前里程碑将自动应用于新的拉取请求。</span><span class="sxs-lookup"><span data-stu-id="3337b-214">The current milestone is automatically applied to new pull requests.</span></span>
