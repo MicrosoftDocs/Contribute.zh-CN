@@ -54,7 +54,7 @@
       items:
         - name: 如何参与
           href: dotnet/dotnet-contribute.md
-        - name: 标签和项目路线图
+        - name: 标签、项目和里程碑路线图
           href: dotnet/labels-projects.md
         - name: 样式约定
           href: dotnet/dotnet-style-guide.md
