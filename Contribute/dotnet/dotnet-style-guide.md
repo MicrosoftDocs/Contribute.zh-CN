@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 926516895798757bde0861a345e0b5d0f95218a4
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: 15288ccb1831e994fd078f47788ad4c2f502775c
+ms.sourcegitcommit: 92d06515af1d9d0e5abf632fc3b6425c487174d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290902"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90837203"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>适用于 .NET 文档的元数据和 Markdown 模板
 
@@ -129,48 +129,9 @@ Markdown 使用特殊字符（例如，\*、\` 和 \#）进行格式设置。 �
 
 ## <a name="code"></a>代码
 
-包括代码的最佳方式是包括工作示例中的代码片段。 请遵循[参与 .NET](dotnet-contribute.md#contribute-to-samples) 一文中的说明，创建示例。 包括代码的基本规则位于有关[代码](../code-in-docs.md)的通用指南中。
+包括代码的最佳方式是包括工作示例中的代码片段。 请遵循[参与 .NET](dotnet-contribute.md#contribute-to-samples) 一文中的说明，创建示例。 包含来自完整程序的代码片段可确保所有代码通过持续集成 (CI) 系统运行。 然而，如果需要显示导致编译时或运行时错误的内容，可以使用内联代码块。
 
-可使用以下语法，包括代码：
-
-```markdown
-[!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
-```
-
-* `-<language>`（是可选的，但建议采用） 
-  * 要引用的代码片段的语言。
-
-* `<name>`（可选）
-  * 代码片段的名称。 这不会对输出 HTML 产生影响，但可用于增强 Markdown 源的可读性。
-
-* `<pathToFile>`（必需）
-  * 文件系统中的相对路径，指示将引用的代码片段文件。 根据组成 .NET 文档集的不同存储库，这可能很复杂。 .NET 示例位于 dotnet/示例存储库。 所有代码片段路径都会以 `~/samples` 开头，路径其余部分为该存储库的根目录中的源路径。
-
-* `<queryoption>`（可选）
-  * 用于指定如何从文件中检索代码：
-    * `#`：`#{tagname}`（标记名称）或 `#L{startlinenumber}-L{endlinenumber}`（行范围）。
-    不鼓励使用行号，因为它们很脆弱。 标记名称是引用代码片段的首选方式。 请使用有意义的标记名称。 （由于许多代码片段迁移自上一个平台，并且标记具有 `Snippet1`、`Snippet2` 等名称。因此维持此做法要困难得多。）
-    * `range`：`?range=1,3-5` 行的范围。 此示例包含第 1、3、4 和 5 行。
-
-建议在可能的情况下使用标记名称。 标记名称是区域或代码注释的名称，在源代码中以 `Snippettagname` 格式存在。 以下示例说明如何引用标记名称 `BasicThrow`：
-
-```markdown
-[!code-csharp[csrefKeyword#1](~/samples/snippets/snippets/csharp/language-reference/operators/ConditionalExamples.csConditionalRef)]
-```
-
-dotnet/示例存储库中源的相对路径遵循 `~/samples` 路径。
-
-并且，可在[此源文件](https://github.com/dotnet/samples/blob/master/snippets/csharp/language-reference/operators/ConditionalExamples.cs)中了解代码片段标记的构成方式。 有关按语言在代码片段源文件中呈现标记名称的详细信息，请参阅 [DocFX 准则](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file)。
-
-以下示例介绍在所有三种 .NET 语言中包含的代码：
-
-```markdown
-[!code-fsharp[ToPigLatin](../../../samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L14)]
- [!code-csharp[ADCreateDomain#2](../../../samples/snippets/csharp/VS_Snippets_CLR/ADCreateDomain/CS/source2.cs#2)]
- [!code-vb[ADCreateDomain#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/ADCreateDomain/VB/source2.vb#2)]
-```
-
-包含来自完整程序的代码片段可确保所有代码通过持续集成 (CI) 系统运行。 然而，如果需要显示导致编译时或运行时错误的内容，可以使用内联代码块。
+有关在文档中显示代码的 Markdown 语法的信息，请参阅[如何在文档中包含代码](../code-in-docs.md)。
 
 ## <a name="images"></a>图像
 
