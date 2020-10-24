@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 4e57af6a1fe9a9d3799f09cb04f3bd3f0b9b712d
-ms.sourcegitcommit: 59e77d2fb9c38cccbacde9d2a7df61ae58c38fa4
+ms.openlocfilehash: b33333a49df11f0234193ca84fc2c3accdb6894d
+ms.sourcegitcommit: f1535713b66ff9b840f1138583746bc2bf182b4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84421036"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91953641"
 ---
 # <a name="how-to-include-code-in-docs"></a>如何在文档中包含代码
 
@@ -354,11 +354,17 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 
 * `cloudshell-powershell` - 启用 Azure PowerShell Cloud Shell，如前例所示
 * `cloudshell-bash` - 启用 Azure Cloud Shell
-* `try-dotnet` - 启用 Try .NET
-* `try-dotnet-class` - 使用类基架启用 Try .NET
-* `try-dotnet-method` - 使用方法基架启用 Try .NET
+* `try-dotnet` - 启用 .NET Interactive
+* `try-dotnet-class` - 使用类基架启用 .NET Interactive
+* `try-dotnet-method` - 使用方法基架启用 .NET Interactive
 
 对于 Azure Cloud Shell 和 PowerShell Cloud Shell，用户只能针对自己的 Azure 帐户运行命令。
+
+对于 .NET Interactive 体验，代码块的内容取决于三种基架体验中所选的体验：
+
+* 无基架 (`try-dotnet`)：代码块应表示完整的程序文本。 例如，`dotnet new console` 生成的 Program.cs 文件将有效。 这些最适用于显示整个小程序，包括所需的 `using` 指令。 此时不支持顶级语句。
+* 方法基架 (`try-dotnet-method`)：代码块应表示控制台应用程序中的 `Main` 方法的内容。 你可以假设由 `dotnet new console` 模板添加的 `using` 指令。 此设置最适用于演示一个功能的短代码段。
+* 类基架 (`try-dotnet-class`)：代码块应将具有 `Main` 方法的类表示为程序入口点。 这些可用于显示类的成员如何交互。
 
 ## <a name="snippet-syntax-reference"></a>片段语法引用
 
@@ -377,7 +383,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 * `<path>`（必需）
   * 文件系统中的相对路径，指示将引用的代码片段文件。
 
-* `<attribute>` 和 `<attribute-value>`（可选）
+* `<attribute>` 和 `<attribute-value>`（可选）**
 
   配合使用以指定如何从文件中检索代码以及如何显示代码：
 
@@ -398,115 +404,115 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | .NET Core CLI                  | `dotnetcli`                                                                    |
 | 1C                             | `1c`                                                                           |
 | ABNF                           | `abnf`                                                                         |
-| Access logs                    | `accesslog`                                                                    |
+| 访问日志                    | `accesslog`                                                                    |
 | Ada                            | `ada`                                                                          |
 | ARM assembler                  | `armasm`、`arm`                                                                |
 | AVR assembler                  | `avrasm`                                                                       |
-| ActionScript                   | `actionscript`、`as`                                                           |
+| ActionScript                   | `actionscript`, `as`                                                           |
 | Alan                           | `alan`、`i`                                                                    |
-| AngelScript                    | `angelscript`、`asc`                                                           |
+| AngelScript                    | `angelscript`, `asc`                                                           |
 | ANTLR                          | `antlr`                                                                        |
-| Apache                         | `apache`、`apacheconf`                                                         |
-| AppleScript                    | `applescript`、`osascript`                                                     |
-| Arcade                         | `arcade`                                                                       |
-| AsciiDoc                       | `asciidoc`、`adoc`                                                             |
+| Apache                         | `apache`, `apacheconf`                                                         |
+| AppleScript                    | `applescript`, `osascript`                                                     |
+| 街机游戏                         | `arcade`                                                                       |
+| AsciiDoc                       | `asciidoc`, `adoc`                                                             |
 | AspectJ                        | `aspectj`                                                                      |
 | ASPX                           | `aspx`                                                                         |
 | ASP.NET (C#)                   | `aspx-csharp`                                                                  |
 | ASP.NET (VB)                   | `aspx-vb`                                                                      |
 | AutoHotkey                     | `autohotkey`                                                                   |
 | AutoIt                         | `autoit`                                                                       |
-| Awk                            | `awk`、`mawk`、`nawk`、`gawk`                                                  |
+| Awk                            | `awk`, `mawk`, `nawk`, `gawk`                                                  |
 | Axapta                         | `axapta`                                                                       |
 | AzCopy                         | `azcopy`                                                                       |
 | Azure CLI                      | `azurecli`                                                                     |
 | Azure CLI (Interactive)        | `azurecli-interactive`                                                         |
 | Azure Powershell               | `azurepowershell`                                                              |
 | Azure Powershell (Interactive) | `azurepowershell-interactive`                                                  |
-| Bash                           | `bash`、`sh`、`zsh`                                                            |
-| Basic                          | `basic`                                                                        |
+| Bash                           | `bash`, `sh`, `zsh`                                                            |
+| 基本                          | `basic`                                                                        |
 | BNF                            | `bnf`                                                                          |
 | C                              | `c`                                                                            |
 | C#                             | `csharp`、`cs`                                                                 |
 | C# (Interactive)               | `csharp-interactive`                                                           |
-| C++                            | `cpp`、`c`、`cc`、`h`、`c++`、`h++`、`hpp`                                     |
+| C++                            | `cpp`, `c`, `cc`, `h`, `c++`, `h++`, `hpp`                                     |
 | C++/CX                         | `cppcx`                                                                        |
 | C++/WinRT                      | `cppwinrt`                                                                     |
 | C/AL                           | `cal`                                                                          |
-| Cache Object Script            | `cos`、`cls`                                                                   |
-| CMake                          | `cmake`、`cmake.in`                                                            |
+| Cache Object Script            | `cos`, `cls`                                                                   |
+| CMake                          | `cmake`, `cmake.in`                                                            |
 | Coq                            | `coq`                                                                          |
 | CSP                            | `csp`                                                                          |
 | CSS                            | `css`                                                                          |
-| Cap'n Proto                    | `capnproto`、`capnp`                                                           |
-| Clojure                        | `clojure`、`clj`                                                               |
-| CoffeeScript                   | `coffeescript`、`coffee`、`cson`、`iced`                                       |
-| Crmsh                          | `crmsh`、`crm`、`pcmk`                                                         |
-| Crystal                        | `crystal`、`cr`                                                                |
+| Cap'n Proto                    | `capnproto`, `capnp`                                                           |
+| Clojure                        | `clojure`, `clj`                                                               |
+| CoffeeScript                   | `coffeescript`, `coffee`, `cson`, `iced`                                       |
+| Crmsh                          | `crmsh`, `crm`, `pcmk`                                                         |
+| Crystal                        | `crystal`, `cr`                                                                |
 | Cypher (Neo4j)                 | `cypher`                                                                       |
 | D                              | `d`                                                                            |
 | DAX Power BI                   | `dax`                                                                          |
-| DNS Zone file                  | `dns`、`zone`、`bind`                                                          |
-| DOS                            | `dos`、`bat`、`cmd`                                                            |
+| DNS Zone file                  | `dns`, `zone`, `bind`                                                          |
+| DOS                            | `dos`, `bat`, `cmd`                                                            |
 | Dart                           | `dart`                                                                         |
-| Delphi                         | `delphi`、`dpr`、`dfm`、`pas`、`pascal`、`freepascal`、`lazarus`、`lpr`、`lfm` |
-| Diff                           | `diff`、`patch`                                                                |
-| Django                         | `django`、`jinja`                                                              |
+| Delphi                         | `delphi`, `dpr`, `dfm`, `pas`, `pascal`, `freepascal`, `lazarus`, `lpr`, `lfm` |
+| 差异                           | `diff`, `patch`                                                                |
+| Django                         | `django`, `jinja`                                                              |
 | Dockerfile                     | `dockerfile`、`docker`                                                         |
 | dsconfig                       | `dsconfig`                                                                     |
 | DTS (Device Tree)              | `dts`                                                                          |
-| Dust                           | `dust`、`dst`                                                                  |
+| Dust                           | `dust`, `dst`                                                                  |
 | Dylan                          | `dylan`                                                                        |
 | EBNF                           | `ebnf`                                                                         |
 | Elixir                         | `elixir`                                                                       |
 | Elm                            | `elm`                                                                          |
-| Erlang                         | `erlang`、`erl`                                                                |
-| Excel                          | `excel`、`xls`、`xlsx`                                                         |
-| Extempore                      | `extempore`、`xtlang`、`xtm`                                                   |
-| F#                             | `fsharp`、`fs`                                                                 |
+| Erlang                         | `erlang`, `erl`                                                                |
+| Excel                          | `excel`, `xls`, `xlsx`                                                         |
+| Extempore                      | `extempore`, `xtlang`, `xtm`                                                   |
+| F#                             | `fsharp`, `fs`                                                                 |
 | FIX                            | `fix`                                                                          |
-| Fortran                        | `fortran`、`f90`、`f95`                                                        |
-| G-Code                         | `gcode`、`nc`                                                                  |
-| Gams                           | `gams`、`gms`                                                                  |
-| GAUSS                          | `gauss`、`gss`                                                                 |
-| GDScript                       | `godot`、`gdscript`                                                            |
+| Fortran                        | `fortran`, `f90`, `f95`                                                        |
+| G-Code                         | `gcode`, `nc`                                                                  |
+| Gams                           | `gams`, `gms`                                                                  |
+| GAUSS                          | `gauss`, `gss`                                                                 |
+| GDScript                       | `godot`, `gdscript`                                                            |
 | Gherkin                        | `gherkin`                                                                      |
 | GN for Ninja                   | `gn`、`gni`                                                                    |
-| Go                             | `go`、`golang`                                                                 |
-| Golo                           | `golo`、`gololang`                                                             |
+| Go                             | `go`, `golang`                                                                 |
+| Golo                           | `golo`, `gololang`                                                             |
 | Gradle                         | `gradle`                                                                       |
 | Groovy                         | `groovy`                                                                       |
-| HTML                           | `html`、`xhtml`                                                                |
-| HTTP                           | `http`、`https`                                                                |
+| HTML                           | `html`, `xhtml`                                                                |
+| HTTP                           | `http`, `https`                                                                |
 | Haml                           | `haml`                                                                         |
-| Handlebars                     | `handlebars`、`hbs`、`html.hbs`、`html.handlebars`                             |
-| Haskell                        | `haskell`、`hs`                                                                |
-| Haxe                           | `haxe`、`hx`                                                                   |
-| Hy                             | `hy`、`hylang`                                                                 |
+| 把手                     | `handlebars`, `hbs`, `html.hbs`, `html.handlebars`                             |
+| Haskell                        | `haskell`, `hs`                                                                |
+| Haxe                           | `haxe`, `hx`                                                                   |
+| Hy                             | `hy`, `hylang`                                                                 |
 | Ini                            | `ini`                                                                          |
-| Inform7                        | `inform7`、`i7`                                                                |
+| Inform7                        | `inform7`, `i7`                                                                |
 | IRPF90                         | `irpf90`                                                                       |
 | JSON                           | `json`                                                                         |
-| Java                           | `java`、`jsp`                                                                  |
-| JavaScript                     | `javascript`、`js`、`jsx`                                                      |
+| Java                           | `java`, `jsp`                                                                  |
+| JavaScript                     | `javascript`, `js`, `jsx`                                                      |
 | Kotlin                         | `kotlin`、`kt`                                                                 |
 | Kusto                          | `kusto`                                                                        |
-| Leaf                           | `leaf`                                                                         |
-| Lasso                          | `lasso`、`ls`、`lassoscript`                                                   |
+| 叶                           | `leaf`                                                                         |
+| 套索                          | `lasso`, `ls`, `lassoscript`                                                   |
 | Less                           | `less`                                                                         |
 | LDIF                           | `ldif`                                                                         |
 | Lisp                           | `lisp`                                                                         |
 | LiveCode Server                | `livecodeserver`                                                               |
-| LiveScript                     | `livescript`、`ls`                                                             |
+| LiveScript                     | `livescript`, `ls`                                                             |
 | Lua                            | `lua`                                                                          |
-| Makefile                       | `makefile`、`mk`、`mak`                                                        |
-| Markdown                       | `markdown`、`md`、`mkdown`、`mkd`                                              |
-| Mathematica                    | `mathematica`、`mma`、`wl`                                                     |
+| 生成文件                       | `makefile`, `mk`, `mak`                                                        |
+| Markdown                       | `markdown`, `md`, `mkdown`, `mkd`                                              |
+| Mathematica                    | `mathematica`, `mma`, `wl`                                                     |
 | Matlab                         | `matlab`                                                                       |
 | Maxima                         | `maxima`                                                                       |
 | Maya Embedded Language         | `mel`                                                                          |
 | Mercury                        | `mercury`                                                                      |
-| mIRC Scripting Language        | `mirc`、`mrc`                                                                  |
+| mIRC Scripting Language        | `mirc`, `mrc`                                                                  |
 | Mizar                          | `mizar`                                                                        |
 | 托管对象格式          | `mof`                                                                          |
 | Mojolicious                    | `mojolicious`                                                                  |
@@ -516,85 +522,85 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | N1QL                           | `n1ql`                                                                         |
 | NSIS                           | `nsis`                                                                         |
 | Nginx                          | `nginx`、`nginxconf`                                                           |
-| Nimrod                         | `nimrod`、`nim`                                                                |
+| Nimrod                         | `nimrod`, `nim`                                                                |
 | Nix                            | `nix`                                                                          |
-| OCaml                          | `ocaml`、`ml`                                                                  |
-| Objective C                    | `objectivec`、`mm`、`objc`、`obj-c`                                            |
+| OCaml                          | `ocaml`, `ml`                                                                  |
+| Objective C                    | `objectivec`, `mm`, `objc`, `obj-c`                                            |
 | OpenGL Shading Language        | `glsl`                                                                         |
-| OpenSCAD                       | `openscad`、`scad`                                                             |
+| OpenSCAD                       | `openscad`, `scad`                                                             |
 | Oracle Rules Language          | `ruleslanguage`                                                                |
 | Oxygene                        | `oxygene`                                                                      |
-| PF                             | `pf`、`pf.conf`                                                                |
-| PHP                            | `php`、`php3`、`php4`、`php5`、`php6`                                          |
+| PF                             | `pf`, `pf.conf`                                                                |
+| PHP                            | `php`, `php3`, `php4`, `php5`, `php6`                                          |
 | Parser3                        | `parser3`                                                                      |
-| Perl                           | `perl`、`pl`、`pm`                                                             |
+| Perl                           | `perl`, `pl`, `pm`                                                             |
 | Plaintext no highlight         | `plaintext`                                                                    |
 | Pony                           | `pony`                                                                         |
-| PostgreSQL & PL/pgSQL          | `pgsql`、`postgres`、`postgresql`                                              |
-| PowerShell                     | `powershell`、`ps`                                                             |
+| PostgreSQL & PL/pgSQL          | `pgsql`, `postgres`, `postgresql`                                              |
+| PowerShell                     | `powershell`, `ps`                                                             |
 | PowerShell (Interactive)       | `powershell-interactive`                                                       |
 | Processing                     | `processing`                                                                   |
 | Prolog                         | `prolog`                                                                       |
 | 属性                     | `properties`                                                                   |
-| Protocol Buffers               | `protobuf`                                                                     |
-| Puppet                         | `puppet`、`pp`                                                                 |
-| Python                         | `python`、`py`、`gyp`                                                          |
+| 协议缓冲区               | `protobuf`                                                                     |
+| Puppet                         | `puppet`, `pp`                                                                 |
+| Python                         | `python`, `py`, `gyp`                                                          |
 | Python profiler results        | `profile`                                                                      |
 | Q#                             | `qsharp`                                                                       |
 | Q                              | `k`、`kdb`                                                                     |
 | QML                            | `qml`                                                                          |
 | R                              | `r`                                                                            |
-| Razor CSHTML                   | `cshtml`、`razor`、`razor-cshtml`                                              |
-| ReasonML                       | `reasonml`、`re`                                                               |
+| Razor CSHTML                   | `cshtml`, `razor`, `razor-cshtml`                                              |
+| ReasonML                       | `reasonml`, `re`                                                               |
 | RenderMan RIB                  | `rib`                                                                          |
 | RenderMan RSL                  | `rsl`                                                                          |
 | Roboconf                       | `graph`、`instances`                                                           |
-| Robot Framework                | `robot`、`rf`                                                                  |
-| RPM spec files                 | `rpm-specfile`、`rpm`、`spec`、`rpm-spec`、`specfile`                          |
-| Ruby                           | `ruby`、`rb`、`gemspec`、`podspec`、`thor`、`irb`                              |
+| Robot Framework                | `robot`, `rf`                                                                  |
+| RPM spec files                 | `rpm-specfile`, `rpm`, `spec`, `rpm-spec`, `specfile`                          |
+| Ruby                           | `ruby`, `rb`, `gemspec`, `podspec`, `thor`, `irb`                              |
 | Rust                           | `rust`、`rs`                                                                   |
-| SAS                            | `SAS`、`sas`                                                                   |
+| SAS                            | `SAS`, `sas`                                                                   |
 | SCSS                           | `scss`                                                                         |
 | SQL                            | `sql`                                                                          |
-| STEP Part 21                   | `p21`、`step`、`stp`                                                           |
+| STEP Part 21                   | `p21`, `step`, `stp`                                                           |
 | Scala                          | `scala`                                                                        |
 | Scheme                         | `scheme`                                                                       |
-| Scilab                         | `scilab`、`sci`                                                                |
+| Scilab                         | `scilab`, `sci`                                                                |
 | Shape Expressions              | `shexc`                                                                        |
-| Shell                          | `shell`、`console`                                                             |
+| Shell                          | `shell`, `console`                                                             |
 | Smali                          | `smali`                                                                        |
-| Smalltalk                      | `smalltalk`、`st`                                                              |
-| Solidity                       | `solidity`、`sol`                                                              |
+| Smalltalk                      | `smalltalk`, `st`                                                              |
+| Solidity                       | `solidity`, `sol`                                                              |
 | Stan                           | `stan`                                                                         |
 | Stata                          | `stata`                                                                        |
-| Structured Text                | `iecst`、`scl`、`stl`、`structured-text`                                       |
-| Stylus                         | `stylus`、`styl`                                                               |
+| Structured Text                | `iecst`, `scl`, `stl`, `structured-text`                                       |
+| 触笔                         | `stylus`, `styl`                                                               |
 | SubUnit                        | `subunit`                                                                      |
-| Supercollider                  | `supercollider`、`sc`                                                          |
+| Supercollider                  | `supercollider`, `sc`                                                          |
 | Swift                          | `swift`                                                                        |
-| Tcl                            | `tcl`、`tk`                                                                    |
-| Terraform (HCL)                | `terraform`、`tf`、`hcl`                                                       |
+| Tcl                            | `tcl`, `tk`                                                                    |
+| Terraform (HCL)                | `terraform`, `tf`, `hcl`                                                       |
 | Test Anything Protocol         | `tap`                                                                          |
 | TeX                            | `tex`                                                                          |
 | Thrift                         | `thrift`                                                                       |
 | TOML                           | `toml`                                                                         |
 | TP                             | `tp`                                                                           |
 | Twig                           | `twig`、`craftcms`                                                             |
-| TypeScript                     | `typescript`、`ts`                                                             |
-| VB.NET                         | `vbnet`、`vb`                                                                  |
-| VBScript                       | `vbscript`、`vbs`                                                              |
+| TypeScript                     | `typescript`, `ts`                                                             |
+| VB.NET                         | `vbnet`, `vb`                                                                  |
+| VBScript                       | `vbscript`, `vbs`                                                              |
 | VHDL                           | `vhdl`                                                                         |
 | Vala                           | `vala`                                                                         |
-| Verilog                        | `verilog`、`v`                                                                 |
+| Verilog                        | `verilog`, `v`                                                                 |
 | Vim Script                     | `vim`                                                                          |
 | X++                            | `xpp`                                                                          |
 | x86 Assembly                   | `x86asm`                                                                       |
-| XL                             | `xl`、`tao`                                                                    |
-| XQuery                         | `xquery`、`xpath`、`xq`                                                        |
+| XL                             | `xl`, `tao`                                                                    |
+| XQuery                         | `xquery`, `xpath`, `xq`                                                        |
 | XAML                           | `xaml`                                                                         |
-| XML                            | `xml`、`xhtml`、`rss`、`atom`、`xjb`、`xsd`、`xsl`、`plist`                    |
-| YAML                           | `yml`、`yaml`                                                                  |
-| Zephir                         | `zephir`、`zep`                                                                |
+| XML                            | `xml`, `xhtml`, `rss`, `atom`, `xjb`, `xsd`, `xsl`, `plist`                    |
+| YAML                           | `yml`, `yaml`                                                                  |
+| Zephir                         | `zephir`, `zep`                                                                |
 
 > [!TIP]
 > 当多个别名可用时，Docs 创作包的[开发语言完成功能](docs-authoring/dev-lang-completion.md)使用第一个有效别名。
