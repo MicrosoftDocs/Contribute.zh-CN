@@ -54,6 +54,8 @@
       items:
         - name: 如何参与
           href: dotnet/dotnet-contribute.md
+        - name: 代码分析文档
+          href: dotnet/dotnet-contribute-code-analysis.md
         - name: 标签、项目和里程碑路线图
           href: dotnet/labels-projects.md
         - name: 样式约定
