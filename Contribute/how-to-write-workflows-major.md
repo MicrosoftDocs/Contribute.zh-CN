@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 5231b68f04caa94d3ff2ff26afc38e3218ca06b8
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 0661191c64d2f8aa29973e96e98445d070424beb
+ms.sourcegitcommit: 344c3c74c317350a00f91e3e7019a545d5c3c5a2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "78331897"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92689311"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>主要或持续更改的 GitHub 参与工作流
 
@@ -95,10 +95,13 @@ git push --set-upstream origin <branchname>
 
 需要修复已提交的内容？  没问题！  只需在同一分支中进行更改，然后重新提交并推送即可（无需对同一分支的后续推送设置上游服务器）。
 
-需要执行更多与此分支无关的更改？  切换回主分支并使用 Git Bash 签出其他新分支，此过程非常简单，执行以下命令即可：
+## <a name="making-your-next-change"></a>进行下一步更改
+
+需要执行更多与此分支无关的更改？ 切换回主分支，从上游存储库拉取，以确保分支保持最新且签出新分支。  在 Git Bash 中运行以下命令：
 
 ````
 git checkout master
+git pull upstream master
 git checkout -b "branchname"
 ````
 

@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/06/2020
-ms.openlocfilehash: b8e9f2a33f9b4a8025aa36a890bff1017cf132c6
-ms.sourcegitcommit: abcc67cb3ec1f635a6374d7c47a4831e3eee9050
+ms.openlocfilehash: 059ed8297956589a281cf11e4f7244e972565160
+ms.sourcegitcommit: 11228bd1d3dc1496820355096453f1eb2d28b33e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89559254"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92523461"
 ---
 # <a name="labels-projects-and-milestones-roadmap"></a>标签、项目和里程碑路线图
 
@@ -114,10 +114,21 @@ ms.locfileid: "89559254"
 
 优先级标签由 `P` 及其后面的单个数字构成。 数字越小表示优先级越高：
 
-- P0 - 指示优先级为严重的问题或 PR
+- P0 - 严重优先级
+
+  安全性问题或合规性所需的法律要求。 应放下所有其他方面来修复。
+  
 - P1 - 高优先级
+
+  常见方案的要素。 或者高访问量文章上的明显错误。 在 P2 或 P3 起作用之前执行。
+  
 - P2 - 中优先级
+
+  有助于常见方案，但不阻止。  快速简单地执行，或者在解决同一篇文章中 P1 问题时修复。
+  
 - P3 - 低优先级
+
+  有助于边缘案例、常见案例的普通矫正、低访问量文章或弃用的技术。 不值得花费时间，但可供争取社区参与。 如果 P3 问题两个月后仍未解决，可关闭。
 
 ### <a name="what-about-the-other-labels"></a>其他标签呢
 
