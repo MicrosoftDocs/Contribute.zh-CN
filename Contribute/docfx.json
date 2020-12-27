@@ -1,65 +1,74 @@
 {
-  "build": {
-    "markdownEngineName": "markdig",
-    "content": [
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
-      }
-    ],
-    "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif",
-          "**/*.pdf",
-          "**/*.pptx"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ]
-      }
-    ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {
-      "breadcrumb_path": "~/breadcrumb/toc.yml",
-      "extendBreadcrumb": true,
-      "titleSuffix": "Contributor Guide",
-      "searchScope": [
-        "Contribute"
-      ],
-      "hideScope": false,
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/Contribute.zh-cn",
-      "feedback_product_url": "https://aka.ms/sitefeedback",
-      "author": "billwagner",
-      "ms.author": "wiwagn",
-      "manager": "wpickett",
-      "ms.prod": "non-product-specific",
-      "ms.topic": "contributor-guide",
-      "ms.custom": "external-contributor-guide",
-      "disable_contribution_on_translation_quality": [
-        "MT",
-        "MTE75",
-        "MTE95",
-        "Blank"
-      ]
+    "docsets_to_publish": [{
+      "docset_name": "ContributionGuide",
+      "build_source_folder": "Contribute",
+      "build_output_subfolder": "ContributionGuide",
+      "locale": "zh-CN",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content",
+        "ZonePivotGroups": "Toc"
+      },
+      "build_entry_point": "docs",
+        "template_folder": "_themes",
+        "xref_query_tags": ["/dotnet", "/uwp/api"]
+     }],
+  "notification_subscribers": [],
+  "branches_to_filter": [
+    "live",
+    "master"
+  ],
+  "continue_with_document_error": true,
+  "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
+    "need_pr_comments": false,
+  "contribution_branch_mappings": {
+    "live-sxs": "live"
+  },
+    "dependent_repositories": [{
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft.zh-CN",
+      "branch": "master",
+      "branch_mapping": {}
     },
-    "fileMetadata": {},
-    "template": [],
-    "dest": "ContributionGuide"
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master"
+    },
+    {
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/MicrosoftDocs/Contribute",
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+      }
+    }
+  ],
+  "branch_target_mapping": {
+    "live-sxs": [
+      "Publish",
+      "Pdf"
+    ],
+    "live": [
+      "Publish",
+      "Pdf"
+    ]
+  },
+  "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
+  "need_generate_pdf_url_template": true,
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Contribute.zh-CN",
+  "git_repository_branch_open_to_public_contributors": "live",
+  "docs_build_engine": {
+    "name": "docfx_v3"
   }
 }
