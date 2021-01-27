@@ -48,6 +48,8 @@
               href: docs-authoring/sort-redirects.md
             - name: 排序所选内容
               href: docs-authoring/sort-selection.md
+            - name: Jupyter 笔记本
+              href: docs-authoring/jupyter-notebooks.md
 - name: 文档集特定指南
   items:
     - name: .NET 文档
