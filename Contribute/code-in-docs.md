@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: b33333a49df11f0234193ca84fc2c3accdb6894d
-ms.sourcegitcommit: f1535713b66ff9b840f1138583746bc2bf182b4f
+ms.openlocfilehash: bc8b510c291341cf03a1ce45cd12d47704aad05e
+ms.sourcegitcommit: fefd2a05daeb6af6b9f377003da70c2e34e9c6cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91953641"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99081504"
 ---
 # <a name="how-to-include-code-in-docs"></a>如何在文档中包含代码
 
@@ -306,6 +306,67 @@ Markdown：
 > [!NOTE]
 > 分配给从属存储库的名称对应于主存储库的根目录，但波形符 (~) 是指文档集的根目录。 文档集根目录由 .openpublishing.publish.config.json 中的 `build_source_folder` 确定。 上一示例中代码片段的路径可在 azure-docs 存储库中使用，因为 `build_source_folder` 指的是存储库根目录 (`.`)。 如果 `build_source_folder` 为 `articles`，则路径将以 `~/../samples-durable-functions` 而非 `~/samples-durable-functions` 开头。
 
+## <a name="snippets-in-a-jupyter-notebook"></a>Jupyter 笔记本中的代码片段
+
+可以将 Jupyter 笔记本中的单元格作为代码片段引用。 若要引用单元格：
+
+1. 针对要引用的单元格，将单元格元数据添加到笔记本。
+1. 设置对存储库的访问权限。
+1. 在 markdown 文件中使用 Jupyter 笔记本代码片段语法。
+
+### <a name="add-metadata-to-notebook"></a>将元数据添加到笔记本
+
+1. 通过在 Jupyter 笔记本中添加单元格元数据来命名单元格。  
+
+    * 在 Jupyter 中，可以通过首先启用单元格工具栏来[编辑单元格元数据](https://jupyterbook.org/advanced/advanced.html#adding-tags-using-notebook-interfaces)：“查看”>“单元格工具栏”>“编辑元数据”。
+    * 启用单元格工具栏后，选择要命名的单元格上的“编辑元数据”。
+    * 或者，可以在笔记本的 JSON 结构中直接编辑元数据。
+
+1.  在“单元格元数据”中，添加“名称”属性：
+ 
+    ```json
+    "metadata": {"name": "<name>"},
+    ```
+  
+    例如：
+
+    ```json
+    "metadata": {"name": "workspace"},
+    ```
+
+    > [!TIP]
+    > 可以添加任何其他用于帮助跟踪单元格使用位置的元数据。  例如：
+    >
+    > ```json
+    >     "metadata": {
+    >       "name": "workspace",
+    >       "msdoc": "how-to-track-experiments.md"
+    >     },
+    > ```
+
+### <a name="set-up-repository-access"></a>设置存储库访问权限
+
+如果要引用的笔记本文件在另一个存储库中，请将代码储存库设置为[从属存储库](#out-of-repo-snippet-references)。
+
+### <a name="jupyter-notebook-snippet-syntax-reference"></a>Jupyter 笔记本代码片段语法参考
+
+ 笔记本包含所需的元数据后，请在 markdown 文件中引用它。 使用添加到笔记本的 `<cell-name-value>`，并使用设置为依赖存储库的 `<path>` 。
+
+```markdown
+[!notebook-<language>[] (<path>/<notebook-name.ipynb>?name=<cell-name-value>)]
+```
+
+例如：
+
+```markdown
+[!notebook-python[] (~/MachineLearningNotebooks/train-on-local.ipynb?name=workspace)]
+```
+
+> [!IMPORTANT]
+> 此语法是块 Markdown 扩展。 必须在自己的行中使用它。
+
+将任何[受支持的语言](#supported-languages)用于 `<language>` 标识符。
+
 ## <a name="interactive-code-snippets"></a>交互式代码片段
 
 ### <a name="inline-interactive-code-blocks"></a>内联交互式代码块
@@ -383,7 +444,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 * `<path>`（必需）
   * 文件系统中的相对路径，指示将引用的代码片段文件。
 
-* `<attribute>` 和 `<attribute-value>`（可选）**
+* `<attribute>` 和 `<attribute-value>`（可选）
 
   配合使用以指定如何从文件中检索代码以及如何显示代码：
 
@@ -406,14 +467,14 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | ABNF                           | `abnf`                                                                         |
 | 访问日志                    | `accesslog`                                                                    |
 | Ada                            | `ada`                                                                          |
-| ARM assembler                  | `armasm`、`arm`                                                                |
+| ARM assembler                  | `armasm`, `arm`                                                                |
 | AVR assembler                  | `avrasm`                                                                       |
 | ActionScript                   | `actionscript`, `as`                                                           |
-| Alan                           | `alan`、`i`                                                                    |
+| Alan                           | `alan`, `i`                                                                    |
 | AngelScript                    | `angelscript`, `asc`                                                           |
 | ANTLR                          | `antlr`                                                                        |
-| Apache                         | `apache`, `apacheconf`                                                         |
-| AppleScript                    | `applescript`, `osascript`                                                     |
+| Apache                         | `apache`、`apacheconf`                                                         |
+| AppleScript                    | `applescript`、`osascript`                                                     |
 | 街机游戏                         | `arcade`                                                                       |
 | AsciiDoc                       | `asciidoc`, `adoc`                                                             |
 | AspectJ                        | `aspectj`                                                                      |
@@ -433,7 +494,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | 基本                          | `basic`                                                                        |
 | BNF                            | `bnf`                                                                          |
 | C                              | `c`                                                                            |
-| C#                             | `csharp`、`cs`                                                                 |
+| C#                             | `csharp`, `cs`                                                                 |
 | C# (Interactive)               | `csharp-interactive`                                                           |
 | C++                            | `cpp`, `c`, `cc`, `h`, `c++`, `h++`, `hpp`                                     |
 | C++/CX                         | `cppcx`                                                                        |
@@ -444,7 +505,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | Coq                            | `coq`                                                                          |
 | CSP                            | `csp`                                                                          |
 | CSS                            | `css`                                                                          |
-| Cap'n Proto                    | `capnproto`, `capnp`                                                           |
+| Cap'n Proto                    | `capnproto`、`capnp`                                                           |
 | Clojure                        | `clojure`, `clj`                                                               |
 | CoffeeScript                   | `coffeescript`, `coffee`, `cson`, `iced`                                       |
 | Crmsh                          | `crmsh`, `crm`, `pcmk`                                                         |
@@ -456,12 +517,12 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | DOS                            | `dos`, `bat`, `cmd`                                                            |
 | Dart                           | `dart`                                                                         |
 | Delphi                         | `delphi`, `dpr`, `dfm`, `pas`, `pascal`, `freepascal`, `lazarus`, `lpr`, `lfm` |
-| 差异                           | `diff`, `patch`                                                                |
-| Django                         | `django`, `jinja`                                                              |
+| 差异                           | `diff`、`patch`                                                                |
+| Django                         | `django`、`jinja`                                                              |
 | Dockerfile                     | `dockerfile`、`docker`                                                         |
 | dsconfig                       | `dsconfig`                                                                     |
 | DTS (Device Tree)              | `dts`                                                                          |
-| Dust                           | `dust`, `dst`                                                                  |
+| Dust                           | `dust`、`dst`                                                                  |
 | Dylan                          | `dylan`                                                                        |
 | EBNF                           | `ebnf`                                                                         |
 | Elixir                         | `elixir`                                                                       |
@@ -477,7 +538,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | GAUSS                          | `gauss`, `gss`                                                                 |
 | GDScript                       | `godot`, `gdscript`                                                            |
 | Gherkin                        | `gherkin`                                                                      |
-| GN for Ninja                   | `gn`、`gni`                                                                    |
+| GN for Ninja                   | `gn`, `gni`                                                                    |
 | Go                             | `go`, `golang`                                                                 |
 | Golo                           | `golo`, `gololang`                                                             |
 | Gradle                         | `gradle`                                                                       |
@@ -488,7 +549,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | 把手                     | `handlebars`, `hbs`, `html.hbs`, `html.handlebars`                             |
 | Haskell                        | `haskell`, `hs`                                                                |
 | Haxe                           | `haxe`, `hx`                                                                   |
-| Hy                             | `hy`, `hylang`                                                                 |
+| Hy                             | `hy`、`hylang`                                                                 |
 | Ini                            | `ini`                                                                          |
 | Inform7                        | `inform7`, `i7`                                                                |
 | IRPF90                         | `irpf90`                                                                       |
@@ -503,7 +564,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | LDIF                           | `ldif`                                                                         |
 | Lisp                           | `lisp`                                                                         |
 | LiveCode Server                | `livecodeserver`                                                               |
-| LiveScript                     | `livescript`, `ls`                                                             |
+| LiveScript                     | `livescript`、`ls`                                                             |
 | Lua                            | `lua`                                                                          |
 | 生成文件                       | `makefile`, `mk`, `mak`                                                        |
 | Markdown                       | `markdown`, `md`, `mkdown`, `mkd`                                              |
@@ -517,20 +578,20 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | 托管对象格式          | `mof`                                                                          |
 | Mojolicious                    | `mojolicious`                                                                  |
 | Monkey                         | `monkey`                                                                       |
-| Moonscript                     | `moonscript`、`moon`                                                           |
+| Moonscript                     | `moonscript`, `moon`                                                           |
 | MS Graph (Interactive)         | `msgraph-interactive`                                                          |
 | N1QL                           | `n1ql`                                                                         |
 | NSIS                           | `nsis`                                                                         |
-| Nginx                          | `nginx`、`nginxconf`                                                           |
+| Nginx                          | `nginx`, `nginxconf`                                                           |
 | Nimrod                         | `nimrod`, `nim`                                                                |
 | Nix                            | `nix`                                                                          |
 | OCaml                          | `ocaml`, `ml`                                                                  |
 | Objective C                    | `objectivec`, `mm`, `objc`, `obj-c`                                            |
 | OpenGL Shading Language        | `glsl`                                                                         |
-| OpenSCAD                       | `openscad`, `scad`                                                             |
+| OpenSCAD                       | `openscad`、`scad`                                                             |
 | Oracle Rules Language          | `ruleslanguage`                                                                |
 | Oxygene                        | `oxygene`                                                                      |
-| PF                             | `pf`, `pf.conf`                                                                |
+| PF                             | `pf`、`pf.conf`                                                                |
 | PHP                            | `php`, `php3`, `php4`, `php5`, `php6`                                          |
 | Parser3                        | `parser3`                                                                      |
 | Perl                           | `perl`, `pl`, `pm`                                                             |
@@ -543,7 +604,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | Prolog                         | `prolog`                                                                       |
 | 属性                     | `properties`                                                                   |
 | 协议缓冲区               | `protobuf`                                                                     |
-| Puppet                         | `puppet`, `pp`                                                                 |
+| Puppet                         | `puppet`、`pp`                                                                 |
 | Python                         | `python`, `py`, `gyp`                                                          |
 | Python profiler results        | `profile`                                                                      |
 | Q#                             | `qsharp`                                                                       |
@@ -554,11 +615,11 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | ReasonML                       | `reasonml`, `re`                                                               |
 | RenderMan RIB                  | `rib`                                                                          |
 | RenderMan RSL                  | `rsl`                                                                          |
-| Roboconf                       | `graph`、`instances`                                                           |
+| Roboconf                       | `graph`, `instances`                                                           |
 | Robot Framework                | `robot`, `rf`                                                                  |
 | RPM spec files                 | `rpm-specfile`, `rpm`, `spec`, `rpm-spec`, `specfile`                          |
 | Ruby                           | `ruby`, `rb`, `gemspec`, `podspec`, `thor`, `irb`                              |
-| Rust                           | `rust`、`rs`                                                                   |
+| Rust                           | `rust`, `rs`                                                                   |
 | SAS                            | `SAS`, `sas`                                                                   |
 | SCSS                           | `scss`                                                                         |
 | SQL                            | `sql`                                                                          |
@@ -576,7 +637,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | Structured Text                | `iecst`, `scl`, `stl`, `structured-text`                                       |
 | 触笔                         | `stylus`, `styl`                                                               |
 | SubUnit                        | `subunit`                                                                      |
-| Supercollider                  | `supercollider`, `sc`                                                          |
+| Supercollider                  | `supercollider`、`sc`                                                          |
 | Swift                          | `swift`                                                                        |
 | Tcl                            | `tcl`, `tk`                                                                    |
 | Terraform (HCL)                | `terraform`, `tf`, `hcl`                                                       |
@@ -585,7 +646,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | Thrift                         | `thrift`                                                                       |
 | TOML                           | `toml`                                                                         |
 | TP                             | `tp`                                                                           |
-| Twig                           | `twig`、`craftcms`                                                             |
+| Twig                           | `twig`, `craftcms`                                                             |
 | TypeScript                     | `typescript`, `ts`                                                             |
 | VB.NET                         | `vbnet`, `vb`                                                                  |
 | VBScript                       | `vbscript`, `vbs`                                                              |
