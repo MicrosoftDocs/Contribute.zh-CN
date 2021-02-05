@@ -66,6 +66,8 @@
           href: dotnet/dotnet-voice-tone.md
         - name: 拉取请求评审流程
           href: dotnet/dotnet-pr-review.md
+        - name: 文档中的 .NET 命名
+          href: dotnet/net-core-5-naming.md
     - name: PowerShell-Docs
       href: powershell-overview.md
 - name: 其他资源
