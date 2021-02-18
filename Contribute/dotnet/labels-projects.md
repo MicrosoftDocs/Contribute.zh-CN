@@ -4,17 +4,17 @@ description: 本文介绍了如何在 dotnet/docs 存储库中使用标签、项
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.date: 08/06/2020
-ms.openlocfilehash: b7c6e4058d802db2e9dc391bfebc9f66b27c4023
-ms.sourcegitcommit: fe12c5eef9d05fa598e326c44248c2b9c68cca12
+ms.date: 02/10/2021
+ms.openlocfilehash: e053f09f7502cbe6f711488959de910298d3a456
+ms.sourcegitcommit: f9a92d1cc70e46fae100dbc698e1d2196e0df7c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96755437"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100335732"
 ---
 # <a name="labels-projects-and-milestones-roadmap"></a>标签、项目和里程碑路线图
 
-.NET 文档团队广泛使用 [ GitHub 标签](https://github.com/dotnet/docs/labels)来组织工作。 通过筛选标签的组合，我们可以快速关注 [.NET 文档网站](https://docs.microsoft.com/dotnet)上我们所需的部分。 例如，我们可以筛选到 `P1` 通过查询 [is:issue is:open label:":books:Area - .NET Architecture Guide"](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3A%22%3Abooks%3A+Area+-+.NET+Architecture+Guide%22) 发出的所有开放优先级。
+.NET 文档团队广泛使用 [ GitHub 标签](https://github.com/dotnet/docs/labels)来组织工作。 通过筛选标签的组合，我们可以快速关注 [.NET 文档网站](https://docs.microsoft.com/dotnet)上我们所需的部分。 例如，我们可以通过查询 [is:issue is:open label:"dotnet-architecture/prod"](https://github.com/dotnet/docs/labels/dotnet-architecture%2Fprod) 筛选出有关体系结构指南的所有待解决问题。
 
 我们使用 [GitHub 项目](https://github.com/dotnet/docs/projects)来组织冲刺 (sprint) 和其他以目标为导向的长篇故事。 我们还使用 [GitHub 里程碑](https://github.com/dotnet/docs/milestones)来跟踪工作。 最好考虑用于规划的项目（问题）和用于工作的里程碑（拉取请求）。
 
@@ -26,106 +26,60 @@ ms.locfileid: "96755437"
 
 我们使用标签以多种不同方式来分类问题：
 
-- [.NET 指南](#find-a-single-net-guide)和[指南章节](#search-one-section-of-a-guide)。
+- [.NET 指南](#find-issues-for-a-single-net-guide)和[指南章节](#find-issues-for-one-section-of-a-guide)。
 - [目标版本](#releases)
 - [Priority](#priority)
 
 你可以合并每组（指南、版本、优先级）中的标签，以缩小关注范围，查找你想要解决的问题。
 
-### <a name="find-a-single-net-guide"></a>查找单个 .NET 指南
+### <a name="find-issues-for-a-single-net-guide"></a>查找单个 .NET 指南的问题
 
-我们针对各个体系结构电子书以及各个 .NET 指南使用标签。
+我们针对各个体系结构电子书以及各个 .NET 指南使用标签。 所有电子书都注明了 [dotnet-architecture/prod](https://github.com/dotnet/docs/labels/dotnet-architecture%2Fprod) 标签。 每本书都具有以 `/tech` 结尾的唯一标签。
 
-![:book: guide on light green background](./media/labels-projects/guide.png "体系结构指南标签的前缀")
+每个 .NET 指南都带有 [`/prod`](https://github.com/dotnet/docs/labels?q=prod) 后缀和蓝灰色背景。 以下是针对各个 .NET 指南筛选出的当前问题。
 
-体系结构电子书标有 `:book: guide` 前缀，并且使用浅绿色背景。 这些是长格式区域，其中包含推荐的体系结构。 以下是针对各个 .NET 体系结构指南筛选出的当前问题。
+- [.NET 指南 - `dotnet/prod`](https://github.com/dotnet/docs/labels/dotnet%2Fprod)
+- [.NET 基础指南（以前称为 .NET Standard 指南）- `dotnet-fundamentals/prod`](https://github.com/dotnet/docs/labels/dotnet-fundamentals%2Fprod)
+- [.NET 基础指南（以前称为 .NET Core 指南）- `dotnet-core/prod`](https://github.com/dotnet/docs/labels/dotnet-core%2Fprod)
+- [.NET Framework 指南 - `dotnet-framework/prod`](https://github.com/dotnet/docs/labels/dotnet-framework%2Fprod)
+- [API 参考 - `dotnet-api/prod`](https://github.com/dotnet/docs/labels/dotnet-api%2Fprod)
+- [C# 指南 - `dotnet-csharp/prod`](https://github.com/dotnet/docs/labels/dotnet-csharp%2Fprod)
+- [F# 指南 - `dotnet-fsharp/prod`](https://github.com/dotnet/docs/labels/dotnet-fsharp%2Fprod)
+- [Visual Basic 指南 - `dotnet-visualbasic/prod](https://github.com/dotnet/docs/labels/dotnet-visualbasic%2Fprod)
+- [ML.NET 指南 - `dotnet-ml/prod`](https://github.com/dotnet/docs/labels/dotnet-ml%2Fprod)
+- [Azure .NET SDK - `azure-dotnet/prod`](https://github.com/dotnet/docs/labels/azure-dotnet%2Fprod)
+- [.NET for Apache Spark 指南 - `dotnet-spark/prod`](https://github.com/dotnet/docs/labels/dotnet-spark%2Fprod)
+- [.NET 桌面指南 - `dotnet-desktop/prod`](https://github.com/dotnet/docs/labels/dotnet-desktop%2Fprod)
 
-- [ASP.NET Core Web 应用](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20ASP.NET%20Core%20web%20apps)
-- [Blazor](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Blazor)
-- [云本机](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Cloud%20Native)
-- [Docker 生命周期](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Docker%20lifecycle)
-- [gRPC](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20gRPC)
-- [通过 Windows 容器实现现代化](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Modernizing%20w%2F%20Windows%20containers)
-- [.NET 微服务](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20.NET%20Microservices)
-- [无服务器应用](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Serverless%20apps)
+为跨存储库的区域定义了其他产品标签。
 
-此标签样式也适用于 [Framework 设计准则](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Framework%20Design%20Guidelines)。 此区域使用相同的标签设计，但不建议对它执行社区拉取请求。 此为经许可后转载的材料，请勿进行编辑。
+#### <a name="find-issues-for-one-section-of-a-guide"></a>查找指南某个部分的问题
 
-![：书籍：深蓝色背景上的区域](./media/labels-projects/area.png ".NET 指南区域标签的前缀")
-
-每个 .NET 指南都标有 `:books: Area` 前缀，并且使用深蓝色背景。 以下是针对各个 .NET 指南筛选出的当前问题。
-
-- [API 参考](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20API%20Reference)
-- [Azure .NET SDK](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Azure%20.NET%20SDk)
-- [C# 指南](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20C%23%20Guide)
-- [F# 指南](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20F%23%20Guide)
-- [ML.NET 指南](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20ML.NET%20Guide)
-- [.NET 体系结构指南](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Architecture%20Guide) - 可以删除
-- [.NET Core 指南](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Core%20Guide)
-- [.NET for Apache Spark 指南](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20for%20Apache%20Spark%20Guide)
-- [.NET Framework 指南](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Framework%20Guide)
-- [.NET 指南](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Guide)
-- [Roslyn API 参考](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Roslyn%20API%20Reference) - 可以删除。
-- [Visual Basic 指南](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Visual%20Basic%20Guide)
-
-#### <a name="search-one-section-of-a-guide"></a>搜索指南的某个章节
-
-![：card_file_box：中蓝色背景上的区域](./media/labels-projects/technology.png ".NET 指南子区域标签的前缀")
-
-.NET 指南范围较大，因此，这些标签按指南章节对范围做了进一步限制。 每个 .NET 指南的子区域都标有 `:card_file_box: Technology` 前缀，并且使用中蓝色背景。 其中许多标签适用于多个指南，而有些标签仅适用于一个指南。 基于区域筛选后，添加其中一种标签，进一步限制问题的范围。
-
-- AppCompat
-- 异步任务
-- C# 高级概念
-- C# 编译器
-- C# 基础知识
-- C# 入门
-- C# 语言参考
-- C# Null 安全性
-- C# 新增功能
-- CLI
-- 数据访问
-- Docker
-- 安装程序
-- LINQ
-- NCL
-- .NET Standard
-- Roslyn API
-- 安全性
-- WCF
-- WF
-- WIF
-- WinForms
-- WPF
+.NET 指南范围较大，因此，这些标签按指南章节对范围做了进一步限制。 每个 .NET 指南子区域都带有 [`/tech`](https://github.com/dotnet/docs/labels?q=tech) 后缀和浅蓝色背景。 其中许多标签适用于多个指南，而有些标签仅适用于一个指南。 基于区域筛选后，添加其中一种标签，进一步限制问题的范围。
 
 ### <a name="releases"></a>版本
 
 ![：checkered_flag：版本：深黄色](./media/labels-projects/release.png "版本标签的前缀")
 
-针对特定版本标记的问题标有 `:checkered_flag: Release:` 前缀，并且使用深黄色背景。
-
-- .NET Core 2.2
-- .NET Core 3.0
-- .NET Framework 4.8
-- .NET 5
+针对特定版本标记的问题使用 [`:checkered_flag: Release:`](https://github.com/dotnet/docs/labels?q=%3Acheckered_flag%3A+Release) 前缀标注，并具有深黄色背景。
 
 ### <a name="priority"></a>优先级
 
-优先级标签由 `P` 及其后面的单个数字构成。 数字越小表示优先级越高：
+优先级标签由 `Pri` 及其后面的单个数字构成。 数字越小表示优先级越高：
 
-- P0 - 严重优先级
+- Pri0 - 严重优先级
 
   安全性问题或合规性所需的法律要求。 应放下所有其他方面来修复。
   
-- P1 - 高优先级
+- Pri1 - 高优先级
 
   常见方案的要素。 或者高访问量文章上的明显错误。 在 P2 或 P3 起作用之前执行。
   
-- P2 - 中优先级
+- Pri2 - 中优先级
 
   有助于常见方案，但不阻止。  快速简单地执行，或者在解决同一篇文章中 P1 问题时修复。
   
-- P3 - 低优先级
+- Pri3 - 低优先级
 
   有助于边缘案例、常见案例的普通矫正、低访问量文章或弃用的技术。 不值得花费时间，但可供争取社区参与。 如果 P3 问题两个月后仍未解决，可关闭。
 
